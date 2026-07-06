@@ -29,6 +29,8 @@ echo "▸ Syncing to $DEPLOYPATH"
 /bin/mkdir -p "$DEPLOYPATH"
 /bin/rm -rf "${DEPLOYPATH:?}"/*
 /bin/cp -r "$ROOT/deploy/development/." "$DEPLOYPATH/"
+# CloudLinux: remove physical node_modules if present; use cPanel Run NPM Install
+/bin/rm -rf "$DEPLOYPATH/node_modules"
 /bin/mkdir -p "$DEPLOYPATH/tmp"
 /usr/bin/touch "$DEPLOYPATH/tmp/restart.txt"
 echo "✓ Deployed to $DEPLOYPATH"

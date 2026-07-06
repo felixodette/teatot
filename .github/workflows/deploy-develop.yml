@@ -30,7 +30,9 @@ jobs:
           node scripts/stage-standalone.mjs
 
       - name: Verify standalone bundle
-        run: test -f deploy/development/node_modules/next/package.json
+        run: |
+          test -f deploy/development/server.js
+          test ! -e deploy/development/node_modules
 
       - name: Deploy to cPanel (FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -45,7 +47,3 @@ jobs:
           server-dir: public_html/development/
           dangerous-clean-slate: false
           timeout: 600000
-          # ponytail: default exclude skips **/node_modules/** — standalone needs it
-          exclude: |
-            **/.git*
-            **/.git*/**

@@ -30,7 +30,9 @@ jobs:
           node scripts/stage-standalone.mjs
 
       - name: Verify standalone bundle
-        run: test -f deploy/development/node_modules/next/package.json
+        run: |
+          test -f deploy/development/server.js
+          test ! -e deploy/development/node_modules
 
       - name: Deploy to cPanel (FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -41,10 +43,6 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./deploy/development/
-          # FTP root: /home/teatotco → /home/teatotco/public_html/production/
           server-dir: public_html/production/
           dangerous-clean-slate: false
           timeout: 600000
-          exclude: |
-            **/.git*
-            **/.git*/**
