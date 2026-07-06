@@ -1,0 +1,22 @@
+---
+# cPanel Git deployment — runs after pull on the configured branch.
+# Configure in cPanel → Git Version Control → deploy "develop" → public_html/development
+#
+# Requires Node.js App Manager app rooted at public_html/development (startup: server.js).
+# If `npm run build` fails on shared hosting (memory), use scripts/package-standalone.mjs
+# locally and upload deploy/development/ via File Manager instead.
+
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/development
+    - export NODE_ENV=production
+    - npm ci
+    - npm run build
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH/*
+    - /bin/cp -r .next/standalone/. $DEPLOYPATH/
+    - /bin/mkdir -p $DEPLOYPATH/.next/static
+    - /bin/cp -r .next/static/. $DEPLOYPATH/.next/static/
+    - /bin/cp -r public $DEPLOYPATH/public
+    - /bin/mkdir -p $DEPLOYPATH/tmp
+    - /usr/bin/touch $DEPLOYPATH/tmp/restart.txt
