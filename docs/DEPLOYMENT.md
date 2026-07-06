@@ -71,35 +71,33 @@ git push origin develop
 GitHub Actions will:
 
 1. `npm ci` + `npm run build`
-2. Install 4 runtime packages in CI (`next`, `react`, `react-dom`, `nodemailer`)
-3. FTP app files → `public_html/development/`
-4. FTP `node_modules` → `nodevenv/public_html/development/22/lib/node_modules/` (clean replace each deploy)
+2. Install 4 runtime packages in CI and pack them as `tmp/node_modules.tar.gz` (~80 MB)
+3. FTP app files + tarball → `public_html/development/`
 
 ### After each deploy
 
-1. cPanel → **Setup Node.js App** → **Restart** (or Stop → Start)
-2. Open https://dev.teatot.co.ke/
+1. cPanel → **Setup Node.js App** → **STOP APP**
+2. Wait for GitHub Actions to finish
+3. **START** the app — `server.js` extracts deps into the virtualenv on boot (first start may take ~30s)
+4. Open https://dev.teatot.co.ke/
 
-**Do not click Run NPM Install** — that step is obsolete and causes ENOTEMPTY errors on shared hosting.
+**Do not click Run NPM Install.**
 
 ---
 
-## How the permanent fix works
+## How deploy works
 
 ```mermaid
 flowchart LR
-  A[git push develop] --> B[GitHub Actions build]
-  B --> C[FTP app + .next]
-  B --> D[FTP node_modules to virtualenv]
-  C --> E[public_html/development]
-  D --> F[nodevenv/.../lib/node_modules]
-  F --> G[node_modules symlink in app root]
-  E --> H[Restart app]
-  G --> H
-  H --> I[dev.teatot.co.ke]
+  A[git push] --> B[CI build + tar deps]
+  B --> C[FTP single deploy]
+  C --> D[public_html/development]
+  D --> E[Stop then Start app]
+  E --> F[server.js extracts tarball to virtualenv]
+  F --> G[dev.teatot.co.ke]
 ```
 
-CloudLinux forbids a real `node_modules` folder in the app root but allows a symlink to the virtualenv. Server-side `npm install` is slow, memory-limited, and leaves corrupted partial installs (ENOTEMPTY). CI installs deps on a full Ubuntu runner and FTP replaces the virtualenv folder atomically each deploy.
+One FTP upload (including one ~80 MB tarball) avoids FTPS dropping connections on thousands of tiny `node_modules` files. `server.js` extracts into the CloudLinux virtualenv when the SHA changes.
 
 ---
 
@@ -111,7 +109,7 @@ Stop the app, then run this **once** via Cron Jobs:
 rm -rf /home/teatotco/nodevenv/public_html/development/22/lib/node_modules && mkdir -p /home/teatotco/nodevenv/public_html/development/22/lib/node_modules
 ```
 
-Then push to `develop` and let GitHub Actions repopulate the virtualenv. Restart the app.
+Then redeploy from `develop` and **Start** the app (extraction runs automatically).
 
 ---
 
@@ -119,14 +117,15 @@ Then push to `develop` and let GitHub Actions repopulate the virtualenv. Restart
 
 | Symptom | Fix |
 |---------|-----|
-| **ENOTEMPTY on Run NPM Install** | Stop using Run NPM Install. Push `develop` so CI uploads deps. One-time cron cleanup above if virtualenv is corrupted. |
-| **Cannot find module 'next'** | Virtualenv upload failed — check GitHub Actions FTP step. Confirm `node_modules` symlink exists in app root. Restart app. |
-| **503** | Restart app; confirm `.htaccess` exists. |
-| **Wrong Node version on cPanel** | Virtualenv path uses `/22/` — must match Node 22.x in Setup Node.js App. Update workflow `server-dir` if you change version. |
-| FTP fails on virtualenv step | Confirm FTP user is `teatotco` (account home access). |
+| **FTP FIN packet / connection closed** | Fixed by shipping `tmp/node_modules.tar.gz` instead of uploading `node_modules` file-by-file. |
+| **ENOTEMPTY on Run NPM Install** | Do not use Run NPM Install. Use deploy + Stop → Start. |
+| **Cannot find module 'next'** | Stop app, confirm `tmp/node_modules.tar.gz` exists, Start app, check `stderr.log` for extract errors. |
+| **503 on first start after deploy** | Extraction can take ~30s — wait and refresh. If it persists, check `stderr.log`. |
+| **503** | Confirm `.htaccess` exists. Stop → Start. |
+| **Wrong Node version on cPanel** | Virtualenv path uses your Node major version (e.g. `22`). |
 
 ---
 
 ## Production (when ready)
 
-Push to `main` — workflow deploys to `public_html/production` and `nodevenv/public_html/production/22/lib/node_modules/`.
+Push to `main` — workflow deploys to `public_html/production` with the same tarball extract flow.

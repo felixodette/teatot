@@ -32,12 +32,12 @@ jobs:
       - name: Verify cPanel bundle
         run: |
           test -f deploy/development/server.js
-          test -f deploy/development/package.json
+          test -f deploy/development/tmp/node_modules.tar.gz
+          test -f deploy/development/tmp/.deps-sha256
           test -f deploy/development/.next/BUILD_ID
           test ! -e deploy/development/node_modules
-          test -d deploy/venv-node_modules/next
 
-      - name: Deploy app to cPanel (FTP)
+      - name: Deploy to cPanel (FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.CPANEL_FTP_HOST }}
@@ -48,17 +48,4 @@ jobs:
           local-dir: ./deploy/development/
           server-dir: public_html/development/
           dangerous-clean-slate: false
-          timeout: 600000
-
-      - name: Deploy dependencies to CloudLinux virtualenv (FTP)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.CPANEL_FTP_HOST }}
-          username: ${{ secrets.CPANEL_FTP_USER }}
-          password: ${{ secrets.CPANEL_FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: ./deploy/venv-node_modules/
-          server-dir: nodevenv/public_html/development/22/lib/node_modules/
-          dangerous-clean-slate: true
           timeout: 600000

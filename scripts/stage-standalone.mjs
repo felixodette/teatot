@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
  * Stage production build for cPanel (CloudLinux Node.js Selector).
- * Installs runtime deps in CI and uploads them to the virtualenv via FTP —
- * no server-side npm install (avoids ENOTEMPTY / OOM on shared hosting).
+ * Ships runtime deps as a single tarball — extracted on app start (no server npm install).
  */
+import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
 import { cpSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { dirname, resolve, sep } from "node:path";
@@ -49,7 +49,7 @@ function installRuntimeDeps() {
   );
   cpSync(resolve(root, "config/cpanel.npmrc"), resolve(prodDir, ".npmrc"));
 
-  console.log("▸ npm install --omit=dev (CI only, for virtualenv upload)");
+  console.log("▸ npm install --omit=dev (CI only)");
   const result = spawnSync("npm", ["install", "--omit=dev"], {
     cwd: prodDir,
     stdio: "inherit",
@@ -61,8 +61,22 @@ function installRuntimeDeps() {
   rmSync(prodDir, { recursive: true, force: true });
 }
 
+function packRuntimeDeps(tmpDir) {
+  const tarball = resolve(tmpDir, "node_modules.tar.gz");
+  rmSync(tarball, { force: true });
+  const result = spawnSync("tar", ["-czf", tarball, "-C", venvDir, "."], { stdio: "inherit" });
+  if (result.status !== 0) process.exit(result.status ?? 1);
+
+  const sha = createHash("sha256").update(readFileSync(tarball)).digest("hex");
+  writeFileSync(resolve(tmpDir, ".deps-sha256"), `${sha}\n`);
+  const sizeMb = (statSync(tarball).size / (1024 * 1024)).toFixed(1);
+  console.log(`✓ deps tarball: ${tarball} (${sizeMb} MB)`);
+}
+
 rmSync(outDir, { recursive: true, force: true });
 mkdirSync(outDir, { recursive: true });
+const tmpDir = resolve(outDir, "tmp");
+mkdirSync(tmpDir, { recursive: true });
 
 const cachePath = `${sep}.next${sep}cache${sep}`;
 cpSync(nextDir, resolve(outDir, ".next"), {
@@ -72,7 +86,7 @@ cpSync(nextDir, resolve(outDir, ".next"), {
 cpSync(resolve(root, "public"), resolve(outDir, "public"), { recursive: true });
 cpSync(resolve(root, "scripts/cpanel-server.js"), resolve(outDir, "server.js"));
 cpSync(resolve(root, "config/passenger-development.htaccess"), resolve(outDir, ".htaccess"));
-mkdirSync(resolve(outDir, "tmp"), { recursive: true });
+writeFileSync(resolve(tmpDir, ".htaccess"), "<IfModule mod_authz_core.c>\n  Require all denied\n</IfModule>\n");
 
 writeFileSync(
   resolve(outDir, "package.json"),
@@ -90,8 +104,8 @@ writeFileSync(
 );
 
 installRuntimeDeps();
+packRuntimeDeps(tmpDir);
+rmSync(venvDir, { recursive: true, force: true });
 
 console.log(`✓ Staged app: ${outDir}`);
-console.log(`✓ Staged virtualenv deps: ${venvDir}`);
-console.log(`  FTP venv target: nodevenv/public_html/${target}/22/lib/node_modules/`);
-console.log("  On cPanel after deploy: Restart app only (no Run NPM Install)");
+console.log("  On cPanel: Stop app → deploy → Start (server.js extracts deps on boot)");
