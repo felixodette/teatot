@@ -29,9 +29,11 @@ jobs:
           npm run build
           node scripts/stage-standalone.mjs
 
-      - name: Verify standalone bundle
+      - name: Verify cPanel bundle
         run: |
           test -f deploy/development/server.js
+          test -f deploy/development/package-lock.json
+          test -f deploy/development/.next/BUILD_ID
           test ! -e deploy/development/node_modules
 
       - name: Deploy to cPanel (FTP)

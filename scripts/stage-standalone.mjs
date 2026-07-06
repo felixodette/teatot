@@ -1,34 +1,34 @@
 #!/usr/bin/env node
 /**
- * Stage .next/standalone + static + public into deploy/development/.
- * CloudLinux/cPanel forbids a physical node_modules in app root — Run NPM Install on server.
+ * Stage production build for cPanel (CloudLinux Node.js Selector).
+ * Uploads .next + package-lock; server uses virtualenv node_modules after Run NPM Install.
  */
 import { cpSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
-import { dirname, resolve } from "node:path";
+import { dirname, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const standalone = resolve(root, ".next/standalone");
 const outDir = resolve(root, "deploy/development");
+const nextDir = resolve(root, ".next");
 
-if (!statSync(resolve(standalone, "server.js")).isFile()) {
-  console.error("✗ Missing .next/standalone/server.js — run npm run build first");
+if (!statSync(resolve(nextDir, "BUILD_ID")).isFile()) {
+  console.error("✗ Missing .next/BUILD_ID — run npm run build first");
   process.exit(1);
 }
 
 rmSync(outDir, { recursive: true, force: true });
 mkdirSync(outDir, { recursive: true });
 
-cpSync(standalone, outDir, { recursive: true });
-cpSync(resolve(root, ".next/static"), resolve(outDir, ".next/static"), {
+const cachePath = `${sep}.next${sep}cache${sep}`;
+cpSync(nextDir, resolve(outDir, ".next"), {
   recursive: true,
+  filter: (src) => !src.includes(cachePath) && !src.endsWith(`${sep}.next${sep}cache`),
 });
 cpSync(resolve(root, "public"), resolve(outDir, "public"), { recursive: true });
+cpSync(resolve(root, "scripts/cpanel-server.js"), resolve(outDir, "server.js"));
 cpSync(resolve(root, "config/passenger-development.htaccess"), resolve(outDir, ".htaccess"));
+cpSync(resolve(root, "package-lock.json"), resolve(outDir, "package-lock.json"));
 mkdirSync(resolve(outDir, "tmp"), { recursive: true });
-
-// CloudLinux Node.js Selector owns node_modules via symlink — must not upload a real folder
-rmSync(resolve(outDir, "node_modules"), { recursive: true, force: true });
 
 const pkg = JSON.parse(readFileSync(resolve(root, "package.json"), "utf8"));
 writeFileSync(
@@ -38,6 +38,7 @@ writeFileSync(
       name: pkg.name,
       version: pkg.version,
       private: true,
+      engines: { node: ">=22" },
       scripts: { start: "node server.js" },
       dependencies: pkg.dependencies,
     },
@@ -46,4 +47,5 @@ writeFileSync(
   ),
 );
 
-console.log(`✓ Staged: ${outDir} (no node_modules — run NPM Install on cPanel)`);
+console.log(`✓ Staged: ${outDir}`);
+console.log("  On cPanel: Run NPM Install → Restart app");
