@@ -24,6 +24,7 @@ cpSync(resolve(root, ".next/static"), resolve(outDir, ".next/static"), {
   recursive: true,
 });
 cpSync(resolve(root, "public"), resolve(outDir, "public"), { recursive: true });
+cpSync(resolve(root, "config/passenger-development.htaccess"), resolve(outDir, ".htaccess"));
 mkdirSync(resolve(outDir, "tmp"), { recursive: true });
 
 console.log(`✓ Staged: ${outDir}`);

@@ -40,4 +40,4 @@ jobs:
           local-dir: ./deploy/development/
           # FTP root: /home/teatotco → deploy target: /home/teatotco/public_html/development/
           server-dir: public_html/development/
-          dangerous-clean-slate: true
+          dangerous-clean-slate: false
