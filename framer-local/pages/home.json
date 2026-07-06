@@ -1,0 +1,3584 @@
+{
+  "type": "WebPageNode",
+  "id": "augiA20Il",
+  "name": "Home",
+  "variables": [],
+  "$parentId": "sn7IXw6X9",
+  "$layoutTemplateId": "cd4ShtEtf",
+  "$layoutTemplateDisplayName": "Template",
+  "$breakpoints": [
+    {
+      "id": "WQLkyLRf1",
+      "name": "Desktop",
+      "mediaQueryRange": "(min-width: 1200px)"
+    },
+    {
+      "id": "dxsNX3TnE",
+      "name": "Tablet",
+      "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+    },
+    {
+      "id": "krsiyEKvu",
+      "name": "Phone",
+      "mediaQueryRange": "(max-width: 809.98px)"
+    }
+  ],
+  "attributes": {
+    "$control__scrollSection": "{\"target\":\"uyxfw2By1\"}",
+    "layoutTemplate": "default",
+    "path": "/"
+  },
+  "children": [
+    {
+      "type": "FrameNode",
+      "name": "Desktop",
+      "id": "WQLkyLRf1",
+      "$isPrimary": true,
+      "$rect": {
+        "height": 6540
+      },
+      "$mediaQuery": {
+        "range": "(min-width: 1200px)",
+        "name": "Desktop"
+      },
+      "attributes": {
+        "left": "240px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "1200px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "sFwy_eJcH",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$rect": {
+            "x": 600,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "ElSa16mtG",
+          "component": "f9mwZML90",
+          "$rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1200,
+            "height": 800
+          },
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Desktop",
+            "$control__label": "Welcome to The Hotel",
+            "$control__headline": "A place truly worth staying.",
+            "$control__paragraph": "Rooms, suites, and villas designed for rest. Dining worth booking. A team that anticipates before you ask.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__primaryButtonLink": "/rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__secondaryButtonLink": "/about",
+            "$control__buttonsVisability": "true",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "true",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/BpyFXgVjTsWyjqKRvSNpMKx3S0.jpg",
+              "alt": "Hotel lobby"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "100vh"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "woagFZm6J",
+          "$rect": {
+            "x": 0,
+            "y": 800,
+            "width": 1200,
+            "height": 5296
+          },
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "128px",
+            "overflow": "clip",
+            "padding": "80px 24px 80px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "zO8XDd5Il",
+              "$rect": {
+                "x": 24,
+                "y": 80,
+                "width": 1152,
+                "height": 591
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "iPZgXVIPZ",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1152,
+                    "height": 591
+                  },
+                  "attributes": {
+                    "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "pnjGYQFPj",
+                      "component": "TOI7zJbFB",
+                      "$rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1152,
+                        "height": 77
+                      },
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "Rooms & Suites",
+                        "$control__sectionHeadline": "Find your room.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonLink": "/rooms",
+                        "$control__buttonVisability": "true",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "ITA_Apo3x",
+                      "$rect": {
+                        "x": 0,
+                        "y": 141,
+                        "width": 1152,
+                        "height": 450
+                      },
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Rooms",
+                          "repeatedDescendantId": "dakntLSGL",
+                          "limit": "3"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "dakntLSGL",
+                          "component": "fclm0HQnA",
+                          "$rect": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 379,
+                            "height": 450
+                          },
+                          "$componentDisplayName": "Room Card",
+                          "attributes": {
+                            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+                            "$control__name": "var(--variable-LmnFrKT0w)",
+                            "$control__textContent": {
+                              "from": "var(--variable-s_5P30m6p)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__currency": "var(--variable-z0tLkA06X)",
+                            "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "$control__link": {
+                              "href": "/rooms/:slug",
+                              "collectionItem": "var(--variable-dsZM117_y)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "HW6O_EXTF",
+              "$rect": {
+                "x": 24,
+                "y": 799,
+                "width": 1152,
+                "height": 1048
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Image Container",
+                  "id": "b4fnyrEL1",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1152
+                  },
+                  "attributes": {
+                    "layout": "null",
+                    "position": "sticky",
+                    "positionStickyTop": 0,
+                    "width": "1fr",
+                    "height": "528px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "JefURocBZ",
+                      "name": "Photo",
+                      "component": "zxcGfQb3lPhoJOWc1HTU",
+                      "$rect": {
+                        "width": 1152,
+                        "height": 702
+                      },
+                      "$componentDisplayName": "Image Parallax",
+                      "attributes": {
+                        "$control__image": {
+                          "src": "https://framerusercontent.com/images/knxbeOZTgaB7PioYWyWeZbtj9A.jpg",
+                          "alt": "Hotel room"
+                        },
+                        "$control__parallaxY": "30",
+                        "$control__parallaxX": "0",
+                        "$control__border": "null",
+                        "$control__radius": "0px",
+                        "$control__shadow": [],
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                        "bottom": "-174px",
+                        "centerAnchorX": "50%",
+                        "centerAnchorY": "50%",
+                        "constraintsLocked": true,
+                        "width": "1168px",
+                        "height": "428px",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "EgRocnDGW",
+                  "$rect": {
+                    "x": 0,
+                    "y": 528,
+                    "width": 1152,
+                    "height": 520
+                  },
+                  "attributes": {
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "padding": "64px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1412px",
+                    "zIndex": "2"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "lQD4l1TZI",
+                      "component": "TOI7zJbFB",
+                      "$rect": {
+                        "x": 64,
+                        "y": 64,
+                        "width": 1024,
+                        "height": 77
+                      },
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "Hotel Services",
+                        "$control__sectionHeadline": "Everything you need.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "1284px"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "O640Z5mVR",
+                      "$rect": {
+                        "x": 64,
+                        "y": 189,
+                        "width": 1024,
+                        "height": 267
+                      },
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "grid",
+                        "gridAlignment": "center",
+                        "gridColumnCount": 4,
+                        "gridColumnMinWidth": "50px",
+                        "gap": "0px 8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Services",
+                          "repeatedDescendantId": "hfFrr4qmw",
+                          "limit": "4"
+                        },
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "1284px"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "hfFrr4qmw",
+                          "component": "xbHH3xwPx",
+                          "$rect": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 250,
+                            "height": 267
+                          },
+                          "$componentDisplayName": "Service Card",
+                          "attributes": {
+                            "$control__number": "var(--variable-Q3KyP29hu)",
+                            "$control__name": "var(--variable-gCgWBu3Ox)",
+                            "$control__shortDescrription": "var(--variable-v9SeSOhlA)",
+                            "$control__padding": "32px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "vVsHG2Iwu",
+              "$rect": {
+                "x": 24,
+                "y": 1975,
+                "width": 1152,
+                "height": 640
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "IkR7OWCUr",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1152,
+                    "height": 640
+                  },
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "horizontal",
+                    "stackDistribution": "start",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "0px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Container",
+                      "id": "fV0bfdKdG",
+                      "$rect": {
+                        "x": 0,
+                        "y": 141,
+                        "width": 576,
+                        "height": 359
+                      },
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "center",
+                        "stackWrapEnabled": false,
+                        "gap": 10,
+                        "overflow": "clip",
+                        "padding": "64px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "p_9xe_qMa",
+                          "component": "AQfPbQAWg",
+                          "$rect": {
+                            "x": 64,
+                            "y": 64,
+                            "width": 448,
+                            "height": 231
+                          },
+                          "$componentDisplayName": "Section Headline with Paragraph",
+                          "attributes": {
+                            "$control__sectionLabel": "OUR STORY",
+                            "$control__sectionHeadline": "A hotel built to last.",
+                            "$control__text": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:p_9xe_qMa/U9HYmlqEO:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:p_9xe_qMa/U9HYmlqEO:0:0",
+                                    "attributes": {
+                                      "text": "We believe a great stay comes down to three things: the right room, honest food, and a team that genuinely cares. Independently owned and locally rooted since 2009."
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "$control__buttonVisability": "true",
+                            "$control__buttonText": "Meet the Team",
+                            "$control__buttonLink": "/about",
+                            "$control__padding": "0px",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "FrameNode",
+                      "name": "Photo",
+                      "id": "g0r9KujFt",
+                      "$rect": {
+                        "x": 576,
+                        "y": 0,
+                        "width": 576
+                      },
+                      "attributes": {
+                        "fill": "https://framerusercontent.com/images/oQlVsOEJHDIJeHqz7RG5TBNaXM.jpg",
+                        "altText": "Hotel lobby",
+                        "layout": "null",
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "640px"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "S0iz55ufK",
+              "$rect": {
+                "x": 24,
+                "y": 2743,
+                "width": 1152,
+                "height": 492
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "X8edKnOik",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1152,
+                    "height": 492
+                  },
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "qq7_zwWJL",
+                      "component": "TOI7zJbFB",
+                      "$rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1152,
+                        "height": 77
+                      },
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "GUEST REVIEWS",
+                        "$control__sectionHeadline": "What guests say.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "quR7J2a4R",
+                      "$rect": {
+                        "x": 0,
+                        "y": 141,
+                        "width": 1152,
+                        "height": 351
+                      },
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Testimonials",
+                          "repeatedDescendantId": "wU3GiEKGm",
+                          "limit": "3"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "wU3GiEKGm",
+                          "component": "CRExxYlmH",
+                          "$rect": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 379,
+                            "height": 351
+                          },
+                          "$componentDisplayName": "Testimonial Card",
+                          "attributes": {
+                            "$control__starRating": "var(--variable-JX9aBKtA0)",
+                            "$control__quote": "var(--variable-neG9dX9Ok)",
+                            "$control__guestName": "var(--variable-BACWM2tb1)",
+                            "$control__location": "var(--variable-bm8DA4Eaq)",
+                            "$control__roomStayed": "var(--variable-rOqsqRliQ)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "fdaDTfpgd",
+              "$rect": {
+                "x": 24,
+                "y": 3363,
+                "width": 1152,
+                "height": 1068
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Image Container",
+                  "id": "NO16FsBd5",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1152
+                  },
+                  "attributes": {
+                    "layout": "null",
+                    "position": "sticky",
+                    "positionStickyTop": 0,
+                    "width": "1fr",
+                    "height": "528px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "atLG3hGMh",
+                      "name": "Photo",
+                      "component": "zxcGfQb3lPhoJOWc1HTU",
+                      "$rect": {
+                        "width": 1152,
+                        "height": 702
+                      },
+                      "$componentDisplayName": "Image Parallax",
+                      "attributes": {
+                        "$control__image": {
+                          "src": "https://framerusercontent.com/images/S8E0ZRL3qWu4FGFmfjmwb9diIv8.jpg",
+                          "alt": "cooked food on gray ceramic plate"
+                        },
+                        "$control__parallaxY": "30",
+                        "$control__parallaxX": "0",
+                        "$control__border": "null",
+                        "$control__radius": "0px",
+                        "$control__shadow": [],
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                        "bottom": "-174px",
+                        "centerAnchorX": "50%",
+                        "centerAnchorY": "50%",
+                        "constraintsLocked": true,
+                        "width": "1168px",
+                        "height": "428px",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "BLiUAJur2",
+                  "$rect": {
+                    "x": 0,
+                    "y": 528,
+                    "width": 1152,
+                    "height": 540
+                  },
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "end",
+                    "stackAlignment": "end",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1412px",
+                    "zIndex": "2"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "yOnY6Uwkn",
+                      "component": "AQfPbQAWg",
+                      "$rect": {
+                        "x": 576,
+                        "y": 0,
+                        "width": 576,
+                        "height": 540
+                      },
+                      "$componentDisplayName": "Section Headline with Paragraph",
+                      "attributes": {
+                        "$control__sectionLabel": "The Restaurant",
+                        "$control__sectionHeadline": "Cooking worth coming down for.",
+                        "$control__text": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:yOnY6Uwkn/U9HYmlqEO:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:yOnY6Uwkn/U9HYmlqEO:0:0",
+                                "attributes": {
+                                  "text": "Seasonal ingredients, local producers, and a dining room that earns its place on the itinerary. Breakfast through dinner, seven days a week."
+                                }
+                              },
+                              {
+                                "type": "TextLineBreak",
+                                "id": "v:yOnY6Uwkn/U9HYmlqEO:0:1"
+                              },
+                              {
+                                "type": "TextLineBreak",
+                                "id": "v:yOnY6Uwkn/U9HYmlqEO:0:2"
+                              },
+                              {
+                                "type": "TextRun",
+                                "id": "v:yOnY6Uwkn/U9HYmlqEO:0:3",
+                                "attributes": {
+                                  "text": "Whether you are starting the day slowly over eggs and coffee, looking for a proper sit-down lunch, or settling in for a long dinner with a good bottle of wine, there is a table for you."
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "$control__buttonVisability": "true",
+                        "$control__buttonText": "See Our Menu",
+                        "$control__buttonLink": "/dining",
+                        "$control__padding": "64px",
+                        "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "LvsPpSIZS",
+              "$rect": {
+                "x": 24,
+                "y": 4559,
+                "width": 1152,
+                "height": 657
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "jAnnxsUba",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1152,
+                    "height": 657
+                  },
+                  "attributes": {
+                    "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "TfjEAs1bf",
+                      "component": "TOI7zJbFB",
+                      "$rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1152,
+                        "height": 77
+                      },
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "Journal",
+                        "$control__sectionHeadline": "From The Hotel.",
+                        "$control__buttonText": "",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "RHgsf6d0V",
+                      "$rect": {
+                        "x": 0,
+                        "y": 141,
+                        "width": 1152,
+                        "height": 516
+                      },
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Blog Posts",
+                          "repeatedDescendantId": "qfk29c2sF",
+                          "limit": "3"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "qfk29c2sF",
+                          "component": "YOsylrQee",
+                          "$rect": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 379,
+                            "height": 516
+                          },
+                          "$componentDisplayName": "Blog Post Card",
+                          "attributes": {
+                            "$control__coverImage": "var(--variable-a2wBhysaJ)",
+                            "$control__textContent": {
+                              "from": "var(--variable-BXWU1mWbB)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__title": "var(--variable-wmwZJYJwb)",
+                            "$control__excerpt": "var(--variable-TkxexJEE3)",
+                            "$control__publishedDate": "var(--variable-fNQUuHd3H)",
+                            "$control__link": {
+                              "href": "/blog-posts/:slug",
+                              "collectionItem": "var(--variable-iCzbWRExi)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "dA4JGGyJ3",
+          "$rect": {
+            "height": 6540
+          },
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "uyxfw2By1",
+              "$rect": {
+                "width": 32,
+                "height": 6148
+              },
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Tablet",
+      "id": "dxsNX3TnE",
+      "$isReplica": true,
+      "$originalId": "WQLkyLRf1",
+      "$rect": {
+        "height": 7238
+      },
+      "$mediaQuery": {
+        "range": "(min-width: 810px) and (max-width: 1199.98px)",
+        "name": "Tablet"
+      },
+      "attributes": {
+        "left": "1540px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "810px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "dxsNX3TnEsFwy_eJcH",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "dxsNX3TnE",
+          "$originalId": "sFwy_eJcH",
+          "$rect": {
+            "x": 405,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "dxsNX3TnEElSa16mtG",
+          "component": "f9mwZML90",
+          "$replicaId": "dxsNX3TnE",
+          "$originalId": "ElSa16mtG",
+          "$rect": {
+            "x": 0,
+            "y": 0,
+            "width": 810,
+            "height": 1080
+          },
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Tablet",
+            "$control__label": "Welcome to The Hotel",
+            "$control__headline": "A place truly worth staying.",
+            "$control__paragraph": "Rooms, suites, and villas designed for rest. Dining worth booking. A team that anticipates before you ask.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__primaryButtonLink": "/rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__secondaryButtonLink": "/about",
+            "$control__buttonsVisability": "true",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "true",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/BpyFXgVjTsWyjqKRvSNpMKx3S0.jpg",
+              "alt": "Hotel lobby"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "100vh"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "dxsNX3TnEwoagFZm6J",
+          "$replicaId": "dxsNX3TnE",
+          "$originalId": "woagFZm6J",
+          "$rect": {
+            "x": 0,
+            "y": 1080,
+            "width": 810,
+            "height": 5236
+          },
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "80px",
+            "overflow": "clip",
+            "padding": "80px 24px 80px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "dxsNX3TnEzO8XDd5Il",
+              "$replicaId": "dxsNX3TnE",
+              "$originalId": "zO8XDd5Il",
+              "$rect": {
+                "x": 24,
+                "y": 80,
+                "width": 762,
+                "height": 582
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "dxsNX3TnEiPZgXVIPZ",
+                  "$replicaId": "dxsNX3TnE",
+                  "$originalId": "iPZgXVIPZ",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 762,
+                    "height": 582
+                  },
+                  "attributes": {
+                    "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "dxsNX3TnEpnjGYQFPj",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "pnjGYQFPj",
+                      "$rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 762,
+                        "height": 68
+                      },
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "Rooms & Suites",
+                        "$control__sectionHeadline": "Find your room.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonLink": "/rooms",
+                        "$control__buttonVisability": "true",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "dxsNX3TnEITA_Apo3x",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "ITA_Apo3x",
+                      "$rect": {
+                        "x": 0,
+                        "y": 132,
+                        "width": 762,
+                        "height": 450
+                      },
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Rooms",
+                          "repeatedDescendantId": "dakntLSGL",
+                          "limit": "3"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "dxsNX3TnEdakntLSGL",
+                          "component": "fclm0HQnA",
+                          "$replicaId": "dxsNX3TnE",
+                          "$originalId": "dakntLSGL",
+                          "$rect": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 249,
+                            "height": 450
+                          },
+                          "$componentDisplayName": "Room Card",
+                          "attributes": {
+                            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+                            "$control__name": "var(--variable-LmnFrKT0w)",
+                            "$control__textContent": {
+                              "from": "var(--variable-s_5P30m6p)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__currency": "var(--variable-z0tLkA06X)",
+                            "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "$control__link": {
+                              "href": "/rooms/:slug",
+                              "collectionItem": "var(--variable-dsZM117_y)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "dxsNX3TnEHW6O_EXTF",
+              "$replicaId": "dxsNX3TnE",
+              "$originalId": "HW6O_EXTF",
+              "$rect": {
+                "x": 24,
+                "y": 742,
+                "width": 762,
+                "height": 1268
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Image Container",
+                  "id": "dxsNX3TnEb4fnyrEL1",
+                  "$replicaId": "dxsNX3TnE",
+                  "$originalId": "b4fnyrEL1",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 762
+                  },
+                  "attributes": {
+                    "layout": "null",
+                    "position": "sticky",
+                    "positionStickyTop": 0,
+                    "width": "1fr",
+                    "height": "400px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "dxsNX3TnEJefURocBZ",
+                      "name": "Photo",
+                      "component": "zxcGfQb3lPhoJOWc1HTU",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "JefURocBZ",
+                      "$rect": {
+                        "width": 762,
+                        "height": 480
+                      },
+                      "$componentDisplayName": "Image Parallax",
+                      "attributes": {
+                        "$control__image": {
+                          "src": "https://framerusercontent.com/images/knxbeOZTgaB7PioYWyWeZbtj9A.jpg",
+                          "alt": "Hotel room"
+                        },
+                        "$control__parallaxY": "30",
+                        "$control__parallaxX": "0",
+                        "$control__border": "null",
+                        "$control__radius": "0px",
+                        "$control__shadow": [],
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                        "bottom": "-80px",
+                        "centerAnchorX": "50%",
+                        "centerAnchorY": "71.75%",
+                        "constraintsLocked": true,
+                        "width": "778px",
+                        "height": "574px",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "dxsNX3TnEEgRocnDGW",
+                  "$replicaId": "dxsNX3TnE",
+                  "$originalId": "EgRocnDGW",
+                  "$rect": {
+                    "x": 0,
+                    "y": 400,
+                    "width": 762,
+                    "height": 868
+                  },
+                  "attributes": {
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "padding": "64px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1412px",
+                    "zIndex": "2"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "dxsNX3TnElQD4l1TZI",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "lQD4l1TZI",
+                      "$rect": {
+                        "x": 64,
+                        "y": 64,
+                        "width": 634,
+                        "height": 196
+                      },
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "Hotel Services",
+                        "$control__sectionHeadline": "Everything you need.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "64px 64px 64px 0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "1284px"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "dxsNX3TnEO640Z5mVR",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "O640Z5mVR",
+                      "$rect": {
+                        "x": 64,
+                        "y": 308,
+                        "width": 634,
+                        "height": 496
+                      },
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "grid",
+                        "gridAlignment": "center",
+                        "gridColumnCount": 2,
+                        "gridColumnMinWidth": "50px",
+                        "gap": "24px 24px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Services",
+                          "repeatedDescendantId": "hfFrr4qmw",
+                          "limit": "4"
+                        },
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "1284px"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "dxsNX3TnEhfFrr4qmw",
+                          "component": "xbHH3xwPx",
+                          "$replicaId": "dxsNX3TnE",
+                          "$originalId": "hfFrr4qmw",
+                          "$rect": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 305,
+                            "height": 236
+                          },
+                          "$componentDisplayName": "Service Card",
+                          "attributes": {
+                            "$control__number": "var(--variable-Q3KyP29hu)",
+                            "$control__name": "var(--variable-gCgWBu3Ox)",
+                            "$control__shortDescrription": "var(--variable-v9SeSOhlA)",
+                            "$control__padding": "32px 32px 32px 32px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "dxsNX3TnEvVsHG2Iwu",
+              "$replicaId": "dxsNX3TnE",
+              "$originalId": "vVsHG2Iwu",
+              "$rect": {
+                "x": 24,
+                "y": 2090,
+                "width": 762,
+                "height": 472
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "dxsNX3TnEIkR7OWCUr",
+                  "$replicaId": "dxsNX3TnE",
+                  "$originalId": "IkR7OWCUr",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 762,
+                    "height": 472
+                  },
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "horizontal",
+                    "stackDistribution": "start",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "0px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Container",
+                      "id": "dxsNX3TnEfV0bfdKdG",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "fV0bfdKdG",
+                      "$rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 381,
+                        "height": 472
+                      },
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "center",
+                        "stackWrapEnabled": false,
+                        "gap": 10,
+                        "overflow": "clip",
+                        "padding": "64px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "dxsNX3TnEp_9xe_qMa",
+                          "component": "AQfPbQAWg",
+                          "$replicaId": "dxsNX3TnE",
+                          "$originalId": "p_9xe_qMa",
+                          "$rect": {
+                            "x": 64,
+                            "y": 64,
+                            "width": 253,
+                            "height": 344
+                          },
+                          "$componentDisplayName": "Section Headline with Paragraph",
+                          "attributes": {
+                            "$control__sectionLabel": "OUR STORY",
+                            "$control__sectionHeadline": "A hotel built to last.",
+                            "$control__text": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:dxsNX3TnEp_9xe_qMa/U9HYmlqEO:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:dxsNX3TnEp_9xe_qMa/U9HYmlqEO:0:0",
+                                    "attributes": {
+                                      "text": "We believe a great stay comes down to three things: the right room, honest food, and a team that genuinely cares. Independently owned and locally rooted since 2009."
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "$control__buttonVisability": "true",
+                            "$control__buttonText": "Meet the Team",
+                            "$control__buttonLink": "/about",
+                            "$control__padding": "0px",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "FrameNode",
+                      "name": "Photo",
+                      "id": "dxsNX3TnEg0r9KujFt",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "g0r9KujFt",
+                      "$rect": {
+                        "x": 381,
+                        "y": 0,
+                        "width": 381,
+                        "height": 472
+                      },
+                      "attributes": {
+                        "fill": "https://framerusercontent.com/images/oQlVsOEJHDIJeHqz7RG5TBNaXM.jpg",
+                        "altText": "Hotel lobby",
+                        "layout": "null",
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "1fr"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "dxsNX3TnES0iz55ufK",
+              "$replicaId": "dxsNX3TnE",
+              "$originalId": "S0iz55ufK",
+              "$rect": {
+                "x": 24,
+                "y": 2642,
+                "width": 762,
+                "height": 564
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "dxsNX3TnEX8edKnOik",
+                  "$replicaId": "dxsNX3TnE",
+                  "$originalId": "X8edKnOik",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 762,
+                    "height": 564
+                  },
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "dxsNX3TnEqq7_zwWJL",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "qq7_zwWJL",
+                      "$rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 762,
+                        "height": 68
+                      },
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "GUEST REVIEWS",
+                        "$control__sectionHeadline": "What guests say.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "dxsNX3TnEquR7J2a4R",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "quR7J2a4R",
+                      "$rect": {
+                        "x": 0,
+                        "y": 132,
+                        "width": 762,
+                        "height": 432
+                      },
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Testimonials",
+                          "repeatedDescendantId": "wU3GiEKGm",
+                          "limit": "3"
+                        },
+                        "width": "1fr",
+                        "height": "432.5px"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "dxsNX3TnEwU3GiEKGm",
+                          "component": "CRExxYlmH",
+                          "$replicaId": "dxsNX3TnE",
+                          "$originalId": "wU3GiEKGm",
+                          "$rect": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 249,
+                            "height": 432
+                          },
+                          "$componentDisplayName": "Testimonial Card",
+                          "attributes": {
+                            "$control__starRating": "var(--variable-JX9aBKtA0)",
+                            "$control__quote": "var(--variable-neG9dX9Ok)",
+                            "$control__guestName": "var(--variable-BACWM2tb1)",
+                            "$control__location": "var(--variable-bm8DA4Eaq)",
+                            "$control__roomStayed": "var(--variable-rOqsqRliQ)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "1fr"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "dxsNX3TnEfdaDTfpgd",
+              "$replicaId": "dxsNX3TnE",
+              "$originalId": "fdaDTfpgd",
+              "$rect": {
+                "x": 24,
+                "y": 3286,
+                "width": 762,
+                "height": 1069
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Image Container",
+                  "id": "dxsNX3TnENO16FsBd5",
+                  "$replicaId": "dxsNX3TnE",
+                  "$originalId": "NO16FsBd5",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 762
+                  },
+                  "attributes": {
+                    "layout": "null",
+                    "position": "sticky",
+                    "positionStickyTop": 0,
+                    "width": "1fr",
+                    "height": "400px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "dxsNX3TnEatLG3hGMh",
+                      "name": "Photo",
+                      "component": "zxcGfQb3lPhoJOWc1HTU",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "atLG3hGMh",
+                      "$rect": {
+                        "width": 762,
+                        "height": 480
+                      },
+                      "$componentDisplayName": "Image Parallax",
+                      "attributes": {
+                        "$control__image": {
+                          "src": "https://framerusercontent.com/images/S8E0ZRL3qWu4FGFmfjmwb9diIv8.jpg",
+                          "alt": "cooked food on gray ceramic plate"
+                        },
+                        "$control__parallaxY": "30",
+                        "$control__parallaxX": "0",
+                        "$control__border": "null",
+                        "$control__radius": "0px",
+                        "$control__shadow": [],
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                        "bottom": "-80px",
+                        "centerAnchorX": "50%",
+                        "centerAnchorY": "71.75%",
+                        "constraintsLocked": true,
+                        "width": "778px",
+                        "height": "574px",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "dxsNX3TnEBLiUAJur2",
+                  "$replicaId": "dxsNX3TnE",
+                  "$originalId": "BLiUAJur2",
+                  "$rect": {
+                    "x": 0,
+                    "y": 400,
+                    "width": 762,
+                    "height": 669
+                  },
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "end",
+                    "stackAlignment": "end",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1412px",
+                    "zIndex": "2"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "dxsNX3TnEyOnY6Uwkn",
+                      "component": "AQfPbQAWg",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "yOnY6Uwkn",
+                      "$rect": {
+                        "x": 381,
+                        "y": 0,
+                        "width": 381,
+                        "height": 669
+                      },
+                      "$componentDisplayName": "Section Headline with Paragraph",
+                      "attributes": {
+                        "$control__sectionLabel": "The Restaurant",
+                        "$control__sectionHeadline": "Cooking worth coming down for.",
+                        "$control__text": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:dxsNX3TnEyOnY6Uwkn/U9HYmlqEO:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:dxsNX3TnEyOnY6Uwkn/U9HYmlqEO:0:0",
+                                "attributes": {
+                                  "text": "Seasonal ingredients, local producers, and a dining room that earns its place on the itinerary. Breakfast through dinner, seven days a week."
+                                }
+                              },
+                              {
+                                "type": "TextLineBreak",
+                                "id": "v:dxsNX3TnEyOnY6Uwkn/U9HYmlqEO:0:1"
+                              },
+                              {
+                                "type": "TextLineBreak",
+                                "id": "v:dxsNX3TnEyOnY6Uwkn/U9HYmlqEO:0:2"
+                              },
+                              {
+                                "type": "TextRun",
+                                "id": "v:dxsNX3TnEyOnY6Uwkn/U9HYmlqEO:0:3",
+                                "attributes": {
+                                  "text": "Whether you are starting the day slowly over eggs and coffee, looking for a proper sit-down lunch, or settling in for a long dinner with a good bottle of wine, there is a table for you."
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "$control__buttonVisability": "true",
+                        "$control__buttonText": "See Our Menu",
+                        "$control__buttonLink": "/dining",
+                        "$control__padding": "64px",
+                        "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "dxsNX3TnELvsPpSIZS",
+              "$replicaId": "dxsNX3TnE",
+              "$originalId": "LvsPpSIZS",
+              "$rect": {
+                "x": 24,
+                "y": 4435,
+                "width": 762,
+                "height": 721
+              },
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "dxsNX3TnEjAnnxsUba",
+                  "$replicaId": "dxsNX3TnE",
+                  "$originalId": "jAnnxsUba",
+                  "$rect": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 762,
+                    "height": 721
+                  },
+                  "attributes": {
+                    "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "dxsNX3TnETfjEAs1bf",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "TfjEAs1bf",
+                      "$rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 762,
+                        "height": 68
+                      },
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "Journal",
+                        "$control__sectionHeadline": "From The Hotel.",
+                        "$control__buttonText": "",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "dxsNX3TnERHgsf6d0V",
+                      "$replicaId": "dxsNX3TnE",
+                      "$originalId": "RHgsf6d0V",
+                      "$rect": {
+                        "x": 0,
+                        "y": 132,
+                        "width": 762,
+                        "height": 589
+                      },
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Blog Posts",
+                          "repeatedDescendantId": "qfk29c2sF",
+                          "limit": "3"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "dxsNX3TnEqfk29c2sF",
+                          "component": "YOsylrQee",
+                          "$replicaId": "dxsNX3TnE",
+                          "$originalId": "qfk29c2sF",
+                          "$rect": {
+                            "x": 0,
+                            "y": 0,
+                            "width": 249,
+                            "height": 567
+                          },
+                          "$componentDisplayName": "Blog Post Card",
+                          "attributes": {
+                            "$control__coverImage": "var(--variable-a2wBhysaJ)",
+                            "$control__textContent": {
+                              "from": "var(--variable-BXWU1mWbB)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__title": "var(--variable-wmwZJYJwb)",
+                            "$control__excerpt": "var(--variable-TkxexJEE3)",
+                            "$control__publishedDate": "var(--variable-fNQUuHd3H)",
+                            "$control__link": {
+                              "href": "/blog-posts/:slug",
+                              "collectionItem": "var(--variable-iCzbWRExi)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "dxsNX3TnEdA4JGGyJ3",
+          "$replicaId": "dxsNX3TnE",
+          "$originalId": "dA4JGGyJ3",
+          "$rect": {
+            "height": 7238
+          },
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "dxsNX3TnEuyxfw2By1",
+              "$replicaId": "dxsNX3TnE",
+              "$originalId": "uyxfw2By1",
+              "$rect": {
+                "width": 32,
+                "height": 6804
+              },
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Phone",
+      "id": "krsiyEKvu",
+      "$isReplica": true,
+      "$originalId": "WQLkyLRf1",
+      "$mediaQuery": {
+        "range": "(max-width: 809.98px)",
+        "name": "Phone"
+      },
+      "attributes": {
+        "left": "2450px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "390px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "krsiyEKvusFwy_eJcH",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "krsiyEKvu",
+          "$originalId": "sFwy_eJcH",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "krsiyEKvuElSa16mtG",
+          "component": "f9mwZML90",
+          "$replicaId": "krsiyEKvu",
+          "$originalId": "ElSa16mtG",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Phone",
+            "$control__label": "Welcome to The Hotel",
+            "$control__headline": "A place truly worth staying.",
+            "$control__paragraph": "Rooms, suites, and villas designed for rest. Dining worth booking. A team that anticipates before you ask.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__primaryButtonLink": "/rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__secondaryButtonLink": "/about",
+            "$control__buttonsVisability": "true",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "true",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/BpyFXgVjTsWyjqKRvSNpMKx3S0.jpg",
+              "alt": "Hotel lobby"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "100vh"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "krsiyEKvuwoagFZm6J",
+          "$replicaId": "krsiyEKvu",
+          "$originalId": "woagFZm6J",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "96px",
+            "overflow": "clip",
+            "padding": "80px 24px 80px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "krsiyEKvuzO8XDd5Il",
+              "$replicaId": "krsiyEKvu",
+              "$originalId": "zO8XDd5Il",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "krsiyEKvuiPZgXVIPZ",
+                  "$replicaId": "krsiyEKvu",
+                  "$originalId": "iPZgXVIPZ",
+                  "attributes": {
+                    "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "krsiyEKvupnjGYQFPj",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "pnjGYQFPj",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "Rooms & Suites",
+                        "$control__sectionHeadline": "Find your room.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonLink": "/rooms",
+                        "$control__buttonVisability": "true",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "Start",
+                        "$control__direction": "Vertical",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "krsiyEKvuITA_Apo3x",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "ITA_Apo3x",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Rooms",
+                          "repeatedDescendantId": "dakntLSGL",
+                          "limit": "3"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "krsiyEKvudakntLSGL",
+                          "component": "fclm0HQnA",
+                          "$replicaId": "krsiyEKvu",
+                          "$originalId": "dakntLSGL",
+                          "$componentDisplayName": "Room Card",
+                          "attributes": {
+                            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+                            "$control__name": "var(--variable-LmnFrKT0w)",
+                            "$control__textContent": {
+                              "from": "var(--variable-s_5P30m6p)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__currency": "var(--variable-z0tLkA06X)",
+                            "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "$control__link": {
+                              "href": "/rooms/:slug",
+                              "collectionItem": "var(--variable-dsZM117_y)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "krsiyEKvuHW6O_EXTF",
+              "$replicaId": "krsiyEKvu",
+              "$originalId": "HW6O_EXTF",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Image Container",
+                  "id": "krsiyEKvub4fnyrEL1",
+                  "$replicaId": "krsiyEKvu",
+                  "$originalId": "b4fnyrEL1",
+                  "attributes": {
+                    "layout": "null",
+                    "position": "sticky",
+                    "positionStickyTop": 0,
+                    "width": "1fr",
+                    "height": "320px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "krsiyEKvuJefURocBZ",
+                      "name": "Photo",
+                      "component": "zxcGfQb3lPhoJOWc1HTU",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "JefURocBZ",
+                      "$componentDisplayName": "Image Parallax",
+                      "attributes": {
+                        "$control__image": {
+                          "src": "https://framerusercontent.com/images/knxbeOZTgaB7PioYWyWeZbtj9A.jpg",
+                          "alt": "Hotel room"
+                        },
+                        "$control__parallaxY": "30",
+                        "$control__parallaxX": "0",
+                        "$control__border": "null",
+                        "$control__radius": "0px",
+                        "$control__shadow": [],
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                        "bottom": "-96px",
+                        "centerAnchorX": "50%",
+                        "centerAnchorY": "71.75%",
+                        "constraintsLocked": true,
+                        "width": "358px",
+                        "height": "574px",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "krsiyEKvuEgRocnDGW",
+                  "$replicaId": "krsiyEKvu",
+                  "$originalId": "EgRocnDGW",
+                  "attributes": {
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "24px",
+                    "padding": "24px 16px 24px 16px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1412px",
+                    "zIndex": "2"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "krsiyEKvulQD4l1TZI",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "lQD4l1TZI",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "Hotel Services",
+                        "$control__sectionHeadline": "Everything you need.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "20px 0px 24px 0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "1284px"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "krsiyEKvuO640Z5mVR",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "O640Z5mVR",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "grid",
+                        "gridAlignment": "center",
+                        "gridColumnCount": 1,
+                        "gridColumnMinWidth": "50px",
+                        "gap": "16px 0px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Services",
+                          "repeatedDescendantId": "hfFrr4qmw",
+                          "limit": "4"
+                        },
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "1284px"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "krsiyEKvuhfFrr4qmw",
+                          "component": "xbHH3xwPx",
+                          "$replicaId": "krsiyEKvu",
+                          "$originalId": "hfFrr4qmw",
+                          "$componentDisplayName": "Service Card",
+                          "attributes": {
+                            "$control__number": "var(--variable-Q3KyP29hu)",
+                            "$control__name": "var(--variable-gCgWBu3Ox)",
+                            "$control__shortDescrription": "var(--variable-v9SeSOhlA)",
+                            "$control__padding": "24px 24px 24px 24px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "krsiyEKvuvVsHG2Iwu",
+              "$replicaId": "krsiyEKvu",
+              "$originalId": "vVsHG2Iwu",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "krsiyEKvuIkR7OWCUr",
+                  "$replicaId": "krsiyEKvu",
+                  "$originalId": "IkR7OWCUr",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "0px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Container",
+                      "id": "krsiyEKvufV0bfdKdG",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "fV0bfdKdG",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "center",
+                        "stackWrapEnabled": false,
+                        "gap": 10,
+                        "overflow": "clip",
+                        "padding": "48px 24px 48px 24px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "krsiyEKvup_9xe_qMa",
+                          "component": "AQfPbQAWg",
+                          "$replicaId": "krsiyEKvu",
+                          "$originalId": "p_9xe_qMa",
+                          "$componentDisplayName": "Section Headline with Paragraph",
+                          "attributes": {
+                            "$control__sectionLabel": "OUR STORY",
+                            "$control__sectionHeadline": "A hotel built to last.",
+                            "$control__text": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:krsiyEKvup_9xe_qMa/U9HYmlqEO:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:krsiyEKvup_9xe_qMa/U9HYmlqEO:0:0",
+                                    "attributes": {
+                                      "text": "We believe a great stay comes down to three things: the right room, honest food, and a team that genuinely cares. Independently owned and locally rooted since 2009."
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "$control__buttonVisability": "true",
+                            "$control__buttonText": "Meet the Team",
+                            "$control__buttonLink": "/about",
+                            "$control__padding": "0px",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "FrameNode",
+                      "name": "Photo",
+                      "id": "krsiyEKvug0r9KujFt",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "g0r9KujFt",
+                      "attributes": {
+                        "fill": "https://framerusercontent.com/images/oQlVsOEJHDIJeHqz7RG5TBNaXM.jpg",
+                        "altText": "Hotel lobby",
+                        "layout": "null",
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "320px"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "krsiyEKvuS0iz55ufK",
+              "$replicaId": "krsiyEKvu",
+              "$originalId": "S0iz55ufK",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "krsiyEKvuX8edKnOik",
+                  "$replicaId": "krsiyEKvu",
+                  "$originalId": "X8edKnOik",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "krsiyEKvuqq7_zwWJL",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "qq7_zwWJL",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "GUEST REVIEWS",
+                        "$control__sectionHeadline": "What guests say.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "krsiyEKvuquR7J2a4R",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "quR7J2a4R",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Testimonials",
+                          "repeatedDescendantId": "wU3GiEKGm",
+                          "limit": "3"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "krsiyEKvuwU3GiEKGm",
+                          "component": "CRExxYlmH",
+                          "$replicaId": "krsiyEKvu",
+                          "$originalId": "wU3GiEKGm",
+                          "$componentDisplayName": "Testimonial Card",
+                          "attributes": {
+                            "$control__starRating": "var(--variable-JX9aBKtA0)",
+                            "$control__quote": "var(--variable-neG9dX9Ok)",
+                            "$control__guestName": "var(--variable-BACWM2tb1)",
+                            "$control__location": "var(--variable-bm8DA4Eaq)",
+                            "$control__roomStayed": "var(--variable-rOqsqRliQ)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "krsiyEKvufdaDTfpgd",
+              "$replicaId": "krsiyEKvu",
+              "$originalId": "fdaDTfpgd",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Image Container",
+                  "id": "krsiyEKvuNO16FsBd5",
+                  "$replicaId": "krsiyEKvu",
+                  "$originalId": "NO16FsBd5",
+                  "attributes": {
+                    "layout": "null",
+                    "position": "sticky",
+                    "positionStickyTop": 0,
+                    "width": "1fr",
+                    "height": "400px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "krsiyEKvuatLG3hGMh",
+                      "name": "Photo",
+                      "component": "zxcGfQb3lPhoJOWc1HTU",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "atLG3hGMh",
+                      "$componentDisplayName": "Image Parallax",
+                      "attributes": {
+                        "$control__image": {
+                          "src": "https://framerusercontent.com/images/S8E0ZRL3qWu4FGFmfjmwb9diIv8.jpg",
+                          "alt": "cooked food on gray ceramic plate"
+                        },
+                        "$control__parallaxY": "30",
+                        "$control__parallaxX": "0",
+                        "$control__border": "null",
+                        "$control__radius": "0px",
+                        "$control__shadow": [],
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                        "bottom": "-96px",
+                        "centerAnchorX": "50%",
+                        "centerAnchorY": "71.75%",
+                        "constraintsLocked": true,
+                        "width": "358px",
+                        "height": "574px",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "krsiyEKvuBLiUAJur2",
+                  "$replicaId": "krsiyEKvu",
+                  "$originalId": "BLiUAJur2",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "end",
+                    "stackAlignment": "end",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1412px",
+                    "zIndex": "2"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "krsiyEKvuyOnY6Uwkn",
+                      "component": "AQfPbQAWg",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "yOnY6Uwkn",
+                      "$componentDisplayName": "Section Headline with Paragraph",
+                      "attributes": {
+                        "$control__sectionLabel": "The Restaurant",
+                        "$control__sectionHeadline": "Cooking worth coming down for.",
+                        "$control__text": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:krsiyEKvuyOnY6Uwkn/U9HYmlqEO:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:krsiyEKvuyOnY6Uwkn/U9HYmlqEO:0:0",
+                                "attributes": {
+                                  "text": "Seasonal ingredients, local producers, and a dining room that earns its place on the itinerary. Breakfast through dinner, seven days a week."
+                                }
+                              },
+                              {
+                                "type": "TextLineBreak",
+                                "id": "v:krsiyEKvuyOnY6Uwkn/U9HYmlqEO:0:1"
+                              },
+                              {
+                                "type": "TextLineBreak",
+                                "id": "v:krsiyEKvuyOnY6Uwkn/U9HYmlqEO:0:2"
+                              },
+                              {
+                                "type": "TextRun",
+                                "id": "v:krsiyEKvuyOnY6Uwkn/U9HYmlqEO:0:3",
+                                "attributes": {
+                                  "text": "Whether you are starting the day slowly over eggs and coffee, looking for a proper sit-down lunch, or settling in for a long dinner with a good bottle of wine, there is a table for you."
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "$control__buttonVisability": "true",
+                        "$control__buttonText": "See Our Menu",
+                        "$control__buttonLink": "/dining",
+                        "$control__padding": "48px 24px 48px 24px",
+                        "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "krsiyEKvuLvsPpSIZS",
+              "$replicaId": "krsiyEKvu",
+              "$originalId": "LvsPpSIZS",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "krsiyEKvujAnnxsUba",
+                  "$replicaId": "krsiyEKvu",
+                  "$originalId": "jAnnxsUba",
+                  "attributes": {
+                    "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "krsiyEKvuTfjEAs1bf",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "TfjEAs1bf",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "Journal",
+                        "$control__sectionHeadline": "From The Hotel.",
+                        "$control__buttonText": "",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "Start",
+                        "$control__direction": "Vertical",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "krsiyEKvuRHgsf6d0V",
+                      "$replicaId": "krsiyEKvu",
+                      "$originalId": "RHgsf6d0V",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "gap": "24px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Blog Posts",
+                          "repeatedDescendantId": "qfk29c2sF",
+                          "limit": "3"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "krsiyEKvuqfk29c2sF",
+                          "component": "YOsylrQee",
+                          "$replicaId": "krsiyEKvu",
+                          "$originalId": "qfk29c2sF",
+                          "$componentDisplayName": "Blog Post Card",
+                          "attributes": {
+                            "$control__coverImage": "var(--variable-a2wBhysaJ)",
+                            "$control__textContent": {
+                              "from": "var(--variable-BXWU1mWbB)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__title": "var(--variable-wmwZJYJwb)",
+                            "$control__excerpt": "var(--variable-TkxexJEE3)",
+                            "$control__publishedDate": "var(--variable-fNQUuHd3H)",
+                            "$control__link": {
+                              "href": "/blog-posts/:slug",
+                              "collectionItem": "var(--variable-iCzbWRExi)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "krsiyEKvudA4JGGyJ3",
+          "$replicaId": "krsiyEKvu",
+          "$originalId": "dA4JGGyJ3",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "krsiyEKvuuyxfw2By1",
+              "$replicaId": "krsiyEKvu",
+              "$originalId": "uyxfw2By1",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

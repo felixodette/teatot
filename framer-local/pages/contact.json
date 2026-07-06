@@ -1,0 +1,3124 @@
+{
+  "type": "WebPageNode",
+  "id": "OpwolEvMT",
+  "name": "/contact",
+  "variables": [],
+  "$parentId": "sn7IXw6X9",
+  "$layoutTemplateId": "cd4ShtEtf",
+  "$layoutTemplateDisplayName": "Template",
+  "$breakpoints": [
+    {
+      "id": "kM0q51hmv",
+      "name": "Desktop",
+      "mediaQueryRange": "(min-width: 1200px)"
+    },
+    {
+      "id": "TNXVlqGjM",
+      "name": "Tablet",
+      "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+    },
+    {
+      "id": "OrcfEdhYG",
+      "name": "Phone",
+      "mediaQueryRange": "(max-width: 809.98px)"
+    }
+  ],
+  "attributes": {
+    "$control__scrollSection": "{\"target\":\"aHnEupB9P\"}",
+    "layoutTemplate": "default",
+    "path": "/contact"
+  },
+  "children": [
+    {
+      "type": "FrameNode",
+      "name": "Desktop",
+      "id": "kM0q51hmv",
+      "$isPrimary": true,
+      "$mediaQuery": {
+        "range": "(min-width: 1200px)",
+        "name": "Desktop"
+      },
+      "attributes": {
+        "left": "240px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "1200px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "mn9VL4r8E",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "iBWSlH7EQ",
+          "component": "f9mwZML90",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Desktop",
+            "$control__label": "GET IN TOUCH",
+            "$control__headline": "We are here.",
+            "$control__paragraph": "Reach out for reservations, enquiries, or anything else. We respond within 24 hours.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "false",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/BpyFXgVjTsWyjqKRvSNpMKx3S0.jpg",
+              "alt": "dish on white ceramic plate"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "640px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "Ot1a7k4wc",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "128px",
+            "overflow": "clip",
+            "padding": "96px 24px 24px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "anPW8Uzio",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "AIJeIixqr",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "z7QbBAiio",
+                      "component": "TOI7zJbFB",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE HOTEL",
+                        "$control__sectionHeadline": "Find us. We will be waiting.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "EnEc14Gva",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": "48px",
+                        "overflow": "clip",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "name": "Left",
+                          "id": "bwq8Tx8NO",
+                          "attributes": {
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "center",
+                            "stackAlignment": "center",
+                            "stackWrapEnabled": false,
+                            "gap": "64px",
+                            "overflow": "clip",
+                            "padding": "0px 0px 24px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto",
+                            "maxWidth": "40%"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Contact Info",
+                              "id": "tBeclb1zN",
+                              "attributes": {
+                                "borderStyle": "solid",
+                                "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                                "borderBottom": "1px",
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "padding": "0px 0px 48px 0px",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Address",
+                                  "id": "kUpiqUZdI",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "qdvXwjPjd",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:qdvXwjPjd:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:qdvXwjPjd:0:0",
+                                              "attributes": {
+                                                "text": "Address"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "jdAiOygpn",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:jdAiOygpn:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:jdAiOygpn:0:0",
+                                              "attributes": {
+                                                "text": "1 Grand Avenue, City Centre"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Phone",
+                                  "id": "gCA0EADfd",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "B_as39AWq",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:B_as39AWq:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:B_as39AWq:0:0",
+                                              "attributes": {
+                                                "text": "Phone"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "angD0KCb7",
+                                      "attributes": {
+                                        "link": {
+                                          "href": "call:",
+                                          "openInNewTab": true
+                                        },
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:angD0KCb7:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:angD0KCb7:0:0",
+                                              "attributes": {
+                                                "text": "+1 (000) 000 0000"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Email",
+                                  "id": "XSdZDIUZb",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "rynmkAsYA",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:rynmkAsYA:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:rynmkAsYA:0:0",
+                                              "attributes": {
+                                                "text": "Email"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "KGz1foFKM",
+                                      "attributes": {
+                                        "link": {
+                                          "href": "mailto:",
+                                          "openInNewTab": true
+                                        },
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:KGz1foFKM:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:KGz1foFKM:0:0",
+                                              "attributes": {
+                                                "text": "info@thehotel.com"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Social Networks",
+                              "id": "v8Fp_eBKI",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Follow Us",
+                                  "id": "SyiKTrCQf",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "12px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "HCpAQEQdp",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:HCpAQEQdp:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:HCpAQEQdp:0:0",
+                                              "attributes": {
+                                                "text": "Follow Us"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FrameNode",
+                                      "id": "l460SzIVp",
+                                      "attributes": {
+                                        "layout": "stack",
+                                        "stackDirection": "horizontal",
+                                        "stackDistribution": "start",
+                                        "stackAlignment": "center",
+                                        "stackWrapEnabled": false,
+                                        "gap": "12px",
+                                        "overflow": "clip",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "ComponentInstanceNode",
+                                          "id": "Jraf2CYAV",
+                                          "component": "gn6xtBgGj",
+                                          "$componentDisplayName": "Social Icon",
+                                          "attributes": {
+                                            "position": "relative",
+                                            "width": "32px",
+                                            "height": "32px",
+                                            "aspectRatio": 1
+                                          }
+                                        },
+                                        {
+                                          "type": "ComponentInstanceNode",
+                                          "id": "p42REmVtp",
+                                          "component": "gn6xtBgGj",
+                                          "$componentDisplayName": "Social Icon",
+                                          "attributes": {
+                                            "$control__link": "https://www.facebook.com/",
+                                            "position": "relative",
+                                            "width": "32px",
+                                            "height": "32px",
+                                            "aspectRatio": 1
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "id": "maFbOEORs",
+                          "attributes": {
+                            "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "formSubmitButtonId": "DP0WBmdVf",
+                            "htmlTag": "form",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "gap": "24px",
+                            "overflow": "hidden",
+                            "padding": "24px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Inputs",
+                              "id": "G7TgTIrnK",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "id": "xTHGgZmvM",
+                                  "attributes": {
+                                    "htmlTag": "label",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "gap": "12px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "E2sSOG8Fj",
+                                      "attributes": {
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:E2sSOG8Fj:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:E2sSOG8Fj:0:0",
+                                              "attributes": {
+                                                "text": "Your Name"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FormPlainTextInputNode",
+                                      "id": "FNYom4BIp",
+                                      "attributes": {
+                                        "borderStyle": "solid",
+                                        "borderColor": "var(--token-c06b0098-1f19-4867-9ca8-b1d63c893aab)",
+                                        "borderBottom": "1px",
+                                        "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                                        "formInputName": "Name",
+                                        "formInputRequired": "true",
+                                        "formInputFocusedBorderColor": "var(--token-38a9a261-835b-4818-9daa-dc4e250ea768)",
+                                        "formInputFocusedBorderWidth": 0,
+                                        "formInputFocusedBorderTop": 0,
+                                        "formInputFocusedBorderRight": 0,
+                                        "formInputFocusedBorderBottom": 1,
+                                        "formInputFocusedBorderLeft": 0,
+                                        "formInputFocusedBorderPerSide": true,
+                                        "formInputFocusedBorderStyle": "solid",
+                                        "formInputPlaceholder": "Enter your name",
+                                        "formInputPlaceholderColor": "var(--token-09631677-32fa-4c34-91d8-d36a088fd60b, rgb(153, 153, 153)) /* {\"name\":\"Text Subtle\"} */",
+                                        "formTextInputType": "text",
+                                        "padding": "0px 0px 12px 0px",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "fontName": "Inter",
+                                        "fontStyle": "normal",
+                                        "fontWeight": 400,
+                                        "fontSize": "16px",
+                                        "letterSpacing": "0em",
+                                        "lineHeight": "1.6em",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "id": "zsIg0_v65",
+                                  "attributes": {
+                                    "htmlTag": "label",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "gap": "12px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OBAsWRkeQ",
+                                      "attributes": {
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OBAsWRkeQ:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OBAsWRkeQ:0:0",
+                                              "attributes": {
+                                                "text": "Your Email"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FormPlainTextInputNode",
+                                      "id": "skAQEuPV6",
+                                      "attributes": {
+                                        "borderStyle": "solid",
+                                        "borderColor": "var(--token-c06b0098-1f19-4867-9ca8-b1d63c893aab)",
+                                        "borderBottom": "1px",
+                                        "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                                        "formInputName": "Email",
+                                        "formInputRequired": "true",
+                                        "formInputFocusedBorderColor": "var(--token-38a9a261-835b-4818-9daa-dc4e250ea768)",
+                                        "formInputFocusedBorderWidth": 0,
+                                        "formInputFocusedBorderTop": 0,
+                                        "formInputFocusedBorderRight": 0,
+                                        "formInputFocusedBorderBottom": 1,
+                                        "formInputFocusedBorderLeft": 0,
+                                        "formInputFocusedBorderPerSide": true,
+                                        "formInputFocusedBorderStyle": "solid",
+                                        "formInputPlaceholder": "Enter your email",
+                                        "formInputPlaceholderColor": "var(--token-09631677-32fa-4c34-91d8-d36a088fd60b, rgb(153, 153, 153)) /* {\"name\":\"Text Subtle\"} */",
+                                        "formTextInputType": "email",
+                                        "padding": "0px 0px 12px 0px",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "fontName": "Inter",
+                                        "fontStyle": "normal",
+                                        "fontWeight": 400,
+                                        "fontSize": "16px",
+                                        "letterSpacing": "0em",
+                                        "lineHeight": "1.6em",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "id": "mE56RIE9m",
+                                  "attributes": {
+                                    "htmlTag": "label",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "gap": "12px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "cPv37FKos",
+                                      "attributes": {
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:cPv37FKos:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:cPv37FKos:0:0",
+                                              "attributes": {
+                                                "text": "Name"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FormPlainTextInputNode",
+                                      "id": "QIPLtu0Ob",
+                                      "attributes": {
+                                        "borderStyle": "solid",
+                                        "borderColor": "var(--token-c06b0098-1f19-4867-9ca8-b1d63c893aab)",
+                                        "borderBottom": "1px",
+                                        "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                                        "formInputName": "Message",
+                                        "formInputRequired": "true",
+                                        "formInputFocusedBorderColor": "var(--token-38a9a261-835b-4818-9daa-dc4e250ea768)",
+                                        "formInputFocusedBorderWidth": 0,
+                                        "formInputFocusedBorderTop": 0,
+                                        "formInputFocusedBorderRight": 0,
+                                        "formInputFocusedBorderBottom": 1,
+                                        "formInputFocusedBorderLeft": 0,
+                                        "formInputFocusedBorderPerSide": true,
+                                        "formInputFocusedBorderStyle": "solid",
+                                        "formInputPlaceholder": "Enter your message",
+                                        "formInputPlaceholderColor": "var(--token-09631677-32fa-4c34-91d8-d36a088fd60b, rgb(153, 153, 153)) /* {\"name\":\"Text Subtle\"} */",
+                                        "formTextInputType": "textarea",
+                                        "formTextAreaResizable": "true",
+                                        "padding": "0px 0px 12px 0px",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "minHeight": 100,
+                                        "fontName": "Inter",
+                                        "fontStyle": "normal",
+                                        "fontWeight": 400,
+                                        "fontSize": "16px",
+                                        "letterSpacing": "0em",
+                                        "lineHeight": "1.6em",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "ComponentInstanceNode",
+                              "id": "DP0WBmdVf",
+                              "component": "uQByHw8mQ",
+                              "$componentDisplayName": "Form Button",
+                              "attributes": {
+                                "$control__variant": "Default",
+                                "$control__buttonText": "Send message",
+                                "formButtonSuccessVariant": "zgy_iC82i",
+                                "formButtonPendingVariant": "BTq5G6UGZ",
+                                "formButtonErrorVariant": "zYsvHnraH",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ComponentInstanceNode",
+              "id": "xVIMN7yPd",
+              "component": "Hbc0lxqGSRzFG6uMT9yO",
+              "$componentDisplayName": "GoogleMaps",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0s",
+                    "stagger": "0s"
+                  }
+                },
+                "$control__location": "Framer B.V.",
+                "$control__zoom": "15",
+                "$control__radius": "0px",
+                "position": "relative",
+                "width": "1fr",
+                "height": "640px"
+              }
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "ISnoODjQL",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "aHnEupB9P",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Tablet",
+      "id": "TNXVlqGjM",
+      "$isReplica": true,
+      "$originalId": "kM0q51hmv",
+      "$mediaQuery": {
+        "range": "(min-width: 810px) and (max-width: 1199.98px)",
+        "name": "Tablet"
+      },
+      "attributes": {
+        "left": "1540px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "810px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "TNXVlqGjMmn9VL4r8E",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "TNXVlqGjM",
+          "$originalId": "mn9VL4r8E",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "TNXVlqGjMiBWSlH7EQ",
+          "component": "f9mwZML90",
+          "$replicaId": "TNXVlqGjM",
+          "$originalId": "iBWSlH7EQ",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Tablet",
+            "$control__label": "GET IN TOUCH",
+            "$control__headline": "We are here.",
+            "$control__paragraph": "Reach out for reservations, enquiries, or anything else. We respond within 24 hours.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "false",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/BpyFXgVjTsWyjqKRvSNpMKx3S0.jpg",
+              "alt": "dish on white ceramic plate"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "640px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "TNXVlqGjMOt1a7k4wc",
+          "$replicaId": "TNXVlqGjM",
+          "$originalId": "Ot1a7k4wc",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "80px",
+            "overflow": "clip",
+            "padding": "80px 24px 24px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "TNXVlqGjManPW8Uzio",
+              "$replicaId": "TNXVlqGjM",
+              "$originalId": "anPW8Uzio",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "TNXVlqGjMAIJeIixqr",
+                  "$replicaId": "TNXVlqGjM",
+                  "$originalId": "AIJeIixqr",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "TNXVlqGjMz7QbBAiio",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "TNXVlqGjM",
+                      "$originalId": "z7QbBAiio",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE HOTEL",
+                        "$control__sectionHeadline": "Find us. We will be waiting.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "TNXVlqGjMEnEc14Gva",
+                      "$replicaId": "TNXVlqGjM",
+                      "$originalId": "EnEc14Gva",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": "48px",
+                        "overflow": "clip",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "name": "Left",
+                          "id": "TNXVlqGjMbwq8Tx8NO",
+                          "$replicaId": "TNXVlqGjM",
+                          "$originalId": "bwq8Tx8NO",
+                          "attributes": {
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "center",
+                            "stackAlignment": "center",
+                            "stackWrapEnabled": false,
+                            "gap": "48px",
+                            "overflow": "clip",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Contact Info",
+                              "id": "TNXVlqGjMtBeclb1zN",
+                              "$replicaId": "TNXVlqGjM",
+                              "$originalId": "tBeclb1zN",
+                              "attributes": {
+                                "borderStyle": "solid",
+                                "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                                "borderBottom": "1px",
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "padding": "0px 0px 48px 0px",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Address",
+                                  "id": "TNXVlqGjMkUpiqUZdI",
+                                  "$replicaId": "TNXVlqGjM",
+                                  "$originalId": "kUpiqUZdI",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjMqdvXwjPjd",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "qdvXwjPjd",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjMqdvXwjPjd:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjMqdvXwjPjd:0:0",
+                                              "attributes": {
+                                                "text": "Address"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjMjdAiOygpn",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "jdAiOygpn",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjMjdAiOygpn:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjMjdAiOygpn:0:0",
+                                              "attributes": {
+                                                "text": "1 Grand Avenue, City Centre"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Phone",
+                                  "id": "TNXVlqGjMgCA0EADfd",
+                                  "$replicaId": "TNXVlqGjM",
+                                  "$originalId": "gCA0EADfd",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjMB_as39AWq",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "B_as39AWq",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjMB_as39AWq:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjMB_as39AWq:0:0",
+                                              "attributes": {
+                                                "text": "Phone"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjMangD0KCb7",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "angD0KCb7",
+                                      "attributes": {
+                                        "link": {
+                                          "href": "call:",
+                                          "openInNewTab": true
+                                        },
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjMangD0KCb7:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjMangD0KCb7:0:0",
+                                              "attributes": {
+                                                "text": "+1 (000) 000 0000"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Email",
+                                  "id": "TNXVlqGjMXSdZDIUZb",
+                                  "$replicaId": "TNXVlqGjM",
+                                  "$originalId": "XSdZDIUZb",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjMrynmkAsYA",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "rynmkAsYA",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjMrynmkAsYA:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjMrynmkAsYA:0:0",
+                                              "attributes": {
+                                                "text": "Email"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjMKGz1foFKM",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "KGz1foFKM",
+                                      "attributes": {
+                                        "link": {
+                                          "href": "mailto:",
+                                          "openInNewTab": true
+                                        },
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjMKGz1foFKM:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjMKGz1foFKM:0:0",
+                                              "attributes": {
+                                                "text": "info@thehotel.com"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Social Networks",
+                              "id": "TNXVlqGjMv8Fp_eBKI",
+                              "$replicaId": "TNXVlqGjM",
+                              "$originalId": "v8Fp_eBKI",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Follow Us",
+                                  "id": "TNXVlqGjMSyiKTrCQf",
+                                  "$replicaId": "TNXVlqGjM",
+                                  "$originalId": "SyiKTrCQf",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "12px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjMHCpAQEQdp",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "HCpAQEQdp",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjMHCpAQEQdp:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjMHCpAQEQdp:0:0",
+                                              "attributes": {
+                                                "text": "Follow Us"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FrameNode",
+                                      "id": "TNXVlqGjMl460SzIVp",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "l460SzIVp",
+                                      "attributes": {
+                                        "layout": "stack",
+                                        "stackDirection": "horizontal",
+                                        "stackDistribution": "start",
+                                        "stackAlignment": "center",
+                                        "stackWrapEnabled": false,
+                                        "gap": "12px",
+                                        "overflow": "clip",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "ComponentInstanceNode",
+                                          "id": "TNXVlqGjMJraf2CYAV",
+                                          "component": "gn6xtBgGj",
+                                          "$replicaId": "TNXVlqGjM",
+                                          "$originalId": "Jraf2CYAV",
+                                          "$componentDisplayName": "Social Icon",
+                                          "attributes": {
+                                            "position": "relative",
+                                            "width": "32px",
+                                            "height": "32px",
+                                            "aspectRatio": 1
+                                          }
+                                        },
+                                        {
+                                          "type": "ComponentInstanceNode",
+                                          "id": "TNXVlqGjMp42REmVtp",
+                                          "component": "gn6xtBgGj",
+                                          "$replicaId": "TNXVlqGjM",
+                                          "$originalId": "p42REmVtp",
+                                          "$componentDisplayName": "Social Icon",
+                                          "attributes": {
+                                            "$control__link": "https://www.facebook.com/",
+                                            "position": "relative",
+                                            "width": "32px",
+                                            "height": "32px",
+                                            "aspectRatio": 1
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "id": "TNXVlqGjMmaFbOEORs",
+                          "$replicaId": "TNXVlqGjM",
+                          "$originalId": "maFbOEORs",
+                          "attributes": {
+                            "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "formSubmitButtonId": "DP0WBmdVf",
+                            "htmlTag": "form",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "gap": "24px",
+                            "overflow": "hidden",
+                            "padding": "24px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Inputs",
+                              "id": "TNXVlqGjMG7TgTIrnK",
+                              "$replicaId": "TNXVlqGjM",
+                              "$originalId": "G7TgTIrnK",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "id": "TNXVlqGjMxTHGgZmvM",
+                                  "$replicaId": "TNXVlqGjM",
+                                  "$originalId": "xTHGgZmvM",
+                                  "attributes": {
+                                    "htmlTag": "label",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "gap": "12px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjME2sSOG8Fj",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "E2sSOG8Fj",
+                                      "attributes": {
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjME2sSOG8Fj:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjME2sSOG8Fj:0:0",
+                                              "attributes": {
+                                                "text": "Your Name"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FormPlainTextInputNode",
+                                      "id": "TNXVlqGjMFNYom4BIp",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "FNYom4BIp",
+                                      "attributes": {
+                                        "borderStyle": "solid",
+                                        "borderColor": "var(--token-c06b0098-1f19-4867-9ca8-b1d63c893aab)",
+                                        "borderBottom": "1px",
+                                        "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                                        "formInputName": "Name",
+                                        "formInputRequired": "true",
+                                        "formInputFocusedBorderColor": "var(--token-38a9a261-835b-4818-9daa-dc4e250ea768)",
+                                        "formInputFocusedBorderWidth": 0,
+                                        "formInputFocusedBorderTop": 0,
+                                        "formInputFocusedBorderRight": 0,
+                                        "formInputFocusedBorderBottom": 1,
+                                        "formInputFocusedBorderLeft": 0,
+                                        "formInputFocusedBorderPerSide": true,
+                                        "formInputFocusedBorderStyle": "solid",
+                                        "formInputPlaceholder": "Enter your name",
+                                        "formInputPlaceholderColor": "var(--token-09631677-32fa-4c34-91d8-d36a088fd60b, rgb(153, 153, 153)) /* {\"name\":\"Text Subtle\"} */",
+                                        "formTextInputType": "text",
+                                        "padding": "0px 0px 12px 0px",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "fontName": "Inter",
+                                        "fontStyle": "normal",
+                                        "fontWeight": 400,
+                                        "fontSize": "16px",
+                                        "letterSpacing": "0em",
+                                        "lineHeight": "1.6em",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "id": "TNXVlqGjMzsIg0_v65",
+                                  "$replicaId": "TNXVlqGjM",
+                                  "$originalId": "zsIg0_v65",
+                                  "attributes": {
+                                    "htmlTag": "label",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "gap": "12px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjMOBAsWRkeQ",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "OBAsWRkeQ",
+                                      "attributes": {
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjMOBAsWRkeQ:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjMOBAsWRkeQ:0:0",
+                                              "attributes": {
+                                                "text": "Your Email"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FormPlainTextInputNode",
+                                      "id": "TNXVlqGjMskAQEuPV6",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "skAQEuPV6",
+                                      "attributes": {
+                                        "borderStyle": "solid",
+                                        "borderColor": "var(--token-c06b0098-1f19-4867-9ca8-b1d63c893aab)",
+                                        "borderBottom": "1px",
+                                        "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                                        "formInputName": "Email",
+                                        "formInputRequired": "true",
+                                        "formInputFocusedBorderColor": "var(--token-38a9a261-835b-4818-9daa-dc4e250ea768)",
+                                        "formInputFocusedBorderWidth": 0,
+                                        "formInputFocusedBorderTop": 0,
+                                        "formInputFocusedBorderRight": 0,
+                                        "formInputFocusedBorderBottom": 1,
+                                        "formInputFocusedBorderLeft": 0,
+                                        "formInputFocusedBorderPerSide": true,
+                                        "formInputFocusedBorderStyle": "solid",
+                                        "formInputPlaceholder": "Enter your email",
+                                        "formInputPlaceholderColor": "var(--token-09631677-32fa-4c34-91d8-d36a088fd60b, rgb(153, 153, 153)) /* {\"name\":\"Text Subtle\"} */",
+                                        "formTextInputType": "email",
+                                        "padding": "0px 0px 12px 0px",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "fontName": "Inter",
+                                        "fontStyle": "normal",
+                                        "fontWeight": 400,
+                                        "fontSize": "16px",
+                                        "letterSpacing": "0em",
+                                        "lineHeight": "1.6em",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "id": "TNXVlqGjMmE56RIE9m",
+                                  "$replicaId": "TNXVlqGjM",
+                                  "$originalId": "mE56RIE9m",
+                                  "attributes": {
+                                    "htmlTag": "label",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "gap": "12px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "TNXVlqGjMcPv37FKos",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "cPv37FKos",
+                                      "attributes": {
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:TNXVlqGjMcPv37FKos:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:TNXVlqGjMcPv37FKos:0:0",
+                                              "attributes": {
+                                                "text": "Name"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FormPlainTextInputNode",
+                                      "id": "TNXVlqGjMQIPLtu0Ob",
+                                      "$replicaId": "TNXVlqGjM",
+                                      "$originalId": "QIPLtu0Ob",
+                                      "attributes": {
+                                        "borderStyle": "solid",
+                                        "borderColor": "var(--token-c06b0098-1f19-4867-9ca8-b1d63c893aab)",
+                                        "borderBottom": "1px",
+                                        "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                                        "formInputName": "Message",
+                                        "formInputRequired": "true",
+                                        "formInputFocusedBorderColor": "var(--token-38a9a261-835b-4818-9daa-dc4e250ea768)",
+                                        "formInputFocusedBorderWidth": 0,
+                                        "formInputFocusedBorderTop": 0,
+                                        "formInputFocusedBorderRight": 0,
+                                        "formInputFocusedBorderBottom": 1,
+                                        "formInputFocusedBorderLeft": 0,
+                                        "formInputFocusedBorderPerSide": true,
+                                        "formInputFocusedBorderStyle": "solid",
+                                        "formInputPlaceholder": "Enter your message",
+                                        "formInputPlaceholderColor": "var(--token-09631677-32fa-4c34-91d8-d36a088fd60b, rgb(153, 153, 153)) /* {\"name\":\"Text Subtle\"} */",
+                                        "formTextInputType": "textarea",
+                                        "formTextAreaResizable": "true",
+                                        "padding": "0px 0px 12px 0px",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "minHeight": 100,
+                                        "fontName": "Inter",
+                                        "fontStyle": "normal",
+                                        "fontWeight": 400,
+                                        "fontSize": "16px",
+                                        "letterSpacing": "0em",
+                                        "lineHeight": "1.6em",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "ComponentInstanceNode",
+                              "id": "TNXVlqGjMDP0WBmdVf",
+                              "component": "uQByHw8mQ",
+                              "$replicaId": "TNXVlqGjM",
+                              "$originalId": "DP0WBmdVf",
+                              "$componentDisplayName": "Form Button",
+                              "attributes": {
+                                "$control__variant": "Default",
+                                "$control__buttonText": "Send message",
+                                "formButtonSuccessVariant": "zgy_iC82i",
+                                "formButtonPendingVariant": "BTq5G6UGZ",
+                                "formButtonErrorVariant": "zYsvHnraH",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ComponentInstanceNode",
+              "id": "TNXVlqGjMxVIMN7yPd",
+              "component": "Hbc0lxqGSRzFG6uMT9yO",
+              "$replicaId": "TNXVlqGjM",
+              "$originalId": "xVIMN7yPd",
+              "$componentDisplayName": "GoogleMaps",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0s",
+                    "stagger": "0s"
+                  }
+                },
+                "$control__location": "Framer B.V.",
+                "$control__zoom": "15",
+                "$control__radius": "0px",
+                "position": "relative",
+                "width": "1fr",
+                "height": "640px"
+              }
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "TNXVlqGjMISnoODjQL",
+          "$replicaId": "TNXVlqGjM",
+          "$originalId": "ISnoODjQL",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "TNXVlqGjMaHnEupB9P",
+              "$replicaId": "TNXVlqGjM",
+              "$originalId": "aHnEupB9P",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Phone",
+      "id": "OrcfEdhYG",
+      "$isReplica": true,
+      "$originalId": "kM0q51hmv",
+      "$mediaQuery": {
+        "range": "(max-width: 809.98px)",
+        "name": "Phone"
+      },
+      "attributes": {
+        "left": "2450px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "390px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "OrcfEdhYGmn9VL4r8E",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "OrcfEdhYG",
+          "$originalId": "mn9VL4r8E",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "OrcfEdhYGiBWSlH7EQ",
+          "component": "f9mwZML90",
+          "$replicaId": "OrcfEdhYG",
+          "$originalId": "iBWSlH7EQ",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Phone",
+            "$control__label": "GET IN TOUCH",
+            "$control__headline": "We are here.",
+            "$control__paragraph": "Reach out for reservations, enquiries, or anything else. We respond within 24 hours.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "false",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/BpyFXgVjTsWyjqKRvSNpMKx3S0.jpg",
+              "alt": "dish on white ceramic plate"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "640px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "OrcfEdhYGOt1a7k4wc",
+          "$replicaId": "OrcfEdhYG",
+          "$originalId": "Ot1a7k4wc",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "96px",
+            "overflow": "clip",
+            "padding": "80px 24px 24px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "OrcfEdhYGanPW8Uzio",
+              "$replicaId": "OrcfEdhYG",
+              "$originalId": "anPW8Uzio",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "OrcfEdhYGAIJeIixqr",
+                  "$replicaId": "OrcfEdhYG",
+                  "$originalId": "AIJeIixqr",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "OrcfEdhYGz7QbBAiio",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "OrcfEdhYG",
+                      "$originalId": "z7QbBAiio",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE HOTEL",
+                        "$control__sectionHeadline": "Find us. We will be waiting.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "OrcfEdhYGEnEc14Gva",
+                      "$replicaId": "OrcfEdhYG",
+                      "$originalId": "EnEc14Gva",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": "48px",
+                        "overflow": "clip",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "name": "Left",
+                          "id": "OrcfEdhYGbwq8Tx8NO",
+                          "$replicaId": "OrcfEdhYG",
+                          "$originalId": "bwq8Tx8NO",
+                          "attributes": {
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "center",
+                            "stackAlignment": "center",
+                            "stackWrapEnabled": false,
+                            "gap": "48px",
+                            "overflow": "clip",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Contact Info",
+                              "id": "OrcfEdhYGtBeclb1zN",
+                              "$replicaId": "OrcfEdhYG",
+                              "$originalId": "tBeclb1zN",
+                              "attributes": {
+                                "borderStyle": "solid",
+                                "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                                "borderBottom": "1px",
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "padding": "0px 0px 48px 0px",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Address",
+                                  "id": "OrcfEdhYGkUpiqUZdI",
+                                  "$replicaId": "OrcfEdhYG",
+                                  "$originalId": "kUpiqUZdI",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGqdvXwjPjd",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "qdvXwjPjd",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGqdvXwjPjd:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGqdvXwjPjd:0:0",
+                                              "attributes": {
+                                                "text": "Address"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGjdAiOygpn",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "jdAiOygpn",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGjdAiOygpn:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGjdAiOygpn:0:0",
+                                              "attributes": {
+                                                "text": "1 Grand Avenue, City Centre"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Phone",
+                                  "id": "OrcfEdhYGgCA0EADfd",
+                                  "$replicaId": "OrcfEdhYG",
+                                  "$originalId": "gCA0EADfd",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGB_as39AWq",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "B_as39AWq",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGB_as39AWq:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGB_as39AWq:0:0",
+                                              "attributes": {
+                                                "text": "Phone"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGangD0KCb7",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "angD0KCb7",
+                                      "attributes": {
+                                        "link": {
+                                          "href": "call:",
+                                          "openInNewTab": true
+                                        },
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGangD0KCb7:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGangD0KCb7:0:0",
+                                              "attributes": {
+                                                "text": "+1 (000) 000 0000"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Email",
+                                  "id": "OrcfEdhYGXSdZDIUZb",
+                                  "$replicaId": "OrcfEdhYG",
+                                  "$originalId": "XSdZDIUZb",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGrynmkAsYA",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "rynmkAsYA",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGrynmkAsYA:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGrynmkAsYA:0:0",
+                                              "attributes": {
+                                                "text": "Email"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGKGz1foFKM",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "KGz1foFKM",
+                                      "attributes": {
+                                        "link": {
+                                          "href": "mailto:",
+                                          "openInNewTab": true
+                                        },
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGKGz1foFKM:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGKGz1foFKM:0:0",
+                                              "attributes": {
+                                                "text": "info@thehotel.com"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Social Networks",
+                              "id": "OrcfEdhYGv8Fp_eBKI",
+                              "$replicaId": "OrcfEdhYG",
+                              "$originalId": "v8Fp_eBKI",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Follow Us",
+                                  "id": "OrcfEdhYGSyiKTrCQf",
+                                  "$replicaId": "OrcfEdhYG",
+                                  "$originalId": "SyiKTrCQf",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "12px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGHCpAQEQdp",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "HCpAQEQdp",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGHCpAQEQdp:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGHCpAQEQdp:0:0",
+                                              "attributes": {
+                                                "text": "Follow Us"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FrameNode",
+                                      "id": "OrcfEdhYGl460SzIVp",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "l460SzIVp",
+                                      "attributes": {
+                                        "layout": "stack",
+                                        "stackDirection": "horizontal",
+                                        "stackDistribution": "start",
+                                        "stackAlignment": "center",
+                                        "stackWrapEnabled": false,
+                                        "gap": "12px",
+                                        "overflow": "clip",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "ComponentInstanceNode",
+                                          "id": "OrcfEdhYGJraf2CYAV",
+                                          "component": "gn6xtBgGj",
+                                          "$replicaId": "OrcfEdhYG",
+                                          "$originalId": "Jraf2CYAV",
+                                          "$componentDisplayName": "Social Icon",
+                                          "attributes": {
+                                            "position": "relative",
+                                            "width": "32px",
+                                            "height": "32px",
+                                            "aspectRatio": 1
+                                          }
+                                        },
+                                        {
+                                          "type": "ComponentInstanceNode",
+                                          "id": "OrcfEdhYGp42REmVtp",
+                                          "component": "gn6xtBgGj",
+                                          "$replicaId": "OrcfEdhYG",
+                                          "$originalId": "p42REmVtp",
+                                          "$componentDisplayName": "Social Icon",
+                                          "attributes": {
+                                            "$control__link": "https://www.facebook.com/",
+                                            "position": "relative",
+                                            "width": "32px",
+                                            "height": "32px",
+                                            "aspectRatio": 1
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "id": "OrcfEdhYGmaFbOEORs",
+                          "$replicaId": "OrcfEdhYG",
+                          "$originalId": "maFbOEORs",
+                          "attributes": {
+                            "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "formSubmitButtonId": "DP0WBmdVf",
+                            "htmlTag": "form",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "gap": "24px",
+                            "overflow": "hidden",
+                            "padding": "24px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Inputs",
+                              "id": "OrcfEdhYGG7TgTIrnK",
+                              "$replicaId": "OrcfEdhYG",
+                              "$originalId": "G7TgTIrnK",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "id": "OrcfEdhYGxTHGgZmvM",
+                                  "$replicaId": "OrcfEdhYG",
+                                  "$originalId": "xTHGgZmvM",
+                                  "attributes": {
+                                    "htmlTag": "label",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "gap": "12px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGE2sSOG8Fj",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "E2sSOG8Fj",
+                                      "attributes": {
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGE2sSOG8Fj:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGE2sSOG8Fj:0:0",
+                                              "attributes": {
+                                                "text": "Your Name"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FormPlainTextInputNode",
+                                      "id": "OrcfEdhYGFNYom4BIp",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "FNYom4BIp",
+                                      "attributes": {
+                                        "borderStyle": "solid",
+                                        "borderColor": "var(--token-c06b0098-1f19-4867-9ca8-b1d63c893aab)",
+                                        "borderBottom": "1px",
+                                        "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                                        "formInputName": "Name",
+                                        "formInputRequired": "true",
+                                        "formInputFocusedBorderColor": "var(--token-38a9a261-835b-4818-9daa-dc4e250ea768)",
+                                        "formInputFocusedBorderWidth": 0,
+                                        "formInputFocusedBorderTop": 0,
+                                        "formInputFocusedBorderRight": 0,
+                                        "formInputFocusedBorderBottom": 1,
+                                        "formInputFocusedBorderLeft": 0,
+                                        "formInputFocusedBorderPerSide": true,
+                                        "formInputFocusedBorderStyle": "solid",
+                                        "formInputPlaceholder": "Enter your name",
+                                        "formInputPlaceholderColor": "var(--token-09631677-32fa-4c34-91d8-d36a088fd60b, rgb(153, 153, 153)) /* {\"name\":\"Text Subtle\"} */",
+                                        "formTextInputType": "text",
+                                        "padding": "0px 0px 12px 0px",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "fontName": "Inter",
+                                        "fontStyle": "normal",
+                                        "fontWeight": 400,
+                                        "fontSize": "16px",
+                                        "letterSpacing": "0em",
+                                        "lineHeight": "1.6em",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "id": "OrcfEdhYGzsIg0_v65",
+                                  "$replicaId": "OrcfEdhYG",
+                                  "$originalId": "zsIg0_v65",
+                                  "attributes": {
+                                    "htmlTag": "label",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "gap": "12px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGOBAsWRkeQ",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "OBAsWRkeQ",
+                                      "attributes": {
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGOBAsWRkeQ:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGOBAsWRkeQ:0:0",
+                                              "attributes": {
+                                                "text": "Your Email"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FormPlainTextInputNode",
+                                      "id": "OrcfEdhYGskAQEuPV6",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "skAQEuPV6",
+                                      "attributes": {
+                                        "borderStyle": "solid",
+                                        "borderColor": "var(--token-c06b0098-1f19-4867-9ca8-b1d63c893aab)",
+                                        "borderBottom": "1px",
+                                        "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                                        "formInputName": "Email",
+                                        "formInputRequired": "true",
+                                        "formInputFocusedBorderColor": "var(--token-38a9a261-835b-4818-9daa-dc4e250ea768)",
+                                        "formInputFocusedBorderWidth": 0,
+                                        "formInputFocusedBorderTop": 0,
+                                        "formInputFocusedBorderRight": 0,
+                                        "formInputFocusedBorderBottom": 1,
+                                        "formInputFocusedBorderLeft": 0,
+                                        "formInputFocusedBorderPerSide": true,
+                                        "formInputFocusedBorderStyle": "solid",
+                                        "formInputPlaceholder": "Enter your email",
+                                        "formInputPlaceholderColor": "var(--token-09631677-32fa-4c34-91d8-d36a088fd60b, rgb(153, 153, 153)) /* {\"name\":\"Text Subtle\"} */",
+                                        "formTextInputType": "email",
+                                        "padding": "0px 0px 12px 0px",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "fontName": "Inter",
+                                        "fontStyle": "normal",
+                                        "fontWeight": 400,
+                                        "fontSize": "16px",
+                                        "letterSpacing": "0em",
+                                        "lineHeight": "1.6em",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "id": "OrcfEdhYGmE56RIE9m",
+                                  "$replicaId": "OrcfEdhYG",
+                                  "$originalId": "mE56RIE9m",
+                                  "attributes": {
+                                    "htmlTag": "label",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "gap": "12px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "OrcfEdhYGcPv37FKos",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "cPv37FKos",
+                                      "attributes": {
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:OrcfEdhYGcPv37FKos:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:OrcfEdhYGcPv37FKos:0:0",
+                                              "attributes": {
+                                                "text": "Name"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FormPlainTextInputNode",
+                                      "id": "OrcfEdhYGQIPLtu0Ob",
+                                      "$replicaId": "OrcfEdhYG",
+                                      "$originalId": "QIPLtu0Ob",
+                                      "attributes": {
+                                        "borderStyle": "solid",
+                                        "borderColor": "var(--token-c06b0098-1f19-4867-9ca8-b1d63c893aab)",
+                                        "borderBottom": "1px",
+                                        "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                                        "formInputName": "Message",
+                                        "formInputRequired": "true",
+                                        "formInputFocusedBorderColor": "var(--token-38a9a261-835b-4818-9daa-dc4e250ea768)",
+                                        "formInputFocusedBorderWidth": 0,
+                                        "formInputFocusedBorderTop": 0,
+                                        "formInputFocusedBorderRight": 0,
+                                        "formInputFocusedBorderBottom": 1,
+                                        "formInputFocusedBorderLeft": 0,
+                                        "formInputFocusedBorderPerSide": true,
+                                        "formInputFocusedBorderStyle": "solid",
+                                        "formInputPlaceholder": "Enter your message",
+                                        "formInputPlaceholderColor": "var(--token-09631677-32fa-4c34-91d8-d36a088fd60b, rgb(153, 153, 153)) /* {\"name\":\"Text Subtle\"} */",
+                                        "formTextInputType": "textarea",
+                                        "formTextAreaResizable": "true",
+                                        "padding": "0px 0px 12px 0px",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "minHeight": 100,
+                                        "fontName": "Inter",
+                                        "fontStyle": "normal",
+                                        "fontWeight": 400,
+                                        "fontSize": "16px",
+                                        "letterSpacing": "0em",
+                                        "lineHeight": "1.6em",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "ComponentInstanceNode",
+                              "id": "OrcfEdhYGDP0WBmdVf",
+                              "component": "uQByHw8mQ",
+                              "$replicaId": "OrcfEdhYG",
+                              "$originalId": "DP0WBmdVf",
+                              "$componentDisplayName": "Form Button",
+                              "attributes": {
+                                "$control__variant": "Default",
+                                "$control__buttonText": "Send message",
+                                "formButtonSuccessVariant": "zgy_iC82i",
+                                "formButtonPendingVariant": "BTq5G6UGZ",
+                                "formButtonErrorVariant": "zYsvHnraH",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ComponentInstanceNode",
+              "id": "OrcfEdhYGxVIMN7yPd",
+              "component": "Hbc0lxqGSRzFG6uMT9yO",
+              "$replicaId": "OrcfEdhYG",
+              "$originalId": "xVIMN7yPd",
+              "$componentDisplayName": "GoogleMaps",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0s",
+                    "stagger": "0s"
+                  }
+                },
+                "$control__location": "Framer B.V.",
+                "$control__zoom": "15",
+                "$control__radius": "0px",
+                "position": "relative",
+                "width": "1fr",
+                "height": "480px"
+              }
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "OrcfEdhYGISnoODjQL",
+          "$replicaId": "OrcfEdhYG",
+          "$originalId": "ISnoODjQL",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "OrcfEdhYGaHnEupB9P",
+              "$replicaId": "OrcfEdhYG",
+              "$originalId": "aHnEupB9P",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

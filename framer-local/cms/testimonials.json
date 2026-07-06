@@ -1,0 +1,155 @@
+{
+  "collection": "Testimonials",
+  "id": "vwn78KjJk",
+  "fields": [
+    {
+      "id": "BACWM2tb1",
+      "name": "Guest Name",
+      "type": "string"
+    },
+    {
+      "id": "bm8DA4Eaq",
+      "name": "Location",
+      "type": "string"
+    },
+    {
+      "id": "JX9aBKtA0",
+      "name": "Star Rating",
+      "type": "unsupported"
+    },
+    {
+      "id": "neG9dX9Ok",
+      "name": "Quote",
+      "type": "formattedText"
+    },
+    {
+      "id": "QaKdO85vo",
+      "name": "Date",
+      "type": "date"
+    },
+    {
+      "id": "rOqsqRliQ",
+      "name": "Room Stayed",
+      "type": "string"
+    }
+  ],
+  "itemCount": 4,
+  "items": [
+    {
+      "_id": "G_nb6IPj_",
+      "_slug": "sophie-andersen",
+      "_draft": false,
+      "Guest Name": {
+        "type": "string",
+        "value": "Mary Wanjiru",
+        "valueByLocale": {}
+      },
+      "Location": {
+        "type": "string",
+        "value": "Nairobi, Kenya",
+        "valueByLocale": {}
+      },
+      "Quote": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">From the moment we arrived the team treated us kama familia. Clean rooms, hot showers and a proper Kenyan breakfast with the best coffee in Machakos town!</p>",
+        "valueByLocale": {}
+      },
+      "Date": {
+        "type": "date",
+        "value": "2025-06-01T10:00:00.000Z"
+      },
+      "Room Stayed": {
+        "type": "string",
+        "value": "Standard Double",
+        "valueByLocale": {}
+      }
+    },
+    {
+      "_id": "n_9fgnJqy",
+      "_slug": "james-whitfield",
+      "_draft": false,
+      "Guest Name": {
+        "type": "string",
+        "value": "James Kamau",
+        "valueByLocale": {}
+      },
+      "Location": {
+        "type": "string",
+        "value": "Machakos, Kenya",
+        "valueByLocale": {}
+      },
+      "Quote": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Outstanding conference facilities in Baraza Hall. Our 60-person team was perfectly accommodated. AV equipment, catering and dedicated staff made our training seamless.</p>",
+        "valueByLocale": {}
+      },
+      "Date": {
+        "type": "date",
+        "value": "2025-05-15T10:00:00.000Z"
+      },
+      "Room Stayed": {
+        "type": "string",
+        "value": "Conference Guest",
+        "valueByLocale": {}
+      }
+    },
+    {
+      "_id": "KHpauOB1A",
+      "_slug": "marta-ferrara",
+      "_draft": false,
+      "Guest Name": {
+        "type": "string",
+        "value": "Amina & David Omondi",
+        "valueByLocale": {}
+      },
+      "Location": {
+        "type": "string",
+        "value": "Mombasa, Kenya",
+        "valueByLocale": {}
+      },
+      "Quote": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Our wedding reception in their gardens — absolutely magical! The outside catering team delivered restaurant-quality food for 500 guests. Highly recommended!</p>",
+        "valueByLocale": {}
+      },
+      "Date": {
+        "type": "date",
+        "value": "2025-04-20T10:00:00.000Z"
+      },
+      "Room Stayed": {
+        "type": "string",
+        "value": "Garden Event",
+        "valueByLocale": {}
+      }
+    },
+    {
+      "_id": "SAGTxZFAF",
+      "_slug": "david-park",
+      "_draft": true,
+      "Guest Name": {
+        "type": "string",
+        "value": "TODO: Client content required",
+        "valueByLocale": {}
+      },
+      "Location": {
+        "type": "string",
+        "value": "Kenya",
+        "valueByLocale": {}
+      },
+      "Quote": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">TODO: Client content required — additional guest review needed from client.</p>",
+        "valueByLocale": {}
+      },
+      "Date": {
+        "type": "date",
+        "value": "2025-03-01T10:00:00.000Z"
+      },
+      "Room Stayed": {
+        "type": "string",
+        "value": "Standard Double",
+        "valueByLocale": {}
+      }
+    }
+  ]
+}

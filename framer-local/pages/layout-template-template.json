@@ -1,0 +1,299 @@
+{
+  "type": "LayoutTemplateNode",
+  "id": "cd4ShtEtf",
+  "name": "Template",
+  "variables": [
+    {
+      "key": "$control__scrollSection",
+      "id": "jpm6c8eMF",
+      "name": "Scroll Section",
+      "node": "Variable",
+      "type": "scrollsectionref"
+    }
+  ],
+  "$parentId": "sn7IXw6X9",
+  "$breakpoints": [
+    {
+      "id": "V5S5oYBsd",
+      "name": "Desktop",
+      "mediaQueryRange": "(min-width: 1200px)"
+    },
+    {
+      "id": "DgW42Prwt",
+      "name": "Tablet",
+      "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+    },
+    {
+      "id": "Xkr8TQUgl",
+      "name": "Phone",
+      "mediaQueryRange": "(max-width: 809.98px)"
+    }
+  ],
+  "children": [
+    {
+      "type": "FrameNode",
+      "name": "Desktop",
+      "id": "V5S5oYBsd",
+      "$isPrimary": true,
+      "$mediaQuery": {
+        "range": "(min-width: 1200px)",
+        "name": "Desktop"
+      },
+      "attributes": {
+        "fill": "rgba(255,255,255,1)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": 0,
+        "overflow": "clip",
+        "left": "0px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "1200px",
+        "height": "1000px"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "vwQpNEw0S",
+          "component": "J_YJb9SYs",
+          "$componentDisplayName": "Top Nav",
+          "attributes": {
+            "appearEffect": {
+              "threshold": 0.5,
+              "trigger": "onMount",
+              "enter": {
+                "opacity": 0,
+                "x": 0,
+                "y": -20,
+                "scale": 1,
+                "rotate": 0,
+                "rotateX": 0,
+                "rotateY": 0,
+                "skewX": 0,
+                "skewY": 0,
+                "transition": "spring-duration 1.2s 0 0.1s",
+                "stagger": "0s"
+              }
+            },
+            "$control__variant": "Desktop",
+            "$control__scrollSection": "var(--variable-jpm6c8eMF)",
+            "position": "fixed",
+            "left": "0px",
+            "right": "0px",
+            "top": "0px",
+            "bottom": "null",
+            "centerAnchorX": "50%",
+            "centerAnchorY": "4.1%",
+            "constraintsLocked": false,
+            "width": "1200px",
+            "height": "auto",
+            "zIndex": "10"
+          }
+        },
+        {
+          "type": "PlaceholderNode",
+          "id": "zp_dZSrdX"
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "nt9ixBUwJ",
+          "component": "WZjz0gh2O",
+          "$componentDisplayName": "Footer",
+          "attributes": {
+            "$control__variant": "Desktop",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          }
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Tablet",
+      "id": "DgW42Prwt",
+      "$isReplica": true,
+      "$originalId": "V5S5oYBsd",
+      "$mediaQuery": {
+        "range": "(min-width: 810px) and (max-width: 1199.98px)",
+        "name": "Tablet"
+      },
+      "attributes": {
+        "fill": "rgba(255,255,255,1)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": 0,
+        "overflow": "clip",
+        "left": "1300px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "810px",
+        "height": "1781px"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "DgW42PrwtvwQpNEw0S",
+          "component": "J_YJb9SYs",
+          "$replicaId": "DgW42Prwt",
+          "$originalId": "vwQpNEw0S",
+          "$componentDisplayName": "Top Nav",
+          "attributes": {
+            "appearEffect": {
+              "threshold": 0.5,
+              "trigger": "onMount",
+              "enter": {
+                "opacity": 0,
+                "x": 0,
+                "y": -20,
+                "scale": 1,
+                "rotate": 0,
+                "rotateX": 0,
+                "rotateY": 0,
+                "skewX": 0,
+                "skewY": 0,
+                "transition": "spring-duration 1.2s 0 0.1s",
+                "stagger": "0s"
+              }
+            },
+            "$control__variant": "Tablet - Closed",
+            "$control__scrollSection": "var(--variable-jpm6c8eMF)",
+            "position": "fixed",
+            "left": "0px",
+            "right": "0px",
+            "top": "0px",
+            "bottom": "null",
+            "centerAnchorX": "50%",
+            "centerAnchorY": "4.1%",
+            "constraintsLocked": false,
+            "width": "1200px",
+            "height": "auto",
+            "zIndex": "10"
+          }
+        },
+        {
+          "type": "PlaceholderNode",
+          "id": "DgW42Prwtzp_dZSrdX"
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "DgW42Prwtnt9ixBUwJ",
+          "component": "WZjz0gh2O",
+          "$replicaId": "DgW42Prwt",
+          "$originalId": "nt9ixBUwJ",
+          "$componentDisplayName": "Footer",
+          "attributes": {
+            "$control__variant": "Tablet",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          }
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Phone",
+      "id": "Xkr8TQUgl",
+      "$isReplica": true,
+      "$originalId": "V5S5oYBsd",
+      "$mediaQuery": {
+        "range": "(max-width: 809.98px)",
+        "name": "Phone"
+      },
+      "attributes": {
+        "fill": "rgba(255,255,255,1)",
+        "layout": "stack",
+        "stackDirection": "vertical",
+        "stackDistribution": "start",
+        "stackAlignment": "center",
+        "stackWrapEnabled": false,
+        "gap": 0,
+        "overflow": "clip",
+        "left": "2210px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "390px",
+        "height": "1781px"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "Xkr8TQUglvwQpNEw0S",
+          "component": "J_YJb9SYs",
+          "$replicaId": "Xkr8TQUgl",
+          "$originalId": "vwQpNEw0S",
+          "$componentDisplayName": "Top Nav",
+          "attributes": {
+            "appearEffect": {
+              "threshold": 0.5,
+              "trigger": "onMount",
+              "enter": {
+                "opacity": 0,
+                "x": 0,
+                "y": -20,
+                "scale": 1,
+                "rotate": 0,
+                "rotateX": 0,
+                "rotateY": 0,
+                "skewX": 0,
+                "skewY": 0,
+                "transition": "spring-duration 1.2s 0 0.1s",
+                "stagger": "0s"
+              }
+            },
+            "$control__variant": "Phone - Closed",
+            "$control__scrollSection": "var(--variable-jpm6c8eMF)",
+            "position": "fixed",
+            "left": "0px",
+            "right": "0px",
+            "top": "0px",
+            "bottom": "null",
+            "centerAnchorX": "50%",
+            "centerAnchorY": "4.1%",
+            "constraintsLocked": false,
+            "width": "1200px",
+            "height": "auto",
+            "zIndex": "10"
+          }
+        },
+        {
+          "type": "PlaceholderNode",
+          "id": "Xkr8TQUglzp_dZSrdX"
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "Xkr8TQUglnt9ixBUwJ",
+          "component": "WZjz0gh2O",
+          "$replicaId": "Xkr8TQUgl",
+          "$originalId": "nt9ixBUwJ",
+          "$componentDisplayName": "Footer",
+          "attributes": {
+            "$control__variant": "Phone",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          }
+        }
+      ]
+    }
+  ]
+}

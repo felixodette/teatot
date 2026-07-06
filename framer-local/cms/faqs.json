@@ -1,0 +1,121 @@
+{
+  "collection": "FAQs",
+  "id": "WINFUfElZ",
+  "fields": [
+    {
+      "id": "F4XL5mpht",
+      "name": "Question",
+      "type": "string"
+    },
+    {
+      "id": "i0K8kTEXt",
+      "name": "Answer",
+      "type": "formattedText"
+    },
+    {
+      "id": "bglIMM2WU",
+      "name": "Category",
+      "type": "enum"
+    },
+    {
+      "id": "QhaRXxr0v",
+      "name": "Sort",
+      "type": "number"
+    }
+  ],
+  "itemCount": 4,
+  "items": [
+    {
+      "_id": "aNtOmyr6Q",
+      "_slug": "check-in-check-out",
+      "_draft": false,
+      "Question": {
+        "type": "string",
+        "value": "What time is check-in and check-out?",
+        "valueByLocale": {}
+      },
+      "Answer": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Check-in is from 2:00 PM. Check-out is by 12:00 noon.</p>",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Rooms"
+      },
+      "Sort": {
+        "type": "number",
+        "value": 1
+      }
+    },
+    {
+      "_id": "m87fUukAc",
+      "_slug": "breakfast-included",
+      "_draft": false,
+      "Question": {
+        "type": "string",
+        "value": "What dining options are available?",
+        "valueByLocale": {}
+      },
+      "Answer": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">ANAM Restaurant, TeaTot Pizzeria and our Coffee Shop are on-site, serving Kenyan classics, continental cuisine, artisan pizza and specialty coffee.</p>",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Dining"
+      },
+      "Sort": {
+        "type": "number",
+        "value": 2
+      }
+    },
+    {
+      "_id": "ho59QhWVA",
+      "_slug": "pets-policy",
+      "_draft": false,
+      "Question": {
+        "type": "string",
+        "value": "Do you offer conference facilities?",
+        "valueByLocale": {}
+      },
+      "Answer": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Yes. We have three halls and a boardroom accommodating 15 to 200 delegates, with full AV, catering and dedicated staff.</p>",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Policies"
+      },
+      "Sort": {
+        "type": "number",
+        "value": 3
+      }
+    },
+    {
+      "_id": "ltZebTqmg",
+      "_slug": "parking-available",
+      "_draft": false,
+      "Question": {
+        "type": "string",
+        "value": "Is parking available at the hotel?",
+        "valueByLocale": {}
+      },
+      "Answer": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Yes. Free secure guarded parking is available 24 hours for hotel guests and event attendees.</p>",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Other"
+      },
+      "Sort": {
+        "type": "number",
+        "value": 4
+      }
+    }
+  ]
+}

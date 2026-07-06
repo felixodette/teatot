@@ -1,0 +1,2686 @@
+{
+  "type": "WebPageNode",
+  "id": "SSH_XMoI2",
+  "name": "/dining",
+  "variables": [],
+  "$parentId": "sn7IXw6X9",
+  "$layoutTemplateId": "cd4ShtEtf",
+  "$layoutTemplateDisplayName": "Template",
+  "$breakpoints": [
+    {
+      "id": "o5cn2riSy",
+      "name": "Desktop",
+      "mediaQueryRange": "(min-width: 1200px)"
+    },
+    {
+      "id": "MLpZPWxHH",
+      "name": "Tablet",
+      "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+    },
+    {
+      "id": "kHY_1MCjk",
+      "name": "Phone",
+      "mediaQueryRange": "(max-width: 809.98px)"
+    }
+  ],
+  "attributes": {
+    "$control__scrollSection": "{\"target\":\"eA0QyCE7i\"}",
+    "layoutTemplate": "default",
+    "path": "/dining"
+  },
+  "children": [
+    {
+      "type": "FrameNode",
+      "name": "Desktop",
+      "id": "o5cn2riSy",
+      "$isPrimary": true,
+      "$mediaQuery": {
+        "range": "(min-width: 1200px)",
+        "name": "Desktop"
+      },
+      "attributes": {
+        "left": "240px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "1200px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "UdiD4NtVl",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "iIOMY0Yom",
+          "component": "f9mwZML90",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Desktop",
+            "$control__label": "THE RESTAURANT",
+            "$control__headline": "Cooking worth coming down for.",
+            "$control__paragraph": "Seasonal ingredients, local producers, and a dining room open from breakfast through dinner, seven days a week.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "false",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/0wTKAwU0zpsKorADDlDt9S8.jpg",
+              "alt": "dish on white ceramic plate"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "640px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Opening Hours",
+          "id": "UoRL1b4vK",
+          "attributes": {
+            "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+            "htmlTag": "section",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": 10,
+            "overflow": "clip",
+            "padding": "64px 24px 64px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Content",
+              "id": "L9PwlJKLP",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "layout": "grid",
+                "gridAlignment": "center",
+                "gridColumnCount": 4,
+                "gridColumnMinWidth": "50px",
+                "gridRowCount": 1,
+                "gridRowHeightType": "auto",
+                "gridRowHeight": "200px",
+                "gap": "48px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "maxWidth": "1284px"
+              },
+              "children": [
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "fCD1j51NB",
+                  "component": "LYYdaXPDT",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Breakfast",
+                    "$control__typePadding": "0px 0px 12px 0px",
+                    "$control__fromTime": "7:00",
+                    "$control__fromPeriod": "am",
+                    "$control__toTime": "11:00",
+                    "$control__toPeriod": "am",
+                    "$control__additionalTextVisability": "false",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "32",
+                    "$control__timeAlignment": "End",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                },
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "H9mBOWkgP",
+                  "component": "LYYdaXPDT",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Lunch",
+                    "$control__typePadding": "0px 0px 12px 0px",
+                    "$control__fromTime": "12:00",
+                    "$control__fromPeriod": "pm",
+                    "$control__toTime": "3:00",
+                    "$control__toPeriod": "pm",
+                    "$control__additionalTextVisability": "false",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "32",
+                    "$control__timeAlignment": "End",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                },
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "wtWEFYIoa",
+                  "component": "LYYdaXPDT",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Dinner",
+                    "$control__typePadding": "0px 0px 12px 0px",
+                    "$control__fromTime": "6:00",
+                    "$control__fromPeriod": "pm",
+                    "$control__toTime": "10:30",
+                    "$control__toPeriod": "pm",
+                    "$control__additionalTextVisability": "false",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "32",
+                    "$control__timeAlignment": "End",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                },
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "sDWfzHAUT",
+                  "component": "LYYdaXPDT",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Brunch",
+                    "$control__typePadding": "0px 0px 12px 0px",
+                    "$control__fromTime": "10:00",
+                    "$control__fromPeriod": "am",
+                    "$control__toTime": "3:00",
+                    "$control__toPeriod": "pm",
+                    "$control__additionalTextVisability": "true",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "32",
+                    "$control__timeAlignment": "End",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "nChosXE4K",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "128px",
+            "overflow": "clip",
+            "padding": "96px 24px 96px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "ioy2ZYJPK",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "g6NUVmcvI",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "FKBiHoDbE",
+                      "component": "TOI7zJbFB",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE MENU",
+                        "$control__sectionHeadline": "What we are cooking.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "ZbhTarA9g",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "gap": "48px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Dining Menu",
+                          "repeatedDescendantId": "RnaG6AF3v",
+                          "limit": "10"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "id": "RnaG6AF3v",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "horizontal",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "gap": "64px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "RichTextNode",
+                              "name": "Category",
+                              "id": "MHHcz1YqN",
+                              "attributes": {
+                                "linkStylePreset": "Body Large",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "maxWidth": "20%",
+                                "text": {
+                                  "from": "var(--variable-OMXWenByR)",
+                                  "transforms": [
+                                    {
+                                      "name": "enumToDisplayName"
+                                    }
+                                  ]
+                                },
+                                "textStylePreset": "Body Semibold",
+                                "textAlignment": "left",
+                                "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                              }
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Name + Description",
+                              "id": "XsVM8jQs1",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": 10,
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Item Name",
+                                  "id": "B2GiSmFbS",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-lOvnW6_Uv)",
+                                    "textStylePreset": "Heading 3",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Description",
+                                  "id": "Kb7PjmiHn",
+                                  "attributes": {
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-oaO37Ccsr)",
+                                    "stylePresetParagraph": "Body"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Price",
+                              "id": "LIG_iGYfx",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "horizontal",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "0px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "auto",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Currency",
+                                  "id": "JS_vYGyCh",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "text": "var(--variable-vyokjbJDf)",
+                                    "textStylePreset": "Heading 3",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Price",
+                                  "id": "yz1CArHkN",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "text": {
+                                      "from": "var(--variable-rkV156Nlu)",
+                                      "transforms": [
+                                        {
+                                          "name": "numberToString",
+                                          "grouping": "auto",
+                                          "notation": "standard",
+                                          "compactDisplay": "short",
+                                          "style": "decimal",
+                                          "currency": "USD",
+                                          "currencyDisplay": "symbol",
+                                          "unit": "percent",
+                                          "unitDisplay": "short"
+                                        }
+                                      ]
+                                    },
+                                    "textStylePreset": "Heading 3",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "id": "ez7Qdp7PQ",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "fill": "https://framerusercontent.com/images/GlubszLsVfAAF0YQUu6qhcYHLyU.jpg",
+                "altText": "Hotel restaurant",
+                "htmlTag": "figure",
+                "layout": "null",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "640px"
+              }
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "HuPpUl5cI",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "DdQA8t5dZ",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "horizontal",
+                    "stackDistribution": "start",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "0px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Container",
+                      "id": "JbF2Bvck2",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": 10,
+                        "overflow": "clip",
+                        "padding": "64px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "gmTBQ4cMo",
+                          "component": "AQfPbQAWg",
+                          "$componentDisplayName": "Section Headline with Paragraph",
+                          "attributes": {
+                            "$control__sectionLabel": "THE KITCHEN",
+                            "$control__sectionHeadline": "Marco Ricci, Head Chef.",
+                            "$control__text": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:gmTBQ4cMo/U9HYmlqEO:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:gmTBQ4cMo/U9HYmlqEO:0:0",
+                                    "attributes": {
+                                      "text": "Marco trained in Bologna and Lyon before leading kitchens in London and Singapore. He joined The Hotel to build a restaurant that cooks honestly and sources locally. His tasting menu changes every month."
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "$control__buttonVisability": "false",
+                            "$control__buttonText": "Meet the Team",
+                            "$control__padding": "0px",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "FrameNode",
+                      "name": "Photo",
+                      "id": "gtURM5wGM",
+                      "attributes": {
+                        "fill": "https://framerusercontent.com/images/wScVVvcV3otS0pfxbkwUsgUvbQ.jpg",
+                        "altText": "Marco Ricci",
+                        "layout": "null",
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "640px"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "wtMGh0X5z",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Image Container",
+                  "id": "MHpDzrCfD",
+                  "attributes": {
+                    "layout": "null",
+                    "position": "sticky",
+                    "positionStickyTop": 0,
+                    "width": "1fr",
+                    "height": "528px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "G3ohKmS1y",
+                      "name": "Photo",
+                      "component": "zxcGfQb3lPhoJOWc1HTU",
+                      "$componentDisplayName": "Image Parallax",
+                      "attributes": {
+                        "$control__image": {
+                          "src": "https://framerusercontent.com/images/jvXOHj0tsFUXtLCOPo0JU0KS8.jpg",
+                          "alt": "Romantic dinner"
+                        },
+                        "$control__parallaxY": "30",
+                        "$control__parallaxX": "0",
+                        "$control__border": "null",
+                        "$control__radius": "0px",
+                        "$control__shadow": [],
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                        "bottom": "-174px",
+                        "centerAnchorX": "50%",
+                        "centerAnchorY": "50%",
+                        "constraintsLocked": true,
+                        "width": "1168px",
+                        "height": "428px",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "B_HBp3FCH",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "end",
+                    "stackAlignment": "end",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1412px",
+                    "zIndex": "2"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "svoUVTM_2",
+                      "component": "AQfPbQAWg",
+                      "$componentDisplayName": "Section Headline with Paragraph",
+                      "attributes": {
+                        "$control__sectionLabel": "PRIVATE DINING",
+                        "$control__sectionHeadline": "A table for your occasion.",
+                        "$control__text": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:svoUVTM_2/U9HYmlqEO:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:svoUVTM_2/U9HYmlqEO:0:0",
+                                "attributes": {
+                                  "text": "The private dining room seats up to 14 guests and can be reserved for business dinners, celebrations, and special events. Contact us to arrange."
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "$control__buttonVisability": "true",
+                        "$control__buttonText": "Contact Us",
+                        "$control__buttonLink": "/contact",
+                        "$control__padding": "64px",
+                        "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "M_GrG56TX",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "eA0QyCE7i",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Tablet",
+      "id": "MLpZPWxHH",
+      "$isReplica": true,
+      "$originalId": "o5cn2riSy",
+      "$mediaQuery": {
+        "range": "(min-width: 810px) and (max-width: 1199.98px)",
+        "name": "Tablet"
+      },
+      "attributes": {
+        "left": "1540px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "810px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "MLpZPWxHHUdiD4NtVl",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "MLpZPWxHH",
+          "$originalId": "UdiD4NtVl",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "MLpZPWxHHiIOMY0Yom",
+          "component": "f9mwZML90",
+          "$replicaId": "MLpZPWxHH",
+          "$originalId": "iIOMY0Yom",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Tablet",
+            "$control__label": "THE RESTAURANT",
+            "$control__headline": "Cooking worth coming down for.",
+            "$control__paragraph": "Seasonal ingredients, local producers, and a dining room open from breakfast through dinner, seven days a week.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "false",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/0wTKAwU0zpsKorADDlDt9S8.jpg",
+              "alt": "dish on white ceramic plate"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "640px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Opening Hours",
+          "id": "MLpZPWxHHUoRL1b4vK",
+          "$replicaId": "MLpZPWxHH",
+          "$originalId": "UoRL1b4vK",
+          "attributes": {
+            "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+            "htmlTag": "section",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": 10,
+            "overflow": "clip",
+            "padding": "64px 24px 64px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Content",
+              "id": "MLpZPWxHHL9PwlJKLP",
+              "$replicaId": "MLpZPWxHH",
+              "$originalId": "L9PwlJKLP",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "layout": "grid",
+                "gridAlignment": "center",
+                "gridColumnCount": 1,
+                "gridColumnMinWidth": "50px",
+                "gridRowCount": 1,
+                "gridRowHeightType": "auto",
+                "gridRowHeight": "200px",
+                "gap": "32px 48px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "maxWidth": "1284px"
+              },
+              "children": [
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "MLpZPWxHHfCD1j51NB",
+                  "component": "LYYdaXPDT",
+                  "$replicaId": "MLpZPWxHH",
+                  "$originalId": "fCD1j51NB",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Breakfast",
+                    "$control__typePadding": "0px 0px 12px 0px",
+                    "$control__fromTime": "7:00",
+                    "$control__fromPeriod": "am",
+                    "$control__toTime": "11:00",
+                    "$control__toPeriod": "am",
+                    "$control__additionalTextVisability": "false",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "16",
+                    "$control__timeAlignment": "Center",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                },
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "MLpZPWxHHH9mBOWkgP",
+                  "component": "LYYdaXPDT",
+                  "$replicaId": "MLpZPWxHH",
+                  "$originalId": "H9mBOWkgP",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Lunch",
+                    "$control__typePadding": "0px 0px 12px 0px",
+                    "$control__fromTime": "12:00",
+                    "$control__fromPeriod": "pm",
+                    "$control__toTime": "3:00",
+                    "$control__toPeriod": "pm",
+                    "$control__additionalTextVisability": "false",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "16",
+                    "$control__timeAlignment": "Center",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                },
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "MLpZPWxHHwtWEFYIoa",
+                  "component": "LYYdaXPDT",
+                  "$replicaId": "MLpZPWxHH",
+                  "$originalId": "wtWEFYIoa",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Dinner",
+                    "$control__typePadding": "0px 0px 12px 0px",
+                    "$control__fromTime": "6:00",
+                    "$control__fromPeriod": "pm",
+                    "$control__toTime": "10:30",
+                    "$control__toPeriod": "pm",
+                    "$control__additionalTextVisability": "false",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "16",
+                    "$control__timeAlignment": "Center",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                },
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "MLpZPWxHHsDWfzHAUT",
+                  "component": "LYYdaXPDT",
+                  "$replicaId": "MLpZPWxHH",
+                  "$originalId": "sDWfzHAUT",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Brunch",
+                    "$control__typePadding": "0px 0px 12px 0px",
+                    "$control__fromTime": "10:00",
+                    "$control__fromPeriod": "am",
+                    "$control__toTime": "3:00",
+                    "$control__toPeriod": "pm",
+                    "$control__additionalTextVisability": "true",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "16",
+                    "$control__timeAlignment": "Center",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "MLpZPWxHHnChosXE4K",
+          "$replicaId": "MLpZPWxHH",
+          "$originalId": "nChosXE4K",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "80px",
+            "overflow": "clip",
+            "padding": "80px 24px 80px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "MLpZPWxHHioy2ZYJPK",
+              "$replicaId": "MLpZPWxHH",
+              "$originalId": "ioy2ZYJPK",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "MLpZPWxHHg6NUVmcvI",
+                  "$replicaId": "MLpZPWxHH",
+                  "$originalId": "g6NUVmcvI",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "MLpZPWxHHFKBiHoDbE",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "MLpZPWxHH",
+                      "$originalId": "FKBiHoDbE",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE MENU",
+                        "$control__sectionHeadline": "What we are cooking.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "MLpZPWxHHZbhTarA9g",
+                      "$replicaId": "MLpZPWxHH",
+                      "$originalId": "ZbhTarA9g",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "gap": "48px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Dining Menu",
+                          "repeatedDescendantId": "RnaG6AF3v",
+                          "limit": "10"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "id": "MLpZPWxHHRnaG6AF3v",
+                          "$replicaId": "MLpZPWxHH",
+                          "$originalId": "RnaG6AF3v",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "horizontal",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "gap": "32px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "RichTextNode",
+                              "name": "Category",
+                              "id": "MLpZPWxHHMHHcz1YqN",
+                              "$replicaId": "MLpZPWxHH",
+                              "$originalId": "MHHcz1YqN",
+                              "attributes": {
+                                "linkStylePreset": "Body Large",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "maxWidth": "15%",
+                                "text": {
+                                  "from": "var(--variable-OMXWenByR)",
+                                  "transforms": [
+                                    {
+                                      "name": "enumToDisplayName"
+                                    }
+                                  ]
+                                },
+                                "textStylePreset": "Body Semibold",
+                                "textAlignment": "left",
+                                "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                              }
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Name + Description",
+                              "id": "MLpZPWxHHXsVM8jQs1",
+                              "$replicaId": "MLpZPWxHH",
+                              "$originalId": "XsVM8jQs1",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": 10,
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Item Name",
+                                  "id": "MLpZPWxHHB2GiSmFbS",
+                                  "$replicaId": "MLpZPWxHH",
+                                  "$originalId": "B2GiSmFbS",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-lOvnW6_Uv)",
+                                    "textStylePreset": "Heading 3",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Description",
+                                  "id": "MLpZPWxHHKb7PjmiHn",
+                                  "$replicaId": "MLpZPWxHH",
+                                  "$originalId": "Kb7PjmiHn",
+                                  "attributes": {
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-oaO37Ccsr)",
+                                    "stylePresetParagraph": "Body"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Price",
+                              "id": "MLpZPWxHHLIG_iGYfx",
+                              "$replicaId": "MLpZPWxHH",
+                              "$originalId": "LIG_iGYfx",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "horizontal",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "0px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "auto",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Currency",
+                                  "id": "MLpZPWxHHJS_vYGyCh",
+                                  "$replicaId": "MLpZPWxHH",
+                                  "$originalId": "JS_vYGyCh",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "text": "var(--variable-vyokjbJDf)",
+                                    "textStylePreset": "Heading 3",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Price",
+                                  "id": "MLpZPWxHHyz1CArHkN",
+                                  "$replicaId": "MLpZPWxHH",
+                                  "$originalId": "yz1CArHkN",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "text": {
+                                      "from": "var(--variable-rkV156Nlu)",
+                                      "transforms": [
+                                        {
+                                          "name": "numberToString",
+                                          "grouping": "auto",
+                                          "notation": "standard",
+                                          "compactDisplay": "short",
+                                          "style": "decimal",
+                                          "currency": "USD",
+                                          "currencyDisplay": "symbol",
+                                          "unit": "percent",
+                                          "unitDisplay": "short"
+                                        }
+                                      ]
+                                    },
+                                    "textStylePreset": "Heading 3",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "id": "MLpZPWxHHez7Qdp7PQ",
+              "$replicaId": "MLpZPWxHH",
+              "$originalId": "ez7Qdp7PQ",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "fill": "https://framerusercontent.com/images/GlubszLsVfAAF0YQUu6qhcYHLyU.jpg",
+                "altText": "Hotel restaurant",
+                "htmlTag": "figure",
+                "layout": "null",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "480px"
+              }
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "MLpZPWxHHHuPpUl5cI",
+              "$replicaId": "MLpZPWxHH",
+              "$originalId": "HuPpUl5cI",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "MLpZPWxHHDdQA8t5dZ",
+                  "$replicaId": "MLpZPWxHH",
+                  "$originalId": "DdQA8t5dZ",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "horizontal",
+                    "stackDistribution": "start",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "0px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Container",
+                      "id": "MLpZPWxHHJbF2Bvck2",
+                      "$replicaId": "MLpZPWxHH",
+                      "$originalId": "JbF2Bvck2",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": 10,
+                        "overflow": "clip",
+                        "padding": "64px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "MLpZPWxHHgmTBQ4cMo",
+                          "component": "AQfPbQAWg",
+                          "$replicaId": "MLpZPWxHH",
+                          "$originalId": "gmTBQ4cMo",
+                          "$componentDisplayName": "Section Headline with Paragraph",
+                          "attributes": {
+                            "$control__sectionLabel": "THE KITCHEN",
+                            "$control__sectionHeadline": "Marco Ricci, Head Chef.",
+                            "$control__text": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:MLpZPWxHHgmTBQ4cMo/U9HYmlqEO:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:MLpZPWxHHgmTBQ4cMo/U9HYmlqEO:0:0",
+                                    "attributes": {
+                                      "text": "Marco trained in Bologna and Lyon before leading kitchens in London and Singapore. He joined The Hotel to build a restaurant that cooks honestly and sources locally. His tasting menu changes every month."
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "$control__buttonVisability": "false",
+                            "$control__buttonText": "Meet the Team",
+                            "$control__padding": "0px",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "FrameNode",
+                      "name": "Photo",
+                      "id": "MLpZPWxHHgtURM5wGM",
+                      "$replicaId": "MLpZPWxHH",
+                      "$originalId": "gtURM5wGM",
+                      "attributes": {
+                        "fill": "https://framerusercontent.com/images/wScVVvcV3otS0pfxbkwUsgUvbQ.jpg",
+                        "altText": "Marco Ricci",
+                        "layout": "null",
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "1fr"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "MLpZPWxHHwtMGh0X5z",
+              "$replicaId": "MLpZPWxHH",
+              "$originalId": "wtMGh0X5z",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Image Container",
+                  "id": "MLpZPWxHHMHpDzrCfD",
+                  "$replicaId": "MLpZPWxHH",
+                  "$originalId": "MHpDzrCfD",
+                  "attributes": {
+                    "layout": "null",
+                    "position": "sticky",
+                    "positionStickyTop": 0,
+                    "width": "1fr",
+                    "height": "400px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "MLpZPWxHHG3ohKmS1y",
+                      "name": "Photo",
+                      "component": "zxcGfQb3lPhoJOWc1HTU",
+                      "$replicaId": "MLpZPWxHH",
+                      "$originalId": "G3ohKmS1y",
+                      "$componentDisplayName": "Image Parallax",
+                      "attributes": {
+                        "$control__image": {
+                          "src": "https://framerusercontent.com/images/jvXOHj0tsFUXtLCOPo0JU0KS8.jpg",
+                          "alt": "Romantic dinner"
+                        },
+                        "$control__parallaxY": "30",
+                        "$control__parallaxX": "0",
+                        "$control__border": "null",
+                        "$control__radius": "0px",
+                        "$control__shadow": [],
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                        "bottom": "-80px",
+                        "centerAnchorX": "50%",
+                        "centerAnchorY": "71.75%",
+                        "constraintsLocked": true,
+                        "width": "778px",
+                        "height": "574px",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "MLpZPWxHHB_HBp3FCH",
+                  "$replicaId": "MLpZPWxHH",
+                  "$originalId": "B_HBp3FCH",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "end",
+                    "stackAlignment": "end",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1412px",
+                    "zIndex": "2"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "MLpZPWxHHsvoUVTM_2",
+                      "component": "AQfPbQAWg",
+                      "$replicaId": "MLpZPWxHH",
+                      "$originalId": "svoUVTM_2",
+                      "$componentDisplayName": "Section Headline with Paragraph",
+                      "attributes": {
+                        "$control__sectionLabel": "PRIVATE DINING",
+                        "$control__sectionHeadline": "A table for your occasion.",
+                        "$control__text": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:MLpZPWxHHsvoUVTM_2/U9HYmlqEO:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:MLpZPWxHHsvoUVTM_2/U9HYmlqEO:0:0",
+                                "attributes": {
+                                  "text": "The private dining room seats up to 14 guests and can be reserved for business dinners, celebrations, and special events. Contact us to arrange."
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "$control__buttonVisability": "true",
+                        "$control__buttonText": "Contact Us",
+                        "$control__buttonLink": "/contact",
+                        "$control__padding": "64px",
+                        "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "MLpZPWxHHM_GrG56TX",
+          "$replicaId": "MLpZPWxHH",
+          "$originalId": "M_GrG56TX",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "MLpZPWxHHeA0QyCE7i",
+              "$replicaId": "MLpZPWxHH",
+              "$originalId": "eA0QyCE7i",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Phone",
+      "id": "kHY_1MCjk",
+      "$isReplica": true,
+      "$originalId": "o5cn2riSy",
+      "$mediaQuery": {
+        "range": "(max-width: 809.98px)",
+        "name": "Phone"
+      },
+      "attributes": {
+        "left": "2450px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "390px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "kHY_1MCjkUdiD4NtVl",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "kHY_1MCjk",
+          "$originalId": "UdiD4NtVl",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "kHY_1MCjkiIOMY0Yom",
+          "component": "f9mwZML90",
+          "$replicaId": "kHY_1MCjk",
+          "$originalId": "iIOMY0Yom",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Phone",
+            "$control__label": "THE RESTAURANT",
+            "$control__headline": "Cooking worth coming down for.",
+            "$control__paragraph": "Seasonal ingredients, local producers, and a dining room open from breakfast through dinner, seven days a week.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "false",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/0wTKAwU0zpsKorADDlDt9S8.jpg",
+              "alt": "dish on white ceramic plate"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "640px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Opening Hours",
+          "id": "kHY_1MCjkUoRL1b4vK",
+          "$replicaId": "kHY_1MCjk",
+          "$originalId": "UoRL1b4vK",
+          "attributes": {
+            "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+            "htmlTag": "section",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": 10,
+            "overflow": "clip",
+            "padding": "64px 24px 64px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Content",
+              "id": "kHY_1MCjkL9PwlJKLP",
+              "$replicaId": "kHY_1MCjk",
+              "$originalId": "L9PwlJKLP",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "layout": "grid",
+                "gridAlignment": "center",
+                "gridColumnCount": 1,
+                "gridColumnMinWidth": "50px",
+                "gridRowCount": 1,
+                "gridRowHeightType": "auto",
+                "gridRowHeight": "200px",
+                "gap": "32px 48px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "maxWidth": "1284px"
+              },
+              "children": [
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "kHY_1MCjkfCD1j51NB",
+                  "component": "LYYdaXPDT",
+                  "$replicaId": "kHY_1MCjk",
+                  "$originalId": "fCD1j51NB",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Breakfast",
+                    "$control__typePadding": "0px 0px 8px 0px",
+                    "$control__fromTime": "7:00",
+                    "$control__fromPeriod": "am",
+                    "$control__toTime": "11:00",
+                    "$control__toPeriod": "am",
+                    "$control__additionalTextVisability": "false",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "12",
+                    "$control__timeAlignment": "Center",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                },
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "kHY_1MCjkH9mBOWkgP",
+                  "component": "LYYdaXPDT",
+                  "$replicaId": "kHY_1MCjk",
+                  "$originalId": "H9mBOWkgP",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Lunch",
+                    "$control__typePadding": "0px 0px 8px 0px",
+                    "$control__fromTime": "12:00",
+                    "$control__fromPeriod": "pm",
+                    "$control__toTime": "3:00",
+                    "$control__toPeriod": "pm",
+                    "$control__additionalTextVisability": "false",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "12",
+                    "$control__timeAlignment": "Center",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                },
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "kHY_1MCjkwtWEFYIoa",
+                  "component": "LYYdaXPDT",
+                  "$replicaId": "kHY_1MCjk",
+                  "$originalId": "wtWEFYIoa",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Dinner",
+                    "$control__typePadding": "0px 0px 8px 0px",
+                    "$control__fromTime": "6:00",
+                    "$control__fromPeriod": "pm",
+                    "$control__toTime": "10:30",
+                    "$control__toPeriod": "pm",
+                    "$control__additionalTextVisability": "false",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "12",
+                    "$control__timeAlignment": "Center",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                },
+                {
+                  "type": "ComponentInstanceNode",
+                  "id": "kHY_1MCjksDWfzHAUT",
+                  "component": "LYYdaXPDT",
+                  "$replicaId": "kHY_1MCjk",
+                  "$originalId": "sDWfzHAUT",
+                  "$componentDisplayName": "Dining Type Card",
+                  "attributes": {
+                    "$control__type": "Brunch",
+                    "$control__typePadding": "0px 0px 8px 0px",
+                    "$control__fromTime": "10:00",
+                    "$control__fromPeriod": "am",
+                    "$control__toTime": "3:00",
+                    "$control__toPeriod": "pm",
+                    "$control__additionalTextVisability": "true",
+                    "$control__additionalText": "(weekends only)",
+                    "$control__gap": "12",
+                    "$control__timeAlignment": "Center",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "kHY_1MCjknChosXE4K",
+          "$replicaId": "kHY_1MCjk",
+          "$originalId": "nChosXE4K",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "96px",
+            "overflow": "clip",
+            "padding": "80px 24px 80px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "kHY_1MCjkioy2ZYJPK",
+              "$replicaId": "kHY_1MCjk",
+              "$originalId": "ioy2ZYJPK",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "kHY_1MCjkg6NUVmcvI",
+                  "$replicaId": "kHY_1MCjk",
+                  "$originalId": "g6NUVmcvI",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "kHY_1MCjkFKBiHoDbE",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "kHY_1MCjk",
+                      "$originalId": "FKBiHoDbE",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE MENU",
+                        "$control__sectionHeadline": "What we are cooking.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "kHY_1MCjkZbhTarA9g",
+                      "$replicaId": "kHY_1MCjk",
+                      "$originalId": "ZbhTarA9g",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "gap": "48px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Dining Menu",
+                          "repeatedDescendantId": "RnaG6AF3v",
+                          "limit": "10"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "id": "kHY_1MCjkRnaG6AF3v",
+                          "$replicaId": "kHY_1MCjk",
+                          "$originalId": "RnaG6AF3v",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "horizontal",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "gap": "24px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "RichTextNode",
+                              "name": "Category",
+                              "id": "kHY_1MCjkMHHcz1YqN",
+                              "$replicaId": "kHY_1MCjk",
+                              "$originalId": "MHHcz1YqN",
+                              "attributes": {
+                                "linkStylePreset": "Body Large",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "maxWidth": "25%",
+                                "text": {
+                                  "from": "var(--variable-OMXWenByR)",
+                                  "transforms": [
+                                    {
+                                      "name": "enumToDisplayName"
+                                    }
+                                  ]
+                                },
+                                "textStylePreset": "Body Semibold",
+                                "textAlignment": "left",
+                                "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                              }
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Name + Description",
+                              "id": "kHY_1MCjkXsVM8jQs1",
+                              "$replicaId": "kHY_1MCjk",
+                              "$originalId": "XsVM8jQs1",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": 10,
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Item Name",
+                                  "id": "kHY_1MCjkB2GiSmFbS",
+                                  "$replicaId": "kHY_1MCjk",
+                                  "$originalId": "B2GiSmFbS",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-lOvnW6_Uv)",
+                                    "textStylePreset": "Heading 3",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Description",
+                                  "id": "kHY_1MCjkKb7PjmiHn",
+                                  "$replicaId": "kHY_1MCjk",
+                                  "$originalId": "Kb7PjmiHn",
+                                  "attributes": {
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-oaO37Ccsr)",
+                                    "stylePresetParagraph": "Body"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Price",
+                              "id": "kHY_1MCjkLIG_iGYfx",
+                              "$replicaId": "kHY_1MCjk",
+                              "$originalId": "LIG_iGYfx",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "horizontal",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "0px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "auto",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Currency",
+                                  "id": "kHY_1MCjkJS_vYGyCh",
+                                  "$replicaId": "kHY_1MCjk",
+                                  "$originalId": "JS_vYGyCh",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "text": "var(--variable-vyokjbJDf)",
+                                    "textStylePreset": "Heading 3",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Price",
+                                  "id": "kHY_1MCjkyz1CArHkN",
+                                  "$replicaId": "kHY_1MCjk",
+                                  "$originalId": "yz1CArHkN",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "text": {
+                                      "from": "var(--variable-rkV156Nlu)",
+                                      "transforms": [
+                                        {
+                                          "name": "numberToString",
+                                          "grouping": "auto",
+                                          "notation": "standard",
+                                          "compactDisplay": "short",
+                                          "style": "decimal",
+                                          "currency": "USD",
+                                          "currencyDisplay": "symbol",
+                                          "unit": "percent",
+                                          "unitDisplay": "short"
+                                        }
+                                      ]
+                                    },
+                                    "textStylePreset": "Heading 3",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "id": "kHY_1MCjkez7Qdp7PQ",
+              "$replicaId": "kHY_1MCjk",
+              "$originalId": "ez7Qdp7PQ",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "fill": "https://framerusercontent.com/images/GlubszLsVfAAF0YQUu6qhcYHLyU.jpg",
+                "altText": "Hotel restaurant",
+                "htmlTag": "figure",
+                "layout": "null",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "320px"
+              }
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "kHY_1MCjkHuPpUl5cI",
+              "$replicaId": "kHY_1MCjk",
+              "$originalId": "HuPpUl5cI",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "kHY_1MCjkDdQA8t5dZ",
+                  "$replicaId": "kHY_1MCjk",
+                  "$originalId": "DdQA8t5dZ",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "0px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Container",
+                      "id": "kHY_1MCjkJbF2Bvck2",
+                      "$replicaId": "kHY_1MCjk",
+                      "$originalId": "JbF2Bvck2",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": 10,
+                        "overflow": "clip",
+                        "padding": "48px 24px 48px 24px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "kHY_1MCjkgmTBQ4cMo",
+                          "component": "AQfPbQAWg",
+                          "$replicaId": "kHY_1MCjk",
+                          "$originalId": "gmTBQ4cMo",
+                          "$componentDisplayName": "Section Headline with Paragraph",
+                          "attributes": {
+                            "$control__sectionLabel": "THE KITCHEN",
+                            "$control__sectionHeadline": "Marco Ricci, Head Chef.",
+                            "$control__text": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:kHY_1MCjkgmTBQ4cMo/U9HYmlqEO:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:kHY_1MCjkgmTBQ4cMo/U9HYmlqEO:0:0",
+                                    "attributes": {
+                                      "text": "Marco trained in Bologna and Lyon before leading kitchens in London and Singapore. He joined The Hotel to build a restaurant that cooks honestly and sources locally. His tasting menu changes every month."
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "$control__buttonVisability": "false",
+                            "$control__buttonText": "Meet the Team",
+                            "$control__padding": "0px",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "FrameNode",
+                      "name": "Photo",
+                      "id": "kHY_1MCjkgtURM5wGM",
+                      "$replicaId": "kHY_1MCjk",
+                      "$originalId": "gtURM5wGM",
+                      "attributes": {
+                        "fill": "https://framerusercontent.com/images/wScVVvcV3otS0pfxbkwUsgUvbQ.jpg",
+                        "altText": "Marco Ricci",
+                        "layout": "null",
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "320px"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "kHY_1MCjkwtMGh0X5z",
+              "$replicaId": "kHY_1MCjk",
+              "$originalId": "wtMGh0X5z",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Image Container",
+                  "id": "kHY_1MCjkMHpDzrCfD",
+                  "$replicaId": "kHY_1MCjk",
+                  "$originalId": "MHpDzrCfD",
+                  "attributes": {
+                    "layout": "null",
+                    "position": "sticky",
+                    "positionStickyTop": 0,
+                    "width": "1fr",
+                    "height": "400px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "kHY_1MCjkG3ohKmS1y",
+                      "name": "Photo",
+                      "component": "zxcGfQb3lPhoJOWc1HTU",
+                      "$replicaId": "kHY_1MCjk",
+                      "$originalId": "G3ohKmS1y",
+                      "$componentDisplayName": "Image Parallax",
+                      "attributes": {
+                        "$control__image": {
+                          "src": "https://framerusercontent.com/images/jvXOHj0tsFUXtLCOPo0JU0KS8.jpg",
+                          "alt": "Romantic dinner"
+                        },
+                        "$control__parallaxY": "30",
+                        "$control__parallaxX": "0",
+                        "$control__border": "null",
+                        "$control__radius": "0px",
+                        "$control__shadow": [],
+                        "left": "0px",
+                        "right": "0px",
+                        "top": "0px",
+                        "bottom": "-96px",
+                        "centerAnchorX": "50%",
+                        "centerAnchorY": "71.75%",
+                        "constraintsLocked": true,
+                        "width": "358px",
+                        "height": "574px",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "kHY_1MCjkB_HBp3FCH",
+                  "$replicaId": "kHY_1MCjk",
+                  "$originalId": "B_HBp3FCH",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "end",
+                    "stackAlignment": "end",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1412px",
+                    "zIndex": "2"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "kHY_1MCjksvoUVTM_2",
+                      "component": "AQfPbQAWg",
+                      "$replicaId": "kHY_1MCjk",
+                      "$originalId": "svoUVTM_2",
+                      "$componentDisplayName": "Section Headline with Paragraph",
+                      "attributes": {
+                        "$control__sectionLabel": "PRIVATE DINING",
+                        "$control__sectionHeadline": "A table for your occasion.",
+                        "$control__text": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:kHY_1MCjksvoUVTM_2/U9HYmlqEO:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:kHY_1MCjksvoUVTM_2/U9HYmlqEO:0:0",
+                                "attributes": {
+                                  "text": "The private dining room seats up to 14 guests and can be reserved for business dinners, celebrations, and special events. Contact us to arrange."
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "$control__buttonVisability": "true",
+                        "$control__buttonText": "Contact Us",
+                        "$control__buttonLink": "/contact",
+                        "$control__padding": "48px 24px 48px 24px",
+                        "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "kHY_1MCjkM_GrG56TX",
+          "$replicaId": "kHY_1MCjk",
+          "$originalId": "M_GrG56TX",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "kHY_1MCjkeA0QyCE7i",
+              "$replicaId": "kHY_1MCjk",
+              "$originalId": "eA0QyCE7i",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

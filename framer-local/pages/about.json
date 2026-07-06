@@ -1,0 +1,2513 @@
+{
+  "type": "WebPageNode",
+  "id": "iUDxivcU3",
+  "name": "/about",
+  "variables": [],
+  "$parentId": "sn7IXw6X9",
+  "$layoutTemplateId": "cd4ShtEtf",
+  "$layoutTemplateDisplayName": "Template",
+  "$breakpoints": [
+    {
+      "id": "OWZJ93rpx",
+      "name": "Desktop",
+      "mediaQueryRange": "(min-width: 1200px)"
+    },
+    {
+      "id": "DKBQFLkFA",
+      "name": "Tablet",
+      "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+    },
+    {
+      "id": "eYAgn2Ju6",
+      "name": "Phone",
+      "mediaQueryRange": "(max-width: 809.98px)"
+    }
+  ],
+  "attributes": {
+    "$control__scrollSection": "{\"target\":\"QjVCt12sA\"}",
+    "layoutTemplate": "default",
+    "path": "/about"
+  },
+  "children": [
+    {
+      "type": "FrameNode",
+      "name": "Desktop",
+      "id": "OWZJ93rpx",
+      "$isPrimary": true,
+      "$mediaQuery": {
+        "range": "(min-width: 1200px)",
+        "name": "Desktop"
+      },
+      "attributes": {
+        "left": "240px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "1200px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "Bv7D56O7C",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "X_Do62Nua",
+          "component": "f9mwZML90",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Desktop",
+            "$control__label": "OUR STORY",
+            "$control__headline": "Built to last. Built to welcome.",
+            "$control__paragraph": "Independently owned since 2009. Built on the right room, honest food, and a team that cares.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "true",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/BpyFXgVjTsWyjqKRvSNpMKx3S0.jpg",
+              "alt": "dish on white ceramic plate"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "720px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "xN_UQ_ROf",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "128px",
+            "overflow": "clip",
+            "padding": "96px 24px 96px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "d1SSwIRBg",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "xpzSbgq2C",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "horizontal",
+                    "stackDistribution": "center",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "0px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Photo",
+                      "id": "sEUdpztuX",
+                      "attributes": {
+                        "fill": "https://framerusercontent.com/images/l6KUfoXRIZlcvtwhFDafwdbkM.jpg",
+                        "altText": "Marco Ricci",
+                        "layout": "null",
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "640px"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "name": "Container",
+                      "id": "xojiYOMSm",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": 10,
+                        "overflow": "clip",
+                        "padding": "64px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "SRUPBvAcN",
+                          "component": "AQfPbQAWg",
+                          "$componentDisplayName": "Section Headline with Paragraph",
+                          "attributes": {
+                            "$control__sectionLabel": "WHO WE ARE",
+                            "$control__sectionHeadline": "The details that matter.",
+                            "$control__text": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:SRUPBvAcN/U9HYmlqEO:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:SRUPBvAcN/U9HYmlqEO:0:0",
+                                    "attributes": {
+                                      "text": "The Hotel opened in 2009 with a simple idea: that a great hotel should feel like somewhere, not anywhere. Independently owned and operated, we have never chased scale over quality."
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "TextBlock",
+                                "id": "v:SRUPBvAcN/U9HYmlqEO:1",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:SRUPBvAcN/U9HYmlqEO:1:0",
+                                    "attributes": {
+                                      "text": "Every decision we make, from the mattresses to the menu, comes back to the same question: does this make the stay better? If the answer is no, we do not do it."
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "$control__buttonVisability": "false",
+                            "$control__buttonText": "Meet the Team",
+                            "$control__padding": "0px",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "ETOMppPpp",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "zIJ4_VUwR",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "layout": "grid",
+                    "gridAlignment": "center",
+                    "gridColumnCount": 4,
+                    "gridColumnMinWidth": "50px",
+                    "gridRowCount": 1,
+                    "gridRowHeightType": "auto",
+                    "gridRowHeight": "200px",
+                    "gap": "2px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "Hxl3pC4U1",
+                      "component": "fe3XXezeC",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Years in hospitality",
+                        "$control__numbersEnd": "16",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "yb0ZOHBTF",
+                      "component": "fe3XXezeC",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Room types",
+                        "$control__numbersEnd": "6",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "F4tnxAfxY",
+                      "component": "fe3XXezeC",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Restaurant seats",
+                        "$control__numbersEnd": "72",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "yZ3JBNYzT",
+                      "component": "fe3XXezeC",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Average guest rating",
+                        "$control__numbersEnd": "5",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "CFe_NpKiy",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "XjoSjkwpr",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "y8uG5yHyl",
+                      "component": "TOI7zJbFB",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE TEAM",
+                        "$control__sectionHeadline": "The people behind the stay.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "DbHYS6lVi",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "gap": "32px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Team",
+                          "repeatedDescendantId": "C5xkrSoZG",
+                          "limit": "10"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "id": "C5xkrSoZG",
+                          "attributes": {
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "gap": "24px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "id": "L1rg1btMB",
+                              "attributes": {
+                                "fill": "var(--variable-FVVdKGF5F)",
+                                "layout": "null",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "480px"
+                              }
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Content",
+                              "id": "lJTXu9AU4",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "16px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Name + role",
+                                  "id": "LRzFgN_Ob",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "4px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Name",
+                                      "id": "APYL28cYp",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "text": "var(--variable-MyPvrDjXJ)",
+                                        "textStylePreset": "Heading 4",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Role",
+                                      "id": "uOjfzQaum",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "text": "var(--variable-oouNXsRhw)",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Bio",
+                                  "id": "KTiXuNSnK",
+                                  "attributes": {
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-YRJkYkc3N)",
+                                    "stylePresetParagraph": "Body"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "id": "jdRckHLWW",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "fill": "https://framerusercontent.com/images/Apb9fpzf6k34xQymPWUCZyP4bQ.jpg",
+                "altText": "Hotel restaurant",
+                "htmlTag": "figure",
+                "layout": "null",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "640px"
+              }
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "vGW4jqxPR",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "awdyA7rDl",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "Q9t9PO28q",
+                      "component": "TOI7zJbFB",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE HOTEL",
+                        "$control__sectionHeadline": "A look inside.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "A4Bb9Aj8y",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "grid",
+                        "gridAlignment": "center",
+                        "gridColumnCount": 3,
+                        "gridColumnMinWidth": "50px",
+                        "gap": "8px 8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Gallery",
+                          "repeatedDescendantId": "eGThG7qRQ",
+                          "limit": "10"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "id": "eGThG7qRQ",
+                          "attributes": {
+                            "layout": "stack",
+                            "stackDirection": "horizontal",
+                            "stackDistribution": "start",
+                            "stackAlignment": "center",
+                            "gap": 10,
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "id": "wXYzRMEu7",
+                              "attributes": {
+                                "fill": "var(--variable-ngQ4P59ny)",
+                                "layout": "null",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "320px"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "lVr6LuIKR",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "QjVCt12sA",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Tablet",
+      "id": "DKBQFLkFA",
+      "$isReplica": true,
+      "$originalId": "OWZJ93rpx",
+      "$mediaQuery": {
+        "range": "(min-width: 810px) and (max-width: 1199.98px)",
+        "name": "Tablet"
+      },
+      "attributes": {
+        "left": "1540px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "810px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "DKBQFLkFABv7D56O7C",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "DKBQFLkFA",
+          "$originalId": "Bv7D56O7C",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "DKBQFLkFAX_Do62Nua",
+          "component": "f9mwZML90",
+          "$replicaId": "DKBQFLkFA",
+          "$originalId": "X_Do62Nua",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Tablet",
+            "$control__label": "OUR STORY",
+            "$control__headline": "Built to last. Built to welcome.",
+            "$control__paragraph": "Independently owned since 2009. Built on the right room, honest food, and a team that cares.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "true",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/BpyFXgVjTsWyjqKRvSNpMKx3S0.jpg",
+              "alt": "dish on white ceramic plate"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "720px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "DKBQFLkFAxN_UQ_ROf",
+          "$replicaId": "DKBQFLkFA",
+          "$originalId": "xN_UQ_ROf",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "80px",
+            "overflow": "clip",
+            "padding": "80px 24px 80px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "DKBQFLkFAd1SSwIRBg",
+              "$replicaId": "DKBQFLkFA",
+              "$originalId": "d1SSwIRBg",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "DKBQFLkFAxpzSbgq2C",
+                  "$replicaId": "DKBQFLkFA",
+                  "$originalId": "xpzSbgq2C",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "horizontal",
+                    "stackDistribution": "center",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "0px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Photo",
+                      "id": "DKBQFLkFAsEUdpztuX",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "sEUdpztuX",
+                      "attributes": {
+                        "fill": "https://framerusercontent.com/images/l6KUfoXRIZlcvtwhFDafwdbkM.jpg",
+                        "altText": "Marco Ricci",
+                        "layout": "null",
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "1fr"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "name": "Container",
+                      "id": "DKBQFLkFAxojiYOMSm",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "xojiYOMSm",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": 10,
+                        "overflow": "clip",
+                        "padding": "64px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "50%"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "DKBQFLkFASRUPBvAcN",
+                          "component": "AQfPbQAWg",
+                          "$replicaId": "DKBQFLkFA",
+                          "$originalId": "SRUPBvAcN",
+                          "$componentDisplayName": "Section Headline with Paragraph",
+                          "attributes": {
+                            "$control__sectionLabel": "WHO WE ARE",
+                            "$control__sectionHeadline": "The details that matter.",
+                            "$control__text": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:DKBQFLkFASRUPBvAcN/U9HYmlqEO:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:DKBQFLkFASRUPBvAcN/U9HYmlqEO:0:0",
+                                    "attributes": {
+                                      "text": "The Hotel opened in 2009 with a simple idea: that a great hotel should feel like somewhere, not anywhere. Independently owned and operated, we have never chased scale over quality."
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "TextBlock",
+                                "id": "v:DKBQFLkFASRUPBvAcN/U9HYmlqEO:1",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:DKBQFLkFASRUPBvAcN/U9HYmlqEO:1:0",
+                                    "attributes": {
+                                      "text": "Every decision we make, from the mattresses to the menu, comes back to the same question: does this make the stay better? If the answer is no, we do not do it."
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "$control__buttonVisability": "false",
+                            "$control__buttonText": "Meet the Team",
+                            "$control__padding": "0px",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "DKBQFLkFAETOMppPpp",
+              "$replicaId": "DKBQFLkFA",
+              "$originalId": "ETOMppPpp",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "DKBQFLkFAzIJ4_VUwR",
+                  "$replicaId": "DKBQFLkFA",
+                  "$originalId": "zIJ4_VUwR",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "layout": "grid",
+                    "gridAlignment": "center",
+                    "gridColumnCount": 2,
+                    "gridColumnMinWidth": "50px",
+                    "gridRowCount": 1,
+                    "gridRowHeightType": "auto",
+                    "gridRowHeight": "200px",
+                    "gap": "2px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "DKBQFLkFAHxl3pC4U1",
+                      "component": "fe3XXezeC",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "Hxl3pC4U1",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Years in hospitality",
+                        "$control__numbersEnd": "16",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "DKBQFLkFAyb0ZOHBTF",
+                      "component": "fe3XXezeC",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "yb0ZOHBTF",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Room types",
+                        "$control__numbersEnd": "6",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "DKBQFLkFAF4tnxAfxY",
+                      "component": "fe3XXezeC",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "F4tnxAfxY",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Restaurant seats",
+                        "$control__numbersEnd": "72",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "DKBQFLkFAyZ3JBNYzT",
+                      "component": "fe3XXezeC",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "yZ3JBNYzT",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Average guest rating",
+                        "$control__numbersEnd": "5",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "DKBQFLkFACFe_NpKiy",
+              "$replicaId": "DKBQFLkFA",
+              "$originalId": "CFe_NpKiy",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "DKBQFLkFAXjoSjkwpr",
+                  "$replicaId": "DKBQFLkFA",
+                  "$originalId": "XjoSjkwpr",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "DKBQFLkFAy8uG5yHyl",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "y8uG5yHyl",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE TEAM",
+                        "$control__sectionHeadline": "The people behind the stay.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "DKBQFLkFADbHYS6lVi",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "DbHYS6lVi",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "gap": "32px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Team",
+                          "repeatedDescendantId": "C5xkrSoZG",
+                          "limit": "10"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "id": "DKBQFLkFAC5xkrSoZG",
+                          "$replicaId": "DKBQFLkFA",
+                          "$originalId": "C5xkrSoZG",
+                          "attributes": {
+                            "layout": "stack",
+                            "stackDirection": "horizontal",
+                            "stackDistribution": "start",
+                            "stackAlignment": "center",
+                            "gap": "48px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "id": "DKBQFLkFAL1rg1btMB",
+                              "$replicaId": "DKBQFLkFA",
+                              "$originalId": "L1rg1btMB",
+                              "attributes": {
+                                "fill": "var(--variable-FVVdKGF5F)",
+                                "layout": "null",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "320px"
+                              }
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Content",
+                              "id": "DKBQFLkFAlJTXu9AU4",
+                              "$replicaId": "DKBQFLkFA",
+                              "$originalId": "lJTXu9AU4",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "16px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Name + role",
+                                  "id": "DKBQFLkFALRzFgN_Ob",
+                                  "$replicaId": "DKBQFLkFA",
+                                  "$originalId": "LRzFgN_Ob",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "4px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Name",
+                                      "id": "DKBQFLkFAAPYL28cYp",
+                                      "$replicaId": "DKBQFLkFA",
+                                      "$originalId": "APYL28cYp",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "text": "var(--variable-MyPvrDjXJ)",
+                                        "textStylePreset": "Heading 4",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Role",
+                                      "id": "DKBQFLkFAuOjfzQaum",
+                                      "$replicaId": "DKBQFLkFA",
+                                      "$originalId": "uOjfzQaum",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "text": "var(--variable-oouNXsRhw)",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Bio",
+                                  "id": "DKBQFLkFAKTiXuNSnK",
+                                  "$replicaId": "DKBQFLkFA",
+                                  "$originalId": "KTiXuNSnK",
+                                  "attributes": {
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-YRJkYkc3N)",
+                                    "stylePresetParagraph": "Body"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "id": "DKBQFLkFAjdRckHLWW",
+              "$replicaId": "DKBQFLkFA",
+              "$originalId": "jdRckHLWW",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "fill": "https://framerusercontent.com/images/Apb9fpzf6k34xQymPWUCZyP4bQ.jpg",
+                "altText": "Hotel restaurant",
+                "htmlTag": "figure",
+                "layout": "null",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "480px"
+              }
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "DKBQFLkFAvGW4jqxPR",
+              "$replicaId": "DKBQFLkFA",
+              "$originalId": "vGW4jqxPR",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "DKBQFLkFAawdyA7rDl",
+                  "$replicaId": "DKBQFLkFA",
+                  "$originalId": "awdyA7rDl",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "DKBQFLkFAQ9t9PO28q",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "Q9t9PO28q",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE HOTEL",
+                        "$control__sectionHeadline": "A look inside.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "DKBQFLkFAA4Bb9Aj8y",
+                      "$replicaId": "DKBQFLkFA",
+                      "$originalId": "A4Bb9Aj8y",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "grid",
+                        "gridAlignment": "center",
+                        "gridColumnCount": 2,
+                        "gridColumnMinWidth": "50px",
+                        "gap": "8px 8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Gallery",
+                          "repeatedDescendantId": "eGThG7qRQ",
+                          "limit": "10"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "id": "DKBQFLkFAeGThG7qRQ",
+                          "$replicaId": "DKBQFLkFA",
+                          "$originalId": "eGThG7qRQ",
+                          "attributes": {
+                            "layout": "stack",
+                            "stackDirection": "horizontal",
+                            "stackDistribution": "start",
+                            "stackAlignment": "center",
+                            "gap": 10,
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "id": "DKBQFLkFAwXYzRMEu7",
+                              "$replicaId": "DKBQFLkFA",
+                              "$originalId": "wXYzRMEu7",
+                              "attributes": {
+                                "fill": "var(--variable-ngQ4P59ny)",
+                                "layout": "null",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "320px"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "DKBQFLkFAlVr6LuIKR",
+          "$replicaId": "DKBQFLkFA",
+          "$originalId": "lVr6LuIKR",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "DKBQFLkFAQjVCt12sA",
+              "$replicaId": "DKBQFLkFA",
+              "$originalId": "QjVCt12sA",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Phone",
+      "id": "eYAgn2Ju6",
+      "$isReplica": true,
+      "$originalId": "OWZJ93rpx",
+      "$mediaQuery": {
+        "range": "(max-width: 809.98px)",
+        "name": "Phone"
+      },
+      "attributes": {
+        "left": "2450px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "390px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "eYAgn2Ju6Bv7D56O7C",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "eYAgn2Ju6",
+          "$originalId": "Bv7D56O7C",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "eYAgn2Ju6X_Do62Nua",
+          "component": "f9mwZML90",
+          "$replicaId": "eYAgn2Ju6",
+          "$originalId": "X_Do62Nua",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Phone",
+            "$control__label": "OUR STORY",
+            "$control__headline": "Built to last. Built to welcome.",
+            "$control__paragraph": "Independently owned since 2009. Built on the right room, honest food, and a team that cares.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "true",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/BpyFXgVjTsWyjqKRvSNpMKx3S0.jpg",
+              "alt": "dish on white ceramic plate"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "720px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "eYAgn2Ju6xN_UQ_ROf",
+          "$replicaId": "eYAgn2Ju6",
+          "$originalId": "xN_UQ_ROf",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "96px",
+            "overflow": "clip",
+            "padding": "48px 24px 80px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "eYAgn2Ju6d1SSwIRBg",
+              "$replicaId": "eYAgn2Ju6",
+              "$originalId": "d1SSwIRBg",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "eYAgn2Ju6xpzSbgq2C",
+                  "$replicaId": "eYAgn2Ju6",
+                  "$originalId": "xpzSbgq2C",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "center",
+                    "stackWrapEnabled": false,
+                    "gap": "0px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Photo",
+                      "id": "eYAgn2Ju6sEUdpztuX",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "sEUdpztuX",
+                      "attributes": {
+                        "fill": "https://framerusercontent.com/images/l6KUfoXRIZlcvtwhFDafwdbkM.jpg",
+                        "altText": "Marco Ricci",
+                        "layout": "null",
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "320px"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "name": "Container",
+                      "id": "eYAgn2Ju6xojiYOMSm",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "xojiYOMSm",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": 10,
+                        "overflow": "clip",
+                        "padding": "48px 24px 48px 24px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "eYAgn2Ju6SRUPBvAcN",
+                          "component": "AQfPbQAWg",
+                          "$replicaId": "eYAgn2Ju6",
+                          "$originalId": "SRUPBvAcN",
+                          "$componentDisplayName": "Section Headline with Paragraph",
+                          "attributes": {
+                            "$control__sectionLabel": "WHO WE ARE",
+                            "$control__sectionHeadline": "The details that matter.",
+                            "$control__text": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:eYAgn2Ju6SRUPBvAcN/U9HYmlqEO:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:eYAgn2Ju6SRUPBvAcN/U9HYmlqEO:0:0",
+                                    "attributes": {
+                                      "text": "The Hotel opened in 2009 with a simple idea: that a great hotel should feel like somewhere, not anywhere. Independently owned and operated, we have never chased scale over quality."
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "TextBlock",
+                                "id": "v:eYAgn2Ju6SRUPBvAcN/U9HYmlqEO:1",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:eYAgn2Ju6SRUPBvAcN/U9HYmlqEO:1:0",
+                                    "attributes": {
+                                      "text": "Every decision we make, from the mattresses to the menu, comes back to the same question: does this make the stay better? If the answer is no, we do not do it."
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "$control__buttonVisability": "false",
+                            "$control__buttonText": "Meet the Team",
+                            "$control__padding": "0px",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "eYAgn2Ju6ETOMppPpp",
+              "$replicaId": "eYAgn2Ju6",
+              "$originalId": "ETOMppPpp",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "eYAgn2Ju6zIJ4_VUwR",
+                  "$replicaId": "eYAgn2Ju6",
+                  "$originalId": "zIJ4_VUwR",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "layout": "grid",
+                    "gridAlignment": "center",
+                    "gridColumnCount": 1,
+                    "gridColumnMinWidth": "50px",
+                    "gridRowCount": 1,
+                    "gridRowHeightType": "auto",
+                    "gridRowHeight": "200px",
+                    "gap": "2px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "eYAgn2Ju6Hxl3pC4U1",
+                      "component": "fe3XXezeC",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "Hxl3pC4U1",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Years in hospitality",
+                        "$control__numbersEnd": "16",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "eYAgn2Ju6yb0ZOHBTF",
+                      "component": "fe3XXezeC",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "yb0ZOHBTF",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Room types",
+                        "$control__numbersEnd": "6",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "eYAgn2Ju6F4tnxAfxY",
+                      "component": "fe3XXezeC",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "F4tnxAfxY",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Restaurant seats",
+                        "$control__numbersEnd": "72",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "eYAgn2Ju6yZ3JBNYzT",
+                      "component": "fe3XXezeC",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "yZ3JBNYzT",
+                      "$componentDisplayName": "Animated Number Card",
+                      "attributes": {
+                        "$control__title": "Average guest rating",
+                        "$control__numbersEnd": "5",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "eYAgn2Ju6CFe_NpKiy",
+              "$replicaId": "eYAgn2Ju6",
+              "$originalId": "CFe_NpKiy",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "eYAgn2Ju6XjoSjkwpr",
+                  "$replicaId": "eYAgn2Ju6",
+                  "$originalId": "XjoSjkwpr",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "eYAgn2Ju6y8uG5yHyl",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "y8uG5yHyl",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE TEAM",
+                        "$control__sectionHeadline": "The people behind the stay.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "eYAgn2Ju6DbHYS6lVi",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "DbHYS6lVi",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "gap": "48px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Team",
+                          "repeatedDescendantId": "C5xkrSoZG",
+                          "limit": "10"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "id": "eYAgn2Ju6C5xkrSoZG",
+                          "$replicaId": "eYAgn2Ju6",
+                          "$originalId": "C5xkrSoZG",
+                          "attributes": {
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "gap": "24px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "id": "eYAgn2Ju6L1rg1btMB",
+                              "$replicaId": "eYAgn2Ju6",
+                              "$originalId": "L1rg1btMB",
+                              "attributes": {
+                                "fill": "var(--variable-FVVdKGF5F)",
+                                "layout": "null",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "320px"
+                              }
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Content",
+                              "id": "eYAgn2Ju6lJTXu9AU4",
+                              "$replicaId": "eYAgn2Ju6",
+                              "$originalId": "lJTXu9AU4",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "16px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Name + role",
+                                  "id": "eYAgn2Ju6LRzFgN_Ob",
+                                  "$replicaId": "eYAgn2Ju6",
+                                  "$originalId": "LRzFgN_Ob",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "center",
+                                    "stackAlignment": "center",
+                                    "stackWrapEnabled": false,
+                                    "gap": "4px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Name",
+                                      "id": "eYAgn2Ju6APYL28cYp",
+                                      "$replicaId": "eYAgn2Ju6",
+                                      "$originalId": "APYL28cYp",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "text": "var(--variable-MyPvrDjXJ)",
+                                        "textStylePreset": "Heading 4",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Role",
+                                      "id": "eYAgn2Ju6uOjfzQaum",
+                                      "$replicaId": "eYAgn2Ju6",
+                                      "$originalId": "uOjfzQaum",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "text": "var(--variable-oouNXsRhw)",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Bio",
+                                  "id": "eYAgn2Ju6KTiXuNSnK",
+                                  "$replicaId": "eYAgn2Ju6",
+                                  "$originalId": "KTiXuNSnK",
+                                  "attributes": {
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-YRJkYkc3N)",
+                                    "stylePresetParagraph": "Body"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "id": "eYAgn2Ju6jdRckHLWW",
+              "$replicaId": "eYAgn2Ju6",
+              "$originalId": "jdRckHLWW",
+              "attributes": {
+                "appearEffect": {
+                  "threshold": 0,
+                  "trigger": "onInView",
+                  "replay": false,
+                  "enter": {
+                    "opacity": 0,
+                    "x": 0,
+                    "y": 60,
+                    "scale": 1,
+                    "rotate": 0,
+                    "rotateX": 0,
+                    "rotateY": 0,
+                    "skewX": 0,
+                    "skewY": 0,
+                    "transition": "spring-duration 1s 0 0.1s",
+                    "stagger": "0s"
+                  }
+                },
+                "fill": "https://framerusercontent.com/images/Apb9fpzf6k34xQymPWUCZyP4bQ.jpg",
+                "altText": "Hotel restaurant",
+                "htmlTag": "figure",
+                "layout": "null",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "480px"
+              }
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "eYAgn2Ju6vGW4jqxPR",
+              "$replicaId": "eYAgn2Ju6",
+              "$originalId": "vGW4jqxPR",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "64px",
+                "position": "relative",
+                "width": "100%",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "eYAgn2Ju6awdyA7rDl",
+                  "$replicaId": "eYAgn2Ju6",
+                  "$originalId": "awdyA7rDl",
+                  "attributes": {
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "start",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "eYAgn2Ju6Q9t9PO28q",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "Q9t9PO28q",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "$control__sectionLabel": "THE HOTEL",
+                        "$control__sectionHeadline": "A look inside.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "eYAgn2Ju6A4Bb9Aj8y",
+                      "$replicaId": "eYAgn2Ju6",
+                      "$originalId": "A4Bb9Aj8y",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "grid",
+                        "gridAlignment": "center",
+                        "gridColumnCount": 1,
+                        "gridColumnMinWidth": "50px",
+                        "gap": "8px 8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Gallery",
+                          "repeatedDescendantId": "eGThG7qRQ",
+                          "limit": "10"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "id": "eYAgn2Ju6eGThG7qRQ",
+                          "$replicaId": "eYAgn2Ju6",
+                          "$originalId": "eGThG7qRQ",
+                          "attributes": {
+                            "layout": "stack",
+                            "stackDirection": "horizontal",
+                            "stackDistribution": "start",
+                            "stackAlignment": "center",
+                            "gap": 10,
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "id": "eYAgn2Ju6wXYzRMEu7",
+                              "$replicaId": "eYAgn2Ju6",
+                              "$originalId": "wXYzRMEu7",
+                              "attributes": {
+                                "fill": "var(--variable-ngQ4P59ny)",
+                                "layout": "null",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "320px"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "eYAgn2Ju6lVr6LuIKR",
+          "$replicaId": "eYAgn2Ju6",
+          "$originalId": "lVr6LuIKR",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "eYAgn2Ju6QjVCt12sA",
+              "$replicaId": "eYAgn2Ju6",
+              "$originalId": "QjVCt12sA",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

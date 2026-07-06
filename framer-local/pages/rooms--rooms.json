@@ -1,0 +1,3638 @@
+{
+  "type": "WebPageNode",
+  "id": "sCKQTCXad",
+  "name": "/rooms/:Rooms",
+  "variables": [],
+  "$parentId": "sn7IXw6X9",
+  "$layoutTemplateId": "cd4ShtEtf",
+  "$layoutTemplateDisplayName": "Template",
+  "$breakpoints": [
+    {
+      "id": "NA6bpAzxx",
+      "name": "Desktop",
+      "mediaQueryRange": "(min-width: 1200px)"
+    },
+    {
+      "id": "A61qm0PIv",
+      "name": "Tablet",
+      "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+    },
+    {
+      "id": "CeBsSxyuG",
+      "name": "Phone",
+      "mediaQueryRange": "(max-width: 809.98px)"
+    }
+  ],
+  "attributes": {
+    "$control__scrollSection": "{\"target\":\"dej4KvKgV\"}",
+    "layoutTemplate": "default",
+    "path": "/rooms/:Rooms"
+  },
+  "children": [
+    {
+      "type": "FrameNode",
+      "name": "Desktop",
+      "id": "NA6bpAzxx",
+      "$isPrimary": true,
+      "$mediaQuery": {
+        "range": "(min-width: 1200px)",
+        "name": "Desktop"
+      },
+      "attributes": {
+        "left": "0px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "1200px",
+        "height": "auto",
+        "transition": "spring-duration 0.4s 0.2 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "EBDLgMjhe",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "sQ289UuKt",
+          "component": "TPeRMXbkn",
+          "$componentDisplayName": "Room Hero",
+          "attributes": {
+            "$control__variant": "Desktop",
+            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+            "position": "relative",
+            "width": "1fr",
+            "height": "480px",
+            "zIndex": "1"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "Xi_D0Hdzw",
+          "attributes": {
+            "appearEffect": {
+              "threshold": 0.5,
+              "trigger": "onMount",
+              "enter": {
+                "opacity": 1,
+                "x": 0,
+                "y": 50,
+                "scale": 1,
+                "rotate": 0,
+                "rotateX": 0,
+                "rotateY": 0,
+                "skewX": 0,
+                "skewY": 0,
+                "transition": "spring-duration 1.2s 0 0.1s",
+                "stagger": "0s"
+              }
+            },
+            "flowEffect": {
+              "transition": "spring-duration 0.6s 0 0s"
+            },
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "center",
+            "gap": "64px",
+            "padding": "0px 24px 80px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "zIndex": "2"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "B8zy9e2ZQ",
+              "attributes": {
+                "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                "flowEffect": {},
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "horizontal",
+                "stackDistribution": "center",
+                "stackAlignment": "start",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "padding": "48px",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "maxWidth": "1284px"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "qbyDcepWH",
+                  "attributes": {
+                    "flowEffect": {
+                      "transition": "spring-duration 0.6s 0 0s"
+                    },
+                    "layout": "stack",
+                    "stackDirection": "horizontal",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Left",
+                      "id": "MU3cAu5Jv",
+                      "attributes": {
+                        "flowEffect": {},
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": "48px",
+                        "overflow": "clip",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "name": "Room Info",
+                          "id": "DRqEHFK_U",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "48px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "Y8Yw9FbFA",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "xXNGjDi0a",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "text": {
+                                      "from": "var(--variable-s_5P30m6p)",
+                                      "transforms": [
+                                        {
+                                          "name": "enumToDisplayName"
+                                        }
+                                      ]
+                                    },
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "T3mRpY9u1",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-LmnFrKT0w)",
+                                    "textStylePreset": "Heading 1",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Short Descriotion",
+                                  "id": "Im6Wt0RXT",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "paragraphSpacing": 32,
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "text": "var(--variable-rnVELr0qj)",
+                                    "stylePresetHeading1": "Heading 1",
+                                    "stylePresetHeading2": "Heading 2",
+                                    "stylePresetHeading3": "Heading 3",
+                                    "stylePresetHeading4": "Heading 4",
+                                    "stylePresetHeading5": "Heading 5",
+                                    "stylePresetParagraph": "Body"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "ComponentInstanceNode",
+                              "id": "KqLqZsoqJ",
+                              "component": "CVxHeOnN8",
+                              "$componentDisplayName": "Button",
+                              "attributes": {
+                                "$control__variant": "Primary Black L",
+                                "$control__buttonText": "Book Now",
+                                "$control__link": "https://www.booking.com/",
+                                "$control__newTab": "false",
+                                "$control__smoothScroll": "true",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "visible": "false"
+                              }
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Info Table",
+                              "id": "ODaTM08BQ",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "horizontal",
+                                "stackDistribution": "start",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "48px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Guests",
+                                  "id": "n0WVtw7Vm",
+                                  "attributes": {
+                                    "borderStyle": "solid",
+                                    "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                                    "borderRight": "1px",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "padding": "0px 48px 0px 0px",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "q_1lVFApc",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:q_1lVFApc:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:q_1lVFApc:0:0",
+                                              "attributes": {
+                                                "text": "Max Guests"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Number",
+                                      "id": "NvOUlvZlD",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "text": {
+                                          "from": "var(--variable-CW_zNVeK6)",
+                                          "transforms": [
+                                            {
+                                              "name": "toString"
+                                            }
+                                          ]
+                                        },
+                                        "textStylePreset": "Heading 3",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Room Size",
+                                  "id": "hHHxkJqhY",
+                                  "attributes": {
+                                    "borderStyle": "solid",
+                                    "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                                    "borderRight": "1px",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "padding": "0px 48px 0px 0px",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "ggUr2fLKA",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:ggUr2fLKA:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:ggUr2fLKA:0:0",
+                                              "attributes": {
+                                                "text": "Room size:"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FrameNode",
+                                      "name": "Size",
+                                      "id": "XfwIfqTFc",
+                                      "attributes": {
+                                        "layout": "stack",
+                                        "stackDirection": "horizontal",
+                                        "stackDistribution": "start",
+                                        "stackAlignment": "center",
+                                        "stackWrapEnabled": false,
+                                        "gap": "2px",
+                                        "overflow": "clip",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "RichTextNode",
+                                          "name": "Number",
+                                          "id": "YoJdVcs32",
+                                          "attributes": {
+                                            "linkStylePreset": "Body Large",
+                                            "position": "relative",
+                                            "width": "auto",
+                                            "height": "auto",
+                                            "text": {
+                                              "from": "var(--variable-l0SPmbjnE)",
+                                              "transforms": [
+                                                {
+                                                  "name": "toString"
+                                                }
+                                              ]
+                                            },
+                                            "textStylePreset": "Heading 3",
+                                            "textAlignment": "left",
+                                            "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                          }
+                                        },
+                                        {
+                                          "type": "RichTextNode",
+                                          "id": "E7kunbE9J",
+                                          "attributes": {
+                                            "linkStylePreset": "Body Large",
+                                            "position": "relative",
+                                            "width": "auto",
+                                            "height": "auto",
+                                            "textStylePreset": "Body Semibold",
+                                            "textAlignment": "left",
+                                            "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextBlock",
+                                              "id": "v:E7kunbE9J:0",
+                                              "attributes": {
+                                                "tag": "p"
+                                              },
+                                              "children": [
+                                                {
+                                                  "type": "TextRun",
+                                                  "id": "v:E7kunbE9J:0:0",
+                                                  "attributes": {
+                                                    "text": "m²"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Bed Type",
+                                  "id": "kgWUZrRbY",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "padding": "0px 48px 0px 0px",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "Hj4zWW3ts",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:Hj4zWW3ts:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:Hj4zWW3ts:0:0",
+                                              "attributes": {
+                                                "text": "Bed type:"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Type",
+                                      "id": "rUkpMds8b",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "text": "var(--variable-WQQ5QQzKf)",
+                                        "textStylePreset": "Heading 3",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "name": "What's Included",
+                          "id": "H2XJ_Kfty",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "24px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "ZJX7PwJ0t",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "uKxXKdXlz",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:uKxXKdXlz:0",
+                                      "attributes": {
+                                        "tag": "p"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:uKxXKdXlz:0:0",
+                                          "attributes": {
+                                            "text": "WHAT'S INCLUDED"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "r8or1ZO2a",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "textStylePreset": "Heading 2",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:r8or1ZO2a:0",
+                                      "attributes": {
+                                        "tag": "h2"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:r8or1ZO2a:0:0",
+                                          "attributes": {
+                                            "text": "Room amenities."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "RichTextNode",
+                              "name": "Amenities",
+                              "id": "ZCcjYk50c",
+                              "attributes": {
+                                "paragraphSpacing": 32,
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "text": "var(--variable-pX_pbnANu)",
+                                "stylePresetParagraph": "Body Large"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "name": "About",
+                          "id": "MxrMBwyEP",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "24px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "P6zUSc6R8",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "ZKDPSsu15",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:ZKDPSsu15:0",
+                                      "attributes": {
+                                        "tag": "p"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:ZKDPSsu15:0:0",
+                                          "attributes": {
+                                            "text": "ABOUT THIS ROOM"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "BwK2Asn0g",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "textStylePreset": "Heading 2",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:BwK2Asn0g:0",
+                                      "attributes": {
+                                        "tag": "h2"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:BwK2Asn0g:0:0",
+                                          "attributes": {
+                                            "text": "The details that matter."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "RichTextNode",
+                              "name": "Full Description",
+                              "id": "feElzBKhl",
+                              "attributes": {
+                                "paragraphSpacing": 32,
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "maxWidth": "90%",
+                                "text": "var(--variable-UU3_aUcjd)",
+                                "stylePresetParagraph": "Body"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "name": "FAQs",
+                          "id": "VAOAYkh6p",
+                          "attributes": {
+                            "flowEffect": {
+                              "transition": "spring-duration 0.6s 0 0s"
+                            },
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "24px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "KOvW7LBPc",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "yr8AH8HPU",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:yr8AH8HPU:0",
+                                      "attributes": {
+                                        "tag": "p"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:yr8AH8HPU:0:0",
+                                          "attributes": {
+                                            "text": "FAQS"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "MytuV42xG",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "textStylePreset": "Heading 2",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:MytuV42xG:0",
+                                      "attributes": {
+                                        "tag": "h2"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:MytuV42xG:0:0",
+                                          "attributes": {
+                                            "text": "Before you arrive."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FrameNode",
+                              "id": "LAzN6e_Js",
+                              "attributes": {
+                                "flowEffect": {},
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "start",
+                                "gap": 20,
+                                "position": "relative",
+                                "collectionList": {
+                                  "collection": "FAQs",
+                                  "repeatedDescendantId": "SM2PHnkyJ",
+                                  "limit": "10"
+                                },
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "ComponentInstanceNode",
+                                  "id": "SM2PHnkyJ",
+                                  "component": "vvF2CEvfr",
+                                  "$componentDisplayName": "FAQ Element",
+                                  "attributes": {
+                                    "$control__variant": "Closed",
+                                    "$control__question": "var(--variable-F4XL5mpht)",
+                                    "$control__answer": "var(--variable-i0K8kTEXt)",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "MtLKxRRIa",
+                      "component": "iJmPMWJax",
+                      "$componentDisplayName": "Booking Card",
+                      "attributes": {
+                        "$control__currency": "var(--variable-z0tLkA06X)",
+                        "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                        "$control__pricingSmallText": "Taxes and fees not included.",
+                        "$control__buttonText": "Book Now",
+                        "$control__buttonLink": "https://www.booking.com/",
+                        "$control__bookingSmallText": "Free cancellation available on most rates.",
+                        "$control__padding": "48px",
+                        "position": "sticky",
+                        "positionStickyTop": 96,
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "35%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "jBoX6VMcu",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "kISKPUnWj",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-e42b162e-de6f-49f2-8501-e67127b2ab3d)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "padding": "96px 48px 96px 48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "QwepFMYHB",
+                      "component": "TOI7zJbFB",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "$control__sectionLabel": "EXPLORE MORE",
+                        "$control__sectionHeadline": "Other rooms you may like.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "loqEcNPrw",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Rooms",
+                          "repeatedDescendantId": "uCOCGb519",
+                          "limit": "3",
+                          "sorting": [
+                            {
+                              "variable": "createdAt",
+                              "direction": "desc"
+                            }
+                          ]
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "uCOCGb519",
+                          "component": "fclm0HQnA",
+                          "$componentDisplayName": "Room Card",
+                          "attributes": {
+                            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+                            "$control__name": "var(--variable-LmnFrKT0w)",
+                            "$control__textContent": {
+                              "from": "var(--variable-s_5P30m6p)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__currency": "var(--variable-z0tLkA06X)",
+                            "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                            "$control__fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                            "$control__link": {
+                              "href": "/rooms/:slug",
+                              "collectionItem": "var(--variable-dsZM117_y)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "pJGpQ5paT",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": false,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "dej4KvKgV",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Tablet",
+      "id": "A61qm0PIv",
+      "$isReplica": true,
+      "$originalId": "NA6bpAzxx",
+      "$mediaQuery": {
+        "range": "(min-width: 810px) and (max-width: 1199.98px)",
+        "name": "Tablet"
+      },
+      "attributes": {
+        "left": "1300px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "810px",
+        "height": "auto",
+        "transition": "spring-duration 0.4s 0.2 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "A61qm0PIvEBDLgMjhe",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "A61qm0PIv",
+          "$originalId": "EBDLgMjhe",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "A61qm0PIvsQ289UuKt",
+          "component": "TPeRMXbkn",
+          "$replicaId": "A61qm0PIv",
+          "$originalId": "sQ289UuKt",
+          "$componentDisplayName": "Room Hero",
+          "attributes": {
+            "$control__variant": "Tablet",
+            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+            "position": "relative",
+            "width": "1fr",
+            "height": "400px",
+            "zIndex": "1"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "A61qm0PIvXi_D0Hdzw",
+          "$replicaId": "A61qm0PIv",
+          "$originalId": "Xi_D0Hdzw",
+          "attributes": {
+            "appearEffect": {
+              "threshold": 0.5,
+              "trigger": "onMount",
+              "enter": {
+                "opacity": 1,
+                "x": 0,
+                "y": 50,
+                "scale": 1,
+                "rotate": 0,
+                "rotateX": 0,
+                "rotateY": 0,
+                "skewX": 0,
+                "skewY": 0,
+                "transition": "spring-duration 1.2s 0 0.1s",
+                "stagger": "0s"
+              }
+            },
+            "flowEffect": {
+              "transition": "spring-duration 0.6s 0 0s"
+            },
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "center",
+            "gap": "64px",
+            "padding": "0px 24px 80px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "zIndex": "2"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "A61qm0PIvB8zy9e2ZQ",
+              "$replicaId": "A61qm0PIv",
+              "$originalId": "B8zy9e2ZQ",
+              "attributes": {
+                "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                "flowEffect": {},
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "horizontal",
+                "stackDistribution": "center",
+                "stackAlignment": "start",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "padding": "48px 24px 48px 24px",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "maxWidth": "1284px"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "A61qm0PIvqbyDcepWH",
+                  "$replicaId": "A61qm0PIv",
+                  "$originalId": "qbyDcepWH",
+                  "attributes": {
+                    "flowEffect": {
+                      "transition": "spring-duration 0.6s 0 0s"
+                    },
+                    "layout": "stack",
+                    "stackDirection": "horizontal",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Left",
+                      "id": "A61qm0PIvMU3cAu5Jv",
+                      "$replicaId": "A61qm0PIv",
+                      "$originalId": "MU3cAu5Jv",
+                      "attributes": {
+                        "flowEffect": {},
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": "48px",
+                        "overflow": "clip",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "name": "Room Info",
+                          "id": "A61qm0PIvDRqEHFK_U",
+                          "$replicaId": "A61qm0PIv",
+                          "$originalId": "DRqEHFK_U",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "48px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "A61qm0PIvY8Yw9FbFA",
+                              "$replicaId": "A61qm0PIv",
+                              "$originalId": "Y8Yw9FbFA",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "A61qm0PIvxXNGjDi0a",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "xXNGjDi0a",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "text": {
+                                      "from": "var(--variable-s_5P30m6p)",
+                                      "transforms": [
+                                        {
+                                          "name": "enumToDisplayName"
+                                        }
+                                      ]
+                                    },
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "A61qm0PIvT3mRpY9u1",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "T3mRpY9u1",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-LmnFrKT0w)",
+                                    "textStylePreset": "Heading 1",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Short Descriotion",
+                                  "id": "A61qm0PIvIm6Wt0RXT",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "Im6Wt0RXT",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "paragraphSpacing": 32,
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "text": "var(--variable-rnVELr0qj)",
+                                    "stylePresetHeading1": "Heading 1",
+                                    "stylePresetHeading2": "Heading 2",
+                                    "stylePresetHeading3": "Heading 3",
+                                    "stylePresetHeading4": "Heading 4",
+                                    "stylePresetHeading5": "Heading 5",
+                                    "stylePresetParagraph": "Body"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "ComponentInstanceNode",
+                              "id": "A61qm0PIvKqLqZsoqJ",
+                              "component": "CVxHeOnN8",
+                              "$replicaId": "A61qm0PIv",
+                              "$originalId": "KqLqZsoqJ",
+                              "$componentDisplayName": "Button",
+                              "attributes": {
+                                "$control__variant": "Primary Black L",
+                                "$control__buttonText": "Book Now",
+                                "$control__link": "https://www.booking.com/",
+                                "$control__newTab": "false",
+                                "$control__smoothScroll": "true",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "visible": "false"
+                              }
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Info Table",
+                              "id": "A61qm0PIvODaTM08BQ",
+                              "$replicaId": "A61qm0PIv",
+                              "$originalId": "ODaTM08BQ",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "horizontal",
+                                "stackDistribution": "start",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "24px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Guests",
+                                  "id": "A61qm0PIvn0WVtw7Vm",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "n0WVtw7Vm",
+                                  "attributes": {
+                                    "borderStyle": "solid",
+                                    "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                                    "borderRight": "1px",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "padding": "0px 24px 0px 0px",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "A61qm0PIvq_1lVFApc",
+                                      "$replicaId": "A61qm0PIv",
+                                      "$originalId": "q_1lVFApc",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:A61qm0PIvq_1lVFApc:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:A61qm0PIvq_1lVFApc:0:0",
+                                              "attributes": {
+                                                "text": "Max Guests"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Number",
+                                      "id": "A61qm0PIvNvOUlvZlD",
+                                      "$replicaId": "A61qm0PIv",
+                                      "$originalId": "NvOUlvZlD",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "text": {
+                                          "from": "var(--variable-CW_zNVeK6)",
+                                          "transforms": [
+                                            {
+                                              "name": "toString"
+                                            }
+                                          ]
+                                        },
+                                        "textStylePreset": "Heading 3",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Room Size",
+                                  "id": "A61qm0PIvhHHxkJqhY",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "hHHxkJqhY",
+                                  "attributes": {
+                                    "borderStyle": "solid",
+                                    "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                                    "borderRight": "1px",
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "padding": "0px 24px 0px 0px",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "A61qm0PIvggUr2fLKA",
+                                      "$replicaId": "A61qm0PIv",
+                                      "$originalId": "ggUr2fLKA",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:A61qm0PIvggUr2fLKA:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:A61qm0PIvggUr2fLKA:0:0",
+                                              "attributes": {
+                                                "text": "Room size:"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FrameNode",
+                                      "name": "Size",
+                                      "id": "A61qm0PIvXfwIfqTFc",
+                                      "$replicaId": "A61qm0PIv",
+                                      "$originalId": "XfwIfqTFc",
+                                      "attributes": {
+                                        "layout": "stack",
+                                        "stackDirection": "horizontal",
+                                        "stackDistribution": "start",
+                                        "stackAlignment": "center",
+                                        "stackWrapEnabled": false,
+                                        "gap": "2px",
+                                        "overflow": "clip",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "RichTextNode",
+                                          "name": "Number",
+                                          "id": "A61qm0PIvYoJdVcs32",
+                                          "$replicaId": "A61qm0PIv",
+                                          "$originalId": "YoJdVcs32",
+                                          "attributes": {
+                                            "linkStylePreset": "Body Large",
+                                            "position": "relative",
+                                            "width": "auto",
+                                            "height": "auto",
+                                            "text": {
+                                              "from": "var(--variable-l0SPmbjnE)",
+                                              "transforms": [
+                                                {
+                                                  "name": "toString"
+                                                }
+                                              ]
+                                            },
+                                            "textStylePreset": "Heading 3",
+                                            "textAlignment": "left",
+                                            "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                          }
+                                        },
+                                        {
+                                          "type": "RichTextNode",
+                                          "id": "A61qm0PIvE7kunbE9J",
+                                          "$replicaId": "A61qm0PIv",
+                                          "$originalId": "E7kunbE9J",
+                                          "attributes": {
+                                            "linkStylePreset": "Body Large",
+                                            "position": "relative",
+                                            "width": "auto",
+                                            "height": "auto",
+                                            "textStylePreset": "Body Semibold",
+                                            "textAlignment": "left",
+                                            "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextBlock",
+                                              "id": "v:A61qm0PIvE7kunbE9J:0",
+                                              "attributes": {
+                                                "tag": "p"
+                                              },
+                                              "children": [
+                                                {
+                                                  "type": "TextRun",
+                                                  "id": "v:A61qm0PIvE7kunbE9J:0:0",
+                                                  "attributes": {
+                                                    "text": "m²"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Bed Type",
+                                  "id": "A61qm0PIvkgWUZrRbY",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "kgWUZrRbY",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "vertical",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "padding": "0px 24px 0px 0px",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "A61qm0PIvHj4zWW3ts",
+                                      "$replicaId": "A61qm0PIv",
+                                      "$originalId": "Hj4zWW3ts",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:A61qm0PIvHj4zWW3ts:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:A61qm0PIvHj4zWW3ts:0:0",
+                                              "attributes": {
+                                                "text": "Bed type:"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Type",
+                                      "id": "A61qm0PIvrUkpMds8b",
+                                      "$replicaId": "A61qm0PIv",
+                                      "$originalId": "rUkpMds8b",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "auto",
+                                        "height": "auto",
+                                        "text": "var(--variable-WQQ5QQzKf)",
+                                        "textStylePreset": "Heading 3",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "name": "What's Included",
+                          "id": "A61qm0PIvH2XJ_Kfty",
+                          "$replicaId": "A61qm0PIv",
+                          "$originalId": "H2XJ_Kfty",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "24px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "A61qm0PIvZJX7PwJ0t",
+                              "$replicaId": "A61qm0PIv",
+                              "$originalId": "ZJX7PwJ0t",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "A61qm0PIvuKxXKdXlz",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "uKxXKdXlz",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:A61qm0PIvuKxXKdXlz:0",
+                                      "attributes": {
+                                        "tag": "p"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:A61qm0PIvuKxXKdXlz:0:0",
+                                          "attributes": {
+                                            "text": "WHAT'S INCLUDED"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "A61qm0PIvr8or1ZO2a",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "r8or1ZO2a",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "textStylePreset": "Heading 2",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:A61qm0PIvr8or1ZO2a:0",
+                                      "attributes": {
+                                        "tag": "h2"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:A61qm0PIvr8or1ZO2a:0:0",
+                                          "attributes": {
+                                            "text": "Room amenities."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "RichTextNode",
+                              "name": "Amenities",
+                              "id": "A61qm0PIvZCcjYk50c",
+                              "$replicaId": "A61qm0PIv",
+                              "$originalId": "ZCcjYk50c",
+                              "attributes": {
+                                "paragraphSpacing": 32,
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "text": "var(--variable-pX_pbnANu)",
+                                "stylePresetParagraph": "Body Large"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "name": "About",
+                          "id": "A61qm0PIvMxrMBwyEP",
+                          "$replicaId": "A61qm0PIv",
+                          "$originalId": "MxrMBwyEP",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "24px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "A61qm0PIvP6zUSc6R8",
+                              "$replicaId": "A61qm0PIv",
+                              "$originalId": "P6zUSc6R8",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "A61qm0PIvZKDPSsu15",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "ZKDPSsu15",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:A61qm0PIvZKDPSsu15:0",
+                                      "attributes": {
+                                        "tag": "p"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:A61qm0PIvZKDPSsu15:0:0",
+                                          "attributes": {
+                                            "text": "ABOUT THIS ROOM"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "A61qm0PIvBwK2Asn0g",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "BwK2Asn0g",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "textStylePreset": "Heading 2",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:A61qm0PIvBwK2Asn0g:0",
+                                      "attributes": {
+                                        "tag": "h2"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:A61qm0PIvBwK2Asn0g:0:0",
+                                          "attributes": {
+                                            "text": "The details that matter."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "RichTextNode",
+                              "name": "Full Description",
+                              "id": "A61qm0PIvfeElzBKhl",
+                              "$replicaId": "A61qm0PIv",
+                              "$originalId": "feElzBKhl",
+                              "attributes": {
+                                "paragraphSpacing": 32,
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "maxWidth": "90%",
+                                "text": "var(--variable-UU3_aUcjd)",
+                                "stylePresetParagraph": "Body"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "name": "FAQs",
+                          "id": "A61qm0PIvVAOAYkh6p",
+                          "$replicaId": "A61qm0PIv",
+                          "$originalId": "VAOAYkh6p",
+                          "attributes": {
+                            "flowEffect": {
+                              "transition": "spring-duration 0.6s 0 0s"
+                            },
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "24px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "A61qm0PIvKOvW7LBPc",
+                              "$replicaId": "A61qm0PIv",
+                              "$originalId": "KOvW7LBPc",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "A61qm0PIvyr8AH8HPU",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "yr8AH8HPU",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:A61qm0PIvyr8AH8HPU:0",
+                                      "attributes": {
+                                        "tag": "p"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:A61qm0PIvyr8AH8HPU:0:0",
+                                          "attributes": {
+                                            "text": "FAQS"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "A61qm0PIvMytuV42xG",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "MytuV42xG",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "textStylePreset": "Heading 2",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:A61qm0PIvMytuV42xG:0",
+                                      "attributes": {
+                                        "tag": "h2"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:A61qm0PIvMytuV42xG:0:0",
+                                          "attributes": {
+                                            "text": "Before you arrive."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FrameNode",
+                              "id": "A61qm0PIvLAzN6e_Js",
+                              "$replicaId": "A61qm0PIv",
+                              "$originalId": "LAzN6e_Js",
+                              "attributes": {
+                                "flowEffect": {},
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "start",
+                                "gap": 20,
+                                "position": "relative",
+                                "collectionList": {
+                                  "collection": "FAQs",
+                                  "repeatedDescendantId": "SM2PHnkyJ",
+                                  "limit": "10"
+                                },
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "ComponentInstanceNode",
+                                  "id": "A61qm0PIvSM2PHnkyJ",
+                                  "component": "vvF2CEvfr",
+                                  "$replicaId": "A61qm0PIv",
+                                  "$originalId": "SM2PHnkyJ",
+                                  "$componentDisplayName": "FAQ Element",
+                                  "attributes": {
+                                    "$control__variant": "Closed",
+                                    "$control__question": "var(--variable-F4XL5mpht)",
+                                    "$control__answer": "var(--variable-i0K8kTEXt)",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "A61qm0PIvMtLKxRRIa",
+                      "component": "iJmPMWJax",
+                      "$replicaId": "A61qm0PIv",
+                      "$originalId": "MtLKxRRIa",
+                      "$componentDisplayName": "Booking Card",
+                      "attributes": {
+                        "$control__currency": "var(--variable-z0tLkA06X)",
+                        "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                        "$control__pricingSmallText": "Taxes and fees not included.",
+                        "$control__buttonText": "Book Now",
+                        "$control__buttonLink": "https://www.booking.com/",
+                        "$control__bookingSmallText": "Free cancellation available on most rates.",
+                        "$control__padding": "48px 24px 48px 24px",
+                        "position": "sticky",
+                        "positionStickyTop": 96,
+                        "width": "1fr",
+                        "height": "auto",
+                        "maxWidth": "35%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "A61qm0PIvjBoX6VMcu",
+              "$replicaId": "A61qm0PIv",
+              "$originalId": "jBoX6VMcu",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "A61qm0PIvkISKPUnWj",
+                  "$replicaId": "A61qm0PIv",
+                  "$originalId": "kISKPUnWj",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-e42b162e-de6f-49f2-8501-e67127b2ab3d)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "padding": "96px 48px 96px 48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "A61qm0PIvQwepFMYHB",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "A61qm0PIv",
+                      "$originalId": "QwepFMYHB",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "$control__sectionLabel": "EXPLORE MORE",
+                        "$control__sectionHeadline": "Other rooms you may like.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "End",
+                        "$control__direction": "Horizontal",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "A61qm0PIvloqEcNPrw",
+                      "$replicaId": "A61qm0PIv",
+                      "$originalId": "loqEcNPrw",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "horizontal",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Rooms",
+                          "repeatedDescendantId": "uCOCGb519",
+                          "limit": "3",
+                          "sorting": [
+                            {
+                              "variable": "createdAt",
+                              "direction": "desc"
+                            }
+                          ]
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "A61qm0PIvuCOCGb519",
+                          "component": "fclm0HQnA",
+                          "$replicaId": "A61qm0PIv",
+                          "$originalId": "uCOCGb519",
+                          "$componentDisplayName": "Room Card",
+                          "attributes": {
+                            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+                            "$control__name": "var(--variable-LmnFrKT0w)",
+                            "$control__textContent": {
+                              "from": "var(--variable-s_5P30m6p)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__currency": "var(--variable-z0tLkA06X)",
+                            "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                            "$control__fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                            "$control__link": {
+                              "href": "/rooms/:slug",
+                              "collectionItem": "var(--variable-dsZM117_y)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "A61qm0PIvpJGpQ5paT",
+          "$replicaId": "A61qm0PIv",
+          "$originalId": "pJGpQ5paT",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": false,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "A61qm0PIvdej4KvKgV",
+              "$replicaId": "A61qm0PIv",
+              "$originalId": "dej4KvKgV",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Phone",
+      "id": "CeBsSxyuG",
+      "$isReplica": true,
+      "$originalId": "NA6bpAzxx",
+      "$mediaQuery": {
+        "range": "(max-width: 809.98px)",
+        "name": "Phone"
+      },
+      "attributes": {
+        "left": "2210px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "390px",
+        "height": "auto",
+        "transition": "spring-duration 0.4s 0.2 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "CeBsSxyuGEBDLgMjhe",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "CeBsSxyuG",
+          "$originalId": "EBDLgMjhe",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "CeBsSxyuGsQ289UuKt",
+          "component": "TPeRMXbkn",
+          "$replicaId": "CeBsSxyuG",
+          "$originalId": "sQ289UuKt",
+          "$componentDisplayName": "Room Hero",
+          "attributes": {
+            "$control__variant": "Phone",
+            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+            "position": "relative",
+            "width": "1fr",
+            "height": "400px",
+            "zIndex": "1"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "CeBsSxyuGXi_D0Hdzw",
+          "$replicaId": "CeBsSxyuG",
+          "$originalId": "Xi_D0Hdzw",
+          "attributes": {
+            "appearEffect": {
+              "threshold": 0.5,
+              "trigger": "onMount",
+              "enter": {
+                "opacity": 1,
+                "x": 0,
+                "y": 50,
+                "scale": 1,
+                "rotate": 0,
+                "rotateX": 0,
+                "rotateY": 0,
+                "skewX": 0,
+                "skewY": 0,
+                "transition": "spring-duration 1.2s 0 0.1s",
+                "stagger": "0s"
+              }
+            },
+            "flowEffect": {
+              "transition": "spring-duration 0.6s 0 0s"
+            },
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "start",
+            "stackAlignment": "center",
+            "gap": "96px",
+            "padding": "0px 0px 80px 0px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto",
+            "zIndex": "2"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "CeBsSxyuGB8zy9e2ZQ",
+              "$replicaId": "CeBsSxyuG",
+              "$originalId": "B8zy9e2ZQ",
+              "attributes": {
+                "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                "flowEffect": {},
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "horizontal",
+                "stackDistribution": "center",
+                "stackAlignment": "start",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "padding": "48px 24px 0px 24px",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto",
+                "maxWidth": "1284px"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "CeBsSxyuGqbyDcepWH",
+                  "$replicaId": "CeBsSxyuG",
+                  "$originalId": "qbyDcepWH",
+                  "attributes": {
+                    "flowEffect": {
+                      "transition": "spring-duration 0.6s 0 0s"
+                    },
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "80px",
+                    "overflow": "clip",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "name": "Left",
+                      "id": "CeBsSxyuGMU3cAu5Jv",
+                      "$replicaId": "CeBsSxyuG",
+                      "$originalId": "MU3cAu5Jv",
+                      "attributes": {
+                        "flowEffect": {},
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "start",
+                        "stackAlignment": "start",
+                        "stackWrapEnabled": false,
+                        "gap": "48px",
+                        "overflow": "clip",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "FrameNode",
+                          "name": "Room Info",
+                          "id": "CeBsSxyuGDRqEHFK_U",
+                          "$replicaId": "CeBsSxyuG",
+                          "$originalId": "DRqEHFK_U",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "32px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "CeBsSxyuGY8Yw9FbFA",
+                              "$replicaId": "CeBsSxyuG",
+                              "$originalId": "Y8Yw9FbFA",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "CeBsSxyuGxXNGjDi0a",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "xXNGjDi0a",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "text": {
+                                      "from": "var(--variable-s_5P30m6p)",
+                                      "transforms": [
+                                        {
+                                          "name": "enumToDisplayName"
+                                        }
+                                      ]
+                                    },
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "CeBsSxyuGT3mRpY9u1",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "T3mRpY9u1",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "text": "var(--variable-LmnFrKT0w)",
+                                    "textStylePreset": "Heading 1",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  }
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Short Descriotion",
+                                  "id": "CeBsSxyuGIm6Wt0RXT",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "Im6Wt0RXT",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "paragraphSpacing": 32,
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "text": "var(--variable-rnVELr0qj)",
+                                    "stylePresetHeading1": "Heading 1",
+                                    "stylePresetHeading2": "Heading 2",
+                                    "stylePresetHeading3": "Heading 3",
+                                    "stylePresetHeading4": "Heading 4",
+                                    "stylePresetHeading5": "Heading 5",
+                                    "stylePresetParagraph": "Body"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "ComponentInstanceNode",
+                              "id": "CeBsSxyuGKqLqZsoqJ",
+                              "component": "CVxHeOnN8",
+                              "$replicaId": "CeBsSxyuG",
+                              "$originalId": "KqLqZsoqJ",
+                              "$componentDisplayName": "Button",
+                              "attributes": {
+                                "$control__variant": "Primary Black L",
+                                "$control__buttonText": "Book Now",
+                                "$control__link": "https://www.booking.com/",
+                                "$control__newTab": "false",
+                                "$control__smoothScroll": "true",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              }
+                            },
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Info Table",
+                              "id": "CeBsSxyuGODaTM08BQ",
+                              "$replicaId": "CeBsSxyuG",
+                              "$originalId": "ODaTM08BQ",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "center",
+                                "stackWrapEnabled": false,
+                                "gap": "16px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Guests",
+                                  "id": "CeBsSxyuGn0WVtw7Vm",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "n0WVtw7Vm",
+                                  "attributes": {
+                                    "borderStyle": "solid",
+                                    "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                                    "borderBottom": "1px",
+                                    "layout": "stack",
+                                    "stackDirection": "horizontal",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "padding": "0px 0px 16px 0px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "CeBsSxyuGq_1lVFApc",
+                                      "$replicaId": "CeBsSxyuG",
+                                      "$originalId": "q_1lVFApc",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "maxWidth": "240px",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:CeBsSxyuGq_1lVFApc:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:CeBsSxyuGq_1lVFApc:0:0",
+                                              "attributes": {
+                                                "text": "Max Guests"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Number",
+                                      "id": "CeBsSxyuGNvOUlvZlD",
+                                      "$replicaId": "CeBsSxyuG",
+                                      "$originalId": "NvOUlvZlD",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "text": {
+                                          "from": "var(--variable-CW_zNVeK6)",
+                                          "transforms": [
+                                            {
+                                              "name": "toString"
+                                            }
+                                          ]
+                                        },
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "right",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Room Size",
+                                  "id": "CeBsSxyuGhHHxkJqhY",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "hHHxkJqhY",
+                                  "attributes": {
+                                    "borderStyle": "solid",
+                                    "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                                    "borderBottom": "1px",
+                                    "layout": "stack",
+                                    "stackDirection": "horizontal",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "padding": "0px 0px 16px 0px",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "CeBsSxyuGggUr2fLKA",
+                                      "$replicaId": "CeBsSxyuG",
+                                      "$originalId": "ggUr2fLKA",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "maxWidth": "240px",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:CeBsSxyuGggUr2fLKA:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:CeBsSxyuGggUr2fLKA:0:0",
+                                              "attributes": {
+                                                "text": "Room size:"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "FrameNode",
+                                      "name": "Size",
+                                      "id": "CeBsSxyuGXfwIfqTFc",
+                                      "$replicaId": "CeBsSxyuG",
+                                      "$originalId": "XfwIfqTFc",
+                                      "attributes": {
+                                        "layout": "stack",
+                                        "stackDirection": "horizontal",
+                                        "stackDistribution": "end",
+                                        "stackAlignment": "center",
+                                        "stackWrapEnabled": false,
+                                        "gap": "2px",
+                                        "overflow": "clip",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "RichTextNode",
+                                          "name": "Number",
+                                          "id": "CeBsSxyuGYoJdVcs32",
+                                          "$replicaId": "CeBsSxyuG",
+                                          "$originalId": "YoJdVcs32",
+                                          "attributes": {
+                                            "linkStylePreset": "Body Large",
+                                            "position": "relative",
+                                            "width": "auto",
+                                            "height": "auto",
+                                            "text": {
+                                              "from": "var(--variable-l0SPmbjnE)",
+                                              "transforms": [
+                                                {
+                                                  "name": "toString"
+                                                }
+                                              ]
+                                            },
+                                            "textStylePreset": "Body Large Semibold",
+                                            "textAlignment": "left",
+                                            "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                          }
+                                        },
+                                        {
+                                          "type": "RichTextNode",
+                                          "id": "CeBsSxyuGE7kunbE9J",
+                                          "$replicaId": "CeBsSxyuG",
+                                          "$originalId": "E7kunbE9J",
+                                          "attributes": {
+                                            "linkStylePreset": "Body Large",
+                                            "position": "relative",
+                                            "width": "auto",
+                                            "height": "auto",
+                                            "textStylePreset": "Body Semibold",
+                                            "textAlignment": "left",
+                                            "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextBlock",
+                                              "id": "v:CeBsSxyuGE7kunbE9J:0",
+                                              "attributes": {
+                                                "tag": "p"
+                                              },
+                                              "children": [
+                                                {
+                                                  "type": "TextRun",
+                                                  "id": "v:CeBsSxyuGE7kunbE9J:0:0",
+                                                  "attributes": {
+                                                    "text": "m²"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "FrameNode",
+                                  "name": "Bed Type",
+                                  "id": "CeBsSxyuGkgWUZrRbY",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "kgWUZrRbY",
+                                  "attributes": {
+                                    "layout": "stack",
+                                    "stackDirection": "horizontal",
+                                    "stackDistribution": "start",
+                                    "stackAlignment": "start",
+                                    "stackWrapEnabled": false,
+                                    "gap": "8px",
+                                    "overflow": "clip",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "RichTextNode",
+                                      "id": "CeBsSxyuGHj4zWW3ts",
+                                      "$replicaId": "CeBsSxyuG",
+                                      "$originalId": "Hj4zWW3ts",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "maxWidth": "240px",
+                                        "textStylePreset": "Body Semibold",
+                                        "textAlignment": "left",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextBlock",
+                                          "id": "v:CeBsSxyuGHj4zWW3ts:0",
+                                          "attributes": {
+                                            "tag": "p"
+                                          },
+                                          "children": [
+                                            {
+                                              "type": "TextRun",
+                                              "id": "v:CeBsSxyuGHj4zWW3ts:0:0",
+                                              "attributes": {
+                                                "text": "Bed type:"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "RichTextNode",
+                                      "name": "Type",
+                                      "id": "CeBsSxyuGrUkpMds8b",
+                                      "$replicaId": "CeBsSxyuG",
+                                      "$originalId": "rUkpMds8b",
+                                      "attributes": {
+                                        "linkStylePreset": "Body Large",
+                                        "position": "relative",
+                                        "width": "1fr",
+                                        "height": "auto",
+                                        "text": "var(--variable-WQQ5QQzKf)",
+                                        "textStylePreset": "Body Large Semibold",
+                                        "textAlignment": "right",
+                                        "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "name": "What's Included",
+                          "id": "CeBsSxyuGH2XJ_Kfty",
+                          "$replicaId": "CeBsSxyuG",
+                          "$originalId": "H2XJ_Kfty",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "24px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "CeBsSxyuGZJX7PwJ0t",
+                              "$replicaId": "CeBsSxyuG",
+                              "$originalId": "ZJX7PwJ0t",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "CeBsSxyuGuKxXKdXlz",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "uKxXKdXlz",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:CeBsSxyuGuKxXKdXlz:0",
+                                      "attributes": {
+                                        "tag": "p"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:CeBsSxyuGuKxXKdXlz:0:0",
+                                          "attributes": {
+                                            "text": "WHAT'S INCLUDED"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "CeBsSxyuGr8or1ZO2a",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "r8or1ZO2a",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "textStylePreset": "Heading 2",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:CeBsSxyuGr8or1ZO2a:0",
+                                      "attributes": {
+                                        "tag": "h2"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:CeBsSxyuGr8or1ZO2a:0:0",
+                                          "attributes": {
+                                            "text": "Room amenities."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "RichTextNode",
+                              "name": "Amenities",
+                              "id": "CeBsSxyuGZCcjYk50c",
+                              "$replicaId": "CeBsSxyuG",
+                              "$originalId": "ZCcjYk50c",
+                              "attributes": {
+                                "paragraphSpacing": 32,
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "text": "var(--variable-pX_pbnANu)",
+                                "stylePresetParagraph": "Body Large"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "name": "About",
+                          "id": "CeBsSxyuGMxrMBwyEP",
+                          "$replicaId": "CeBsSxyuG",
+                          "$originalId": "MxrMBwyEP",
+                          "attributes": {
+                            "borderStyle": "solid",
+                            "borderColor": "var(--token-faaee952-b0b1-4ada-83d2-4a3d4d02155f)",
+                            "borderBottom": "1px",
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "24px",
+                            "padding": "0px 0px 48px 0px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "CeBsSxyuGP6zUSc6R8",
+                              "$replicaId": "CeBsSxyuG",
+                              "$originalId": "P6zUSc6R8",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "CeBsSxyuGZKDPSsu15",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "ZKDPSsu15",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:CeBsSxyuGZKDPSsu15:0",
+                                      "attributes": {
+                                        "tag": "p"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:CeBsSxyuGZKDPSsu15:0:0",
+                                          "attributes": {
+                                            "text": "ABOUT THIS ROOM"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "CeBsSxyuGBwK2Asn0g",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "BwK2Asn0g",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "textStylePreset": "Heading 2",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:CeBsSxyuGBwK2Asn0g:0",
+                                      "attributes": {
+                                        "tag": "h2"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:CeBsSxyuGBwK2Asn0g:0:0",
+                                          "attributes": {
+                                            "text": "The details that matter."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "RichTextNode",
+                              "name": "Full Description",
+                              "id": "CeBsSxyuGfeElzBKhl",
+                              "$replicaId": "CeBsSxyuG",
+                              "$originalId": "feElzBKhl",
+                              "attributes": {
+                                "paragraphSpacing": 32,
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto",
+                                "maxWidth": "90%",
+                                "text": "var(--variable-UU3_aUcjd)",
+                                "stylePresetParagraph": "Body"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "FrameNode",
+                          "name": "FAQs",
+                          "id": "CeBsSxyuGVAOAYkh6p",
+                          "$replicaId": "CeBsSxyuG",
+                          "$originalId": "VAOAYkh6p",
+                          "attributes": {
+                            "flowEffect": {
+                              "transition": "spring-duration 0.6s 0 0s"
+                            },
+                            "layout": "stack",
+                            "stackDirection": "vertical",
+                            "stackDistribution": "start",
+                            "stackAlignment": "start",
+                            "stackWrapEnabled": false,
+                            "gap": "24px",
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          },
+                          "children": [
+                            {
+                              "type": "FrameNode",
+                              "name": "Room Name + Description",
+                              "id": "CeBsSxyuGKOvW7LBPc",
+                              "$replicaId": "CeBsSxyuG",
+                              "$originalId": "KOvW7LBPc",
+                              "attributes": {
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "start",
+                                "stackAlignment": "start",
+                                "stackWrapEnabled": false,
+                                "gap": "12px",
+                                "overflow": "clip",
+                                "position": "relative",
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Category",
+                                  "id": "CeBsSxyuGyr8AH8HPU",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "yr8AH8HPU",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "auto",
+                                    "height": "auto",
+                                    "maxWidth": 600,
+                                    "textStylePreset": "Eyebrow",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:CeBsSxyuGyr8AH8HPU:0",
+                                      "attributes": {
+                                        "tag": "p"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:CeBsSxyuGyr8AH8HPU:0:0",
+                                          "attributes": {
+                                            "text": "FAQS"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "RichTextNode",
+                                  "name": "Name",
+                                  "id": "CeBsSxyuGMytuV42xG",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "MytuV42xG",
+                                  "attributes": {
+                                    "linkStylePreset": "Body Large",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto",
+                                    "textStylePreset": "Heading 2",
+                                    "textAlignment": "left",
+                                    "textColor": "var(--token-ed49300e-c50b-446f-afce-d6417c1ecf0e)"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "TextBlock",
+                                      "id": "v:CeBsSxyuGMytuV42xG:0",
+                                      "attributes": {
+                                        "tag": "h2"
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "TextRun",
+                                          "id": "v:CeBsSxyuGMytuV42xG:0:0",
+                                          "attributes": {
+                                            "text": "Before you arrive."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "FrameNode",
+                              "id": "CeBsSxyuGLAzN6e_Js",
+                              "$replicaId": "CeBsSxyuG",
+                              "$originalId": "LAzN6e_Js",
+                              "attributes": {
+                                "flowEffect": {},
+                                "layout": "stack",
+                                "stackDirection": "vertical",
+                                "stackDistribution": "center",
+                                "stackAlignment": "start",
+                                "gap": 20,
+                                "position": "relative",
+                                "collectionList": {
+                                  "collection": "FAQs",
+                                  "repeatedDescendantId": "SM2PHnkyJ",
+                                  "limit": "10"
+                                },
+                                "width": "1fr",
+                                "height": "auto"
+                              },
+                              "children": [
+                                {
+                                  "type": "ComponentInstanceNode",
+                                  "id": "CeBsSxyuGSM2PHnkyJ",
+                                  "component": "vvF2CEvfr",
+                                  "$replicaId": "CeBsSxyuG",
+                                  "$originalId": "SM2PHnkyJ",
+                                  "$componentDisplayName": "FAQ Element",
+                                  "attributes": {
+                                    "$control__variant": "Closed",
+                                    "$control__question": "var(--variable-F4XL5mpht)",
+                                    "$control__answer": "var(--variable-i0K8kTEXt)",
+                                    "position": "relative",
+                                    "width": "1fr",
+                                    "height": "auto"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "CeBsSxyuGMtLKxRRIa",
+                      "component": "iJmPMWJax",
+                      "$replicaId": "CeBsSxyuG",
+                      "$originalId": "MtLKxRRIa",
+                      "$componentDisplayName": "Booking Card",
+                      "attributes": {
+                        "$control__currency": "var(--variable-z0tLkA06X)",
+                        "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                        "$control__pricingSmallText": "Taxes and fees not included.",
+                        "$control__buttonText": "Book Now",
+                        "$control__buttonLink": "https://www.booking.com/",
+                        "$control__bookingSmallText": "Free cancellation available on most rates.",
+                        "$control__padding": "48px 24px 48px 24px",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto",
+                        "zIndex": "1"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "CeBsSxyuGjBoX6VMcu",
+              "$replicaId": "CeBsSxyuG",
+              "$originalId": "jBoX6VMcu",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": "0px",
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "CeBsSxyuGkISKPUnWj",
+                  "$replicaId": "CeBsSxyuG",
+                  "$originalId": "kISKPUnWj",
+                  "attributes": {
+                    "appearEffect": {
+                      "threshold": 0,
+                      "trigger": "onInView",
+                      "replay": false,
+                      "enter": {
+                        "opacity": 0,
+                        "x": 0,
+                        "y": 60,
+                        "scale": 1,
+                        "rotate": 0,
+                        "rotateX": 0,
+                        "rotateY": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "transition": "spring-duration 1s 0 0s",
+                        "stagger": "0s"
+                      }
+                    },
+                    "fill": "var(--token-e42b162e-de6f-49f2-8501-e67127b2ab3d)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "padding": "80px 24px 80px 24px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "ComponentInstanceNode",
+                      "id": "CeBsSxyuGQwepFMYHB",
+                      "component": "TOI7zJbFB",
+                      "$replicaId": "CeBsSxyuG",
+                      "$originalId": "QwepFMYHB",
+                      "$componentDisplayName": "Section Headline",
+                      "attributes": {
+                        "$control__sectionLabel": "EXPLORE MORE",
+                        "$control__sectionHeadline": "Other rooms you may like.",
+                        "$control__buttonText": "View All Rooms",
+                        "$control__buttonVisability": "false",
+                        "$control__opensInNewTab": "false",
+                        "$control__smoothScroll": "true",
+                        "$control__padding": "0px",
+                        "$control__align": "Start",
+                        "$control__direction": "Vertical",
+                        "position": "relative",
+                        "width": "1fr",
+                        "height": "auto"
+                      }
+                    },
+                    {
+                      "type": "FrameNode",
+                      "id": "CeBsSxyuGloqEcNPrw",
+                      "$replicaId": "CeBsSxyuG",
+                      "$originalId": "loqEcNPrw",
+                      "attributes": {
+                        "layout": "stack",
+                        "stackDirection": "vertical",
+                        "stackDistribution": "center",
+                        "stackAlignment": "start",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Rooms",
+                          "repeatedDescendantId": "uCOCGb519",
+                          "limit": "3",
+                          "sorting": [
+                            {
+                              "variable": "createdAt",
+                              "direction": "desc"
+                            }
+                          ]
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "CeBsSxyuGuCOCGb519",
+                          "component": "fclm0HQnA",
+                          "$replicaId": "CeBsSxyuG",
+                          "$originalId": "uCOCGb519",
+                          "$componentDisplayName": "Room Card",
+                          "attributes": {
+                            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+                            "$control__name": "var(--variable-LmnFrKT0w)",
+                            "$control__textContent": {
+                              "from": "var(--variable-s_5P30m6p)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__currency": "var(--variable-z0tLkA06X)",
+                            "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                            "$control__fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                            "$control__link": {
+                              "href": "/rooms/:slug",
+                              "collectionItem": "var(--variable-dsZM117_y)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "CeBsSxyuGpJGpQ5paT",
+          "$replicaId": "CeBsSxyuG",
+          "$originalId": "pJGpQ5paT",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": false,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "CeBsSxyuGdej4KvKgV",
+              "$replicaId": "CeBsSxyuG",
+              "$originalId": "dej4KvKgV",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

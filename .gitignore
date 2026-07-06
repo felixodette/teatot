@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# build / cache
+*.tsbuildinfo
+next-env.d.ts
+
+# env
+.env
+.env*.local
+
+# os
+.DS_Store
+
+# graphify (regenerated locally)
+graphify-out/
+
+# debug
+npm-debug.log*

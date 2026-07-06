@@ -1,0 +1,136 @@
+{
+  "collection": "Team",
+  "id": "M2vagxzj_",
+  "fields": [
+    {
+      "id": "MyPvrDjXJ",
+      "name": "Name",
+      "type": "string"
+    },
+    {
+      "id": "oouNXsRhw",
+      "name": "Role",
+      "type": "string"
+    },
+    {
+      "id": "YRJkYkc3N",
+      "name": "Bio",
+      "type": "formattedText"
+    },
+    {
+      "id": "at5pFGv62",
+      "name": "Sort Order",
+      "type": "number"
+    },
+    {
+      "id": "FVVdKGF5F",
+      "name": "Photo",
+      "type": "image"
+    }
+  ],
+  "itemCount": 3,
+  "items": [
+    {
+      "_id": "FAnZ8yOZE",
+      "_slug": "jonathan-reed",
+      "_draft": false,
+      "Name": {
+        "type": "string",
+        "value": "TODO: Client content required",
+        "valueByLocale": {}
+      },
+      "Role": {
+        "type": "string",
+        "value": "General Manager",
+        "valueByLocale": {}
+      },
+      "Bio": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">TODO: Client content required — team biography not available on the client website.</p>",
+        "valueByLocale": {}
+      },
+      "Sort Order": {
+        "type": "number",
+        "value": 1
+      },
+      "Photo": {
+        "type": "image",
+        "value": {
+          "id": "fu7704LOuub0FoDZ4GzEd2uTIls.jpg",
+          "url": "https://framerusercontent.com/images/fu7704LOuub0FoDZ4GzEd2uTIls.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/fu7704LOuub0FoDZ4GzEd2uTIls.jpg?scale-down-to=512",
+          "altText": "General manager photo",
+          "resolution": "auto"
+        }
+      }
+    },
+    {
+      "_id": "w0nVQ3DhA",
+      "_slug": "marco-ricci",
+      "_draft": false,
+      "Name": {
+        "type": "string",
+        "value": "TODO: Client content required",
+        "valueByLocale": {}
+      },
+      "Role": {
+        "type": "string",
+        "value": "Head of Operations",
+        "valueByLocale": {}
+      },
+      "Bio": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">TODO: Client content required — team biography not available on the client website.</p>",
+        "valueByLocale": {}
+      },
+      "Sort Order": {
+        "type": "number",
+        "value": 2
+      },
+      "Photo": {
+        "type": "image",
+        "value": {
+          "id": "wScVVvcV3otS0pfxbkwUsgUvbQ.jpg",
+          "url": "https://framerusercontent.com/images/wScVVvcV3otS0pfxbkwUsgUvbQ.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/wScVVvcV3otS0pfxbkwUsgUvbQ.jpg?scale-down-to=512",
+          "altText": "Head chef photo",
+          "resolution": "auto"
+        }
+      }
+    },
+    {
+      "_id": "hih4OeQmo",
+      "_slug": "elena-vasquez",
+      "_draft": false,
+      "Name": {
+        "type": "string",
+        "value": "TODO: Client content required",
+        "valueByLocale": {}
+      },
+      "Role": {
+        "type": "string",
+        "value": "Guest Relations Manager",
+        "valueByLocale": {}
+      },
+      "Bio": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">TODO: Client content required — team biography not available on the client website.</p>",
+        "valueByLocale": {}
+      },
+      "Sort Order": {
+        "type": "number",
+        "value": 3
+      },
+      "Photo": {
+        "type": "image",
+        "value": {
+          "id": "ttsbgAMiND9H5E4LyiSyhpQXM8Q.jpg",
+          "url": "https://framerusercontent.com/images/ttsbgAMiND9H5E4LyiSyhpQXM8Q.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/ttsbgAMiND9H5E4LyiSyhpQXM8Q.jpg?scale-down-to=512",
+          "altText": "Head of guest experience photo",
+          "resolution": "auto"
+        }
+      }
+    }
+  ]
+}

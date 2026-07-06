@@ -1,0 +1,231 @@
+{
+  "collection": "Dining Menu",
+  "id": "dBegp9lOP",
+  "fields": [
+    {
+      "id": "lOvnW6_Uv",
+      "name": "Item Name",
+      "type": "string"
+    },
+    {
+      "id": "oaO37Ccsr",
+      "name": "Description",
+      "type": "formattedText"
+    },
+    {
+      "id": "vyokjbJDf",
+      "name": "Currency",
+      "type": "string"
+    },
+    {
+      "id": "rkV156Nlu",
+      "name": "Price",
+      "type": "number"
+    },
+    {
+      "id": "OMXWenByR",
+      "name": "Category",
+      "type": "enum"
+    },
+    {
+      "id": "uv_XZ9FqM",
+      "name": "Featured",
+      "type": "boolean"
+    }
+  ],
+  "itemCount": 6,
+  "items": [
+    {
+      "_id": "ro2HG91FO",
+      "_slug": "sourdough-toast",
+      "_draft": false,
+      "Item Name": {
+        "type": "string",
+        "value": "Signature Latte",
+        "valueByLocale": {}
+      },
+      "Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Velvety steamed milk, double espresso and TeaTot latte art. Price on request.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price": {
+        "type": "number",
+        "value": 0
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Drinks"
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": false
+      }
+    },
+    {
+      "_id": "FV9j7oWbx",
+      "_slug": "eggs-benedict",
+      "_draft": false,
+      "Item Name": {
+        "type": "string",
+        "value": "AA Grade Coffee",
+        "valueByLocale": {}
+      },
+      "Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Kenya's finest single-origin beans, brewed to perfection. Price on request.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price": {
+        "type": "number",
+        "value": 0
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Drinks"
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    {
+      "_id": "zRF2UrHPh",
+      "_slug": "burrata-tomato",
+      "_draft": false,
+      "Item Name": {
+        "type": "string",
+        "value": "Juices & Teas",
+        "valueByLocale": {}
+      },
+      "Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Freshly blended juices, herbal teas and iced drinks all day. Price on request.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price": {
+        "type": "number",
+        "value": 0
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Drinks"
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    {
+      "_id": "IaGGRELc_",
+      "_slug": "roasted-sea-bass",
+      "_draft": false,
+      "Item Name": {
+        "type": "string",
+        "value": "Pastries & Snacks",
+        "valueByLocale": {}
+      },
+      "Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Freshly baked cakes, muffins, croissants and pastries daily. Price on request.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price": {
+        "type": "number",
+        "value": 0
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Breakfast"
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    {
+      "_id": "qeIwXhAos",
+      "_slug": "negroni",
+      "_draft": false,
+      "Item Name": {
+        "type": "string",
+        "value": "Margherita Pizza",
+        "valueByLocale": {}
+      },
+      "Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Fresh tomato base, premium mozzarella, sliced tomatoes and fresh basil with extra virgin olive oil. Price on request.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price": {
+        "type": "number",
+        "value": 0
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Dinner"
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    {
+      "_id": "wxGZd2AAJ",
+      "_slug": "chocolate-fondant",
+      "_draft": false,
+      "Item Name": {
+        "type": "string",
+        "value": "Meat Deluxe Pizza",
+        "valueByLocale": {}
+      },
+      "Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Beef, chicken, pepperoni, ham, bacon and spicy sausage on a rich tomato base. Price on request.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price": {
+        "type": "number",
+        "value": 0
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Dinner"
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      }
+    }
+  ]
+}

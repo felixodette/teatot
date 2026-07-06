@@ -1,0 +1,171 @@
+{
+  "collection": "Blog Posts",
+  "id": "qIjc3ONJW",
+  "fields": [
+    {
+      "id": "wmwZJYJwb",
+      "name": "Title",
+      "type": "string"
+    },
+    {
+      "id": "TkxexJEE3",
+      "name": "Excerpt",
+      "type": "formattedText"
+    },
+    {
+      "id": "bN0PCLyHL",
+      "name": "Body",
+      "type": "formattedText"
+    },
+    {
+      "id": "K09ND8fmp",
+      "name": "Author",
+      "type": "string"
+    },
+    {
+      "id": "fNQUuHd3H",
+      "name": "Published Date",
+      "type": "date"
+    },
+    {
+      "id": "BXWU1mWbB",
+      "name": "Tag",
+      "type": "enum"
+    },
+    {
+      "id": "a2wBhysaJ",
+      "name": "Cover Image",
+      "type": "image"
+    }
+  ],
+  "itemCount": 3,
+  "items": [
+    {
+      "_id": "UJEgfsi0I",
+      "_slug": "local-guide-neighbourhood",
+      "_draft": false,
+      "Title": {
+        "type": "string",
+        "value": "Discover Ol Donyo Sabuk",
+        "valueByLocale": {}
+      },
+      "Excerpt": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">A day trip to Buffalo Mountain — wildlife, waterfalls and hiking just 85km from the hotel.</p>",
+        "valueByLocale": {}
+      },
+      "Body": {
+        "type": "formattedText",
+        "value": "<h3 dir=\"auto\">Buffalo Mountain</h3><p dir=\"auto\">Ol Donyo Sabuk (Kilimambogo) is a lush national park where elephants, Cape buffalo, baboons and 45+ bird species roam freely. Three waterfalls and the historic MacMillan burial site await at the summit.</p><h3 dir=\"auto\">Getting There</h3><p dir=\"auto\">The park is approximately 85km from Tea Tot Hotels. Our concierge can arrange transport and guided day trips.</p>",
+        "valueByLocale": {}
+      },
+      "Author": {
+        "type": "string",
+        "value": "Tea Tot Hotels",
+        "valueByLocale": {}
+      },
+      "Published Date": {
+        "type": "date",
+        "value": "2025-05-15T10:00:00.000Z"
+      },
+      "Tag": {
+        "type": "enum",
+        "value": "Local"
+      },
+      "Cover Image": {
+        "type": "image",
+        "value": {
+          "id": "NWRWKDLeyACMLDPWF9LuR3Q1tmY.jpg",
+          "url": "https://framerusercontent.com/images/NWRWKDLeyACMLDPWF9LuR3Q1tmY.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/NWRWKDLeyACMLDPWF9LuR3Q1tmY.jpg?scale-down-to=512",
+          "altText": "tables and chairs near building during daytime",
+          "resolution": "auto"
+        }
+      }
+    },
+    {
+      "_id": "Njk60CeFJ",
+      "_slug": "how-we-think-about-food",
+      "_draft": false,
+      "Title": {
+        "type": "string",
+        "value": "Machakos People's Park",
+        "valueByLocale": {}
+      },
+      "Excerpt": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">World-class recreation in Machakos town — zip-lines, boat rides and family fun just 2km away.</p>",
+        "valueByLocale": {}
+      },
+      "Body": {
+        "type": "formattedText",
+        "value": "<h3 dir=\"auto\">In the Heart of Machakos</h3><p dir=\"auto\">Machakos People's Park features beautifully lit walkways and arches, dancing fountains, a 300m zip-line, camel and horse riding, boat rides, archery and a children's playground. Free entry.</p><h3 dir=\"auto\">From the Hotel</h3><p dir=\"auto\">The park is just 2km from Tea Tot Hotels — an easy outing for families and groups staying with us.</p>",
+        "valueByLocale": {}
+      },
+      "Author": {
+        "type": "string",
+        "value": "Tea Tot Hotels",
+        "valueByLocale": {}
+      },
+      "Published Date": {
+        "type": "date",
+        "value": "2025-04-28T10:00:00.000Z"
+      },
+      "Tag": {
+        "type": "enum",
+        "value": "Food"
+      },
+      "Cover Image": {
+        "type": "image",
+        "value": {
+          "id": "sXRjEFOgarSCaQqBTlVTYI0eRQ.jpg",
+          "url": "https://framerusercontent.com/images/sXRjEFOgarSCaQqBTlVTYI0eRQ.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/sXRjEFOgarSCaQqBTlVTYI0eRQ.jpg?scale-down-to=512",
+          "resolution": "auto"
+        }
+      }
+    },
+    {
+      "_id": "Vx8TEh8J7",
+      "_slug": "art-of-a-good-hotel-stay",
+      "_draft": false,
+      "Title": {
+        "type": "string",
+        "value": "Kyamwilu Gravity Hill",
+        "valueByLocale": {}
+      },
+      "Excerpt": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Where nature defies gravity — a mysterious optical phenomenon unique to Machakos.</p>",
+        "valueByLocale": {}
+      },
+      "Body": {
+        "type": "formattedText",
+        "value": "<h3 dir=\"auto\">Antigravity Site</h3><p dir=\"auto\">Officially certified by Machakos Tourism as the Kyamwilu Antigravity Site — water flows uphill and cars roll without power. A must-visit attraction approximately 15km from the hotel.</p><h3 dir=\"auto\">Plan Your Visit</h3><p dir=\"auto\">Ask our front desk to arrange a trip to Kyamwilu and other Machakos highlights during your stay.</p>",
+        "valueByLocale": {}
+      },
+      "Author": {
+        "type": "string",
+        "value": "Tea Tot Hotels",
+        "valueByLocale": {}
+      },
+      "Published Date": {
+        "type": "date",
+        "value": "2025-03-10T10:00:00.000Z"
+      },
+      "Tag": {
+        "type": "enum",
+        "value": "Travel"
+      },
+      "Cover Image": {
+        "type": "image",
+        "value": {
+          "id": "mMbuUXf6I3uief7dRlzE5KmCjQ.jpg",
+          "url": "https://framerusercontent.com/images/mMbuUXf6I3uief7dRlzE5KmCjQ.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/mMbuUXf6I3uief7dRlzE5KmCjQ.jpg?scale-down-to=512",
+          "resolution": "auto"
+        }
+      }
+    }
+  ]
+}

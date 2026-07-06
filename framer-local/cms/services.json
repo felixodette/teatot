@@ -1,0 +1,231 @@
+{
+  "collection": "Services",
+  "id": "Xl_VHDy14",
+  "fields": [
+    {
+      "id": "Q3KyP29hu",
+      "name": "Number",
+      "type": "string"
+    },
+    {
+      "id": "gJf20Il6d",
+      "name": "Image",
+      "type": "image"
+    },
+    {
+      "id": "gCgWBu3Ox",
+      "name": "Name",
+      "type": "string"
+    },
+    {
+      "id": "v9SeSOhlA",
+      "name": "Short Descrription",
+      "type": "formattedText"
+    },
+    {
+      "id": "LZ6FEv0hj",
+      "name": "Full Description",
+      "type": "formattedText"
+    },
+    {
+      "id": "Mi8vN1w8e",
+      "name": "Category",
+      "type": "enum"
+    }
+  ],
+  "itemCount": 5,
+  "items": [
+    {
+      "_id": "qCM7moARG",
+      "_slug": "restaurant",
+      "_draft": false,
+      "Number": {
+        "type": "string",
+        "value": "01",
+        "valueByLocale": {}
+      },
+      "Image": {
+        "type": "image",
+        "value": {
+          "id": "sXRjEFOgarSCaQqBTlVTYI0eRQ.jpg",
+          "url": "https://framerusercontent.com/images/sXRjEFOgarSCaQqBTlVTYI0eRQ.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/sXRjEFOgarSCaQqBTlVTYI0eRQ.jpg?scale-down-to=512",
+          "resolution": "auto"
+        }
+      },
+      "Name": {
+        "type": "string",
+        "value": "ANAM Restaurant",
+        "valueByLocale": {}
+      },
+      "Short Descrription": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">From Kenyan classics to continental cuisine, artisan pizza and world-class coffee.</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">ANAM Restaurant serves breakfast, lunch and dinner with Kenyan classics, continental dishes and seasonal ingredients. TeaTot Pizzeria and our Coffee Shop are also on-site for artisan pizza and specialty Kenyan brews.</p>",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Dining"
+      }
+    },
+    {
+      "_id": "cRLP1TjBq",
+      "_slug": "garage-parking",
+      "_draft": false,
+      "Number": {
+        "type": "string",
+        "value": "02",
+        "valueByLocale": {}
+      },
+      "Image": {
+        "type": "image",
+        "value": {
+          "id": "yZZAsH37aha2TSFvKMY392cZk.jpg",
+          "url": "https://framerusercontent.com/images/yZZAsH37aha2TSFvKMY392cZk.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/yZZAsH37aha2TSFvKMY392cZk.jpg?scale-down-to=512",
+          "altText": "white car in a tunnel",
+          "resolution": "auto"
+        }
+      },
+      "Name": {
+        "type": "string",
+        "value": "Conference & Events",
+        "valueByLocale": {}
+      },
+      "Short Descrription": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Three halls and a boardroom for 15 to 200 delegates with full AV and catering.</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Baraza Hall seats up to 200 theatre-style or 100 classroom. Masaku Hall accommodates 70 theatre or 30–40 classroom. The Lounge holds 30 theatre or 15 classroom. Our boardroom seats 15 for executive meetings. All spaces include Wi-Fi, AC, LCD projector, PA system, flipboard, AV equipment and full catering.</p>",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Other"
+      }
+    },
+    {
+      "_id": "VAl6boLNV",
+      "_slug": "laundry-dry-cleaning",
+      "_draft": false,
+      "Number": {
+        "type": "string",
+        "value": "03",
+        "valueByLocale": {}
+      },
+      "Image": {
+        "type": "image",
+        "value": {
+          "id": "KxB8WvgOsExPTrLWmfEDu5MHD6E.jpg",
+          "url": "https://framerusercontent.com/images/KxB8WvgOsExPTrLWmfEDu5MHD6E.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/KxB8WvgOsExPTrLWmfEDu5MHD6E.jpg?scale-down-to=512",
+          "altText": "white front load washing machine",
+          "resolution": "auto"
+        }
+      },
+      "Name": {
+        "type": "string",
+        "value": "Outside Catering",
+        "valueByLocale": {}
+      },
+      "Short Descrription": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Professional catering for weddings, corporate events, funerals and celebrations.</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Our experienced catering team delivers restaurant-quality meals to your chosen venue. We handle weddings, funerals and memorials, birthday parties, family gatherings, corporate events and large community festivals — from setup through to service.</p>",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Dining"
+      }
+    },
+    {
+      "_id": "KIuR2CuLv",
+      "_slug": "spa-wellness",
+      "_draft": false,
+      "Number": {
+        "type": "string",
+        "value": "04",
+        "valueByLocale": {}
+      },
+      "Image": {
+        "type": "image",
+        "value": {
+          "id": "jQZ6t4dYqvILxSc6IczQGSqWog.jpg",
+          "url": "https://framerusercontent.com/images/jQZ6t4dYqvILxSc6IczQGSqWog.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/jQZ6t4dYqvILxSc6IczQGSqWog.jpg?scale-down-to=512",
+          "resolution": "auto"
+        }
+      },
+      "Name": {
+        "type": "string",
+        "value": "Garden Venue",
+        "valueByLocale": {}
+      },
+      "Short Descrription": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Expansive landscaped grounds accommodating up to 4,000 guests.</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Our breathtaking gardens are ideal for weddings, concerts, team building, graduation parties and large-scale events. Features include complimentary secure parking, mains power with backup generator, a kids' playground and flexible layouts for theatre, cocktail or banquet setups.</p>",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Wellness"
+      }
+    },
+    {
+      "_id": "uJ0dEAhU1",
+      "_slug": "concierge",
+      "_draft": false,
+      "Number": {
+        "type": "string",
+        "value": "05",
+        "valueByLocale": {}
+      },
+      "Image": {
+        "type": "image",
+        "value": {
+          "id": "Jk1sOdKWUNnLUIz0CPQE9SdkCAU.jpg",
+          "url": "https://framerusercontent.com/images/Jk1sOdKWUNnLUIz0CPQE9SdkCAU.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/Jk1sOdKWUNnLUIz0CPQE9SdkCAU.jpg?scale-down-to=512",
+          "resolution": "auto"
+        }
+      },
+      "Name": {
+        "type": "string",
+        "value": "Guest Services",
+        "valueByLocale": {}
+      },
+      "Short Descrription": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">24/7 reception, free guarded parking and local tour arrangements.</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Tea Tot Hotel is your gateway to the wonders of Machakos. Our team can arrange day trips to Ol Donyo Sabuk, Machakos People's Park, Wamunyu Wood Carving and Kyamwilu Gravity Hill. Free high-speed Wi-Fi and secure guarded parking are available around the clock.</p>",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Other"
+      }
+    }
+  ]
+}

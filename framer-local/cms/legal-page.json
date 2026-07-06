@@ -1,0 +1,62 @@
+{
+  "collection": "Legal Page",
+  "id": "ikyKgfSij",
+  "fields": [
+    {
+      "id": "Nfy5Vwyqj",
+      "name": "Title",
+      "type": "string"
+    },
+    {
+      "id": "k8moyylGV",
+      "name": "Body",
+      "type": "formattedText"
+    },
+    {
+      "id": "JmUS42faM",
+      "name": "Last Update",
+      "type": "date"
+    }
+  ],
+  "itemCount": 2,
+  "items": [
+    {
+      "_id": "ajm6xs8JI",
+      "_slug": "privacy-policy",
+      "_draft": false,
+      "Title": {
+        "type": "string",
+        "value": "Privacy Policy",
+        "valueByLocale": {}
+      },
+      "Body": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Last updated: June 2025</p><h4 dir=\"auto\">What We Collect</h4><p dir=\"auto\">When you make a booking or contact us, we collect your name, email address, phone number, and any preferences you share with us. We also collect standard analytics data when you visit this website.</p><h4 dir=\"auto\">How We Use It</h4><p dir=\"auto\">We use your information to manage your reservation, communicate with you about your stay, and improve our service. We do not sell your data to third parties.</p><h4 dir=\"auto\">Cookies</h4><p dir=\"auto\">This website uses cookies for analytics and to remember your preferences. You can disable cookies in your browser settings at any time.</p><h4 dir=\"auto\">Your Rights</h4><p dir=\"auto\">You have the right to access, correct, or delete your personal data at any time. Contact us at <a href=\"mailto:info@teatot.co.ke\">info@teatot.co.ke</a> to make a request.</p><h4 dir=\"auto\">Contact</h4><p dir=\"auto\">For any privacy-related questions, email us at <a href=\"mailto:info@teatot.co.ke\">info@teatot.co.ke</a>.</p>",
+        "valueByLocale": {}
+      },
+      "Last Update": {
+        "type": "date",
+        "value": "2025-06-01T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": "zHcj4r96E",
+      "_slug": "terms-conditions",
+      "_draft": false,
+      "Title": {
+        "type": "string",
+        "value": "Terms & Conditions",
+        "valueByLocale": {}
+      },
+      "Body": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Last updated: June 2025</p><h4 dir=\"auto\">Bookings</h4><p dir=\"auto\">All bookings are subject to availability. A valid credit card is required to secure your reservation. Full payment is taken at check-in unless otherwise agreed at the time of booking.</p><h4 dir=\"auto\">Cancellation Policy</h4><p dir=\"auto\">Cancellations made more than 48 hours before arrival are free of charge. Cancellations within 48 hours of arrival will be charged one night's room rate. No-shows will be charged the full booking amount.</p><h4 dir=\"auto\">Check-In &amp; Check-Out</h4><p dir=\"auto\">Check-in is from 2:00 PM. Check-out is by 12:00 noon. Late check-out is subject to availability and may incur an additional charge.</p><h4 dir=\"auto\">Liability</h4><p dir=\"auto\">Tea Tot Hotels is not responsible for loss or damage to personal belongings. Guests are responsible for any damage caused to hotel property during their stay.</p><h4 dir=\"auto\">Contact</h4><p dir=\"auto\">For any questions regarding these terms, contact us at <a href=\"mailto:info@teatot.co.ke\">info@teatot.co.ke</a>.</p>",
+        "valueByLocale": {}
+      },
+      "Last Update": {
+        "type": "date",
+        "value": "2025-06-01T00:00:00.000Z"
+      }
+    }
+  ]
+}

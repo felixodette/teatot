@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens extracted from Framer project-context.json
+ * Token IDs mapped to semantic names via fallback values in the export.
+ */
+@theme {
+  --color-white: #ffffff;
+  --color-black: #050505;
+  --color-black-80: rgba(5, 5, 5, 0.8);
+  --color-black-30: rgba(5, 5, 5, 0.3);
+  --color-bg-subtle: #f8f8f8;
+  --color-text-subtle: #999999;
+  --color-border: #e5e5e5;
+  --color-text-primary: #050505;
+  --color-text-secondary: #666666;
+
+  /* Breakpoints matching Framer export */
+  --breakpoint-phone: 390px;
+  --breakpoint-tablet: 810px;
+  --breakpoint-desktop: 1200px;
+
+  /* Container */
+  --container-max: 1200px;
+
+  /* Spacing scale (derived from Framer padding/gap values) */
+  --spacing-section: 96px;
+  --spacing-section-mobile: 64px;
+  --spacing-element: 48px;
+  --spacing-element-mobile: 32px;
+
+  /* Animation tokens */
+  --ease-spring-duration: 1s;
+  --ease-spring-bounce: 0;
+}
+
+/* Base styles */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  color: var(--color-text-primary);
+  background: var(--color-white);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

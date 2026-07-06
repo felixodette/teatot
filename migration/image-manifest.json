@@ -1,0 +1,206 @@
+{
+  "generatedAt": "2026-07-03T18:28:52.788Z",
+  "totalImages": 22,
+  "downloaded": 22,
+  "failed": 0,
+  "images": [
+    {
+      "originalUrl": "https://framerusercontent.com/images/NWRWKDLeyACMLDPWF9LuR3Q1tmY.jpg",
+      "localPath": "/images/blog-posts/NWRWKDLeyACMLDPWF9LuR3Q1tmY.jpg",
+      "collection": "blog-posts",
+      "itemSlug": "local-guide-neighbourhood",
+      "altText": "tables and chairs near building during daytime",
+      "sha256": "57458c4c65e03ba13eb153cd98ed9955afa80c28e5a008c12bfbe995c2d91796",
+      "sizeBytes": 3115379
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/sXRjEFOgarSCaQqBTlVTYI0eRQ.jpg",
+      "localPath": "/images/blog-posts/sXRjEFOgarSCaQqBTlVTYI0eRQ.jpg",
+      "collection": "blog-posts",
+      "itemSlug": "how-we-think-about-food",
+      "altText": "",
+      "sha256": "fd4b8a471ddc9d074955610b7108830c958baaef71bcee14d7787ed2ab9c41e1",
+      "sizeBytes": 158713
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/mMbuUXf6I3uief7dRlzE5KmCjQ.jpg",
+      "localPath": "/images/blog-posts/mMbuUXf6I3uief7dRlzE5KmCjQ.jpg",
+      "collection": "blog-posts",
+      "itemSlug": "art-of-a-good-hotel-stay",
+      "altText": "",
+      "sha256": "bd860b5e3962c893bdd75ceaa09f4f42e2599b5146da4a42edbde49b75f1b3f9",
+      "sizeBytes": 131180
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/YnircrNZxUREwfsro0NwdGoki8.jpg",
+      "localPath": "/images/gallery/YnircrNZxUREwfsro0NwdGoki8.jpg",
+      "collection": "gallery",
+      "itemSlug": "gallery-deluxe-room",
+      "altText": "",
+      "sha256": "03669a7647df64440baa085871e57a228b76a5534d048b753f8a22207cab07d0",
+      "sizeBytes": 162106
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/S0ZHD901odrdTPjMvEcgeFZLjY.jpg",
+      "localPath": "/images/gallery/S0ZHD901odrdTPjMvEcgeFZLjY.jpg",
+      "collection": "gallery",
+      "itemSlug": "gallery-penthouse",
+      "altText": "",
+      "sha256": "84d582d29166a57bf5071011b8aa589dedd8b8ea8058ba943e46992fde94612d",
+      "sizeBytes": 210680
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/AyrrDhZdDav816xjyT3KhUvLVqc.jpg",
+      "localPath": "/images/gallery/AyrrDhZdDav816xjyT3KhUvLVqc.jpg",
+      "collection": "gallery",
+      "itemSlug": "gallery-restaurant",
+      "altText": "",
+      "sha256": "c21e2dcdadcbfd72d091b88d65c76fdb1571ec76ab67215bf3e1377ecdbc48d5",
+      "sizeBytes": 315368
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/PMQLDK3PwC04dzDLOTTsLfYsx4.jpg",
+      "localPath": "/images/gallery/PMQLDK3PwC04dzDLOTTsLfYsx4.jpg",
+      "collection": "gallery",
+      "itemSlug": "gallery-pool",
+      "altText": "",
+      "sha256": "fa9ec1fc5d448912cb080ce6a96f529f78c7feebebf24f51196e20bb38ecd09f",
+      "sizeBytes": 329216
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/7ZHZXX9xBxF0TZ9doCp9YTVhQg.jpg",
+      "localPath": "/images/gallery/7ZHZXX9xBxF0TZ9doCp9YTVhQg.jpg",
+      "collection": "gallery",
+      "itemSlug": "gallery-exterior",
+      "altText": "",
+      "sha256": "a289030a2bbf23ddd42ee9d21e9b89450ecaddbff3c2afcc97fdd556ce3118af",
+      "sizeBytes": 302267
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/YquqAf7Q280sNbQ9G8sKz3BZzOw.jpg",
+      "localPath": "/images/gallery/YquqAf7Q280sNbQ9G8sKz3BZzOw.jpg",
+      "collection": "gallery",
+      "itemSlug": "gallery-events",
+      "altText": "",
+      "sha256": "b85031511da3def4297aa747e1c59c589d17bfa4aa8442bc5af666d97f4c7af3",
+      "sizeBytes": 134586
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg",
+      "localPath": "/images/rooms/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg",
+      "collection": "rooms",
+      "itemSlug": "classic-room",
+      "altText": "Classic room",
+      "sha256": "4af9d82aebe1e2dcfb23741e5b1115cf7a7ad7385d3d59f386232cf6bd37f1d7",
+      "sizeBytes": 649970
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/ZZg75WJS1Y9gEX2gbZSy2Ih7pFI.jpg",
+      "localPath": "/images/rooms/ZZg75WJS1Y9gEX2gbZSy2Ih7pFI.jpg",
+      "collection": "rooms",
+      "itemSlug": "deluxe-room",
+      "altText": "Deluxe room",
+      "sha256": "d5dc437d0b35f7aa1571ac49c58019023401a1f0f39c29b35b0a4939ab3e3e8d",
+      "sizeBytes": 705048
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/fTVtpXxHUPGqroLMhJgvUwBr7w.jpg",
+      "localPath": "/images/rooms/fTVtpXxHUPGqroLMhJgvUwBr7w.jpg",
+      "collection": "rooms",
+      "itemSlug": "penthouse-suite",
+      "altText": "Penthouse suite",
+      "sha256": "39db0df3ee5a981a55177322d0e7e7c0da12643047ed9e6d81100292ec6aa4de",
+      "sizeBytes": 755265
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/MBYpmJ3oSC4KVNubh2vxq6Wy1fI.jpg",
+      "localPath": "/images/rooms/MBYpmJ3oSC4KVNubh2vxq6Wy1fI.jpg",
+      "collection": "rooms",
+      "itemSlug": "junior-suite",
+      "altText": "Junior suite",
+      "sha256": "b0f864323a4139bd3687a2133ba952e543c4f2ad47e0136094ca15d6c538ab75",
+      "sizeBytes": 475923
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/zcEWYcQeMKFK1Xfp5zNaislyTag.jpg",
+      "localPath": "/images/rooms/zcEWYcQeMKFK1Xfp5zNaislyTag.jpg",
+      "collection": "rooms",
+      "itemSlug": "garden-villa",
+      "altText": "Garden vila",
+      "sha256": "7f3b98bb2dadbe5cba7127b5d185403c2c6b9037a5bceb6c65736a49fb68d187",
+      "sizeBytes": 1576409
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/utCEIcnbjlito3X1nVD8i8B5qJU.jpg",
+      "localPath": "/images/rooms/utCEIcnbjlito3X1nVD8i8B5qJU.jpg",
+      "collection": "rooms",
+      "itemSlug": "family-room",
+      "altText": "Family room",
+      "sha256": "531061b369dd80f7a9edf303080beb86932c60b6d70429ed148975fad3681446",
+      "sizeBytes": 658720
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/yZZAsH37aha2TSFvKMY392cZk.jpg",
+      "localPath": "/images/services/yZZAsH37aha2TSFvKMY392cZk.jpg",
+      "collection": "services",
+      "itemSlug": "garage-parking",
+      "altText": "white car in a tunnel",
+      "sha256": "f987af76a73e4967257e1603c70f7e2e50f1ba1ccd6f69c08c06fec296104517",
+      "sizeBytes": 2796640
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/KxB8WvgOsExPTrLWmfEDu5MHD6E.jpg",
+      "localPath": "/images/services/KxB8WvgOsExPTrLWmfEDu5MHD6E.jpg",
+      "collection": "services",
+      "itemSlug": "laundry-dry-cleaning",
+      "altText": "white front load washing machine",
+      "sha256": "6bc2fa3c2642c97ed28d72c80e33e1e913f7a48292303997c5642143bb12eb5f",
+      "sizeBytes": 5082360
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/jQZ6t4dYqvILxSc6IczQGSqWog.jpg",
+      "localPath": "/images/services/jQZ6t4dYqvILxSc6IczQGSqWog.jpg",
+      "collection": "services",
+      "itemSlug": "spa-wellness",
+      "altText": "",
+      "sha256": "057d14ad216906f8e9c63ba4f102b95d4c55948d22eeb3f680980d1b6b08995d",
+      "sizeBytes": 105536
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/Jk1sOdKWUNnLUIz0CPQE9SdkCAU.jpg",
+      "localPath": "/images/services/Jk1sOdKWUNnLUIz0CPQE9SdkCAU.jpg",
+      "collection": "services",
+      "itemSlug": "concierge",
+      "altText": "",
+      "sha256": "d5011c7bf013fbcd1b23fd93db84fe9e16cfd41b238a322c68f423394c0f4c2d",
+      "sizeBytes": 228925
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/fu7704LOuub0FoDZ4GzEd2uTIls.jpg",
+      "localPath": "/images/team/fu7704LOuub0FoDZ4GzEd2uTIls.jpg",
+      "collection": "team",
+      "itemSlug": "jonathan-reed",
+      "altText": "General manager photo",
+      "sha256": "d64d369b6650b86ae666db059dd51650417a4d776b012161fc9778a4843f9511",
+      "sizeBytes": 7242001
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/wScVVvcV3otS0pfxbkwUsgUvbQ.jpg",
+      "localPath": "/images/team/wScVVvcV3otS0pfxbkwUsgUvbQ.jpg",
+      "collection": "team",
+      "itemSlug": "marco-ricci",
+      "altText": "Head chef photo",
+      "sha256": "b5791767e565df69e3066c8262da70ac91f0e29d1e72eb29a5f2db6922ebaa4d",
+      "sizeBytes": 2503707
+    },
+    {
+      "originalUrl": "https://framerusercontent.com/images/ttsbgAMiND9H5E4LyiSyhpQXM8Q.jpg",
+      "localPath": "/images/team/ttsbgAMiND9H5E4LyiSyhpQXM8Q.jpg",
+      "collection": "team",
+      "itemSlug": "elena-vasquez",
+      "altText": "Head of guest experience photo",
+      "sha256": "ca447a7a1346119e7806aac7e5e87b4c66c3b5902b85a46a5935e5ade805b976",
+      "sizeBytes": 3074527
+    }
+  ]
+}

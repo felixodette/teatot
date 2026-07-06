@@ -1,0 +1,459 @@
+{
+  "collection": "Rooms",
+  "id": "i13lXYBbp",
+  "fields": [
+    {
+      "id": "LmnFrKT0w",
+      "name": "Name",
+      "type": "string"
+    },
+    {
+      "id": "s_5P30m6p",
+      "name": "Category",
+      "type": "enum"
+    },
+    {
+      "id": "rnVELr0qj",
+      "name": "Short Descriotion",
+      "type": "formattedText"
+    },
+    {
+      "id": "UU3_aUcjd",
+      "name": "Full Description",
+      "type": "formattedText"
+    },
+    {
+      "id": "z0tLkA06X",
+      "name": "Currency",
+      "type": "string"
+    },
+    {
+      "id": "JqWtXVFFf",
+      "name": "Price Per Night",
+      "type": "number"
+    },
+    {
+      "id": "CW_zNVeK6",
+      "name": "Max Guests",
+      "type": "number"
+    },
+    {
+      "id": "l0SPmbjnE",
+      "name": "Room Size",
+      "type": "number"
+    },
+    {
+      "id": "WQQ5QQzKf",
+      "name": "Bed Type",
+      "type": "string"
+    },
+    {
+      "id": "pX_pbnANu",
+      "name": "Amenities",
+      "type": "formattedText"
+    },
+    {
+      "id": "mA0rGTUKS",
+      "name": "Featured",
+      "type": "boolean"
+    },
+    {
+      "id": "vz5FmTzyM",
+      "name": "Thumbnail",
+      "type": "image"
+    }
+  ],
+  "itemCount": 6,
+  "items": [
+    {
+      "_id": "QNUkUj9zQ",
+      "_slug": "classic-room",
+      "_draft": false,
+      "Name": {
+        "type": "string",
+        "value": "Standard Double",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Standard"
+      },
+      "Short Descriotion": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">A comfortable double room with satellite TV, AC, hot shower and complimentary Wi-Fi.</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Our Standard Double rooms offer a restful stay with a double bed, air conditioning, satellite TV, hot shower, safe box and complimentary high-speed Wi-Fi throughout the hotel.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price Per Night": {
+        "type": "number",
+        "value": 5297
+      },
+      "Max Guests": {
+        "type": "number",
+        "value": 2
+      },
+      "Room Size": {
+        "type": "number",
+        "value": 24
+      },
+      "Bed Type": {
+        "type": "string",
+        "value": "Double Bed",
+        "valueByLocale": {}
+      },
+      "Amenities": {
+        "type": "formattedText",
+        "value": "<ul dir=\"auto\"><li data-preset-tag=\"p\"><p>Double Bed</p></li><li data-preset-tag=\"p\"><p>AC</p></li><li data-preset-tag=\"p\"><p>Satellite TV</p></li><li data-preset-tag=\"p\"><p>Hot Shower</p></li><li data-preset-tag=\"p\"><p>Safe Box</p></li><li data-preset-tag=\"p\"><p>Free Wi-Fi</p></li></ul>",
+        "valueByLocale": {}
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      },
+      "Thumbnail": {
+        "type": "image",
+        "value": {
+          "id": "F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg",
+          "url": "https://framerusercontent.com/images/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg?scale-down-to=512",
+          "altText": "Standard Double room",
+          "resolution": "auto"
+        }
+      }
+    },
+    {
+      "_id": "DpprQu_p2",
+      "_slug": "deluxe-room",
+      "_draft": false,
+      "Name": {
+        "type": "string",
+        "value": "Deluxe Room",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Deluxe"
+      },
+      "Short Descriotion": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">King bed, AC, laundry service, safe box and complimentary Wi-Fi.</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Step up to our Deluxe Room with a king bed, air conditioning, in-room safe, laundry service and complimentary Wi-Fi. Designed for guests who want extra comfort during their Machakos stay.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price Per Night": {
+        "type": "number",
+        "value": 8543
+      },
+      "Max Guests": {
+        "type": "number",
+        "value": 2
+      },
+      "Room Size": {
+        "type": "number",
+        "value": 32
+      },
+      "Bed Type": {
+        "type": "string",
+        "value": "King Bed",
+        "valueByLocale": {}
+      },
+      "Amenities": {
+        "type": "formattedText",
+        "value": "<ul dir=\"auto\"><li data-preset-tag=\"p\"><p>King Bed</p></li><li data-preset-tag=\"p\"><p>AC</p></li><li data-preset-tag=\"p\"><p>Safe Box</p></li><li data-preset-tag=\"p\"><p>Laundry Service</p></li><li data-preset-tag=\"p\"><p>Free Wi-Fi</p></li></ul>",
+        "valueByLocale": {}
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      },
+      "Thumbnail": {
+        "type": "image",
+        "value": {
+          "id": "ZZg75WJS1Y9gEX2gbZSy2Ih7pFI.jpg",
+          "url": "https://framerusercontent.com/images/ZZg75WJS1Y9gEX2gbZSy2Ih7pFI.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/ZZg75WJS1Y9gEX2gbZSy2Ih7pFI.jpg?scale-down-to=512",
+          "altText": "Deluxe Room",
+          "resolution": "auto"
+        }
+      }
+    },
+    {
+      "_id": "X9Ln4vly1",
+      "_slug": "penthouse-suite",
+      "_draft": true,
+      "Name": {
+        "type": "string",
+        "value": "Penthouse Suite",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Suite"
+      },
+      "Short Descriotion": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">TODO: Client content required</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">TODO: Client content required — no penthouse suite listed on the client website. Please confirm room details and pricing.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price Per Night": {
+        "type": "number",
+        "value": 13875
+      },
+      "Max Guests": {
+        "type": "number",
+        "value": 2
+      },
+      "Room Size": {
+        "type": "number",
+        "value": 52
+      },
+      "Bed Type": {
+        "type": "string",
+        "value": "King Bed",
+        "valueByLocale": {}
+      },
+      "Amenities": {
+        "type": "formattedText",
+        "value": "<ul dir=\"auto\"><li data-preset-tag=\"p\"><p>Free Wi-Fi</p></li><li data-preset-tag=\"p\"><p>AC</p></li><li data-preset-tag=\"p\"><p>Satellite TV</p></li><li data-preset-tag=\"p\"><p>Hot Shower</p></li></ul>",
+        "valueByLocale": {}
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": false
+      },
+      "Thumbnail": {
+        "type": "image",
+        "value": {
+          "id": "fTVtpXxHUPGqroLMhJgvUwBr7w.jpg",
+          "url": "https://framerusercontent.com/images/fTVtpXxHUPGqroLMhJgvUwBr7w.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/fTVtpXxHUPGqroLMhJgvUwBr7w.jpg?scale-down-to=512",
+          "altText": "Suite room",
+          "resolution": "auto"
+        }
+      }
+    },
+    {
+      "_id": "kclHesVBJ",
+      "_slug": "junior-suite",
+      "_draft": false,
+      "Name": {
+        "type": "string",
+        "value": "Junior Suite",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Suite"
+      },
+      "Short Descriotion": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Separate sitting room, king bed, large TV, tea facility and bathrobe.</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Our Junior Suite offers a separate sitting room, king bed, large TV, tea-making facility and bathrobe — ideal for longer stays or guests who want more space to relax.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price Per Night": {
+        "type": "number",
+        "value": 13875
+      },
+      "Max Guests": {
+        "type": "number",
+        "value": 3
+      },
+      "Room Size": {
+        "type": "number",
+        "value": 48
+      },
+      "Bed Type": {
+        "type": "string",
+        "value": "King Bed",
+        "valueByLocale": {}
+      },
+      "Amenities": {
+        "type": "formattedText",
+        "value": "<ul dir=\"auto\"><li data-preset-tag=\"p\"><p>Sitting Room</p></li><li data-preset-tag=\"p\"><p>King Bed</p></li><li data-preset-tag=\"p\"><p>Large TV</p></li><li data-preset-tag=\"p\"><p>Tea Facility</p></li><li data-preset-tag=\"p\"><p>Bathrobe</p></li><li data-preset-tag=\"p\"><p>Free Wi-Fi</p></li></ul>",
+        "valueByLocale": {}
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      },
+      "Thumbnail": {
+        "type": "image",
+        "value": {
+          "id": "MBYpmJ3oSC4KVNubh2vxq6Wy1fI.jpg",
+          "url": "https://framerusercontent.com/images/MBYpmJ3oSC4KVNubh2vxq6Wy1fI.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/MBYpmJ3oSC4KVNubh2vxq6Wy1fI.jpg?scale-down-to=512",
+          "altText": "Junior Suite",
+          "resolution": "auto"
+        }
+      }
+    },
+    {
+      "_id": "KKMzPOuO5",
+      "_slug": "garden-villa",
+      "_draft": true,
+      "Name": {
+        "type": "string",
+        "value": "Garden Villa",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Villa"
+      },
+      "Short Descriotion": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">TODO: Client content required</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">TODO: Client content required — no villa room type listed on the client website. Garden venue and outside catering are available separately.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price Per Night": {
+        "type": "number",
+        "value": 13875
+      },
+      "Max Guests": {
+        "type": "number",
+        "value": 4
+      },
+      "Room Size": {
+        "type": "number",
+        "value": 80
+      },
+      "Bed Type": {
+        "type": "string",
+        "value": "King Bed",
+        "valueByLocale": {}
+      },
+      "Amenities": {
+        "type": "formattedText",
+        "value": "<ul dir=\"auto\"><li data-preset-tag=\"p\"><p>Free Wi-Fi</p></li><li data-preset-tag=\"p\"><p>AC</p></li><li data-preset-tag=\"p\"><p>Satellite TV</p></li></ul>",
+        "valueByLocale": {}
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": false
+      },
+      "Thumbnail": {
+        "type": "image",
+        "value": {
+          "id": "zcEWYcQeMKFK1Xfp5zNaislyTag.jpg",
+          "url": "https://framerusercontent.com/images/zcEWYcQeMKFK1Xfp5zNaislyTag.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/zcEWYcQeMKFK1Xfp5zNaislyTag.jpg?scale-down-to=512",
+          "altText": "Garden venue",
+          "resolution": "auto"
+        }
+      }
+    },
+    {
+      "_id": "v3DEhkt3Q",
+      "_slug": "family-room",
+      "_draft": false,
+      "Name": {
+        "type": "string",
+        "value": "Twin Bedroom",
+        "valueByLocale": {}
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Deluxe"
+      },
+      "Short Descriotion": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Twin beds, AC, satellite TV, hot shower and complimentary Wi-Fi.</p>",
+        "valueByLocale": {}
+      },
+      "Full Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">The Twin Bedroom is ideal for friends or colleagues travelling together. Two twin beds, air conditioning, satellite TV, hot shower, safe box and complimentary Wi-Fi come as standard.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price Per Night": {
+        "type": "number",
+        "value": 5297
+      },
+      "Max Guests": {
+        "type": "number",
+        "value": 2
+      },
+      "Room Size": {
+        "type": "number",
+        "value": 26
+      },
+      "Bed Type": {
+        "type": "string",
+        "value": "Twin Beds",
+        "valueByLocale": {}
+      },
+      "Amenities": {
+        "type": "formattedText",
+        "value": "<ul dir=\"auto\"><li data-preset-tag=\"p\"><p>Twin Beds</p></li><li data-preset-tag=\"p\"><p>AC</p></li><li data-preset-tag=\"p\"><p>Satellite TV</p></li><li data-preset-tag=\"p\"><p>Hot Shower</p></li><li data-preset-tag=\"p\"><p>Safe Box</p></li><li data-preset-tag=\"p\"><p>Free Wi-Fi</p></li></ul>",
+        "valueByLocale": {}
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      },
+      "Thumbnail": {
+        "type": "image",
+        "value": {
+          "id": "utCEIcnbjlito3X1nVD8i8B5qJU.jpg",
+          "url": "https://framerusercontent.com/images/utCEIcnbjlito3X1nVD8i8B5qJU.jpg",
+          "thumbnailUrl": "https://framerusercontent.com/images/utCEIcnbjlito3X1nVD8i8B5qJU.jpg?scale-down-to=512",
+          "altText": "Twin Bedroom",
+          "resolution": "auto"
+        }
+      }
+    }
+  ]
+}

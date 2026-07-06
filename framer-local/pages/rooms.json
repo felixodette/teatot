@@ -1,0 +1,770 @@
+{
+  "type": "WebPageNode",
+  "id": "JpiJ0_upd",
+  "name": "/rooms",
+  "variables": [],
+  "$parentId": "sn7IXw6X9",
+  "$layoutTemplateId": "cd4ShtEtf",
+  "$layoutTemplateDisplayName": "Template",
+  "$breakpoints": [
+    {
+      "id": "HWWx6XTH2",
+      "name": "Desktop",
+      "mediaQueryRange": "(min-width: 1200px)"
+    },
+    {
+      "id": "q_PfTkcNq",
+      "name": "Tablet",
+      "mediaQueryRange": "(min-width: 810px) and (max-width: 1199.98px)"
+    },
+    {
+      "id": "WF3SLX1O7",
+      "name": "Phone",
+      "mediaQueryRange": "(max-width: 809.98px)"
+    }
+  ],
+  "attributes": {
+    "$control__scrollSection": "{\"target\":\"SpHonqiq1\"}",
+    "layoutTemplate": "default",
+    "path": "/rooms"
+  },
+  "children": [
+    {
+      "type": "FrameNode",
+      "name": "Desktop",
+      "id": "HWWx6XTH2",
+      "$isPrimary": true,
+      "$mediaQuery": {
+        "range": "(min-width: 1200px)",
+        "name": "Desktop"
+      },
+      "attributes": {
+        "left": "240px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "1200px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "QTT7KCoVR",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "IqZbA80B5",
+          "component": "f9mwZML90",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Desktop",
+            "$control__label": "ROOMS & SUITES",
+            "$control__headline": "Find your room.",
+            "$control__paragraph": "Six room types, from classic doubles to private villas. Every one designed for rest.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "false",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg",
+              "alt": "Hotel room"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "640px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "sl54Eo3K5",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "128px",
+            "overflow": "clip",
+            "padding": "24px 24px 64px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "Z3AfKasyM",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "hN5fNS3_q",
+                  "attributes": {
+                    "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "id": "FuXqNBd3n",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "grid",
+                        "gridAlignment": "center",
+                        "gridColumnCount": 3,
+                        "gridColumnMinWidth": "50px",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Rooms",
+                          "repeatedDescendantId": "rqxNWgkXs",
+                          "limit": "6"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "rqxNWgkXs",
+                          "component": "fclm0HQnA",
+                          "$componentDisplayName": "Room Card",
+                          "attributes": {
+                            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+                            "$control__name": "var(--variable-LmnFrKT0w)",
+                            "$control__textContent": {
+                              "from": "var(--variable-s_5P30m6p)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__currency": "var(--variable-z0tLkA06X)",
+                            "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "$control__link": {
+                              "href": "/rooms/:slug",
+                              "collectionItem": "var(--variable-dsZM117_y)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "QWVcgdnb6",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "SpHonqiq1",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Tablet",
+      "id": "q_PfTkcNq",
+      "$isReplica": true,
+      "$originalId": "HWWx6XTH2",
+      "$mediaQuery": {
+        "range": "(min-width: 810px) and (max-width: 1199.98px)",
+        "name": "Tablet"
+      },
+      "attributes": {
+        "left": "1540px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "810px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "q_PfTkcNqQTT7KCoVR",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "q_PfTkcNq",
+          "$originalId": "QTT7KCoVR",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "q_PfTkcNqIqZbA80B5",
+          "component": "f9mwZML90",
+          "$replicaId": "q_PfTkcNq",
+          "$originalId": "IqZbA80B5",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Tablet",
+            "$control__label": "ROOMS & SUITES",
+            "$control__headline": "Find your room.",
+            "$control__paragraph": "Six room types, from classic doubles to private villas. Every one designed for rest.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "false",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg",
+              "alt": "Hotel room"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "640px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "q_PfTkcNqsl54Eo3K5",
+          "$replicaId": "q_PfTkcNq",
+          "$originalId": "sl54Eo3K5",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "80px",
+            "overflow": "clip",
+            "padding": "24px 24px 64px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "q_PfTkcNqZ3AfKasyM",
+              "$replicaId": "q_PfTkcNq",
+              "$originalId": "Z3AfKasyM",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "q_PfTkcNqhN5fNS3_q",
+                  "$replicaId": "q_PfTkcNq",
+                  "$originalId": "hN5fNS3_q",
+                  "attributes": {
+                    "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "64px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "id": "q_PfTkcNqFuXqNBd3n",
+                      "$replicaId": "q_PfTkcNq",
+                      "$originalId": "FuXqNBd3n",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "grid",
+                        "gridAlignment": "center",
+                        "gridColumnCount": 2,
+                        "gridColumnMinWidth": "50px",
+                        "gap": "8px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Rooms",
+                          "repeatedDescendantId": "rqxNWgkXs",
+                          "limit": "6"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "q_PfTkcNqrqxNWgkXs",
+                          "component": "fclm0HQnA",
+                          "$replicaId": "q_PfTkcNq",
+                          "$originalId": "rqxNWgkXs",
+                          "$componentDisplayName": "Room Card",
+                          "attributes": {
+                            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+                            "$control__name": "var(--variable-LmnFrKT0w)",
+                            "$control__textContent": {
+                              "from": "var(--variable-s_5P30m6p)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__currency": "var(--variable-z0tLkA06X)",
+                            "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "$control__link": {
+                              "href": "/rooms/:slug",
+                              "collectionItem": "var(--variable-dsZM117_y)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "q_PfTkcNqQWVcgdnb6",
+          "$replicaId": "q_PfTkcNq",
+          "$originalId": "QWVcgdnb6",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "q_PfTkcNqSpHonqiq1",
+              "$replicaId": "q_PfTkcNq",
+              "$originalId": "SpHonqiq1",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "FrameNode",
+      "name": "Phone",
+      "id": "WF3SLX1O7",
+      "$isReplica": true,
+      "$originalId": "HWWx6XTH2",
+      "$mediaQuery": {
+        "range": "(max-width: 809.98px)",
+        "name": "Phone"
+      },
+      "attributes": {
+        "left": "2450px",
+        "right": "null",
+        "top": "0px",
+        "bottom": "null",
+        "centerAnchorX": "0%",
+        "centerAnchorY": "0%",
+        "constraintsLocked": false,
+        "width": "390px",
+        "height": "auto",
+        "transition": "spring-physics 500 60 1 0s"
+      },
+      "children": [
+        {
+          "type": "ComponentInstanceNode",
+          "id": "WF3SLX1O7QTT7KCoVR",
+          "component": "bSeEZJm22jsjERCOGQvq",
+          "$replicaId": "WF3SLX1O7",
+          "$originalId": "QTT7KCoVR",
+          "$componentDisplayName": "Lenis",
+          "attributes": {
+            "$control__smooth": "true",
+            "$control__intensity": "12",
+            "$control__infinite": "false",
+            "$control__orientation": "Vertical",
+            "$control__content": [],
+            "$control__snap": "null",
+            "position": "relative",
+            "width": "auto",
+            "height": "auto"
+          }
+        },
+        {
+          "type": "ComponentInstanceNode",
+          "id": "WF3SLX1O7IqZbA80B5",
+          "component": "f9mwZML90",
+          "$replicaId": "WF3SLX1O7",
+          "$originalId": "IqZbA80B5",
+          "$componentDisplayName": "Hero Section",
+          "attributes": {
+            "$control__variant": "Phone",
+            "$control__label": "ROOMS & SUITES",
+            "$control__headline": "Find your room.",
+            "$control__paragraph": "Six room types, from classic doubles to private villas. Every one designed for rest.",
+            "$control__primaryButtonText": "View Rooms",
+            "$control__secondaryButtonText": "Our Story",
+            "$control__buttonsVisability": "false",
+            "$control__ratingText": "4.9 out of 5 — Booking.com",
+            "$control__ratingVisible": "false",
+            "$control__image": {
+              "src": "https://framerusercontent.com/images/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg",
+              "alt": "Hotel room"
+            },
+            "position": "relative",
+            "width": "1fr",
+            "height": "640px"
+          }
+        },
+        {
+          "type": "FrameNode",
+          "name": "Main",
+          "id": "WF3SLX1O7sl54Eo3K5",
+          "$replicaId": "WF3SLX1O7",
+          "$originalId": "sl54Eo3K5",
+          "attributes": {
+            "htmlTag": "main",
+            "layout": "stack",
+            "stackDirection": "vertical",
+            "stackDistribution": "center",
+            "stackAlignment": "center",
+            "stackWrapEnabled": false,
+            "gap": "96px",
+            "overflow": "clip",
+            "padding": "24px 24px 64px 24px",
+            "position": "relative",
+            "width": "1fr",
+            "height": "auto"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "name": "Section",
+              "id": "WF3SLX1O7Z3AfKasyM",
+              "$replicaId": "WF3SLX1O7",
+              "$originalId": "Z3AfKasyM",
+              "attributes": {
+                "htmlTag": "section",
+                "layout": "stack",
+                "stackDirection": "vertical",
+                "stackDistribution": "center",
+                "stackAlignment": "center",
+                "stackWrapEnabled": false,
+                "gap": 10,
+                "overflow": "clip",
+                "position": "relative",
+                "width": "1fr",
+                "height": "auto"
+              },
+              "children": [
+                {
+                  "type": "FrameNode",
+                  "name": "Content",
+                  "id": "WF3SLX1O7hN5fNS3_q",
+                  "$replicaId": "WF3SLX1O7",
+                  "$originalId": "hN5fNS3_q",
+                  "attributes": {
+                    "fill": "var(--token-c966359b-ad94-41d4-9cee-ed518cc31784)",
+                    "layout": "stack",
+                    "stackDirection": "vertical",
+                    "stackDistribution": "center",
+                    "stackAlignment": "start",
+                    "stackWrapEnabled": false,
+                    "gap": "48px",
+                    "position": "relative",
+                    "width": "1fr",
+                    "height": "auto",
+                    "maxWidth": "1284px"
+                  },
+                  "children": [
+                    {
+                      "type": "FrameNode",
+                      "id": "WF3SLX1O7FuXqNBd3n",
+                      "$replicaId": "WF3SLX1O7",
+                      "$originalId": "FuXqNBd3n",
+                      "attributes": {
+                        "appearEffect": {
+                          "threshold": 0,
+                          "trigger": "onInView",
+                          "replay": false,
+                          "enter": {
+                            "opacity": 0,
+                            "x": 0,
+                            "y": 60,
+                            "scale": 1,
+                            "rotate": 0,
+                            "rotateX": 0,
+                            "rotateY": 0,
+                            "skewX": 0,
+                            "skewY": 0,
+                            "transition": "spring-duration 1s 0 0.1s",
+                            "stagger": "0s"
+                          }
+                        },
+                        "layout": "grid",
+                        "gridAlignment": "center",
+                        "gridColumnCount": 1,
+                        "gridColumnMinWidth": "50px",
+                        "gap": "8px 48px",
+                        "position": "relative",
+                        "collectionList": {
+                          "collection": "Rooms",
+                          "repeatedDescendantId": "rqxNWgkXs",
+                          "limit": "6"
+                        },
+                        "width": "1fr",
+                        "height": "auto"
+                      },
+                      "children": [
+                        {
+                          "type": "ComponentInstanceNode",
+                          "id": "WF3SLX1O7rqxNWgkXs",
+                          "component": "fclm0HQnA",
+                          "$replicaId": "WF3SLX1O7",
+                          "$originalId": "rqxNWgkXs",
+                          "$componentDisplayName": "Room Card",
+                          "attributes": {
+                            "$control__thumbnail": "var(--variable-vz5FmTzyM)",
+                            "$control__name": "var(--variable-LmnFrKT0w)",
+                            "$control__textContent": {
+                              "from": "var(--variable-s_5P30m6p)",
+                              "transforms": [
+                                {
+                                  "name": "enumToDisplayName"
+                                }
+                              ]
+                            },
+                            "$control__currency": "var(--variable-z0tLkA06X)",
+                            "$control__pricePerNight": "var(--variable-JqWtXVFFf)",
+                            "$control__fill": "var(--token-1d415d8d-0090-4270-98f3-57852a560cbe)",
+                            "$control__link": {
+                              "href": "/rooms/:slug",
+                              "collectionItem": "var(--variable-dsZM117_y)"
+                            },
+                            "position": "relative",
+                            "width": "1fr",
+                            "height": "auto"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FrameNode",
+          "name": "Top Nav Scroll Section Activator",
+          "id": "WF3SLX1O7QWVcgdnb6",
+          "$replicaId": "WF3SLX1O7",
+          "$originalId": "QWVcgdnb6",
+          "attributes": {
+            "layout": "null",
+            "overflow": "clip",
+            "position": "absolute",
+            "left": "0px",
+            "right": "null",
+            "top": "0px",
+            "bottom": "0px",
+            "centerAnchorX": "1.33%",
+            "centerAnchorY": "7.36%",
+            "constraintsLocked": true,
+            "width": "32px",
+            "height": "800px"
+          },
+          "children": [
+            {
+              "type": "FrameNode",
+              "id": "WF3SLX1O7SpHonqiq1",
+              "$replicaId": "WF3SLX1O7",
+              "$originalId": "SpHonqiq1",
+              "attributes": {
+                "layout": "null",
+                "overflow": "clip",
+                "left": "0px",
+                "right": "0px",
+                "top": "null",
+                "bottom": "0px",
+                "centerAnchorX": "87.5%",
+                "centerAnchorY": "79.18%",
+                "constraintsLocked": true,
+                "scrollTargetEnabled": true,
+                "elementId": "top-nav",
+                "width": "8px",
+                "height": "94%"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
