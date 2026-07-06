@@ -15,15 +15,19 @@
 
 ### 1. GitHub repository secrets
 
-Repo → **Settings** → **Secrets and variables** → **Actions** → New repository secret:
+Repo → **Settings** → **Secrets and variables** → **Actions**:
 
 | Secret | Value |
 |--------|-------|
-| `CPANEL_FTP_HOST` | FTP host (e.g. `ftp.teatot.co.ke` or server IP) |
-| `CPANEL_FTP_USER` | cPanel username |
-| `CPANEL_FTP_PASSWORD` | cPanel password (or FTP account password) |
+| `CPANEL_FTP_HOST` | FTP host (e.g. `teatot.co.ke` or server hostname) |
+| `CPANEL_FTP_USER` | **Main cPanel username** (`teatotco`) — not a subdomain FTP account |
+| `CPANEL_FTP_PASSWORD` | cPanel password |
 
-Create/find FTP credentials in cPanel → **FTP Accounts** (main account works).
+Deploy paths are set in the workflow: `public_html/development/` (dev) and `public_html/production/` (prod).
+
+Verify in FileZilla: connect with the same credentials → remote path should be `/home/teatotco` (or `/`), then `public_html/development` already exists.
+
+If a previous deploy created a wrong folder tree (e.g. `teatot.co.ke/developer/public_html/...`), delete it in File Manager — that was caused by a subdomain-scoped FTP account or wrong `server-dir`.
 
 ### 2. Subdomain (development)
 

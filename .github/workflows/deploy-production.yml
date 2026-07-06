@@ -35,6 +35,8 @@ jobs:
           server: ${{ secrets.CPANEL_FTP_HOST }}
           username: ${{ secrets.CPANEL_FTP_USER }}
           password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
           local-dir: ./deploy/development/
-          server-dir: ./public_html/production/
+          server-dir: public_html/production/
           dangerous-clean-slate: true

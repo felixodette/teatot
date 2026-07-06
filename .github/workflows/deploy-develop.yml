@@ -35,6 +35,9 @@ jobs:
           server: ${{ secrets.CPANEL_FTP_HOST }}
           username: ${{ secrets.CPANEL_FTP_USER }}
           password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
           local-dir: ./deploy/development/
-          server-dir: ./public_html/development/
+          # Main cPanel FTP user lands at /home/teatotco — NOT a subdomain FTP account.
+          server-dir: public_html/development/
           dangerous-clean-slate: true
