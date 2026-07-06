@@ -63,7 +63,7 @@ After deploy, the app root should contain: `server.js`, `package.json`, `package
 
 1. cPanel → **Setup Node.js App** → your app
 2. If a real `node_modules` **folder** exists (not a symlink), **delete it**
-3. Confirm `package.json` and `package-lock.json` are in the app root
+3. Confirm `package.json`, `package-lock.json`, and `.npmrc` are in the app root
 4. Click **Run NPM Install** — wait until it completes without errors
 5. In File Manager, `node_modules` should be a **symlink** (arrow icon), not a folder
 6. Click **Restart**
@@ -128,7 +128,8 @@ This runs `npm run build` on the server — may fail on low-memory hosting. GitH
 | Symptom | Fix |
 |---------|-----|
 | **CloudLinux: must not contain node_modules** | Delete the `node_modules` **folder** in File Manager (not the symlink). Then **Run NPM Install** in Node.js App. |
-| **Cannot find module 'next'** | **Run NPM Install** did not run or failed. Check `package-lock.json` exists in app root, run NPM Install again, confirm `node_modules` is a symlink with `next` inside, then Restart. |
+| **npm install fails on cPanel** | Usually lockfile mismatch (fixed in latest deploy). Ensure `.npmrc` is present. If it still fails, open the NPM Install log in cPanel and check disk quota / memory. |
+| **Cannot find module 'next'** | NPM Install did not succeed. Fix install first, confirm `node_modules` symlink contains `next`, then Restart. |
 | **503 Service Unavailable** | Start/restart app; check `.htaccess` exists; see stderr.log. |
 | GitHub Action fails at FTP | Check secrets; confirm `public_html/development` exists |
 | 503 after deploy | cPanel → Node.js App → Restart |

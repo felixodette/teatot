@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 /**
  * Stage production build for cPanel (CloudLinux Node.js Selector).
- * Uploads .next + package-lock; server uses virtualenv node_modules after Run NPM Install.
+ * Generates a matching production package-lock.json for Run NPM Install on server.
  */
+import { execSync } from "node:child_process";
 import { cpSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { dirname, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -27,7 +28,7 @@ cpSync(nextDir, resolve(outDir, ".next"), {
 cpSync(resolve(root, "public"), resolve(outDir, "public"), { recursive: true });
 cpSync(resolve(root, "scripts/cpanel-server.js"), resolve(outDir, "server.js"));
 cpSync(resolve(root, "config/passenger-development.htaccess"), resolve(outDir, ".htaccess"));
-cpSync(resolve(root, "package-lock.json"), resolve(outDir, "package-lock.json"));
+cpSync(resolve(root, "config/cpanel.npmrc"), resolve(outDir, ".npmrc"));
 mkdirSync(resolve(outDir, "tmp"), { recursive: true });
 
 const pkg = JSON.parse(readFileSync(resolve(root, "package.json"), "utf8"));
@@ -46,6 +47,11 @@ writeFileSync(
     2,
   ),
 );
+
+// Production lockfile matching slim package.json (root lock includes devDeps → cPanel npm install fails)
+console.log("▸ Generating production package-lock.json…");
+execSync("npm install --omit=dev", { cwd: outDir, stdio: "inherit" });
+rmSync(resolve(outDir, "node_modules"), { recursive: true, force: true });
 
 console.log(`✓ Staged: ${outDir}`);
 console.log("  On cPanel: Run NPM Install → Restart app");

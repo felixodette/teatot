@@ -33,6 +33,7 @@ jobs:
         run: |
           test -f deploy/development/server.js
           test -f deploy/development/package-lock.json
+          test -f deploy/development/.npmrc
           test -f deploy/development/.next/BUILD_ID
           test ! -e deploy/development/node_modules
 
