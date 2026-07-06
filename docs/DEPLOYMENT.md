@@ -1,11 +1,21 @@
 # Deployment — Tea Tot Hotels (cPanel)
 
+## Server layout
+
+| | Path |
+|---|------|
+| Account home | `/home/teatotco` |
+| Development site | `/home/teatotco/public_html/development` |
+| Production site | `/home/teatotco/public_html/production` |
+
+FTP `server-dir` is **relative to account home** (`/home/teatotco`), so development deploys use `public_html/development/`.
+
 ## Branch → environment
 
-| Branch    | URL                      | cPanel path                | Build trigger        |
+| Branch    | URL                      | Absolute path on server    | Build trigger        |
 |-----------|--------------------------|----------------------------|----------------------|
-| `develop` | https://dev.teatot.co.ke   | `public_html/development`  | push → GitHub Actions |
-| `main`    | https://www.teatot.co.ke   | `public_html/production`   | push → GitHub Actions |
+| `develop` | https://dev.teatot.co.ke   | `/home/teatotco/public_html/development`  | push → GitHub Actions |
+| `main`    | https://www.teatot.co.ke   | `/home/teatotco/public_html/production`   | push → GitHub Actions |
 
 **Compiling happens on git push** — GitHub Actions runs `npm ci`, `npm run build`, stages the standalone output, and uploads via FTP. You never need to build locally for deploy.
 
@@ -20,14 +30,12 @@ Repo → **Settings** → **Secrets and variables** → **Actions**:
 | Secret | Value |
 |--------|-------|
 | `CPANEL_FTP_HOST` | FTP host (e.g. `teatot.co.ke` or server hostname) |
-| `CPANEL_FTP_USER` | **Main cPanel username** (`teatotco`) — not a subdomain FTP account |
+| `CPANEL_FTP_USER` | `teatotco` (main account — FTP root must be `/home/teatotco`) |
 | `CPANEL_FTP_PASSWORD` | cPanel password |
 
-Deploy paths are set in the workflow: `public_html/development/` (dev) and `public_html/production/` (prod).
+GitHub Actions uploads to `public_html/development/` → `/home/teatotco/public_html/development/`.
 
-Verify in FileZilla: connect with the same credentials → remote path should be `/home/teatotco` (or `/`), then `public_html/development` already exists.
-
-If a previous deploy created a wrong folder tree (e.g. `teatot.co.ke/developer/public_html/...`), delete it in File Manager — that was caused by a subdomain-scoped FTP account or wrong `server-dir`.
+Verify in FileZilla: after login, remote directory is `/home/teatotco`. Navigate to `public_html/development` — that is the deploy target.
 
 ### 2. Subdomain (development)
 
@@ -73,7 +81,7 @@ GitHub Actions (`.github/workflows/deploy-develop.yml`) will:
 
 1. `npm ci` + `npm run build`
 2. Stage standalone output to `deploy/development/`
-3. FTP upload to `public_html/development/`
+3. FTP upload to `/home/teatotco/public_html/development/`
 
 Watch progress: GitHub → **Actions** tab.
 

@@ -3,7 +3,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-DEPLOYPATH="${DEPLOYPATH:-$HOME/public_html/development}"
+DEPLOYPATH="${DEPLOYPATH:-/home/teatotco/public_html/development}"
 
 cd "$ROOT"
 export NODE_ENV=production

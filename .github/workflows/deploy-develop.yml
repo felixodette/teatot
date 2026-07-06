@@ -38,6 +38,6 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./deploy/development/
-          # Main cPanel FTP user lands at /home/teatotco — NOT a subdomain FTP account.
+          # FTP root: /home/teatotco → deploy target: /home/teatotco/public_html/development/
           server-dir: public_html/development/
           dangerous-clean-slate: true

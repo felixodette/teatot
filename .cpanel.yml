@@ -3,5 +3,5 @@
 # cPanel → Git Version Control → branch develop → enable Pull and Deploy
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/public_html/development
+    - export DEPLOYPATH=/home/teatotco/public_html/development
     - /bin/bash scripts/cpanel-deploy.sh

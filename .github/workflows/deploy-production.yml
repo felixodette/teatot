@@ -38,5 +38,6 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./deploy/development/
+          # FTP root: /home/teatotco → /home/teatotco/public_html/production/
           server-dir: public_html/production/
           dangerous-clean-slate: true
