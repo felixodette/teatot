@@ -27,17 +27,17 @@ jobs:
         run: |
           npm ci
           npm run build
-          node scripts/stage-standalone.mjs
+          node scripts/stage-standalone.mjs production
 
       - name: Verify cPanel bundle
         run: |
-          test -f deploy/development/server.js
-          test -f deploy/development/package-lock.json
-          test -f deploy/development/.npmrc
-          test -f deploy/development/.next/BUILD_ID
-          test ! -e deploy/development/node_modules
+          test -f deploy/production/server.js
+          test -f deploy/production/package.json
+          test -f deploy/production/.next/BUILD_ID
+          test ! -e deploy/production/node_modules
+          test -d deploy/venv-node_modules/next
 
-      - name: Deploy to cPanel (FTP)
+      - name: Deploy app to cPanel (FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.CPANEL_FTP_HOST }}
@@ -45,7 +45,20 @@ jobs:
           password: ${{ secrets.CPANEL_FTP_PASSWORD }}
           protocol: ftps
           port: 21
-          local-dir: ./deploy/development/
+          local-dir: ./deploy/production/
           server-dir: public_html/production/
           dangerous-clean-slate: false
+          timeout: 600000
+
+      - name: Deploy dependencies to CloudLinux virtualenv (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.CPANEL_FTP_HOST }}
+          username: ${{ secrets.CPANEL_FTP_USER }}
+          password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./deploy/venv-node_modules/
+          server-dir: nodevenv/public_html/production/22/lib/node_modules/
+          dangerous-clean-slate: true
           timeout: 600000
