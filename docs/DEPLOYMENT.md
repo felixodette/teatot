@@ -116,6 +116,7 @@ This runs `npm run build` on the server — may fail on low-memory hosting. GitH
 
 | Symptom | Fix |
 |---------|-----|
+| **Cannot find module 'next'** | FTP deploy skipped `node_modules` (default exclude). Fixed in workflow — redeploy. Or cPanel → **Run NPM Install** as temporary fix. |
 | **503 Service Unavailable** | FTP deploy wipes `.htaccess` — redeploy includes Passenger config now. In cPanel → Node.js App → **Restart**. If still 503, copy the Passenger block from cPanel into `config/passenger-development.htaccess`, push again. Check **stderr.log** in the app root. |
 | GitHub Action fails at FTP | Check secrets; confirm `public_html/development` exists |
 | 503 after deploy | cPanel → Node.js App → Restart |
