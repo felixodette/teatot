@@ -1,0 +1,40 @@
+name: Deploy production
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      NODE_ENV: production
+      NEXT_PUBLIC_SITE_URL: https://www.teatot.co.ke
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+          node scripts/stage-standalone.mjs
+
+      - name: Deploy to cPanel (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.CPANEL_FTP_HOST }}
+          username: ${{ secrets.CPANEL_FTP_USER }}
+          password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+          local-dir: ./deploy/development/
+          server-dir: ./public_html/production/
+          dangerous-clean-slate: true

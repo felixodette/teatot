@@ -6,6 +6,7 @@
     "dev": "next dev",
     "dev:clean": "rm -rf .next && next dev",
     "build": "next build",
+    "stage": "node scripts/stage-standalone.mjs",
     "package:dev": "node scripts/package-standalone.mjs",
     "start": "next start",
     "lint": "next lint"

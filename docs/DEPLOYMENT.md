@@ -2,107 +2,97 @@
 
 ## Branch → environment
 
-| Branch    | URL                    | cPanel path                  |
-|-----------|------------------------|------------------------------|
-| `develop` | https://dev.teatot.co.ke | `public_html/development`  |
-| `main`    | https://www.teatot.co.ke | `public_html/production`   |
+| Branch    | URL                      | cPanel path                | Build trigger        |
+|-----------|--------------------------|----------------------------|----------------------|
+| `develop` | https://dev.teatot.co.ke   | `public_html/development`  | push → GitHub Actions |
+| `main`    | https://www.teatot.co.ke   | `public_html/production`   | push → GitHub Actions |
 
-Production setup is identical; only paths, subdomain, and env vars change.
+**Compiling happens on git push** — GitHub Actions runs `npm ci`, `npm run build`, stages the standalone output, and uploads via FTP. You never need to build locally for deploy.
 
 ---
 
-## One-time cPanel setup (development)
+## One-time setup
 
-### 1. Subdomain
+### 1. GitHub repository secrets
 
-1. cPanel → **Domains** → **Create A New Domain** (or Subdomains)
-2. Domain: `dev.teatot.co.ke`
-3. Document root: `public_html/development`
-4. Enable **SSL** (AutoSSL or Let's Encrypt)
+Repo → **Settings** → **Secrets and variables** → **Actions** → New repository secret:
 
-### 2. Node.js application
+| Secret | Value |
+|--------|-------|
+| `CPANEL_FTP_HOST` | FTP host (e.g. `ftp.teatot.co.ke` or server IP) |
+| `CPANEL_FTP_USER` | cPanel username |
+| `CPANEL_FTP_PASSWORD` | cPanel password (or FTP account password) |
 
-1. cPanel → **Setup Node.js App** → **Create Application**
-2. Settings:
+Create/find FTP credentials in cPanel → **FTP Accounts** (main account works).
 
-   | Field | Value |
-   |-------|-------|
-   | Node.js version | 22.x |
-   | Application mode | Production |
-   | Application root | `public_html/development` |
-   | Application URL | `dev.teatot.co.ke` |
-   | Application startup file | `server.js` |
+### 2. Subdomain (development)
 
-3. Click **Create**
+1. cPanel → **Domains** → create **dev.teatot.co.ke**
+2. Document root: `public_html/development`
+3. Enable SSL (AutoSSL)
 
-### 3. Environment variables
+### 3. Node.js application (development)
 
-In the Node.js app → **Environment variables**:
+cPanel → **Setup Node.js App** → **Create Application**:
 
-| Variable | Development value |
-|----------|-------------------|
+| Field | Value |
+|-------|-------|
+| Node.js version | 22.x |
+| Application mode | Production |
+| Application root | `public_html/development` |
+| Application URL | `dev.teatot.co.ke` |
+| Application startup file | `server.js` |
+
+### 4. Environment variables (cPanel Node.js app)
+
+Set in the Node.js app UI (runtime — not baked into the GitHub build except `NEXT_PUBLIC_*`):
+
+| Variable | Development |
+|----------|-------------|
 | `NODE_ENV` | `production` |
 | `NEXT_PUBLIC_SITE_URL` | `https://dev.teatot.co.ke` |
 | `CONTACT_EMAIL` | `info@teatot.co.ke` |
-| `SMTP_HOST` | (cPanel mail host, e.g. `mail.teatot.co.ke`) |
-| `SMTP_PORT` | `587` |
-| `SMTP_USER` | (mailbox user) |
-| `SMTP_PASSWORD` | (mailbox password) |
-| `NEXT_PUBLIC_GOOGLE_MAPS_EMBED_KEY` | (optional) |
+| `SMTP_HOST` / `SMTP_PORT` / `SMTP_USER` / `SMTP_PASSWORD` | (when contact form needed) |
 
-Passenger sets `PORT` automatically — do not hardcode it.
-
-### 4. Git deployment (recommended)
-
-1. cPanel → **Git Version Control** → **Create**
-2. Clone URL: `https://github.com/felixodette/teatot.git`
-3. Repository path: e.g. `repositories/teatot`
-4. Checkout branch: **`develop`**
-5. Enable **Pull and Deploy** → deploy path: `public_html/development`
-6. The repo includes `.cpanel.yml` which builds and copies the standalone output on each deploy.
-
-If `npm run build` fails on the server (memory limit), use **manual deploy** below.
+`NEXT_PUBLIC_SITE_URL` is also set in `.github/workflows/deploy-develop.yml` at **build** time so sitemap/OG tags are correct.
 
 ---
 
-## Deploy development site
-
-### Option A — Git push (auto-deploy)
+## Deploy (development)
 
 ```bash
 git checkout develop
 git push origin develop
 ```
 
-Then in cPanel → Git → **Pull or Deploy** (or wait for webhook if configured).
+GitHub Actions (`.github/workflows/deploy-develop.yml`) will:
 
-Restart the Node.js app if pages look stale.
+1. `npm ci` + `npm run build`
+2. Stage standalone output to `deploy/development/`
+3. FTP upload to `public_html/development/`
 
-### Option B — Manual package + upload
+Watch progress: GitHub → **Actions** tab.
 
-```bash
-npm run package:dev
-```
+After first deploy, restart the Node.js app in cPanel if needed.
 
-This creates `deploy/development/` with everything Passenger needs:
+---
 
-- `server.js` (startup file)
-- `node_modules/` (traced dependencies)
-- `.next/` (server + static)
-- `public/` (images)
+## Alternative: cPanel Git pull (build on server)
 
-Upload the **contents** of `deploy/development/` to `public_html/development/` (File Manager or SFTP). Overwrite existing files.
+If you prefer building on the cPanel server instead of GitHub Actions:
 
-Then cPanel → Node.js App → **Restart**.
+1. cPanel → **Git Version Control** → clone `https://github.com/felixodette/teatot.git`, branch **`develop`**
+2. Enable **Pull and Deploy** (`.cpanel.yml` runs `scripts/cpanel-deploy.sh`)
+
+This runs `npm run build` on the server — may fail on low-memory hosting. GitHub Actions is the recommended path.
 
 ---
 
 ## Post-deploy checks
 
-1. https://dev.teatot.co.ke/ — home page loads
-2. https://dev.teatot.co.ke/rooms — room listing
-3. https://dev.teatot.co.ke/sitemap.xml — URLs use `dev.teatot.co.ke`
-4. Contact form (if SMTP configured)
+1. https://dev.teatot.co.ke/
+2. https://dev.teatot.co.ke/rooms
+3. https://dev.teatot.co.ke/sitemap.xml — URLs should use `dev.teatot.co.ke`
 
 ---
 
@@ -110,23 +100,16 @@ Then cPanel → Node.js App → **Restart**.
 
 | Symptom | Fix |
 |---------|-----|
-| 503 / app not running | Node.js App → Restart; check `server.js` exists in app root |
-| Missing CSS/JS | Ensure `.next/static/` was copied (see `package:dev`) |
-| Wrong canonical URLs | Set `NEXT_PUBLIC_SITE_URL=https://dev.teatot.co.ke` and rebuild |
-| Build OOM on server | Use `npm run package:dev` locally, upload via File Manager |
-| Images broken | Confirm `public/` folder uploaded; try `images.unoptimized: true` in `next.config.ts` |
+| GitHub Action fails at FTP | Check secrets; confirm `public_html/development` exists |
+| 503 after deploy | cPanel → Node.js App → Restart |
+| Missing CSS/JS | Re-run workflow; confirm `.next/static` uploaded |
+| Wrong URLs in sitemap | `NEXT_PUBLIC_SITE_URL` in workflow env, then re-push |
+| Build OOM on cPanel git | Use GitHub Actions instead of server-side build |
 
 Passenger reload: `touch public_html/development/tmp/restart.txt`
 
 ---
 
-## Production (later)
+## Production (when ready)
 
-Repeat the same steps with:
-
-- Branch: `main`
-- Path: `public_html/production`
-- URL: `www.teatot.co.ke`
-- `NEXT_PUBLIC_SITE_URL=https://www.teatot.co.ke`
-
-Update `.cpanel.yml` deploy path or maintain a production-specific workflow when ready.
+Push to `main` — `.github/workflows/deploy-production.yml` deploys to `public_html/production` with `NEXT_PUBLIC_SITE_URL=https://www.teatot.co.ke`. Repeat Node.js app setup for `www.teatot.co.ke`.
