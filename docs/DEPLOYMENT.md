@@ -116,7 +116,7 @@ This runs `npm run build` on the server — may fail on low-memory hosting. GitH
 
 | Symptom | Fix |
 |---------|-----|
-| **503 Service Unavailable** | FTP deploy wipes `.htaccess` — redeploy includes Passenger config now. In cPanel → Node.js App → **Restart**. If still 503, open the app in cPanel, copy the Passenger block into `deploy/templates/development.htaccess`, push again. Check **stderr.log** in the app root. |
+| **503 Service Unavailable** | FTP deploy wipes `.htaccess` — redeploy includes Passenger config now. In cPanel → Node.js App → **Restart**. If still 503, copy the Passenger block from cPanel into `config/passenger-development.htaccess`, push again. Check **stderr.log** in the app root. |
 | GitHub Action fails at FTP | Check secrets; confirm `public_html/development` exists |
 | 503 after deploy | cPanel → Node.js App → Restart |
 | Missing CSS/JS | Re-run workflow; confirm `.next/static` uploaded |
