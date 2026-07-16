@@ -7,20 +7,18 @@ import ImageWithFallback from "./ImageWithFallback";
 interface Props {
   src: string;
   alt: string;
-  width: number;
-  height: number;
   speed?: number;
   className?: string;
+  layerHeight?: number | string;
   priority?: boolean;
 }
 
 export default function ParallaxImage({
   src,
   alt,
-  width,
-  height,
-  speed = 0.15,
+  speed = 0.3,
   className,
+  layerHeight,
   priority,
 }: Props) {
   const ref = useRef<HTMLDivElement>(null);
@@ -31,14 +29,20 @@ export default function ParallaxImage({
   const y = useTransform(scrollYProgress, [0, 1], [`-${speed * 100}%`, `${speed * 100}%`]);
 
   return (
-    <div ref={ref} className={`overflow-hidden ${className ?? ""}`}>
-      <motion.div style={{ y }}>
+    <div ref={ref} className={`relative h-full w-full overflow-hidden ${className ?? ""}`}>
+      <motion.div
+        className="absolute inset-x-0 top-0 w-full"
+        style={{
+          y,
+          height: layerHeight ?? "130%",
+        }}
+      >
         <ImageWithFallback
           src={src}
           alt={alt}
-          width={width}
-          height={height}
-          className="w-full object-cover"
+          fill
+          sizes="(max-width: 810px) calc(100vw - 50px), min(1635px, calc(100vw - 50px))"
+          className="object-cover"
           priority={priority}
         />
       </motion.div>

@@ -205,9 +205,6 @@ export default function DiningPage() {
           <ParallaxImage
             src="/images/dining/private-dining.jpg"
             alt="Private dining room"
-            width={5261}
-            height={3507}
-            className="h-full w-full"
           />
         </div>
         <RevealSection className="relative z-10 mx-auto max-w-[1412px] px-6 -mt-24 desktop:-mt-[174px]">

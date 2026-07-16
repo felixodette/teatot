@@ -13,6 +13,10 @@ function str(item: RawItem, field: string, fallback = ""): string {
   return item[field]?.value ?? fallback;
 }
 
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]*>/g, "").trim();
+}
+
 function num(item: RawItem, field: string, fallback = 0): number {
   return item[field]?.value ?? fallback;
 }
@@ -60,7 +64,7 @@ export function normalizeServices(raw: { items?: RawItem[] }): Service[] {
     number: str(i, "Number"),
     image: img(i, "Image"),
     name: str(i, "Name"),
-    shortDescription: str(i, "Short Descrription"),
+    shortDescription: stripHtml(str(i, "Short Descrription")),
     fullDescription: str(i, "Full Description"),
     category: str(i, "Category"),
   }));

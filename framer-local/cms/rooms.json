@@ -123,8 +123,8 @@
         "type": "image",
         "value": {
           "id": "F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg",
-          "url": "https://framerusercontent.com/images/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg",
-          "thumbnailUrl": "https://framerusercontent.com/images/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg?scale-down-to=512",
+          "url": "/images/rooms/standard-double.jpeg",
+          "thumbnailUrl": "",
           "altText": "Standard Double room",
           "resolution": "auto"
         }
@@ -188,8 +188,8 @@
         "type": "image",
         "value": {
           "id": "ZZg75WJS1Y9gEX2gbZSy2Ih7pFI.jpg",
-          "url": "https://framerusercontent.com/images/ZZg75WJS1Y9gEX2gbZSy2Ih7pFI.jpg",
-          "thumbnailUrl": "https://framerusercontent.com/images/ZZg75WJS1Y9gEX2gbZSy2Ih7pFI.jpg?scale-down-to=512",
+          "url": "/images/rooms/deluxe-room.jpeg",
+          "thumbnailUrl": "",
           "altText": "Deluxe Room",
           "resolution": "auto"
         }
@@ -318,8 +318,8 @@
         "type": "image",
         "value": {
           "id": "MBYpmJ3oSC4KVNubh2vxq6Wy1fI.jpg",
-          "url": "https://framerusercontent.com/images/MBYpmJ3oSC4KVNubh2vxq6Wy1fI.jpg",
-          "thumbnailUrl": "https://framerusercontent.com/images/MBYpmJ3oSC4KVNubh2vxq6Wy1fI.jpg?scale-down-to=512",
+          "url": "/images/rooms/junior-suite.jpeg",
+          "thumbnailUrl": "",
           "altText": "Junior Suite",
           "resolution": "auto"
         }
@@ -448,8 +448,8 @@
         "type": "image",
         "value": {
           "id": "utCEIcnbjlito3X1nVD8i8B5qJU.jpg",
-          "url": "https://framerusercontent.com/images/utCEIcnbjlito3X1nVD8i8B5qJU.jpg",
-          "thumbnailUrl": "https://framerusercontent.com/images/utCEIcnbjlito3X1nVD8i8B5qJU.jpg?scale-down-to=512",
+          "url": "/images/rooms/twin-bedroom.jpeg",
+          "thumbnailUrl": "",
           "altText": "Twin Bedroom",
           "resolution": "auto"
         }

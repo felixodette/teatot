@@ -43,8 +43,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(getHotelJsonLd()) }}
         />
         <LenisProvider>
+          <a href="#main-content" className="skip-link">
+            Skip to main content
+          </a>
           <Navigation />
-          <main>{children}</main>
+          <main id="main-content">{children}</main>
           <Footer />
         </LenisProvider>
       </body>

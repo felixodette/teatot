@@ -20,7 +20,7 @@ export default function RoomsPage() {
         label="ROOMS & SUITES"
         headline="Find your room."
         paragraph="Four comfortable room types — each with satellite TV, AC, hot showers and complimentary Wi-Fi."
-        imageSrc="/images/rooms/F6TGMb4lxxEGl9Oe4hoKcNb31Y4.jpg"
+        imageSrc="/images/rooms/bedroom-2.jpeg"
         imageAlt="Rooms at Tea Tot Hotels"
         height="640px"
       />

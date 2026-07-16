@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
 interface Props {
@@ -16,6 +16,13 @@ export default function RevealSection({
   delay = 0,
   as = "div",
 }: Props) {
+  const reduceMotion = useReducedMotion();
+
+  if (reduceMotion) {
+    const Tag = as;
+    return <Tag className={className}>{children}</Tag>;
+  }
+
   const Component = motion.create(as);
 
   return (

@@ -1,8 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import ImageWithFallback from "./ImageWithFallback";
+
+interface HeroButton {
+  text: string;
+  href: string;
+  external?: boolean;
+}
 
 interface Props {
   label: string;
@@ -11,9 +17,40 @@ interface Props {
   imageSrc: string;
   imageAlt: string;
   height?: string;
-  primaryButton?: { text: string; href: string };
-  secondaryButton?: { text: string; href: string };
+  fullViewport?: boolean;
+  primaryButton?: HeroButton;
+  secondaryButton?: HeroButton;
+  /** Label beside stars — text only, no ★ characters */
   rating?: string;
+  /** Star icons beside rating label (default 3) */
+  starCount?: number;
+}
+
+function HeroButtonLink({
+  button,
+  variant,
+}: {
+  button: HeroButton;
+  variant: "primary" | "secondary";
+}) {
+  const className =
+    variant === "primary"
+      ? "rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90"
+      : "rounded-full border border-white/30 px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-80";
+
+  if (button.external) {
+    return (
+      <a href={button.href} target="_blank" rel="noopener noreferrer" className={className}>
+        {button.text}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={button.href} className={className}>
+      {button.text}
+    </Link>
+  );
 }
 
 export default function HeroSection({
@@ -23,19 +60,26 @@ export default function HeroSection({
   imageSrc,
   imageAlt,
   height = "640px",
+  fullViewport = false,
   primaryButton,
   secondaryButton,
   rating,
+  starCount = 3,
 }: Props) {
+  const reduceMotion = useReducedMotion();
+  const sectionClass = fullViewport
+    ? "hero-section relative flex h-dvh min-h-[32rem] items-end overflow-hidden"
+    : "hero-section relative flex items-end overflow-hidden";
+
   return (
-    <section className="relative flex items-end overflow-hidden" style={{ height }}>
+    <section className={sectionClass} style={fullViewport ? undefined : { height }}>
       <div className="absolute inset-0">
         <ImageWithFallback
           src={imageSrc}
           alt={imageAlt}
-          width={1920}
-          height={1080}
-          className="h-full w-full object-cover"
+          fill
+          sizes="100vw"
+          className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
@@ -43,26 +87,26 @@ export default function HeroSection({
 
       <div className="relative z-10 mx-auto w-full max-w-[var(--container-max)] px-6 pb-16">
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={reduceMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1, bounce: 0, delay: 0.1 }}
+          transition={{ type: "spring", duration: 1, bounce: 0, delay: reduceMotion ? 0 : 0.1 }}
           className="text-xs font-medium uppercase tracking-[0.2em] text-white/70"
         >
           {label}
         </motion.p>
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={reduceMotion ? false : { opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1, bounce: 0, delay: 0.2 }}
+          transition={{ type: "spring", duration: 1, bounce: 0, delay: reduceMotion ? 0 : 0.2 }}
           className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl lg:text-6xl"
           style={{ fontFamily: "var(--font-inter-display)" }}
         >
           {headline}
         </motion.h1>
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={reduceMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1, bounce: 0, delay: 0.3 }}
+          transition={{ type: "spring", duration: 1, bounce: 0, delay: reduceMotion ? 0 : 0.3 }}
           className="mt-4 max-w-lg text-base text-white/80"
         >
           {paragraph}
@@ -70,39 +114,26 @@ export default function HeroSection({
 
         {(primaryButton || secondaryButton) && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1, bounce: 0, delay: 0.4 }}
-            className="mt-8 flex gap-4"
+            transition={{ type: "spring", duration: 1, bounce: 0, delay: reduceMotion ? 0 : 0.4 }}
+            className="mt-8 flex flex-wrap gap-4"
           >
-            {primaryButton && (
-              <Link
-                href={primaryButton.href}
-                className="rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90"
-              >
-                {primaryButton.text}
-              </Link>
-            )}
-            {secondaryButton && (
-              <Link
-                href={secondaryButton.href}
-                className="rounded-full border border-white/30 px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-80"
-              >
-                {secondaryButton.text}
-              </Link>
-            )}
+            {primaryButton && <HeroButtonLink button={primaryButton} variant="primary" />}
+            {secondaryButton && <HeroButtonLink button={secondaryButton} variant="secondary" />}
           </motion.div>
         )}
 
         {rating && (
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
+            initial={reduceMotion ? false : { opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1, bounce: 0, delay: 0.6 }}
+            transition={{ type: "spring", duration: 1, bounce: 0, delay: reduceMotion ? 0 : 0.6 }}
             className="mt-8 flex items-center gap-3"
+            aria-label={`${starCount} out of 5 stars — ${rating}`}
           >
             <div className="flex gap-0.5" aria-hidden>
-              {Array.from({ length: 5 }).map((_, i) => (
+              {Array.from({ length: starCount }).map((_, i) => (
                 <svg
                   key={i}
                   width="14"

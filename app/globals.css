@@ -46,6 +46,226 @@ body {
   background: var(--color-white);
 }
 
+/* Keyboard focus — visible on tab, not on click */
+:focus-visible {
+  outline: 2px solid var(--color-black);
+  outline-offset: 2px;
+}
+
+.hero-section :focus-visible {
+  outline-color: var(--color-white);
+}
+
+/* Skip navigation link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 1rem;
+}
+
+/* Page layout */
+.container-page {
+  margin-inline: auto;
+  max-width: var(--container-max);
+  padding-inline: 1.5rem;
+}
+
+.section-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding-block: 5rem;
+}
+
+@media (max-width: 810px) {
+  .section-stack {
+    gap: 4rem;
+    padding-block: 4rem;
+  }
+}
+
+/* Homepage services — sticky parallax + overlapping panel (Framer HW6O_EXTF) */
+.services-section {
+  margin-block: 8rem;
+}
+
+@media (max-width: 810px) {
+  .services-section {
+    margin-block: 4rem;
+  }
+}
+
+/* 1635×528 frame with 25px viewport gutters (Framer HW6O_EXTF) */
+.services-inset {
+  width: min(1635px, calc(100vw - 50px));
+  margin-inline: auto;
+}
+
+.services-parallax {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 528px;
+  overflow: hidden;
+}
+
+@media (max-width: 810px) {
+  .services-parallax {
+    height: 400px;
+  }
+}
+
+.services-panel {
+  position: relative;
+  z-index: 2;
+  margin-top: -174px; /* Framer image bottom: -174px */
+  background: var(--color-white);
+  padding: 64px 16px;
+}
+
+@media (max-width: 810px) {
+  .services-panel {
+    margin-top: -96px;
+    padding: 24px 16px;
+  }
+}
+
+@media (min-width: 810px) {
+  .services-panel {
+    padding: 64px;
+  }
+}
+
+/* Panel content — Framer gap 48px, max-width 1284px */
+.services-panel-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+  max-width: 1284px;
+  margin-inline: auto;
+}
+
+.services-intro .section-label {
+  color: var(--color-text-primary);
+}
+
+/* Service list grid — Framer O640Z5mVR */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+  width: 100%;
+}
+
+.services-card {
+  padding: 24px;
+}
+
+.services-card-title {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.services-card-desc {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: var(--color-text-primary);
+}
+
+@media (min-width: 810px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .services-card {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8px;
+    row-gap: 0;
+  }
+
+  .services-card:not(:last-child) {
+    border-right: 1px solid var(--color-border);
+  }
+}
+
+.service-number {
+  font-family: var(--font-inter-display), sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  color: var(--color-text-primary);
+}
+
+/* Section typography */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}
+
+.section-heading {
+  margin-top: 0.75rem;
+  font-family: var(--font-inter-display), sans-serif;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 2.25rem;
+  }
+}
+
+.section-body {
+  margin-top: 1rem;
+  max-width: 36rem;
+  font-size: 1rem;
+  line-height: 1.625;
+  color: var(--color-text-secondary);
+}
+
+/* Buttons */
+.btn-secondary {
+  display: inline-block;
+  border-radius: 9999px;
+  border: 1px solid var(--color-border);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.15s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--color-bg-subtle);
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,

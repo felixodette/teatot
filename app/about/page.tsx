@@ -31,7 +31,8 @@ export default function AboutPage() {
         imageSrc="/images/hero/about-hero.jpg"
         imageAlt="Tea Tot Hotels exterior"
         height="720px"
-        rating="★★★ Machakos Premier"
+        rating="Machakos Premier"
+        starCount={3}
       />
 
       <div className="mx-auto flex max-w-[1284px] flex-col gap-24 px-6 py-12 tablet:gap-20 tablet:py-20 desktop:gap-32 desktop:py-24">

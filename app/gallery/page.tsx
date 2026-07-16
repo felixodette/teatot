@@ -21,7 +21,8 @@ export default function GalleryPage() {
         imageSrc="/images/hero/gallery-hero.jpg"
         imageAlt="Tea Tot Hotels gallery"
         height="640px"
-        rating="★★★ Machakos Premier"
+        rating="Machakos Premier"
+        starCount={3}
       />
 
       <div className="mx-auto w-full max-w-[1284px] px-6 py-6">
