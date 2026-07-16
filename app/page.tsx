@@ -161,7 +161,7 @@ export default function Home() {
           <RevealSection delay={0.1}>
             <div className="h-[640px] overflow-hidden rounded-lg">
               <ImageWithFallback
-                src="/images/home/our-story.jpg"
+                src="/images/dining/coffee-4.jpg"
                 alt="Tea Tot Hotels — Our Story"
                 width={640}
                 height={640}
@@ -211,7 +211,7 @@ export default function Home() {
           <RevealSection>
             <div className="h-[528px] overflow-hidden">
               <ParallaxImage
-                src="/images/dining/dining-interior.jpg"
+                src="/images/dining/dining-1.jpg"
                 alt="Dining at Tea Tot Hotels"
               />
             </div>

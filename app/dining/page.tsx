@@ -190,7 +190,7 @@ export default function DiningPage() {
           </div>
           <div className="relative h-[320px] w-full flex-1 overflow-hidden desktop:h-[640px]">
             <ImageWithFallback
-              src="/images/team/wScVVvcV3otS0pfxbkwUsgUvbQ.jpg"
+              src="/images/dining/pizza-2.jpg"
               alt="Tea Tot Hotels dining team"
               width={4254}
               height={3612}
@@ -203,7 +203,7 @@ export default function DiningPage() {
       <section className="relative mt-24 desktop:mt-24">
         <div className="sticky top-0 z-0 h-[400px] overflow-hidden desktop:h-[528px]">
           <ParallaxImage
-            src="/images/dining/private-dining.jpg"
+            src="/images/dining/dining-2.jpg"
             alt="Private dining room"
           />
         </div>
