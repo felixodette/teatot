@@ -60,23 +60,6 @@ export interface Testimonial {
   rating: number;
 }
 
-export interface Faq {
-  slug: string;
-  question: string;
-  answer: string;
-  category: string;
-  sort: number;
-}
-
-export interface TeamMember {
-  slug: string;
-  name: string;
-  role: string;
-  bio: string;
-  sortOrder: number;
-  photo: CmsImage;
-}
-
 export interface BlogPost {
   slug: string;
   title: string;

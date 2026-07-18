@@ -7,7 +7,7 @@ import ParallaxImage from "@/components/ParallaxImage";
 import ImageWithFallback from "@/components/ImageWithFallback";
 
 const HERO_PARAGRAPH =
-  "From Kenyan classics to continental cuisine, artisan pizza and world-class coffee at ANAM Restaurant, TeaTot Pizzeria and our Coffee Shop.";
+  "Kenyan classics, continental plates, hand-stretched pizza and specialty Kenyan coffee at ANAM Restaurant, TeaTot Pizzeria and our Coffee Shop.";
 
 // Typical service windows — confirm current hours when you book.
 const MEAL_HOURS = [
@@ -88,7 +88,7 @@ export default function DiningPage() {
     <div className="pb-24">
       <HeroSection
         label="FOOD & BEVERAGE"
-        headline="A world of flavours."
+        headline="Food on Konza Road."
         paragraph={HERO_PARAGRAPH}
         imageSrc="/images/hero/dining-hero.jpg"
         imageAlt="Dining at Tea Tot Hotel"
@@ -170,12 +170,12 @@ export default function DiningPage() {
 
       <RevealSection>
         <figure className="h-[320px] w-full overflow-hidden tablet:h-[480px] desktop:h-[640px]">
-          <ImageWithFallback
+          <ParallaxImage
             src="/images/dining/restaurant-3.jpg"
             alt="ANAM Restaurant at Tea Tot Hotel"
-            width={5000}
-            height={3524}
-            className="h-full w-full object-cover"
+            sizes="100vw"
+            speed={0.25}
+            layerHeight="140%"
           />
         </figure>
       </RevealSection>
@@ -198,7 +198,7 @@ export default function DiningPage() {
           </div>
           <div className="relative h-[320px] w-full flex-1 overflow-hidden desktop:h-[640px]">
             <ImageWithFallback
-              src="/images/dining/pizza-2.jpg"
+              src="/images/dining/restaurant-12.jpg"
               alt="Tea Tot Hotel dining team"
               width={4254}
               height={3612}

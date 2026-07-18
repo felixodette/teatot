@@ -1,6 +1,6 @@
 import type {
   CmsImage, Room, Service, GalleryItem, DiningMenuItem,
-  Testimonial, Faq, TeamMember, BlogPost, LegalPage,
+  Testimonial, BlogPost, LegalPage,
 } from "@/types/cms";
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -107,27 +107,6 @@ export function normalizeTestimonials(raw: { items?: RawItem[] }): Testimonial[]
       rating,
     };
   });
-}
-
-export function normalizeFaqs(raw: { items?: RawItem[] }): Faq[] {
-  return published(raw).map((i) => ({
-    slug: i._slug,
-    question: str(i, "Question"),
-    answer: str(i, "Answer"),
-    category: str(i, "Category"),
-    sort: num(i, "Sort"),
-  }));
-}
-
-export function normalizeTeam(raw: { items?: RawItem[] }): TeamMember[] {
-  return published(raw).map((i) => ({
-    slug: i._slug,
-    name: str(i, "Name"),
-    role: str(i, "Role"),
-    bio: str(i, "Bio"),
-    sortOrder: num(i, "Sort Order"),
-    photo: img(i, "Photo"),
-  }));
 }
 
 export function normalizeBlogPosts(raw: { items?: RawItem[] }): BlogPost[] {

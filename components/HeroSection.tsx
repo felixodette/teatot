@@ -49,8 +49,16 @@ function HeroButtonLink({
   }
 
   if (button.external) {
+    const isAppLink =
+      button.href.startsWith("tel:") || button.href.startsWith("mailto:");
     return (
-      <a href={button.href} target="_blank" rel="noopener noreferrer" className={className}>
+      <a
+        href={button.href}
+        {...(isAppLink
+          ? {}
+          : { target: "_blank", rel: "noopener noreferrer" })}
+        className={className}
+      >
         {button.text}
       </a>
     );

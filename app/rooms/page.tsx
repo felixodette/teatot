@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getRooms } from "@/lib/data";
 import { formatMoney, stripHtml } from "@/lib/format";
+import { whatsappUrl } from "@/config/contact";
 import HeroSection from "@/components/HeroSection";
 import RevealSection from "@/components/RevealSection";
 import ImageWithFallback from "@/components/ImageWithFallback";
 import EmptySection from "@/components/EmptySection";
+import { ctaLink } from "@/lib/navigation";
 
 export const metadata: Metadata = {
   title: "Rooms",
@@ -26,6 +28,12 @@ export default function RoomsPage() {
         imageAlt="Rooms at Tea Tot Hotel"
         height="640px"
         parallax
+        primaryButton={{ text: ctaLink.label, href: ctaLink.href, openBooking: true }}
+        secondaryButton={{
+          text: "Ask on WhatsApp",
+          href: whatsappUrl("rooms"),
+          external: true,
+        }}
       />
 
       <div className="mx-auto max-w-[var(--container-max)] px-6 pt-12 pb-16">

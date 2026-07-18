@@ -1,3 +1,5 @@
+import { whatsappUrl } from "@/config/contact";
+
 export const navLinks = [
   { label: "Rooms", href: "/rooms" },
   { label: "Services", href: "/services" },
@@ -38,8 +40,8 @@ export const footerLinks = {
   social: [
     { platform: "Facebook", href: "https://www.facebook.com/teatothotelmachakos" },
     { platform: "Instagram", href: "https://instagram.com/teatotmachakos" },
-    { platform: "WhatsApp", href: "https://wa.me/254718009684" },
-    { platform: "Messenger", href: "https://www.facebook.com/teatothotelmachakos" },
+    { platform: "WhatsApp", href: whatsappUrl("general") },
+    { platform: "Messenger", href: "https://m.me/teatothotelmachakos" },
     { platform: "X", href: "https://twitter.com/teatothotel" },
   ],
 } as const;
