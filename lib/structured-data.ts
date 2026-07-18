@@ -17,6 +17,5 @@ export function getHotelJsonLd() {
     telephone: contact.phone,
     email: contact.email,
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://teatot.co.ke",
-    starRating: { "@type": "Rating", ratingValue: "3" },
   };
 }

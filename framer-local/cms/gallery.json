@@ -112,7 +112,7 @@
       },
       "Category": {
         "type": "enum",
-        "value": "Dining"
+        "value": "Conference"
       },
       "Sort Order": {
         "type": "number",
@@ -145,7 +145,7 @@
       },
       "Category": {
         "type": "enum",
-        "value": "Pool"
+        "value": "Dining"
       },
       "Sort Order": {
         "type": "number",
@@ -178,7 +178,7 @@
       },
       "Category": {
         "type": "enum",
-        "value": "Exterior"
+        "value": "Gardens"
       },
       "Sort Order": {
         "type": "number",
@@ -211,7 +211,7 @@
       },
       "Category": {
         "type": "enum",
-        "value": "Events"
+        "value": "Dining"
       },
       "Sort Order": {
         "type": "number",

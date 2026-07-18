@@ -13,7 +13,7 @@ import { ctaLink } from "@/lib/navigation";
 export const metadata: Metadata = {
   title: "Tea Tot Hotel — Hospitality & Service at its Best",
   description:
-    "56 elegantly furnished rooms, world-class conferencing, outside catering and breathtaking gardens accommodating up to 4,000 guests in Machakos, Kenya.",
+    "Tea Tot Hotel on Konza Road, Machakos — 56 rooms, conference for 200, gardens for large events, ANAM Restaurant and TeaTot Pizzeria. Book direct or enquire on WhatsApp.",
 };
 
 export default function Home() {
@@ -26,8 +26,8 @@ export default function Home() {
     <>
       <HeroSection
         label="Machakos, Kenya"
-        headline="A Premier Machakos Stay"
-        paragraph="56 elegantly furnished rooms, world-class conferencing, outside catering and breathtaking gardens accommodating up to 4,000 guests."
+        headline="56 rooms. Gardens for thousands. Opposite Level 5."
+        paragraph="Tea Tot Hotel sits on Konza Road for business travellers, hospital visitors, conferences up to 200, and outdoor events in gardens that hold large gatherings. Book a room, reserve a hall, or ask about catering — one team handles it."
         imageSrc="/images/home/hotel-front.jpeg"
         imageAlt="Tea Tot Hotel facade on Konza Road, Machakos"
         fullViewport
@@ -215,10 +215,10 @@ export default function Home() {
                 <p className="section-label">Food &amp; Beverage</p>
                 <h2 className="section-heading">Flavours of Machakos.</h2>
                 <p className="mt-6 text-base leading-relaxed text-[var(--color-text-secondary)]">
-                  From Kenyan classics to continental cuisine, artisan pizza and world-class coffee at ANAM Restaurant, TeaTot Pizzeria and our Coffee Shop.
+                  Kenyan classics, continental plates, hand-stretched pizza and specialty Kenyan coffee at ANAM Restaurant, TeaTot Pizzeria and our Coffee Shop.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-[var(--color-text-secondary)]">
-                  Freshly baked artisan pizzas with hand-stretched dough, house-made tomato sauce and premium toppings. Specialty Kenyan brews with signature latte art, served all day.
+                  Freshly baked pizzas with house-made tomato sauce, and brews with latte art — served for business lunches, family meals and late coffee.
                 </p>
                 <div className="mt-8">
                   <Link href="/dining" className="btn-secondary">
@@ -234,7 +234,7 @@ export default function Home() {
         <section>
           <RevealSection>
             <p className="section-label">Explore Machakos</p>
-            <h2 className="section-heading">Discover Machakos with us.</h2>
+            <h2 className="section-heading">Around Machakos with us.</h2>
           </RevealSection>
 
           <RevealSection delay={0.1} className="mt-12">

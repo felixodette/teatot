@@ -1,31 +1,15 @@
 "use client";
 
 import {
-  createContext,
   useCallback,
-  useContext,
   useMemo,
   useState,
   type ReactNode,
 } from "react";
 import BookingModal from "@/components/BookingModal";
+import { BookingContext } from "@/providers/booking-context";
 
-type BookingContextValue = {
-  isOpen: boolean;
-  /** Pass room display name to pre-select Room type in the modal. */
-  openBooking: (roomType?: string) => void;
-  closeBooking: () => void;
-  roomOptions: string[];
-  preferredRoom: string;
-};
-
-const BookingContext = createContext<BookingContextValue | null>(null);
-
-export function useBooking() {
-  const ctx = useContext(BookingContext);
-  if (!ctx) throw new Error("useBooking must be used within BookingProvider");
-  return ctx;
-}
+export { useBooking } from "@/providers/booking-context";
 
 export function BookingProvider({
   children,

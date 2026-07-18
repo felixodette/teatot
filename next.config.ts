@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 import path from "path";
 
+/** App root — parent lockfiles (~/ and ~/Development/) confuse Next's workspace inference. */
+const projectRoot = path.join(__dirname);
+
 const nextConfig: NextConfig = {
   // ponytail: skip sharp on cPanel — image optimizer needs native binaries built on-server
   images: { unoptimized: true },
-  // Parent lockfiles (~/package-lock.json) make Next pick the wrong workspace root,
-  // which breaks webpack client chunk factories (e.g. LenisProvider "reading 'call'").
-  outputFileTracingRoot: path.join(__dirname),
+  // Parent package-lock.json files make Next pick the wrong workspace root,
+  // which can break webpack client chunk factories during Fast Refresh.
+  outputFileTracingRoot: projectRoot,
+  turbopack: { root: projectRoot },
 };
 
 export default nextConfig;
