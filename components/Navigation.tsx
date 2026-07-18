@@ -77,7 +77,7 @@ export function Navigation() {
             className="cursor-pointer text-lg font-semibold tracking-tight text-white"
             style={{ fontFamily: "var(--font-inter-display)" }}
           >
-            Tea Tot Hotels
+            Tea Tot Hotel
           </Link>
 
           <div className="hidden items-center gap-8 desktop:flex">
@@ -121,7 +121,7 @@ export function Navigation() {
                 style={{ fontFamily: "var(--font-inter-display)" }}
                 onClick={() => setIsOpen(false)}
               >
-                Tea Tot Hotels
+                Tea Tot Hotel
               </Link>
               <button
                 type="button"

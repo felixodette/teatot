@@ -14,7 +14,7 @@ export default function ThankYouPage() {
       <div className="absolute inset-0">
         <ImageWithFallback
           src="/images/hero/thank-you.jpg"
-          alt="Tea Tot Hotels interior"
+          alt="Tea Tot Hotel interior"
           width={1920}
           height={1080}
           className="h-full w-full object-cover"

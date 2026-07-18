@@ -7,7 +7,7 @@ import ImageWithFallback from "@/components/ImageWithFallback";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Conference halls, garden venues, dining, outside catering and guest services at Tea Tot Hotels, Machakos.",
+    "Conference halls, garden venues, dining, outside catering and guest services at Tea Tot Hotel, Machakos.",
 };
 
 export default function ServicesPage() {
@@ -20,8 +20,9 @@ export default function ServicesPage() {
         headline="Everything you could need."
         paragraph="Conference for 200, gardens for 4,000, restaurant-quality dining and professional outside catering — all under one roof in Machakos."
         imageSrc="/images/reception/reception-1.jpg"
-        imageAlt="Tea Tot Hotels reception"
+        imageAlt="Tea Tot Hotel reception"
         height="640px"
+        parallax
       />
 
       <div className="mx-auto max-w-[var(--container-max)] px-6 py-24">

@@ -91,8 +91,9 @@ export default function DiningPage() {
         headline="A world of flavours."
         paragraph={HERO_PARAGRAPH}
         imageSrc="/images/hero/dining-hero.jpg"
-        imageAlt="Dining at Tea Tot Hotels"
+        imageAlt="Dining at Tea Tot Hotel"
         height="640px"
+        parallax
       />
 
       <RevealSection>
@@ -171,7 +172,7 @@ export default function DiningPage() {
         <figure className="h-[320px] w-full overflow-hidden tablet:h-[480px] desktop:h-[640px]">
           <ImageWithFallback
             src="/images/dining/restaurant-3.jpg"
-            alt="ANAM Restaurant at Tea Tot Hotels"
+            alt="ANAM Restaurant at Tea Tot Hotel"
             width={5000}
             height={3524}
             className="h-full w-full object-cover"
@@ -198,7 +199,7 @@ export default function DiningPage() {
           <div className="relative h-[320px] w-full flex-1 overflow-hidden desktop:h-[640px]">
             <ImageWithFallback
               src="/images/dining/pizza-2.jpg"
-              alt="Tea Tot Hotels dining team"
+              alt="Tea Tot Hotel dining team"
               width={4254}
               height={3612}
               className="h-full w-full object-cover"

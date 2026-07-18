@@ -7,7 +7,7 @@ import { contact } from "@/config/contact";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Tea Tot Hotels. Konza Road, Machakos — rooms, conferencing, dining and events.",
+  description: "Get in touch with Tea Tot Hotel. Konza Road, Machakos — rooms, conferencing, dining and events.",
 };
 
 export default function ContactPage() {
@@ -17,9 +17,10 @@ export default function ContactPage() {
         label="GET IN TOUCH"
         headline="Find us."
         paragraph="Konza Road, opposite Machakos Level 5 Hospital. Call, email or send a message — our team is here 24/7."
-        imageSrc="/images/hero/hotel-lobby.jpg"
+        imageSrc="/images/rooms/room-8.jpg"
         imageAlt="Hotel lobby interior"
         height="640px"
+        parallax
       />
 
       <div className="mx-auto max-w-[var(--container-max)] px-6 py-24 flex flex-col gap-32">

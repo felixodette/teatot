@@ -43,7 +43,7 @@
 |---------|----------|----------|
 | `FiveStars` always exposes `aria-label="5 out of 5 stars"` for every review | **BLOCKER** (misleading rating) | `app/page.tsx` L17–34, L186; CMS Star Rating field type `unsupported`; `Testimonial` type has no rating (`types/cms.ts` L52–59) |
 | Featured room prices unformatted (`Ksh 5297`) | WARNING | `app/page.tsx` L96–98; runtime probe `Ksh  5297`; `lib/format.ts` `formatMoney` used on rooms pages only |
-| Hero `imageAlt="Tea Tot Hotels"` is brand-only, not descriptive | WARNING | `app/page.tsx` L54; services parallax `alt="Hotel services"` equally vague (L120) |
+| Hero `imageAlt="Tea Tot Hotel"` is brand-only, not descriptive | WARNING | `app/page.tsx` L54; services parallax `alt="Hotel services"` equally vague (L120) |
 | Hero dual CTAs use specific labels (“Book Now”, “View Rooms”) — not generic Submit/Click Here | OK | `app/page.tsx` L56–57; `lib/navigation.ts` `ctaLink.label` |
 | Empty CMS branches have purposeful copy + CTA (`EmptySection`) | OK | Rooms / reviews / journal empty states L104–108, L200–204, L283–287 |
 | Section body copy is concrete (amenities, location, dining outlets) | OK | L68–70, L151–153, L224–228 |
