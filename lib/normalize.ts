@@ -94,14 +94,19 @@ export function normalizeDiningMenu(raw: { items?: RawItem[] }): DiningMenuItem[
 }
 
 export function normalizeTestimonials(raw: { items?: RawItem[] }): Testimonial[] {
-  return published(raw).map((i) => ({
-    slug: i._slug,
-    guestName: str(i, "Guest Name"),
-    location: str(i, "Location"),
-    quote: str(i, "Quote"),
-    date: str(i, "Date"),
-    roomStayed: str(i, "Room Stayed"),
-  }));
+  return published(raw).map((i) => {
+    const rawRating = num(i, "Star Rating", 5);
+    const rating = Math.min(5, Math.max(1, Math.round(rawRating || 5)));
+    return {
+      slug: i._slug,
+      guestName: str(i, "Guest Name"),
+      location: str(i, "Location"),
+      quote: str(i, "Quote"),
+      date: str(i, "Date"),
+      roomStayed: str(i, "Room Stayed"),
+      rating,
+    };
+  });
 }
 
 export function normalizeFaqs(raw: { items?: RawItem[] }): Faq[] {

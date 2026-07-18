@@ -11,6 +11,7 @@ interface Props {
   className?: string;
   layerHeight?: number | string;
   priority?: boolean;
+  sizes?: string;
 }
 
 export default function ParallaxImage({
@@ -20,6 +21,7 @@ export default function ParallaxImage({
   className,
   layerHeight,
   priority,
+  sizes = "(max-width: 810px) calc(100vw - 50px), min(1635px, calc(100vw - 50px))",
 }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -41,7 +43,7 @@ export default function ParallaxImage({
           src={src}
           alt={alt}
           fill
-          sizes="(max-width: 810px) calc(100vw - 50px), min(1635px, calc(100vw - 50px))"
+          sizes={sizes}
           className="object-cover"
           priority={priority}
         />

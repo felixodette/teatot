@@ -10,7 +10,7 @@
   --color-black-80: rgba(5, 5, 5, 0.8);
   --color-black-30: rgba(5, 5, 5, 0.3);
   --color-bg-subtle: #f8f8f8;
-  --color-text-subtle: #999999;
+  --color-text-subtle: #737373;
   --color-border: #e5e5e5;
   --color-text-primary: #050505;
   --color-text-secondary: #666666;
@@ -39,6 +39,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  scroll-padding-top: 5rem; /* fixed nav (~67px) + air */
 }
 
 body {
@@ -116,27 +117,27 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 528px;
+  height: 792px; /* 528 × 1.5 */
   overflow: hidden;
 }
 
 @media (max-width: 810px) {
   .services-parallax {
-    height: 400px;
+    height: 600px; /* 400 × 1.5 */
   }
 }
 
 .services-panel {
   position: relative;
   z-index: 2;
-  margin-top: -174px; /* Framer image bottom: -174px */
+  margin-top: -261px; /* -174 × 1.5 */
   background: var(--color-white);
   padding: 64px 16px;
 }
 
 @media (max-width: 810px) {
   .services-panel {
-    margin-top: -96px;
+    margin-top: -144px; /* -96 × 1.5 */
     padding: 24px 16px;
   }
 }
@@ -254,12 +255,13 @@ body {
 /* Buttons */
 .btn-secondary {
   display: inline-block;
-  border-radius: 9999px;
+  cursor: pointer;
+  border-radius: 0;
   border: 1px solid var(--color-border);
   padding: 0.75rem 1.5rem;
   font-size: 0.875rem;
   font-weight: 500;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.2s ease;
 }
 
 .btn-secondary:hover {

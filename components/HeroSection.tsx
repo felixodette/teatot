@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import ImageWithFallback from "./ImageWithFallback";
 import BookNowButton from "./BookNowButton";
+import ParallaxImage from "./ParallaxImage";
 
 interface HeroButton {
   text: string;
@@ -27,6 +28,8 @@ interface Props {
   rating?: string;
   /** Star icons beside rating label (default 3) */
   starCount?: number;
+  /** Scroll-linked background parallax (off when prefers-reduced-motion) */
+  parallax?: boolean;
 }
 
 function HeroButtonLink({
@@ -38,8 +41,8 @@ function HeroButtonLink({
 }) {
   const className =
     variant === "primary"
-      ? "rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90"
-      : "rounded-full border border-white/30 px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-80";
+      ? "cursor-pointer rounded-none bg-white px-6 py-3 text-sm font-medium text-black transition-opacity duration-200 hover:opacity-90"
+      : "cursor-pointer rounded-none border border-white/30 px-6 py-3 text-sm font-medium text-white transition-opacity duration-200 hover:opacity-80";
 
   if (button.openBooking) {
     return <BookNowButton className={className}>{button.text}</BookNowButton>;
@@ -72,24 +75,37 @@ export default function HeroSection({
   secondaryButton,
   rating,
   starCount = 3,
+  parallax = false,
 }: Props) {
   const reduceMotion = useReducedMotion();
+  const useParallax = parallax && !reduceMotion;
   const sectionClass = fullViewport
     ? "hero-section relative flex h-dvh min-h-[32rem] items-end overflow-hidden"
     : "hero-section relative flex items-end overflow-hidden";
 
   return (
     <section className={sectionClass} style={fullViewport ? undefined : { height }}>
-      <div className="absolute inset-0">
-        <ImageWithFallback
-          src={imageSrc}
-          alt={imageAlt}
-          fill
-          sizes="100vw"
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+      <div className="absolute inset-0 overflow-hidden">
+        {useParallax ? (
+          <ParallaxImage
+            src={imageSrc}
+            alt={imageAlt}
+            priority
+            sizes="100vw"
+            speed={0.25}
+            layerHeight="140%"
+          />
+        ) : (
+          <ImageWithFallback
+            src={imageSrc}
+            alt={imageAlt}
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+          />
+        )}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[var(--container-max)] px-6 pb-16">
@@ -137,7 +153,7 @@ export default function HeroSection({
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 1, bounce: 0, delay: reduceMotion ? 0 : 0.6 }}
             className="mt-8 flex items-center gap-3"
-            aria-label={`${starCount} out of 5 stars — ${rating}`}
+            aria-label={rating}
           >
             <div className="flex gap-0.5" aria-hidden>
               {Array.from({ length: starCount }).map((_, i) => (

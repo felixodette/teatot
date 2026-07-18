@@ -9,7 +9,7 @@ import ImageWithFallback from "@/components/ImageWithFallback";
 const HERO_PARAGRAPH =
   "From Kenyan classics to continental cuisine, artisan pizza and world-class coffee at ANAM Restaurant, TeaTot Pizzeria and our Coffee Shop.";
 
-// TODO: Client content required — restaurant, coffee shop and pizzeria hours not on client website.
+// Typical service windows — confirm current hours when you book.
 const MEAL_HOURS = [
   { type: "Breakfast", from: "7:00", fromMer: "am", to: "11:00", toMer: "am" },
   { type: "Lunch", from: "12:00", fromMer: "pm", to: "3:00", toMer: "pm" },
@@ -24,7 +24,7 @@ const MEAL_HOURS = [
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Dining — Tea Tot Hotels",
+  title: "Dining",
   description: HERO_PARAGRAPH,
 };
 
@@ -85,7 +85,7 @@ export default function DiningPage() {
   const items = getDiningMenu();
 
   return (
-    <main className="pb-24">
+    <div className="pb-24">
       <HeroSection
         label="FOOD & BEVERAGE"
         headline="A world of flavours."
@@ -102,6 +102,13 @@ export default function DiningPage() {
               <MealTimeBlock key={meal.type} {...meal} />
             ))}
           </div>
+          <p className="mx-auto mt-10 max-w-[1284px] text-center text-sm text-[var(--color-text-secondary)]">
+            Hours are typical — please confirm when you book or call{" "}
+            <a href="tel:+254718009684" className="underline underline-offset-2">
+              +254 718 009684
+            </a>
+            .
+          </p>
         </section>
       </RevealSection>
 
@@ -224,7 +231,7 @@ export default function DiningPage() {
             </p>
               <Link
                 href="/contact"
-                className="mt-6 inline-block bg-[var(--color-text)] px-4 py-2 text-base font-semibold text-white"
+                className="mt-6 inline-block cursor-pointer bg-[var(--color-text-primary)] px-4 py-2 text-base font-semibold text-white transition-opacity duration-200 hover:opacity-90"
               >
                 Contact Us
               </Link>
@@ -232,6 +239,6 @@ export default function DiningPage() {
           </div>
         </RevealSection>
       </section>
-    </main>
+    </div>
   );
 }

@@ -32,10 +32,10 @@ const menuItems = {
 };
 
 const ctaClassName =
-  "cursor-pointer rounded-none bg-white px-4 py-2 text-sm font-medium text-black transition-opacity hover:opacity-80";
+  "cursor-pointer rounded-none bg-white px-4 py-2 text-sm font-medium text-black transition-opacity duration-200 hover:opacity-80";
 
 const mobileCtaClassName =
-  "cursor-pointer mt-8 w-full rounded-none bg-white px-6 py-4 text-center text-base font-medium text-black transition-opacity hover:opacity-80 tablet:w-auto tablet:px-8";
+  "cursor-pointer mt-8 w-full rounded-none bg-white px-6 py-4 text-center text-base font-medium text-black transition-opacity duration-200 hover:opacity-80 tablet:w-auto tablet:px-8";
 
 function HamburgerIcon() {
   return (

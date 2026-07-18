@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getRooms } from "@/lib/data";
+import { formatMoney, stripHtml } from "@/lib/format";
 import HeroSection from "@/components/HeroSection";
 import RevealSection from "@/components/RevealSection";
 import ImageWithFallback from "@/components/ImageWithFallback";
+import EmptySection from "@/components/EmptySection";
 
 export const metadata: Metadata = {
-  title: "Rooms — Tea Tot Hotels",
+  title: "Rooms",
   description:
     "Four comfortable room types at Tea Tot Hotels — Standard Double, Twin Bedroom, Deluxe Room and Junior Suite.",
 };
@@ -15,7 +17,7 @@ export default function RoomsPage() {
   const rooms = getRooms();
 
   return (
-    <main>
+    <div>
       <HeroSection
         label="ROOMS & SUITES"
         headline="Find your room."
@@ -25,48 +27,64 @@ export default function RoomsPage() {
         height="640px"
       />
 
-      <div className="mx-auto max-w-[var(--container-max)] px-6 pt-6 pb-16">
-        <div className="grid grid-cols-1 gap-x-2 gap-y-12 tablet:grid-cols-2 tablet:gap-y-2 desktop:grid-cols-3">
-          {rooms.map((room, i) => (
-            <RevealSection key={room.slug} delay={i * 0.1} as="article">
-              <Link
-                href={`/rooms/${room.slug}`}
-                className="group block bg-[var(--color-bg-subtle)]"
-              >
-                <div className="h-[320px] overflow-hidden">
-                  <ImageWithFallback
-                    src={room.thumbnail.url}
-                    alt={room.thumbnail.alt || room.name}
-                    width={600}
-                    height={320}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="flex flex-col gap-2 p-6">
-                  <div className="flex flex-col gap-2">
-                    <p className="text-xs font-medium uppercase tracking-[0.15em]">
-                      {room.category}
-                    </p>
-                    <h2 className="text-lg font-semibold">{room.name}</h2>
-                  </div>
-                  <div className="flex items-center gap-1 text-base">
-                    <span>From</span>
-                    <div className="flex items-center gap-[5px]">
-                      <span>
-                        {room.currency}
-                        {room.pricePerNight}
-                      </span>
-                      <span className="text-sm text-[var(--color-text-subtle)]">
-                        / night
-                      </span>
+      <div className="mx-auto max-w-[var(--container-max)] px-6 pt-12 pb-16">
+        {rooms.length === 0 ? (
+          <EmptySection
+            title="Rooms coming soon"
+            message="Our room list is being updated. Reach out and we will help you find the right stay in Machakos."
+            action={{ label: "Book Now", openBooking: true }}
+          />
+        ) : (
+          <div className="grid grid-cols-1 gap-x-6 gap-y-12 tablet:grid-cols-2 desktop:grid-cols-3">
+            {rooms.map((room, i) => {
+              const blurb = stripHtml(room.shortDescription);
+              return (
+                <RevealSection key={room.slug} delay={i * 0.1} as="article">
+                  <Link
+                    href={`/rooms/${room.slug}`}
+                    className="group block cursor-pointer bg-[var(--color-bg-subtle)] transition-opacity duration-200 hover:opacity-95"
+                  >
+                    <div className="relative h-[320px] overflow-hidden">
+                      <ImageWithFallback
+                        src={room.thumbnail.url}
+                        alt={room.thumbnail.alt || room.name}
+                        fill
+                        sizes="(max-width: 809px) 100vw, (max-width: 1199px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
                     </div>
-                  </div>
-                </div>
-              </Link>
-            </RevealSection>
-          ))}
-        </div>
+                    <div className="flex flex-col gap-3 p-6">
+                      <p className="text-xs font-medium uppercase tracking-[0.15em] text-[var(--color-text-secondary)]">
+                        {room.category}
+                      </p>
+                      <h2 className="text-lg font-semibold">{room.name}</h2>
+                      {blurb ? (
+                        <p className="line-clamp-2 text-sm text-[var(--color-text-secondary)]">
+                          {blurb}
+                        </p>
+                      ) : null}
+                      <div className="mt-1 flex flex-wrap items-center justify-between gap-3">
+                        <p className="text-base">
+                          <span className="text-[var(--color-text-secondary)]">From </span>
+                          <span className="font-semibold">
+                            {formatMoney(room.pricePerNight, room.currency)}
+                          </span>
+                          <span className="ml-1 text-sm text-[var(--color-text-secondary)]">
+                            / night
+                          </span>
+                        </p>
+                        <span className="inline-block cursor-pointer rounded-none bg-[var(--color-text-primary)] px-3 py-2 text-xs font-medium uppercase tracking-[0.12em] text-white transition-opacity duration-200 group-hover:opacity-90">
+                          View room
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                </RevealSection>
+              );
+            })}
+          </div>
+        )}
       </div>
-    </main>
+    </div>
   );
 }

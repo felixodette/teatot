@@ -4,7 +4,7 @@ import RevealSection from "@/components/RevealSection";
 
 export default function NotFound() {
   return (
-    <main className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden">
+    <div className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <ImageWithFallback
           src="/images/hero/404.jpg"
@@ -34,14 +34,22 @@ export default function NotFound() {
             The page you&apos;re looking for doesn&apos;t exist or has been
             moved.
           </p>
-          <Link
-            href="/"
-            className="mt-10 inline-block rounded-full bg-white px-8 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90"
-          >
-            Return Home
-          </Link>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href="/"
+              className="inline-block cursor-pointer rounded-none bg-white px-8 py-3 text-sm font-medium text-black transition-opacity duration-200 hover:opacity-90"
+            >
+              Return Home
+            </Link>
+            <Link
+              href="/rooms"
+              className="inline-block cursor-pointer rounded-none border border-white/40 px-8 py-3 text-sm font-medium text-white transition-opacity duration-200 hover:opacity-80"
+            >
+              Browse rooms
+            </Link>
+          </div>
         </RevealSection>
       </div>
-    </main>
+    </div>
   );
 }

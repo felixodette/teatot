@@ -6,13 +6,13 @@ import MapEmbed from "@/components/MapEmbed";
 import { contact } from "@/config/contact";
 
 export const metadata: Metadata = {
-  title: "Contact — Tea Tot Hotels",
+  title: "Contact",
   description: "Get in touch with Tea Tot Hotels. Konza Road, Machakos — rooms, conferencing, dining and events.",
 };
 
 export default function ContactPage() {
   return (
-    <main>
+    <div>
       <HeroSection
         label="GET IN TOUCH"
         headline="Find us."
@@ -68,6 +68,6 @@ export default function ContactPage() {
           <MapEmbed />
         </RevealSection>
       </div>
-    </main>
+    </div>
   );
 }

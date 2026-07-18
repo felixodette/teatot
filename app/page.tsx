@@ -5,7 +5,9 @@ import RevealSection from "@/components/RevealSection";
 import ImageWithFallback from "@/components/ImageWithFallback";
 import ParallaxImage from "@/components/ParallaxImage";
 import EmptySection from "@/components/EmptySection";
+import StarRating from "@/components/StarRating";
 import { getBlogPosts, getFeaturedRooms, getServices, getTestimonials } from "@/lib/data";
+import { formatMoney, stripHtml } from "@/lib/format";
 import { ctaLink } from "@/lib/navigation";
 
 export const metadata: Metadata = {
@@ -13,30 +15,6 @@ export const metadata: Metadata = {
   description:
     "56 elegantly furnished rooms, world-class conferencing, outside catering and breathtaking gardens accommodating up to 4,000 guests in Machakos, Kenya.",
 };
-
-function FiveStars() {
-  return (
-    <div className="flex gap-1" aria-label="5 out of 5 stars">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <svg
-          key={i}
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="text-[var(--color-black)]"
-          aria-hidden
-        >
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-        </svg>
-      ))}
-    </div>
-  );
-}
-
-function stripHtml(html: string) {
-  return html.replace(/<[^>]*>/g, "");
-}
 
 export default function Home() {
   const featuredRooms = getFeaturedRooms().slice(0, 3);
@@ -51,12 +29,10 @@ export default function Home() {
         headline="A Premier Machakos Stay"
         paragraph="56 elegantly furnished rooms, world-class conferencing, outside catering and breathtaking gardens accommodating up to 4,000 guests."
         imageSrc="/images/home/hotel-front.jpeg"
-        imageAlt="Tea Tot Hotels"
+        imageAlt="Tea Tot Hotels facade on Konza Road, Machakos"
         fullViewport
         primaryButton={{ text: ctaLink.label, href: ctaLink.href, openBooking: true }}
         secondaryButton={{ text: "View Rooms", href: "/rooms" }}
-        rating="Machakos Premier"
-        starCount={3}
       />
 
       <div className="container-page section-stack">
@@ -77,25 +53,30 @@ export default function Home() {
 
           <RevealSection delay={0.1} className="mt-12">
             {featuredRooms.length > 0 ? (
-              <div className="flex flex-col gap-8 tablet:flex-row tablet:gap-2">
+              <div className="flex flex-col gap-8 tablet:flex-row tablet:gap-6">
                 {featuredRooms.map((room) => (
-                  <Link key={room.slug} href={`/rooms/${room.slug}`} className="group tablet:flex-1">
+                  <Link
+                    key={room.slug}
+                    href={`/rooms/${room.slug}`}
+                    className="group cursor-pointer tablet:flex-1"
+                  >
                     <div className="overflow-hidden rounded-lg">
                       <ImageWithFallback
                         src={room.thumbnail.url}
                         alt={room.thumbnail.alt || room.name}
                         width={400}
                         height={450}
-                        className="h-[280px] w-full object-cover transition-transform duration-500 group-hover:scale-105 tablet:h-[450px]"
+                        sizes="(max-width: 809px) 100vw, 33vw"
+                        className="h-[280px] w-full object-cover transition-transform duration-200 group-hover:scale-105 tablet:h-[450px]"
                       />
                     </div>
                     <h3 className="mt-4 text-lg font-medium">{room.name}</h3>
-                    <p className="mt-1 text-xs font-medium uppercase tracking-[0.15em] text-[var(--color-text-subtle)]">
+                    <p className="mt-1 text-xs font-medium uppercase tracking-[0.15em] text-[var(--color-text-secondary)]">
                       {room.category}
                     </p>
                     <p className="mt-2 text-sm font-medium">
-                      {room.currency} {room.pricePerNight}{" "}
-                      <span className="font-normal text-[var(--color-text-subtle)]">/ night</span>
+                      {formatMoney(room.pricePerNight, room.currency)}{" "}
+                      <span className="font-normal text-[var(--color-text-secondary)]">/ night</span>
                     </p>
                   </Link>
                 ))}
@@ -117,7 +98,7 @@ export default function Home() {
           <div className="services-parallax">
             <ParallaxImage
               src="/images/rooms/bedroom-2.jpeg"
-              alt="Hotel services"
+              alt="Guest room at Tea Tot Hotels, Machakos"
               priority
             />
           </div>
@@ -126,15 +107,27 @@ export default function Home() {
               <RevealSection className="services-intro">
                 <p className="section-label">Hotel Services</p>
                 <h2 className="section-heading">Everything you need in Machakos.</h2>
+                <div className="mt-6">
+                  <Link href="/services" className="btn-secondary">
+                    Explore services
+                  </Link>
+                </div>
               </RevealSection>
 
               <RevealSection delay={0.1} className="services-grid">
                 {services.slice(0, 4).map((service) => (
-                  <div key={service.slug} className="services-card">
+                  <Link
+                    key={service.slug}
+                    href={`/services#${service.slug}`}
+                    className="services-card group cursor-pointer transition-opacity duration-200 hover:opacity-90"
+                  >
                     <p className="service-number">{service.number}</p>
                     <h3 className="services-card-title">{service.name}</h3>
                     <p className="services-card-desc">{service.shortDescription}</p>
-                  </div>
+                    <span className="mt-4 inline-block text-xs font-medium uppercase tracking-[0.12em] text-[var(--color-text-primary)]">
+                      Learn more
+                    </span>
+                  </Link>
                 ))}
               </RevealSection>
             </div>
@@ -153,7 +146,7 @@ export default function Home() {
             </p>
             <div className="mt-8">
               <Link href="/about" className="btn-secondary">
-                Meet the Team
+                About Tea Tot
               </Link>
             </div>
           </RevealSection>
@@ -162,7 +155,7 @@ export default function Home() {
             <div className="h-[640px] overflow-hidden rounded-lg">
               <ImageWithFallback
                 src="/images/dining/coffee-4.jpg"
-                alt="Tea Tot Hotels — Our Story"
+                alt="Coffee and lounge at Tea Tot Hotels"
                 width={640}
                 height={640}
                 className="h-full w-full object-cover"
@@ -183,14 +176,14 @@ export default function Home() {
               <div className="grid gap-2 sm:grid-cols-2 desktop:grid-cols-3">
                 {testimonials.map((t) => (
                   <article key={t.slug} className="bg-[var(--color-bg-subtle)] p-8">
-                    <FiveStars />
+                    <StarRating rating={t.rating} />
                     <p className="mt-4 text-base leading-relaxed text-[var(--color-text-secondary)]">
                       {stripHtml(t.quote)}
                     </p>
                     <div className="mt-6">
                       <p className="text-sm font-medium">{t.guestName}</p>
                       <p className="text-sm text-[var(--color-text-secondary)]">{t.location}</p>
-                      <p className="mt-3 text-xs text-[var(--color-text-subtle)]">Stayed at</p>
+                      <p className="mt-3 text-xs text-[var(--color-text-secondary)]">Stayed at</p>
                       <p className="text-sm font-medium">{t.roomStayed}</p>
                     </div>
                   </article>
@@ -212,7 +205,7 @@ export default function Home() {
             <div className="h-[528px] overflow-hidden">
               <ParallaxImage
                 src="/images/dining/dining-1.jpg"
-                alt="Dining at Tea Tot Hotels"
+                alt="Dining room at ANAM Restaurant, Tea Tot Hotels"
               />
             </div>
           </RevealSection>
@@ -246,7 +239,7 @@ export default function Home() {
 
           <RevealSection delay={0.1} className="mt-12">
             {blogPosts.length > 0 ? (
-              <div className="grid gap-2 sm:grid-cols-2 desktop:grid-cols-3">
+              <div className="grid gap-6 sm:grid-cols-2 desktop:grid-cols-3">
                 {blogPosts.map((post) => {
                   const date = new Date(post.publishedDate).toLocaleDateString("en-GB", {
                     day: "numeric",
@@ -255,23 +248,30 @@ export default function Home() {
                   });
 
                   return (
-                    <Link key={post.slug} href={`/blog-posts/${post.slug}`} className="group">
+                    <Link
+                      key={post.slug}
+                      href={`/blog-posts/${post.slug}`}
+                      className="group cursor-pointer"
+                    >
                       <div className="overflow-hidden rounded-lg">
                         <ImageWithFallback
                           src={post.coverImage.url}
                           alt={post.coverImage.alt || post.title}
                           width={400}
                           height={280}
-                          className="h-[280px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 809px) 100vw, 33vw"
+                          className="h-[280px] w-full object-cover transition-transform duration-200 group-hover:scale-105"
                         />
                       </div>
-                      <div className="mt-4 flex items-center gap-3 text-xs text-[var(--color-text-subtle)]">
-                        <span className="rounded-full border border-[var(--color-border)] px-3 py-0.5 font-medium uppercase tracking-[0.1em]">
+                      <div className="mt-4 flex items-center gap-3 text-xs text-[var(--color-text-secondary)]">
+                        <span className="rounded-none border border-[var(--color-border)] px-3 py-0.5 font-medium uppercase tracking-[0.1em]">
                           {post.tag}
                         </span>
                         <time dateTime={post.publishedDate}>{date}</time>
                       </div>
-                      <h3 className="mt-3 text-lg font-medium group-hover:opacity-70">{post.title}</h3>
+                      <h3 className="mt-3 text-lg font-medium transition-opacity duration-200 group-hover:opacity-70">
+                        {post.title}
+                      </h3>
                       <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-secondary)]">
                         {stripHtml(post.excerpt)}
                       </p>
