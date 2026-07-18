@@ -9,8 +9,6 @@ import {
 import BookingModal from "@/components/BookingModal";
 import { BookingContext } from "@/providers/booking-context";
 
-export { useBooking } from "@/providers/booking-context";
-
 export function BookingProvider({
   children,
   roomOptions,
