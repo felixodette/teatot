@@ -1,4 +1,4 @@
-# Tea Tot Hotels — Design System
+# Tea Tot Hotel — Design System
 
 Calibrated from Framer export tokens (`app/globals.css`) and homepage section patterns.
 

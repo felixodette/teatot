@@ -11,7 +11,7 @@ import { formatMoney, stripHtml } from "@/lib/format";
 import { ctaLink } from "@/lib/navigation";
 
 export const metadata: Metadata = {
-  title: "Tea Tot Hotels — Hospitality & Service at its Best",
+  title: "Tea Tot Hotel — Hospitality & Service at its Best",
   description:
     "56 elegantly furnished rooms, world-class conferencing, outside catering and breathtaking gardens accommodating up to 4,000 guests in Machakos, Kenya.",
 };
@@ -29,7 +29,7 @@ export default function Home() {
         headline="A Premier Machakos Stay"
         paragraph="56 elegantly furnished rooms, world-class conferencing, outside catering and breathtaking gardens accommodating up to 4,000 guests."
         imageSrc="/images/home/hotel-front.jpeg"
-        imageAlt="Tea Tot Hotels facade on Konza Road, Machakos"
+        imageAlt="Tea Tot Hotel facade on Konza Road, Machakos"
         fullViewport
         primaryButton={{ text: ctaLink.label, href: ctaLink.href, openBooking: true }}
         secondaryButton={{ text: "View Rooms", href: "/rooms" }}
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="services-parallax">
             <ParallaxImage
               src="/images/rooms/bedroom-2.jpeg"
-              alt="Guest room at Tea Tot Hotels, Machakos"
+              alt="Guest room at Tea Tot Hotel, Machakos"
               priority
             />
           </div>
@@ -142,7 +142,7 @@ export default function Home() {
             <p className="section-label">OUR PHILOSOPHY</p>
             <h2 className="section-heading">Comfort meets Machakos warmth.</h2>
             <p className="section-body">
-              At Tea Tot Hotels we are driven by the desire to provide wellbeing and comfort. Your satisfaction is our daily purpose — met with warmth, enthusiasm and respect. Perfectly located on Konza Road, opposite Machakos Level 5 Hospital.
+              At Tea Tot Hotel we are driven by the desire to provide wellbeing and comfort. Your satisfaction is our daily purpose — met with warmth, enthusiasm and respect. Perfectly located on Konza Road, opposite Machakos Level 5 Hospital.
             </p>
             <div className="mt-8">
               <Link href="/about" className="btn-secondary">
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="h-[640px] overflow-hidden rounded-lg">
               <ImageWithFallback
                 src="/images/dining/coffee-4.jpg"
-                alt="Coffee and lounge at Tea Tot Hotels"
+                alt="Coffee and lounge at Tea Tot Hotel"
                 width={640}
                 height={640}
                 className="h-full w-full object-cover"
@@ -205,7 +205,7 @@ export default function Home() {
             <div className="h-[528px] overflow-hidden">
               <ParallaxImage
                 src="/images/dining/dining-1.jpg"
-                alt="Dining room at ANAM Restaurant, Tea Tot Hotels"
+                alt="Dining room at ANAM Restaurant, Tea Tot Hotel"
               />
             </div>
           </RevealSection>
@@ -282,7 +282,7 @@ export default function Home() {
             ) : (
               <EmptySection
                 title="Local guides coming soon"
-                message="We're writing about Machakos — places to visit, food to try, and what to do near Tea Tot Hotels."
+                message="We're writing about Machakos — places to visit, food to try, and what to do near Tea Tot Hotel."
                 action={{ label: "Contact Us", href: "/contact" }}
               />
             )}

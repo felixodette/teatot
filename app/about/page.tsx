@@ -11,7 +11,7 @@ import { getGallery } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Tea Tot Hotels on Konza Road, Machakos — 56 rooms, conference for 200, gardens for large gatherings, and dining on site. Built for business, events, and family stays.",
+    "Tea Tot Hotel on Konza Road, Machakos — 56 rooms, conference for 200, gardens for large gatherings, and dining on site. Built for business, events, and family stays.",
 };
 
 const stats = [
@@ -33,7 +33,7 @@ const audiences = [
     label: "Business & hospital trips",
     body: "Opposite Machakos Level 5 Hospital on Konza Road. Quiet, sound-proofed rooms, free Wi-Fi, and 24-hour guarded parking — useful when the day runs long.",
     image: "/images/reception/reception-1.jpg",
-    imageAlt: "Reception at Tea Tot Hotels, Machakos",
+    imageAlt: "Reception at Tea Tot Hotel, Machakos",
     cta: { type: "book" as const, label: "Book a room" },
   },
   {
@@ -41,7 +41,7 @@ const audiences = [
     label: "Conferences & training",
     body: "Three halls for up to 200 people, with catering and AV support. Gardens work for outdoor breaks between sessions.",
     image: "/images/conference/baraza-hall.jpeg",
-    imageAlt: "Baraza Hall conference space at Tea Tot Hotels",
+    imageAlt: "Baraza Hall conference space at Tea Tot Hotel",
     cta: { type: "link" as const, label: "Enquire about conferences", href: "/contact" },
   },
   {
@@ -49,7 +49,7 @@ const audiences = [
     label: "Weddings & outdoor events",
     body: "Gardens sized for large gatherings, plus outside catering that stays with you from setup through service.",
     image: "/images/grounds/gardens-2.jpeg",
-    imageAlt: "Gardens at Tea Tot Hotels for outdoor events",
+    imageAlt: "Gardens at Tea Tot Hotel for outdoor events",
     cta: { type: "link" as const, label: "Plan your event", href: "/contact" },
   },
   {
@@ -57,7 +57,7 @@ const audiences = [
     label: "Families & weekends",
     body: "Space to rest, food on site at ANAM, the Coffee Shop and TeaTot Pizzeria, and People’s Park about 2 km away.",
     image: "/images/rooms/bedroom-2.jpeg",
-    imageAlt: "Guest room at Tea Tot Hotels",
+    imageAlt: "Guest room at Tea Tot Hotel",
     cta: { type: "link" as const, label: "View rooms", href: "/rooms" },
   },
 ] as const;
@@ -70,9 +70,9 @@ export default function AboutPage() {
       <HeroSection
         label="OUR PHILOSOPHY"
         headline="Where comfort meets local warmth."
-        paragraph="At Tea Tot Hotels we are driven by the desire to provide wellbeing and comfort. Your satisfaction is our daily purpose — met with warmth, enthusiasm and respect."
+        paragraph="At Tea Tot Hotel we are driven by the desire to provide wellbeing and comfort. Your satisfaction is our daily purpose — met with warmth, enthusiasm and respect."
         imageSrc="/images/dining/chandelier-1.jpg"
-        imageAlt="Dining chandelier at Tea Tot Hotels, Machakos"
+        imageAlt="Dining chandelier at Tea Tot Hotel, Machakos"
         height="720px"
         parallax
       />
@@ -84,7 +84,7 @@ export default function AboutPage() {
             <div className="relative h-[320px] w-full overflow-hidden desktop:h-[640px] desktop:flex-1">
               <ImageWithFallback
                 src="/images/rooms/deluxe-room.jpeg"
-                alt="Deluxe room at Tea Tot Hotels"
+                alt="Deluxe room at Tea Tot Hotel"
                 width={1284}
                 height={640}
                 className="h-full w-full object-cover"
@@ -101,7 +101,7 @@ export default function AboutPage() {
                 A practical base in Machakos.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-[var(--color-text-secondary)]">
-                Tea Tot Hotels offers 56 tastefully furnished, sound-proofed rooms with natural light, free high-speed Wi-Fi, ANAM Restaurant, Coffee Shop and TeaTot Pizzeria on-site, and free secure guarded parking available 24 hours.
+                Tea Tot Hotel offers 56 tastefully furnished, sound-proofed rooms with natural light, free high-speed Wi-Fi, ANAM Restaurant, Coffee Shop and TeaTot Pizzeria on-site, and free secure guarded parking available 24 hours.
               </p>
               <p className="mt-5 text-base leading-relaxed text-[var(--color-text-secondary)]">
                 On Konza Road, opposite Machakos Level 5 Hospital — about 60 km from Nairobi. Check in from 2:00 PM, check out by 12:00 noon.
@@ -187,7 +187,7 @@ export default function AboutPage() {
           <figure className="h-[480px] w-full overflow-hidden desktop:h-[640px]">
             <ParallaxImage
               src="/images/dining/restaurant-3.jpg"
-              alt="ANAM Restaurant at Tea Tot Hotels"
+              alt="ANAM Restaurant at Tea Tot Hotel"
               sizes="100vw"
               speed={0.25}
               layerHeight="140%"

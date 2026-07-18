@@ -60,7 +60,7 @@ export function Footer() {
             className="text-lg font-semibold tracking-tight"
             style={{ fontFamily: "var(--font-inter-display)" }}
           >
-            Tea Tot Hotels
+            Tea Tot Hotel
           </Link>
           <p className="text-sm leading-relaxed text-[var(--color-text-subtle)]">
             {footerLinks.tagline}

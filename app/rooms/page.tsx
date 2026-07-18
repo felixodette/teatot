@@ -10,7 +10,7 @@ import EmptySection from "@/components/EmptySection";
 export const metadata: Metadata = {
   title: "Rooms",
   description:
-    "Four comfortable room types at Tea Tot Hotels — Standard Double, Twin Bedroom, Deluxe Room and Junior Suite.",
+    "Four comfortable room types at Tea Tot Hotel — Standard Double, Twin Bedroom, Deluxe Room and Junior Suite.",
 };
 
 export default function RoomsPage() {
@@ -23,8 +23,9 @@ export default function RoomsPage() {
         headline="Find your room."
         paragraph="Four comfortable room types — each with satellite TV, AC, hot showers and complimentary Wi-Fi."
         imageSrc="/images/rooms/bedroom-2.jpeg"
-        imageAlt="Rooms at Tea Tot Hotels"
+        imageAlt="Rooms at Tea Tot Hotel"
         height="640px"
+        parallax
       />
 
       <div className="mx-auto max-w-[var(--container-max)] px-6 pt-12 pb-16">

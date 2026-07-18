@@ -12,17 +12,17 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://teatot.co.ke";
 
 export const metadata: Metadata = {
   title: {
-    default: "Tea Tot Hotels — Hospitality & Service at its Best",
-    template: "%s | Tea Tot Hotels",
+    default: "Tea Tot Hotel — Hospitality & Service at its Best",
+    template: "%s | Tea Tot Hotel",
   },
   description:
     "56 elegantly furnished rooms, world-class conferencing, outside catering and breathtaking gardens in Machakos, Kenya.",
   metadataBase: new URL(BASE_URL),
   openGraph: {
     type: "website",
-    siteName: "Tea Tot Hotels",
+    siteName: "Tea Tot Hotel",
     locale: "en_KE",
-    images: [{ url: "/images/hero/hotel-lobby.jpg", width: 1920, height: 1080, alt: "Tea Tot Hotels" }],
+    images: [{ url: "/images/hero/hotel-lobby.jpg", width: 1920, height: 1080, alt: "Tea Tot Hotel" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -1,4 +1,4 @@
-# Deployment — Tea Tot Hotels (cPanel)
+# Deployment — Tea Tot Hotel (cPanel)
 
 ## Server layout
 

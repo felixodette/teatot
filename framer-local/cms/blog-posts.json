@@ -56,12 +56,12 @@
       },
       "Body": {
         "type": "formattedText",
-        "value": "<h3 dir=\"auto\">Buffalo Mountain</h3><p dir=\"auto\">Ol Donyo Sabuk (Kilimambogo) is a lush national park where elephants, Cape buffalo, baboons and 45+ bird species roam freely. Three waterfalls and the historic MacMillan burial site await at the summit.</p><h3 dir=\"auto\">Getting There</h3><p dir=\"auto\">The park is approximately 85km from Tea Tot Hotels. Our concierge can arrange transport and guided day trips.</p>",
+        "value": "<h3 dir=\"auto\">Buffalo Mountain</h3><p dir=\"auto\">Ol Donyo Sabuk (Kilimambogo) is a lush national park where elephants, Cape buffalo, baboons and 45+ bird species roam freely. Three waterfalls and the historic MacMillan burial site await at the summit.</p><h3 dir=\"auto\">Getting There</h3><p dir=\"auto\">The park is approximately 85km from Tea Tot Hotel. Our concierge can arrange transport and guided day trips.</p>",
         "valueByLocale": {}
       },
       "Author": {
         "type": "string",
-        "value": "Tea Tot Hotels",
+        "value": "Tea Tot Hotel",
         "valueByLocale": {}
       },
       "Published Date": {
@@ -99,12 +99,12 @@
       },
       "Body": {
         "type": "formattedText",
-        "value": "<h3 dir=\"auto\">In the Heart of Machakos</h3><p dir=\"auto\">Machakos People's Park features beautifully lit walkways and arches, dancing fountains, a 300m zip-line, camel and horse riding, boat rides, archery and a children's playground. Free entry.</p><h3 dir=\"auto\">From the Hotel</h3><p dir=\"auto\">The park is just 2km from Tea Tot Hotels — an easy outing for families and groups staying with us.</p>",
+        "value": "<h3 dir=\"auto\">In the Heart of Machakos</h3><p dir=\"auto\">Machakos People's Park features beautifully lit walkways and arches, dancing fountains, a 300m zip-line, camel and horse riding, boat rides, archery and a children's playground. Free entry.</p><h3 dir=\"auto\">From the Hotel</h3><p dir=\"auto\">The park is just 2km from Tea Tot Hotel — an easy outing for families and groups staying with us.</p>",
         "valueByLocale": {}
       },
       "Author": {
         "type": "string",
-        "value": "Tea Tot Hotels",
+        "value": "Tea Tot Hotel",
         "valueByLocale": {}
       },
       "Published Date": {
@@ -146,7 +146,7 @@
       },
       "Author": {
         "type": "string",
-        "value": "Tea Tot Hotels",
+        "value": "Tea Tot Hotel",
         "valueByLocale": {}
       },
       "Published Date": {

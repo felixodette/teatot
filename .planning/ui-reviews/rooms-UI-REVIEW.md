@@ -42,7 +42,7 @@
 | Listing cards show only category + name + price — `shortDescription` from CMS is unused | WARNING | `app/rooms/page.tsx` L45–63; CMS has short copy e.g. classic-room |
 | Prices render without thousands separators (`Ksh 5297`, `Ksh 13875`) | WARNING | Listing L56–57; detail L39–40 |
 | `Twin Bedroom` categorized as **Deluxe** — confuses taxonomy vs Standard/Deluxe/Suite | WARNING | CMS `family-room` Category = Deluxe; listing shows uppercase DELUXE |
-| Document title doubles brand: `Rooms — Tea Tot Hotels \| Tea Tot Hotels` | WARNING | Page `title` + layout `template: "%s \| Tea Tot Hotels"` |
+| Document title doubles brand: `Rooms — Tea Tot Hotel \| Tea Tot Hotel` | WARNING | Page `title` + layout `template: "%s \| Tea Tot Hotel"` |
 | Hero copy “Four comfortable room types…” matches published count (drafts filtered) | OK | `normalizeRooms` + `published()` |
 | Detail CTA label “Book Now” is specific (not “Submit” / “Click Here”) | OK | `[slug]/page.tsx` L70–72 |
 | No empty-state copy if `getRooms()` returns `[]` | WARNING | Listing maps rooms with no branch |

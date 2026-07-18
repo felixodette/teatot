@@ -6,7 +6,7 @@ import ImageWithFallback from "@/components/ImageWithFallback";
 
 export const metadata: Metadata = {
   title: "Gallery",
-  description: "Rooms, conference halls, gardens and dining at Tea Tot Hotels, Machakos.",
+  description: "Rooms, conference halls, gardens and dining at Tea Tot Hotel, Machakos.",
 };
 
 export default function GalleryPage() {
@@ -16,13 +16,14 @@ export default function GalleryPage() {
     <div>
       <HeroSection
         label="VISUAL TOUR"
-        headline="Tea Tot Hotels gallery."
+        headline="Tea Tot Hotel gallery."
         paragraph="Rooms, conference halls, gardens and dining — a look inside our Machakos property."
         imageSrc="/images/dining/dining-2.jpg"
-        imageAlt="Tea Tot Hotels gallery"
+        imageAlt="Tea Tot Hotel gallery"
         height="640px"
         rating="Machakos Premier"
         starCount={3}
+        parallax
       />
 
       <div className="mx-auto w-full max-w-[var(--container-max)] px-6 py-12">
