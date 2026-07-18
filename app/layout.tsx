@@ -21,11 +21,18 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Tea Tot Hotel",
     locale: "en_KE",
-    images: [{ url: "/images/hero/hotel-lobby.jpg", width: 1920, height: 1080, alt: "Tea Tot Hotel" }],
+    images: [
+      {
+        url: "/images/home/hotel-front.jpeg",
+        width: 1298,
+        height: 960,
+        alt: "Tea Tot Hotel facade on Konza Road, Machakos",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/hero/hotel-lobby.jpg"],
+    images: ["/images/home/hotel-front.jpeg"],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: BASE_URL },
