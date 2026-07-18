@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getServices } from "@/lib/data";
+import { whatsappUrl } from "@/config/contact";
 import HeroSection from "@/components/HeroSection";
 import RevealSection from "@/components/RevealSection";
 import ImageWithFallback from "@/components/ImageWithFallback";
@@ -23,6 +24,12 @@ export default function ServicesPage() {
         imageAlt="Tea Tot Hotel reception"
         height="640px"
         parallax
+        primaryButton={{
+          text: "Enquire on WhatsApp",
+          href: whatsappUrl("conference"),
+          external: true,
+        }}
+        secondaryButton={{ text: "Contact us", href: "/contact" }}
       />
 
       <div className="mx-auto max-w-[var(--container-max)] px-6 py-24">

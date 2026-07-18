@@ -3,7 +3,7 @@
 import { useEffect, useId, useRef, useState, useActionState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { submitBookingForm, type BookingState } from "@/app/actions/booking";
-import { useBooking } from "@/providers/BookingProvider";
+import { useBooking } from "@/providers/booking-context";
 
 const initial: BookingState = { status: "idle", message: "" };
 

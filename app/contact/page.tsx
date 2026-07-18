@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import RevealSection from "@/components/RevealSection";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
-import { contact } from "@/config/contact";
+import { contact, whatsappUrl } from "@/config/contact";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -16,11 +16,17 @@ export default function ContactPage() {
       <HeroSection
         label="GET IN TOUCH"
         headline="Find us."
-        paragraph="Konza Road, opposite Machakos Level 5 Hospital. Call, email or send a message — our team is here 24/7."
+        paragraph="Konza Road, opposite Machakos Level 5 Hospital. Call, email or WhatsApp — our team is here 24/7."
         imageSrc="/images/rooms/room-8.jpg"
         imageAlt="Hotel lobby interior"
         height="640px"
         parallax
+        primaryButton={{
+          text: "Chat on WhatsApp",
+          href: whatsappUrl("general"),
+          external: true,
+        }}
+        secondaryButton={{ text: "Call us", href: `tel:${contact.phone}`, external: true }}
       />
 
       <div className="mx-auto max-w-[var(--container-max)] px-6 py-24 flex flex-col gap-32">
@@ -41,6 +47,17 @@ export default function ContactPage() {
                 <div>
                   <p className="text-sm font-medium uppercase tracking-[0.15em] text-[var(--color-text-primary)]">Phone</p>
                   <a href={`tel:${contact.phone}`} className="mt-1 block hover:underline">{contact.phone}</a>
+                </div>
+                <div>
+                  <p className="text-sm font-medium uppercase tracking-[0.15em] text-[var(--color-text-primary)]">WhatsApp</p>
+                  <a
+                    href={whatsappUrl("general")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block hover:underline"
+                  >
+                    {contact.phone}
+                  </a>
                 </div>
                 <div>
                   <p className="text-sm font-medium uppercase tracking-[0.15em] text-[var(--color-text-primary)]">Email</p>

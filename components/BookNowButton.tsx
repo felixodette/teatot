@@ -1,6 +1,6 @@
 "use client";
 
-import { useBooking } from "@/providers/BookingProvider";
+import { useBooking } from "@/providers/booking-context";
 
 type Props = {
   className?: string;

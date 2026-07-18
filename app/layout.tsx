@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { inter, interDisplay } from "@/lib/fonts";
-import { LenisProvider } from "@/providers/LenisProvider";
 import { BookingProvider } from "@/providers/BookingProvider";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Tea Tot Hotel",
   },
   description:
-    "56 elegantly furnished rooms, world-class conferencing, outside catering and breathtaking gardens in Machakos, Kenya.",
+    "Tea Tot Hotel on Konza Road, Machakos — 56 rooms, conference for 200, gardens for large events, ANAM Restaurant and TeaTot Pizzeria. Book direct or enquire on WhatsApp.",
   metadataBase: new URL(BASE_URL),
   openGraph: {
     type: "website",
@@ -46,16 +45,14 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(getHotelJsonLd()) }}
         />
-        <LenisProvider>
-          <BookingProvider roomOptions={roomOptions}>
-            <a href="#main-content" className="skip-link">
-              Skip to main content
-            </a>
-            <Navigation />
-            <main id="main-content">{children}</main>
-            <Footer />
-          </BookingProvider>
-        </LenisProvider>
+        <BookingProvider roomOptions={roomOptions}>
+          <a href="#main-content" className="skip-link">
+            Skip to main content
+          </a>
+          <Navigation />
+          <main id="main-content">{children}</main>
+          <Footer />
+        </BookingProvider>
       </body>
     </html>
   );
