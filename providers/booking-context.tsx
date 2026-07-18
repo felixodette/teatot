@@ -2,7 +2,7 @@
 
 import { createContext, useContext } from "react";
 
-export type BookingContextValue = {
+type BookingContextValue = {
   isOpen: boolean;
   /** Pass room display name to pre-select Room type in the modal. */
   openBooking: (roomType?: string) => void;

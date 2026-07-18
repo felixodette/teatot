@@ -1,21 +1,20 @@
 import type {
   Room, Service, GalleryItem, DiningMenuItem,
-  Testimonial, Faq, TeamMember, BlogPost, LegalPage,
+  Testimonial, BlogPost, LegalPage,
 } from "@/types/cms";
 import {
   normalizeRooms, normalizeServices, normalizeGallery,
-  normalizeDiningMenu, normalizeTestimonials, normalizeFaqs,
-  normalizeTeam, normalizeBlogPosts, normalizeLegalPages,
+  normalizeDiningMenu, normalizeTestimonials,
+  normalizeBlogPosts, normalizeLegalPages,
 } from "@/lib/normalize";
 import roomsData from "@/framer-local/cms/rooms.json";
 import servicesData from "@/framer-local/cms/services.json";
 import galleryData from "@/framer-local/cms/gallery.json";
 import diningMenuData from "@/framer-local/cms/dining-menu.json";
 import testimonialsData from "@/framer-local/cms/testimonials.json";
-import faqsData from "@/framer-local/cms/faqs.json";
-import teamData from "@/framer-local/cms/team.json";
 import blogPostsData from "@/framer-local/cms/blog-posts.json";
 import legalPageData from "@/framer-local/cms/legal-page.json";
+
 
 export function getRooms(): Room[] {
   return normalizeRooms(roomsData);
@@ -42,22 +41,8 @@ export function getDiningMenu(): DiningMenuItem[] {
   return normalizeDiningMenu(diningMenuData);
 }
 
-export function getDiningMenuByCategory(category: string): DiningMenuItem[] {
-  return getDiningMenu().filter((d) => d.category === category);
-}
-
 export function getTestimonials(): Testimonial[] {
   return normalizeTestimonials(testimonialsData);
-}
-
-export function getFaqs(): Faq[] {
-  return normalizeFaqs(faqsData)
-    .sort((a, b) => a.sort - b.sort);
-}
-
-export function getTeam(): TeamMember[] {
-  return normalizeTeam(teamData)
-    .sort((a, b) => a.sortOrder - b.sortOrder);
 }
 
 export function getBlogPosts(): BlogPost[] {

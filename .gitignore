@@ -20,5 +20,9 @@ next-env.d.ts
 # graphify (regenerated locally)
 graphify-out/
 
+# fallow (local cache / baselines)
+.fallow/
+
+
 # debug
 npm-debug.log*
