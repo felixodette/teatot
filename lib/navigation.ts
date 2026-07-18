@@ -6,10 +6,13 @@ export const navLinks = [
   { label: "Gallery", href: "/gallery" },
 ] as const;
 
+/** Opens the site-wide BookingModal via BookNowButton / useBooking(). */
 export const ctaLink = {
   label: "Book Now",
+  /** Legacy event-booking URL kept for reference; CTAs use the modal. */
   href: "https://teatot.co.ke/event-booking/",
-  external: true,
+  external: false,
+  modal: true,
 } as const;
 
 export const footerLinks = {

@@ -163,7 +163,7 @@ export default function DiningPage() {
       <RevealSection>
         <figure className="h-[320px] w-full overflow-hidden tablet:h-[480px] desktop:h-[640px]">
           <ImageWithFallback
-            src="/images/dining/dining-interior.jpg"
+            src="/images/dining/restaurant-3.jpg"
             alt="ANAM Restaurant at Tea Tot Hotels"
             width={5000}
             height={3524}

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks, ctaLink } from "@/lib/navigation";
+import BookNowButton from "@/components/BookNowButton";
 
 const navAnimation = {
   initial: { opacity: 0, y: -20 },
@@ -52,34 +53,6 @@ function CloseIcon() {
   );
 }
 
-function BookNowButton({
-  className,
-  onClick,
-}: {
-  className: string;
-  onClick?: () => void;
-}) {
-  if (ctaLink.external) {
-    return (
-      <a
-        href={ctaLink.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={className}
-        onClick={onClick}
-      >
-        {ctaLink.label}
-      </a>
-    );
-  }
-
-  return (
-    <Link href={ctaLink.href} className={className} onClick={onClick}>
-      {ctaLink.label}
-    </Link>
-  );
-}
-
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -117,7 +90,7 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <BookNowButton className={ctaClassName} />
+            <BookNowButton className={ctaClassName}>{ctaLink.label}</BookNowButton>
           </div>
 
           <button
@@ -190,7 +163,9 @@ export function Navigation() {
                 <BookNowButton
                   className={mobileCtaClassName}
                   onClick={() => setIsOpen(false)}
-                />
+                >
+                  {ctaLink.label}
+                </BookNowButton>
               </motion.div>
             </nav>
           </motion.div>

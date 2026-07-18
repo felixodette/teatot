@@ -28,7 +28,7 @@ export default function AboutPage() {
         label="OUR PHILOSOPHY"
         headline="Where comfort meets local warmth."
         paragraph="At Tea Tot Hotels we are driven by the desire to provide wellbeing and comfort. Your satisfaction is our daily purpose — met with warmth, enthusiasm and respect."
-        imageSrc="/images/hero/about-hero.jpg"
+        imageSrc="/images/dining/chandelier-1.jpg"
         imageAlt="Tea Tot Hotels exterior"
         height="720px"
         rating="Machakos Premier"
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <div className="flex flex-col bg-[var(--color-bg-subtle)] desktop:flex-row">
             <div className="relative h-[320px] w-full overflow-hidden desktop:h-[640px] desktop:flex-1">
               <ImageWithFallback
-                src="/images/about/who-we-are.jpg"
+                src="/images/rooms/bedroom-2.jpeg"
                 alt="Tea Tot Hotels"
                 width={1284}
                 height={640}
@@ -141,7 +141,7 @@ export default function AboutPage() {
         <RevealSection>
           <figure className="h-[480px] w-full overflow-hidden desktop:h-[640px]">
             <ImageWithFallback
-              src="/images/about/restaurant.jpg"
+              src="/images/dining/restaurant-3.jpg"
               alt="ANAM Restaurant at Tea Tot Hotels"
               width={5000}
               height={3333}

@@ -56,8 +56,8 @@
         "type": "image",
         "value": {
           "id": "YnircrNZxUREwfsro0NwdGoki8.jpg",
-          "url": "https://framerusercontent.com/images/YnircrNZxUREwfsro0NwdGoki8.jpg",
-          "thumbnailUrl": "https://framerusercontent.com/images/YnircrNZxUREwfsro0NwdGoki8.jpg?scale-down-to=512",
+          "url": "/images/rooms/standard-double.jpeg",
+          "thumbnailUrl": "",
           "resolution": "auto",
           "altText": "Standard Double — comfortable Machakos accommodation"
         }
@@ -89,8 +89,8 @@
         "type": "image",
         "value": {
           "id": "S0ZHD901odrdTPjMvEcgeFZLjY.jpg",
-          "url": "https://framerusercontent.com/images/S0ZHD901odrdTPjMvEcgeFZLjY.jpg",
-          "thumbnailUrl": "https://framerusercontent.com/images/S0ZHD901odrdTPjMvEcgeFZLjY.jpg?scale-down-to=512",
+          "url": "/images/rooms/junior-suite.jpeg",
+          "thumbnailUrl": "",
           "resolution": "auto",
           "altText": "Junior Suite — spacious sitting room"
         }
@@ -122,8 +122,8 @@
         "type": "image",
         "value": {
           "id": "AyrrDhZdDav816xjyT3KhUvLVqc.jpg",
-          "url": "https://framerusercontent.com/images/AyrrDhZdDav816xjyT3KhUvLVqc.jpg",
-          "thumbnailUrl": "https://framerusercontent.com/images/AyrrDhZdDav816xjyT3KhUvLVqc.jpg?scale-down-to=512",
+          "url": "/images/conference/baraza-hall.jpeg",
+          "thumbnailUrl": "",
           "resolution": "auto",
           "altText": "Baraza Hall — conference for up to 200 delegates"
         }
@@ -155,8 +155,8 @@
         "type": "image",
         "value": {
           "id": "PMQLDK3PwC04dzDLOTTsLfYsx4.jpg",
-          "url": "https://framerusercontent.com/images/PMQLDK3PwC04dzDLOTTsLfYsx4.jpg",
-          "thumbnailUrl": "https://framerusercontent.com/images/PMQLDK3PwC04dzDLOTTsLfYsx4.jpg?scale-down-to=512",
+          "url": "/images/dining/restaurant-4.jpg",
+          "thumbnailUrl": "",
           "resolution": "auto",
           "altText": "ANAM Restaurant — Kenyan and continental dining"
         }
@@ -188,8 +188,8 @@
         "type": "image",
         "value": {
           "id": "7ZHZXX9xBxF0TZ9doCp9YTVhQg.jpg",
-          "url": "https://framerusercontent.com/images/7ZHZXX9xBxF0TZ9doCp9YTVhQg.jpg",
-          "thumbnailUrl": "https://framerusercontent.com/images/7ZHZXX9xBxF0TZ9doCp9YTVhQg.jpg?scale-down-to=512",
+          "url": "images/grounds/grounds-3.jpg",
+          "thumbnailUrl": "",
           "resolution": "auto",
           "altText": "Garden venue — events for up to 4,000 guests"
         }
@@ -221,7 +221,7 @@
         "type": "image",
         "value": {
           "id": "YquqAf7Q280sNbQ9G8sKz3BZzOw.jpg",
-          "url": "https://framerusercontent.com/images/YquqAf7Q280sNbQ9G8sKz3BZzOw.jpg",
+          "url": "/images/dining/restaurant-12.jpg",
           "thumbnailUrl": "https://framerusercontent.com/images/YquqAf7Q280sNbQ9G8sKz3BZzOw.jpg?scale-down-to=512",
           "resolution": "auto",
           "altText": "TeaTot Pizzeria — artisan pizza in Machakos"

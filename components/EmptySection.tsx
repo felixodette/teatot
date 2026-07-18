@@ -1,9 +1,17 @@
+"use client";
+
 import Link from "next/link";
+import BookNowButton from "./BookNowButton";
 
 interface Props {
   title: string;
   message: string;
-  action?: { label: string; href: string; external?: boolean };
+  action?: {
+    label: string;
+    href?: string;
+    external?: boolean;
+    openBooking?: boolean;
+  };
 }
 
 export default function EmptySection({ title, message, action }: Props) {
@@ -15,7 +23,9 @@ export default function EmptySection({ title, message, action }: Props) {
       </p>
       {action && (
         <div className="mt-8">
-          {action.external ? (
+          {action.openBooking ? (
+            <BookNowButton className="btn-secondary">{action.label}</BookNowButton>
+          ) : action.external && action.href ? (
             <a
               href={action.href}
               target="_blank"
@@ -24,11 +34,11 @@ export default function EmptySection({ title, message, action }: Props) {
             >
               {action.label}
             </a>
-          ) : (
+          ) : action.href ? (
             <Link href={action.href} className="btn-secondary">
               {action.label}
             </Link>
-          )}
+          ) : null}
         </div>
       )}
     </div>

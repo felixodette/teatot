@@ -3,11 +3,14 @@
 import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import ImageWithFallback from "./ImageWithFallback";
+import BookNowButton from "./BookNowButton";
 
 interface HeroButton {
   text: string;
   href: string;
   external?: boolean;
+  /** Opens BookingModal instead of navigating */
+  openBooking?: boolean;
 }
 
 interface Props {
@@ -37,6 +40,10 @@ function HeroButtonLink({
     variant === "primary"
       ? "rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90"
       : "rounded-full border border-white/30 px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-80";
+
+  if (button.openBooking) {
+    return <BookNowButton className={className}>{button.text}</BookNowButton>;
+  }
 
   if (button.external) {
     return (

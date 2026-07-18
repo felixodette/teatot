@@ -18,7 +18,7 @@ export default function GalleryPage() {
         label="VISUAL TOUR"
         headline="Tea Tot Hotels gallery."
         paragraph="Rooms, conference halls, gardens and dining — a look inside our Machakos property."
-        imageSrc="/images/hero/gallery-hero.jpg"
+        imageSrc="/images/dining/dining-2.jpg"
         imageAlt="Tea Tot Hotels gallery"
         height="640px"
         rating="Machakos Premier"

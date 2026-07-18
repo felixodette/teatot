@@ -53,7 +53,7 @@ export default function Home() {
         imageSrc="/images/home/hotel-front.jpeg"
         imageAlt="Tea Tot Hotels"
         fullViewport
-        primaryButton={{ text: ctaLink.label, href: ctaLink.href, external: ctaLink.external }}
+        primaryButton={{ text: ctaLink.label, href: ctaLink.href, openBooking: true }}
         secondaryButton={{ text: "View Rooms", href: "/rooms" }}
         rating="Machakos Premier"
         starCount={3}
@@ -200,7 +200,7 @@ export default function Home() {
               <EmptySection
                 title="Guest stories on the way"
                 message="We're gathering reviews from recent stays. Book a room and share your experience — we'd love to hear from you."
-                action={{ label: "Book Now", href: ctaLink.href, external: true }}
+                action={{ label: "Book Now", openBooking: true }}
               />
             )}
           </RevealSection>

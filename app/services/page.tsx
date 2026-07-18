@@ -19,7 +19,7 @@ export default function ServicesPage() {
         label="HOTEL SERVICES"
         headline="Everything you could need."
         paragraph="Conference for 200, gardens for 4,000, restaurant-quality dining and professional outside catering — all under one roof in Machakos."
-        imageSrc="/images/hero/services-hero.jpg"
+        imageSrc="/images/reception/reception-1.jpg"
         imageAlt="Tea Tot Hotels reception"
         height="640px"
       />

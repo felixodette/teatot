@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { inter, interDisplay } from "@/lib/fonts";
 import { LenisProvider } from "@/providers/LenisProvider";
+import { BookingProvider } from "@/providers/BookingProvider";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { getHotelJsonLd } from "@/lib/structured-data";
+import { getRooms } from "@/lib/data";
 import "./globals.css";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://teatot.co.ke";
@@ -35,6 +37,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const roomOptions = getRooms().map((r) => r.name);
+
   return (
     <html lang="en" className={`${inter.variable} ${interDisplay.variable}`}>
       <body className="font-[family-name:var(--font-inter)]">
@@ -43,12 +47,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(getHotelJsonLd()) }}
         />
         <LenisProvider>
-          <a href="#main-content" className="skip-link">
-            Skip to main content
-          </a>
-          <Navigation />
-          <main id="main-content">{children}</main>
-          <Footer />
+          <BookingProvider roomOptions={roomOptions}>
+            <a href="#main-content" className="skip-link">
+              Skip to main content
+            </a>
+            <Navigation />
+            <main id="main-content">{children}</main>
+            <Footer />
+          </BookingProvider>
         </LenisProvider>
       </body>
     </html>
