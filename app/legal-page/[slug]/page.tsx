@@ -10,9 +10,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const page = getLegalPageBySlug(slug);
-  if (!page) return { title: "Legal — Tea Tot Hotels" };
+  if (!page) return { title: "Legal" };
   return {
-    title: `${page.title} — Tea Tot Hotels`,
+    title: page.title,
   };
 }
 
@@ -28,7 +28,7 @@ export default async function LegalDetailPage({ params }: { params: Promise<{ sl
   });
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-24">
+    <div className="mx-auto max-w-3xl px-6 py-24">
       <RevealSection>
         <h1
           className="text-4xl font-semibold tracking-tight md:text-5xl"
@@ -47,6 +47,6 @@ export default async function LegalDetailPage({ params }: { params: Promise<{ sl
           dangerouslySetInnerHTML={{ __html: page.body }}
         />
       </RevealSection>
-    </main>
+    </div>
   );
 }

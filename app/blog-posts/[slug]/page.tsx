@@ -12,9 +12,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPostBySlug(slug);
-  if (!post) return { title: "Blog — Tea Tot Hotels" };
+  if (!post) return { title: "Blog" };
   return {
-    title: `${post.title} — Tea Tot Hotels`,
+    title: post.title,
     description: post.excerpt.replace(/<[^>]*>/g, ""),
   };
 }

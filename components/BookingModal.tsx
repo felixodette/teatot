@@ -64,7 +64,7 @@ function GuestCounter({
 }
 
 export default function BookingModal() {
-  const { isOpen, closeBooking, roomOptions } = useBooking();
+  const { isOpen, closeBooking, roomOptions, preferredRoom } = useBooking();
   const reduceMotion = useReducedMotion();
   const titleId = useId();
   const panelRef = useRef<HTMLDivElement>(null);
@@ -74,6 +74,9 @@ export default function BookingModal() {
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [clientError, setClientError] = useState("");
+
+  const roomDefault =
+    preferredRoom && roomOptions.includes(preferredRoom) ? preferredRoom : "";
 
   useEffect(() => {
     if (!isOpen) return;
@@ -86,11 +89,51 @@ export default function BookingModal() {
 
   useEffect(() => {
     if (!isOpen) return;
+    const panel = panelRef.current;
+    const previouslyFocused = document.activeElement as HTMLElement | null;
+
+    const focusables = () => {
+      if (!panel) return [] as HTMLElement[];
+      return Array.from(
+        panel.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ),
+      ).filter((el) => el.offsetParent !== null || el === document.activeElement);
+    };
+
+    const focusFirst = () => {
+      const list = focusables();
+      const preferred =
+        list.find((el) => el.tagName === "INPUT" || el.tagName === "SELECT") ?? list[0];
+      preferred?.focus();
+    };
+    // Wait one frame so AnimatePresence mounts the panel before focusing.
+    const raf = requestAnimationFrame(focusFirst);
+
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") closeBooking();
+      if (e.key === "Escape") {
+        closeBooking();
+        return;
+      }
+      if (e.key !== "Tab") return;
+      const list = focusables();
+      if (list.length === 0) return;
+      const first = list[0];
+      const last = list[list.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     };
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("keydown", onKey);
+      previouslyFocused?.focus?.();
+    };
   }, [isOpen, closeBooking]);
 
   useEffect(() => {
@@ -122,6 +165,7 @@ export default function BookingModal() {
         >
           <button
             type="button"
+            tabIndex={-1}
             className="absolute inset-0 bg-[var(--color-black-80)] backdrop-blur-[10px]"
             aria-label="Close booking form"
             onClick={closeBooking}
@@ -179,7 +223,7 @@ export default function BookingModal() {
               ) : (
                 <form action={formAction} onSubmit={validateBeforeSubmit} className="space-y-4">
                   {(state.status === "error" || clientError) && (
-                    <p className="rounded-md bg-red-50 px-4 py-3 text-sm text-red-700">
+                    <p role="alert" className="rounded-md bg-red-50 px-4 py-3 text-sm text-red-700">
                       {clientError || state.message}
                     </p>
                   )}
@@ -238,7 +282,12 @@ export default function BookingModal() {
                     <label htmlFor="roomType" className={labelClass}>
                       Room type <span className="normal-case tracking-normal">(optional)</span>
                     </label>
-                    <select id="roomType" name="roomType" className={fieldClass} defaultValue="">
+                    <select
+                      id="roomType"
+                      name="roomType"
+                      className={fieldClass}
+                      defaultValue={roomDefault}
+                    >
                       <option value="">Any / not specified</option>
                       {roomOptions.map((name) => (
                         <option key={name} value={name}>
@@ -297,7 +346,7 @@ export default function BookingModal() {
                   <button
                     type="submit"
                     disabled={pending}
-                    className="mt-2 w-full rounded-none bg-[var(--color-text-primary)] px-6 py-3.5 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+                    className="mt-2 w-full cursor-pointer rounded-none bg-[var(--color-text-primary)] px-6 py-3.5 text-sm font-medium text-white transition-opacity duration-200 hover:opacity-90 disabled:opacity-50"
                   >
                     {pending ? "Sending…" : "Request booking"}
                   </button>

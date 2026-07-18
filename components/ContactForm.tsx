@@ -5,6 +5,12 @@ import { submitContactForm, type ContactState } from "@/app/actions/contact";
 
 const initial: ContactState = { status: "idle", message: "" };
 
+const fieldClass =
+  "w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3 text-sm outline-none transition-colors focus:border-[var(--color-text-primary)]";
+
+const labelClass =
+  "mb-1.5 block text-xs font-medium uppercase tracking-[0.15em] text-[var(--color-text-subtle)]";
+
 export default function ContactForm() {
   const [state, formAction, pending] = useActionState(submitContactForm, initial);
 
@@ -20,43 +26,69 @@ export default function ContactForm() {
   return (
     <form action={formAction} className="space-y-4">
       {state.status === "error" && (
-        <p className="rounded-md bg-red-50 px-4 py-3 text-sm text-red-700">
+        <p role="alert" className="rounded-md bg-red-50 px-4 py-3 text-sm text-red-700">
           {state.message}
         </p>
       )}
-      <input
-        name="name"
-        type="text"
-        placeholder="Name"
-        required
-        className="w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3 text-sm outline-none transition-colors focus:border-[var(--color-text-primary)]"
-      />
-      <input
-        name="email"
-        type="email"
-        placeholder="Email"
-        required
-        className="w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3 text-sm outline-none transition-colors focus:border-[var(--color-text-primary)]"
-      />
-      <input
-        name="subject"
-        type="text"
-        placeholder="Subject"
-        required
-        className="w-full rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3 text-sm outline-none transition-colors focus:border-[var(--color-text-primary)]"
-      />
-      <textarea
-        name="message"
-        placeholder="Message"
-        required
-        minLength={10}
-        rows={5}
-        className="w-full resize-none rounded-md border border-[var(--color-border)] bg-transparent px-4 py-3 text-sm outline-none transition-colors focus:border-[var(--color-text-primary)]"
-      />
+      <div>
+        <label htmlFor="contact-name" className={labelClass}>
+          Name
+        </label>
+        <input
+          id="contact-name"
+          name="name"
+          type="text"
+          placeholder="Your full name"
+          required
+          autoComplete="name"
+          className={fieldClass}
+        />
+      </div>
+      <div>
+        <label htmlFor="contact-email" className={labelClass}>
+          Email
+        </label>
+        <input
+          id="contact-email"
+          name="email"
+          type="email"
+          placeholder="you@example.com"
+          required
+          autoComplete="email"
+          className={fieldClass}
+        />
+      </div>
+      <div>
+        <label htmlFor="contact-subject" className={labelClass}>
+          Subject
+        </label>
+        <input
+          id="contact-subject"
+          name="subject"
+          type="text"
+          placeholder="How can we help?"
+          required
+          className={fieldClass}
+        />
+      </div>
+      <div>
+        <label htmlFor="contact-message" className={labelClass}>
+          Message
+        </label>
+        <textarea
+          id="contact-message"
+          name="message"
+          placeholder="Your message"
+          required
+          minLength={10}
+          rows={5}
+          className={`${fieldClass} resize-none`}
+        />
+      </div>
       <button
         type="submit"
         disabled={pending}
-        className="rounded-full bg-[var(--color-text-primary)] px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+        className="cursor-pointer rounded-none bg-[var(--color-text-primary)] px-6 py-3 text-sm font-medium text-white transition-opacity duration-200 hover:opacity-90 disabled:opacity-50"
       >
         {pending ? "Sending..." : "Send Message"}
       </button>

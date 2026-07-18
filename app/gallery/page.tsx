@@ -5,7 +5,7 @@ import RevealSection from "@/components/RevealSection";
 import ImageWithFallback from "@/components/ImageWithFallback";
 
 export const metadata: Metadata = {
-  title: "Gallery — Tea Tot Hotels",
+  title: "Gallery",
   description: "Rooms, conference halls, gardens and dining at Tea Tot Hotels, Machakos.",
 };
 
@@ -13,7 +13,7 @@ export default function GalleryPage() {
   const gallery = getGallery();
 
   return (
-    <main>
+    <div>
       <HeroSection
         label="VISUAL TOUR"
         headline="Tea Tot Hotels gallery."
@@ -25,23 +25,28 @@ export default function GalleryPage() {
         starCount={3}
       />
 
-      <div className="mx-auto w-full max-w-[1284px] px-6 py-6">
+      <div className="mx-auto w-full max-w-[var(--container-max)] px-6 py-12">
         <RevealSection>
-          <div className="grid grid-cols-1 gap-2 desktop:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 desktop:grid-cols-2">
             {gallery.map((item) => (
-              <div key={item.slug} className="overflow-hidden">
+              <figure key={item.slug} className="overflow-hidden">
                 <ImageWithFallback
                   src={item.image.url}
-                  alt={item.image.alt || item.caption}
+                  alt={item.image.alt || item.caption || "Gallery image"}
                   width={1400}
                   height={933}
                   className="h-[360px] w-full object-cover desktop:h-[480px]"
                 />
-              </div>
+                {item.caption ? (
+                  <figcaption className="mt-3 text-sm text-[var(--color-text-secondary)]">
+                    {item.caption}
+                  </figcaption>
+                ) : null}
+              </figure>
             ))}
           </div>
         </RevealSection>
       </div>
-    </main>
+    </div>
   );
 }

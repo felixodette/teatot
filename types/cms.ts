@@ -56,6 +56,8 @@ export interface Testimonial {
   quote: string;
   date: string;
   roomStayed: string;
+  /** Guest score 1–5 */
+  rating: number;
 }
 
 export interface Faq {

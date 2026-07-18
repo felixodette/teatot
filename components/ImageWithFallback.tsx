@@ -5,22 +5,28 @@ import { useState } from "react";
 
 type Props = ImageProps & { fallbackSrc?: string };
 
+/** Height utilities that mean the caller sized the box — don't invent aspect-ratio whitespace. */
+const HEIGHT_CLASS_RE = /\bh-(?:\[[^\]]+\]|full|screen|svh|dvh|lvh|\d+)/g;
+
 function BrandedImageFallback({
   alt,
   fill,
   width,
   height,
+  className,
 }: {
   alt: string;
   fill?: boolean;
   width?: number | `${number}`;
   height?: number | `${number}`;
+  className?: string;
 }) {
+  const heightClasses = className?.match(HEIGHT_CLASS_RE)?.join(" ") ?? "";
   return (
     <div
-      className={`flex flex-col items-center justify-center gap-3 bg-[var(--color-bg-subtle)] text-[var(--color-text-subtle)] ${fill ? "absolute inset-0" : "h-full w-full"}`}
+      className={`flex flex-col items-center justify-center gap-3 bg-[var(--color-bg-subtle)] text-[var(--color-text-subtle)] ${fill || heightClasses ? `absolute inset-0 ${heightClasses}`.trim() : "h-full w-full"}`}
       style={
-        fill
+        fill || heightClasses
           ? undefined
           : { width: width ?? "100%", aspectRatio: width && height ? `${width}/${height}` : "16/9" }
       }
@@ -51,6 +57,10 @@ export default function ImageWithFallback({ fallbackSrc, alt, fill, className, .
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
+  const classStr = typeof className === "string" ? className : "";
+  const heightClasses = classStr.match(HEIGHT_CLASS_RE)?.join(" ") ?? "";
+  const imageClasses = classStr.replace(HEIGHT_CLASS_RE, "").replace(/\s+/g, " ").trim();
+
   if (failed) {
     return (
       <BrandedImageFallback
@@ -58,6 +68,7 @@ export default function ImageWithFallback({ fallbackSrc, alt, fill, className, .
         fill={fill}
         width={props.width}
         height={props.height}
+        className={className}
       />
     );
   }
@@ -72,6 +83,34 @@ export default function ImageWithFallback({ fallbackSrc, alt, fill, className, .
           src={src}
           alt={alt}
           className={className ?? "object-cover"}
+          onLoad={() => setLoaded(true)}
+          onError={() => {
+            if (fallbackSrc && src !== fallbackSrc) {
+              setSrc(fallbackSrc);
+            } else {
+              setFailed(true);
+            }
+          }}
+        />
+      </div>
+    );
+  }
+
+  // Caller set h-* — size the wrapper, paint with fill (avoids aspect-ratio gap under photo).
+  if (heightClasses) {
+    // ponytail: drop width/height when switching to fill — Next Image forbids both
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { width, height, ...rest } = props;
+    return (
+      <div className={`relative w-full overflow-hidden ${heightClasses}`}>
+        {!loaded && <div className="absolute inset-0 animate-pulse bg-[var(--color-bg-subtle)]" />}
+        <Image
+          {...rest}
+          fill
+          src={src}
+          alt={alt}
+          sizes={props.sizes ?? "100vw"}
+          className={imageClasses || "object-cover"}
           onLoad={() => setLoaded(true)}
           onError={() => {
             if (fallbackSrc && src !== fallbackSrc) {

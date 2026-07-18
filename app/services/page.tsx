@@ -5,7 +5,7 @@ import RevealSection from "@/components/RevealSection";
 import ImageWithFallback from "@/components/ImageWithFallback";
 
 export const metadata: Metadata = {
-  title: "Services — Tea Tot Hotels",
+  title: "Services",
   description:
     "Conference halls, garden venues, dining, outside catering and guest services at Tea Tot Hotels, Machakos.",
 };
@@ -14,7 +14,7 @@ export default function ServicesPage() {
   const services = getServices();
 
   return (
-    <main>
+    <div>
       <HeroSection
         label="HOTEL SERVICES"
         headline="Everything you could need."
@@ -27,7 +27,7 @@ export default function ServicesPage() {
       <div className="mx-auto max-w-[var(--container-max)] px-6 py-24">
         <div className="space-y-24">
           {services.map((service) => (
-            <RevealSection key={service.slug} as="section">
+            <RevealSection key={service.slug} as="section" id={service.slug} className="scroll-mt-28">
               <div className="grid gap-12 desktop:grid-cols-2 desktop:items-center desktop:gap-24">
                 <div className="aspect-[560/320] w-full overflow-hidden">
                   <ImageWithFallback
@@ -58,6 +58,6 @@ export default function ServicesPage() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

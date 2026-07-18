@@ -15,7 +15,7 @@
     {
       "id": "JX9aBKtA0",
       "name": "Star Rating",
-      "type": "unsupported"
+      "type": "number"
     },
     {
       "id": "neG9dX9Ok",
@@ -49,6 +49,10 @@
         "value": "Nairobi, Kenya",
         "valueByLocale": {}
       },
+      "Star Rating": {
+        "type": "number",
+        "value": 5
+      },
       "Quote": {
         "type": "formattedText",
         "value": "<p dir=\"auto\">From the moment we arrived the team treated us kama familia. Clean rooms, hot showers and a proper Kenyan breakfast with the best coffee in Machakos town!</p>",
@@ -78,6 +82,10 @@
         "value": "Machakos, Kenya",
         "valueByLocale": {}
       },
+      "Star Rating": {
+        "type": "number",
+        "value": 5
+      },
       "Quote": {
         "type": "formattedText",
         "value": "<p dir=\"auto\">Outstanding conference facilities in Baraza Hall. Our 60-person team was perfectly accommodated. AV equipment, catering and dedicated staff made our training seamless.</p>",
@@ -106,6 +114,10 @@
         "type": "string",
         "value": "Mombasa, Kenya",
         "valueByLocale": {}
+      },
+      "Star Rating": {
+        "type": "number",
+        "value": 4
       },
       "Quote": {
         "type": "formattedText",

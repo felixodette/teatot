@@ -8,6 +8,7 @@ interface Props {
   className?: string;
   delay?: number;
   as?: "section" | "div" | "article";
+  id?: string;
 }
 
 export default function RevealSection({
@@ -15,18 +16,24 @@ export default function RevealSection({
   className,
   delay = 0,
   as = "div",
+  id,
 }: Props) {
   const reduceMotion = useReducedMotion();
 
   if (reduceMotion) {
     const Tag = as;
-    return <Tag className={className}>{children}</Tag>;
+    return (
+      <Tag id={id} className={className}>
+        {children}
+      </Tag>
+    );
   }
 
   const Component = motion.create(as);
 
   return (
     <Component
+      id={id}
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0 }}

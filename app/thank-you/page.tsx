@@ -4,13 +4,13 @@ import ImageWithFallback from "@/components/ImageWithFallback";
 import RevealSection from "@/components/RevealSection";
 
 export const metadata: Metadata = {
-  title: "Thank You — Tea Tot Hotels",
+  title: "Thank You",
   description: "Thank you for getting in touch. We will respond shortly.",
 };
 
 export default function ThankYouPage() {
   return (
-    <main className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden">
+    <div className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <ImageWithFallback
           src="/images/hero/thank-you.jpg"
@@ -43,6 +43,6 @@ export default function ThankYouPage() {
           </Link>
         </RevealSection>
       </div>
-    </main>
+    </div>
   );
 }

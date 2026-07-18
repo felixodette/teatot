@@ -4,6 +4,7 @@ export const navLinks = [
   { label: "Dining", href: "/dining" },
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
+  { label: "Contact", href: "/contact" },
 ] as const;
 
 /** Opens the site-wide BookingModal via BookNowButton / useBooking(). */
@@ -39,6 +40,6 @@ export const footerLinks = {
     { platform: "Instagram", href: "https://instagram.com/teatotmachakos" },
     { platform: "WhatsApp", href: "https://wa.me/254718009684" },
     { platform: "Messenger", href: "https://www.facebook.com/teatothotelmachakos" },
-    { platform: "Telegram", href: "https://twitter.com/teatothotel" },
+    { platform: "X", href: "https://twitter.com/teatothotel" },
   ],
 } as const;
