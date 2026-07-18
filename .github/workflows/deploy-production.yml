@@ -1,3 +1,6 @@
+# Production: push to main → build → FTPS → public_html/production/
+# cPanel: Domains document root → public_html/production; separate Node.js app from develop.
+# Secrets SMTP_* live in cPanel Node.js App env — not in this workflow.
 name: Deploy production
 
 on:

@@ -1,0 +1,10 @@
+# Passenger — required for cPanel Node.js App Manager to proxy www.teatot.co.ke → server.js
+# If 503 persists, copy the block from cPanel → Setup Node.js App → your app → "Edit"
+# and replace PassengerNodejs with the path shown there.
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/teatotco/public_html/production"
+PassengerBaseURI "/"
+PassengerNodejs "/home/teatotco/nodevenv/public_html/production/22/bin/node"
+PassengerAppType node
+PassengerStartupFile server.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END

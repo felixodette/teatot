@@ -1,6 +1,7 @@
 ---
-# cPanel Git → build on pull → public_html/development
-# cPanel → Git Version Control → branch develop → enable Pull and Deploy
+# DEVELOP ONLY — cPanel Git Version Control (branch develop).
+# Production uses GitHub Actions → .github/workflows/deploy-production.yml
+# Do not point a main-branch cPanel Git repo at this file.
 deployment:
   tasks:
     - export DEPLOYPATH=/home/teatotco/public_html/development

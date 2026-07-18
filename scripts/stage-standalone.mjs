@@ -85,7 +85,11 @@ cpSync(nextDir, resolve(outDir, ".next"), {
 });
 cpSync(resolve(root, "public"), resolve(outDir, "public"), { recursive: true });
 cpSync(resolve(root, "scripts/cpanel-server.js"), resolve(outDir, "server.js"));
-cpSync(resolve(root, "config/passenger-development.htaccess"), resolve(outDir, ".htaccess"));
+const htaccess =
+  target === "production"
+    ? "config/passenger-production.htaccess"
+    : "config/passenger-development.htaccess";
+cpSync(resolve(root, htaccess), resolve(outDir, ".htaccess"));
 writeFileSync(resolve(tmpDir, ".htaccess"), "<IfModule mod_authz_core.c>\n  Require all denied\n</IfModule>\n");
 
 writeFileSync(
