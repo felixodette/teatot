@@ -36,17 +36,17 @@
   "itemCount": 6,
   "items": [
     {
-      "_id": "ro2HG91FO",
-      "_slug": "sourdough-toast",
+      "_id": "pizzaMarg01",
+      "_slug": "margherita-pizza",
       "_draft": false,
       "Item Name": {
         "type": "string",
-        "value": "Signature Latte",
+        "value": "Margherita",
         "valueByLocale": {}
       },
       "Description": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">Velvety steamed milk, double espresso and TeaTot latte art. Price on request.</p>",
+        "value": "<p dir=\"auto\">Tomato, mozzarella and basil — the classic crowd favourite. Small KSh 600 · Medium KSh 1,000 · Large KSh 1,200.</p>",
         "valueByLocale": {}
       },
       "Currency": {
@@ -56,43 +56,11 @@
       },
       "Price": {
         "type": "number",
-        "value": 0
+        "value": 600
       },
       "Category": {
         "type": "enum",
-        "value": "Drinks"
-      },
-      "Featured": {
-        "type": "boolean",
-        "value": false
-      }
-    },
-    {
-      "_id": "FV9j7oWbx",
-      "_slug": "eggs-benedict",
-      "_draft": false,
-      "Item Name": {
-        "type": "string",
-        "value": "AA Grade Coffee",
-        "valueByLocale": {}
-      },
-      "Description": {
-        "type": "formattedText",
-        "value": "<p dir=\"auto\">Kenya's finest single-origin beans, brewed to perfection. Price on request.</p>",
-        "valueByLocale": {}
-      },
-      "Currency": {
-        "type": "string",
-        "value": "Ksh ",
-        "valueByLocale": {}
-      },
-      "Price": {
-        "type": "number",
-        "value": 0
-      },
-      "Category": {
-        "type": "enum",
-        "value": "Drinks"
+        "value": "Pizza"
       },
       "Featured": {
         "type": "boolean",
@@ -100,17 +68,17 @@
       }
     },
     {
-      "_id": "zRF2UrHPh",
-      "_slug": "burrata-tomato",
+      "_id": "pizzaBbq01",
+      "_slug": "chicken-bbq-pizza",
       "_draft": false,
       "Item Name": {
         "type": "string",
-        "value": "Juices & Teas",
+        "value": "Chicken BBQ",
         "valueByLocale": {}
       },
       "Description": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">Freshly blended juices, herbal teas and iced drinks all day. Price on request.</p>",
+        "value": "<p dir=\"auto\">BBQ chicken on a classic base — always among the first to go. Small KSh 600 · Medium KSh 1,000 · Large KSh 1,200.</p>",
         "valueByLocale": {}
       },
       "Currency": {
@@ -120,11 +88,11 @@
       },
       "Price": {
         "type": "number",
-        "value": 0
+        "value": 600
       },
       "Category": {
         "type": "enum",
-        "value": "Drinks"
+        "value": "Pizza"
       },
       "Featured": {
         "type": "boolean",
@@ -132,17 +100,17 @@
       }
     },
     {
-      "_id": "IaGGRELc_",
-      "_slug": "roasted-sea-bass",
+      "_id": "pizzaMeat01",
+      "_slug": "meat-deluxe-pizza",
       "_draft": false,
       "Item Name": {
         "type": "string",
-        "value": "Pastries & Snacks",
+        "value": "Meat Deluxe",
         "valueByLocale": {}
       },
       "Description": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">Freshly baked cakes, muffins, croissants and pastries daily. Price on request.</p>",
+        "value": "<p dir=\"auto\">Loaded meat signature pie from TeaTot Pizzeria. Small KSh 650 · Medium KSh 1,050 · Large KSh 1,250.</p>",
         "valueByLocale": {}
       },
       "Currency": {
@@ -152,11 +120,11 @@
       },
       "Price": {
         "type": "number",
-        "value": 0
+        "value": 650
       },
       "Category": {
         "type": "enum",
-        "value": "Breakfast"
+        "value": "Pizza"
       },
       "Featured": {
         "type": "boolean",
@@ -164,17 +132,17 @@
       }
     },
     {
-      "_id": "qeIwXhAos",
-      "_slug": "negroni",
+      "_id": "coffeeCap01",
+      "_slug": "cappuccino",
       "_draft": false,
       "Item Name": {
         "type": "string",
-        "value": "Margherita Pizza",
+        "value": "Cappuccino",
         "valueByLocale": {}
       },
       "Description": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">Fresh tomato base, premium mozzarella, sliced tomatoes and fresh basil with extra virgin olive oil. Price on request.</p>",
+        "value": "<p dir=\"auto\">Espresso with steamed milk foam — the house coffee order. Single KSh 200 · Double KSh 250.</p>",
         "valueByLocale": {}
       },
       "Currency": {
@@ -184,11 +152,11 @@
       },
       "Price": {
         "type": "number",
-        "value": 0
+        "value": 200
       },
       "Category": {
         "type": "enum",
-        "value": "Dinner"
+        "value": "Coffee"
       },
       "Featured": {
         "type": "boolean",
@@ -196,17 +164,17 @@
       }
     },
     {
-      "_id": "wxGZd2AAJ",
-      "_slug": "chocolate-fondant",
+      "_id": "coffeeLat01",
+      "_slug": "latte",
       "_draft": false,
       "Item Name": {
         "type": "string",
-        "value": "Meat Deluxe Pizza",
+        "value": "Latte",
         "valueByLocale": {}
       },
       "Description": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">Beef, chicken, pepperoni, ham, bacon and spicy sausage on a rich tomato base. Price on request.</p>",
+        "value": "<p dir=\"auto\">Espresso with steamed milk — smooth and all-day friendly. Single KSh 200 · Double KSh 250.</p>",
         "valueByLocale": {}
       },
       "Currency": {
@@ -216,11 +184,43 @@
       },
       "Price": {
         "type": "number",
-        "value": 0
+        "value": 200
       },
       "Category": {
         "type": "enum",
-        "value": "Dinner"
+        "value": "Coffee"
+      },
+      "Featured": {
+        "type": "boolean",
+        "value": true
+      }
+    },
+    {
+      "_id": "coffeeMoc01",
+      "_slug": "mocha",
+      "_draft": false,
+      "Item Name": {
+        "type": "string",
+        "value": "Mocha",
+        "valueByLocale": {}
+      },
+      "Description": {
+        "type": "formattedText",
+        "value": "<p dir=\"auto\">Chocolate espresso drink for a sweeter cup. Single KSh 220 · Double KSh 260.</p>",
+        "valueByLocale": {}
+      },
+      "Currency": {
+        "type": "string",
+        "value": "Ksh ",
+        "valueByLocale": {}
+      },
+      "Price": {
+        "type": "number",
+        "value": 220
+      },
+      "Category": {
+        "type": "enum",
+        "value": "Coffee"
       },
       "Featured": {
         "type": "boolean",
