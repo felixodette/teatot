@@ -41,21 +41,28 @@ function published(raw: { items?: RawItem[] }): RawItem[] {
 }
 
 export function normalizeRooms(raw: { items?: RawItem[] }): Room[] {
-  return published(raw).map((i) => ({
-    slug: i._slug,
-    name: str(i, "Name"),
-    category: str(i, "Category"),
-    shortDescription: str(i, "Short Descriotion"),
-    fullDescription: str(i, "Full Description"),
-    currency: str(i, "Currency"),
-    pricePerNight: num(i, "Price Per Night"),
-    maxGuests: num(i, "Max Guests"),
-    roomSize: num(i, "Room Size"),
-    bedType: str(i, "Bed Type"),
-    amenities: str(i, "Amenities"),
-    featured: bool(i, "Featured"),
-    thumbnail: img(i, "Thumbnail"),
-  }));
+  return published(raw).map((i) => {
+    // ponytail: Price Per Night = legacy “from”; Price Single wins when set
+    const priceSingle = num(i, "Price Single") || num(i, "Price Per Night");
+    const priceDouble = num(i, "Price Double") || priceSingle;
+    return {
+      slug: i._slug,
+      name: str(i, "Name"),
+      category: str(i, "Category"),
+      shortDescription: str(i, "Short Descriotion"),
+      fullDescription: str(i, "Full Description"),
+      currency: str(i, "Currency"),
+      priceSingle,
+      priceDouble,
+      pricePerNight: priceSingle,
+      maxGuests: num(i, "Max Guests"),
+      roomSize: num(i, "Room Size"),
+      bedType: str(i, "Bed Type"),
+      amenities: str(i, "Amenities"),
+      featured: bool(i, "Featured"),
+      thumbnail: img(i, "Thumbnail"),
+    };
+  });
 }
 
 export function normalizeServices(raw: { items?: RawItem[] }): Service[] {

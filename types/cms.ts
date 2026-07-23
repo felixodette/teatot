@@ -11,7 +11,10 @@ export interface Room {
   shortDescription: string;
   fullDescription: string;
   currency: string;
+  /** B&B single occupancy — also used as “from” on cards */
   pricePerNight: number;
+  priceSingle: number;
+  priceDouble: number;
   maxGuests: number;
   roomSize: number;
   bedType: string;

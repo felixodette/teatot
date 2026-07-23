@@ -75,8 +75,8 @@ export default function Home() {
                       {room.category}
                     </p>
                     <p className="mt-2 text-sm font-medium">
-                      {formatMoney(room.pricePerNight, room.currency)}{" "}
-                      <span className="font-normal text-[var(--color-text-secondary)]">/ night</span>
+                      From {formatMoney(room.priceSingle, room.currency)}{" "}
+                      <span className="font-normal text-[var(--color-text-secondary)]">B&B / night</span>
                     </p>
                   </Link>
                 ))}
