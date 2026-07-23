@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks, ctaLink } from "@/lib/navigation";
@@ -37,6 +38,25 @@ const ctaClassName =
 const mobileCtaClassName =
   "cursor-pointer mt-8 w-full rounded-none bg-white px-6 py-4 text-center text-base font-medium text-black transition-opacity duration-200 hover:opacity-80 tablet:w-auto tablet:px-8";
 
+const brandLinkClass =
+  "flex cursor-pointer items-center gap-2.5 text-lg font-semibold tracking-tight text-white";
+
+function BrandMark() {
+  return (
+    <>
+      <Image
+        src="/images/brand/white-logo.png"
+        alt=""
+        width={36}
+        height={36}
+        className="h-8 w-8 shrink-0 object-contain desktop:h-9 desktop:w-9"
+        priority
+      />
+      <span style={{ fontFamily: "var(--font-inter-display)" }}>Tea Tot Hotel</span>
+    </>
+  );
+}
+
 function HamburgerIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -72,12 +92,8 @@ export function Navigation() {
         animate="animate"
       >
         <nav className="relative mx-auto flex h-[65.5px] max-w-[var(--container-max)] items-center justify-between px-6 desktop:h-[67px] desktop:px-6">
-          <Link
-            href="/"
-            className="cursor-pointer text-lg font-semibold tracking-tight text-white"
-            style={{ fontFamily: "var(--font-inter-display)" }}
-          >
-            Tea Tot Hotel
+          <Link href="/" className={brandLinkClass} aria-label="Tea Tot Hotel home">
+            <BrandMark />
           </Link>
 
           <div className="hidden items-center gap-8 desktop:flex">
@@ -117,11 +133,11 @@ export function Navigation() {
             <div className="flex h-[65.5px] shrink-0 items-center justify-between px-6">
               <Link
                 href="/"
-                className="cursor-pointer text-lg font-semibold tracking-tight text-white"
-                style={{ fontFamily: "var(--font-inter-display)" }}
+                className={brandLinkClass}
+                aria-label="Tea Tot Hotel home"
                 onClick={() => setIsOpen(false)}
               >
-                Tea Tot Hotel
+                <BrandMark />
               </Link>
               <button
                 type="button"

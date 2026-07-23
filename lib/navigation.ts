@@ -1,4 +1,4 @@
-import { whatsappUrl } from "@/config/contact";
+import { contact, whatsappUrl } from "@/config/contact";
 
 export const navLinks = [
   { label: "Rooms", href: "/rooms" },
@@ -41,7 +41,7 @@ export const footerLinks = {
     { platform: "Facebook", href: "https://www.facebook.com/teatothotelmachakos" },
     { platform: "Instagram", href: "https://instagram.com/teatotmachakos" },
     { platform: "WhatsApp", href: whatsappUrl("general") },
-    { platform: "Messenger", href: "https://m.me/teatothotelmachakos" },
+    { platform: "Messenger", href: contact.messenger },
     { platform: "X", href: "https://twitter.com/teatothotel" },
   ],
 } as const;

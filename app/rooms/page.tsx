@@ -48,12 +48,12 @@ export default function RoomsPage() {
             {rooms.map((room, i) => {
               const blurb = stripHtml(room.shortDescription);
               return (
-                <RevealSection key={room.slug} delay={i * 0.1} as="article">
+                <RevealSection key={room.slug} delay={i * 0.1} as="article" className="h-full">
                   <Link
                     href={`/rooms/${room.slug}`}
-                    className="group block cursor-pointer bg-[var(--color-bg-subtle)] transition-opacity duration-200 hover:opacity-95"
+                    className="group flex h-full cursor-pointer flex-col bg-[var(--color-bg-subtle)] transition-opacity duration-200 hover:opacity-95"
                   >
-                    <div className="relative h-[320px] overflow-hidden">
+                    <div className="relative h-[320px] shrink-0 overflow-hidden">
                       <ImageWithFallback
                         src={room.thumbnail.url}
                         alt={room.thumbnail.alt || room.name}
@@ -62,7 +62,7 @@ export default function RoomsPage() {
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
-                    <div className="flex flex-col gap-3 p-6">
+                    <div className="flex flex-1 flex-col gap-3 p-6">
                       <p className="text-xs font-medium uppercase tracking-[0.15em] text-[var(--color-text-secondary)]">
                         {room.category}
                       </p>
@@ -72,17 +72,18 @@ export default function RoomsPage() {
                           {blurb}
                         </p>
                       ) : null}
-                      <div className="mt-1 flex flex-wrap items-center justify-between gap-3">
-                        <p className="text-base">
+                      {/* no wrap: price + CTA stay one row (Deluxe was wrapping under flex-wrap) */}
+                      <div className="mt-auto grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
+                        <p className="min-w-0 text-base leading-snug">
                           <span className="text-[var(--color-text-secondary)]">From </span>
                           <span className="font-semibold">
-                            {formatMoney(room.pricePerNight, room.currency)}
+                            {formatMoney(room.priceSingle, room.currency)}
                           </span>
                           <span className="ml-1 text-sm text-[var(--color-text-secondary)]">
-                            / night
+                            B&B / night
                           </span>
                         </p>
-                        <span className="inline-block cursor-pointer rounded-none bg-[var(--color-text-primary)] px-3 py-2 text-xs font-medium uppercase tracking-[0.12em] text-white transition-opacity duration-200 group-hover:opacity-90">
+                        <span className="shrink-0 cursor-pointer rounded-none bg-[var(--color-text-primary)] px-3 py-2 text-xs font-medium uppercase tracking-[0.12em] text-white transition-opacity duration-200 group-hover:opacity-90">
                           View room
                         </span>
                       </div>

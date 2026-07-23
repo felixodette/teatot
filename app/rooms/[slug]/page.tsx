@@ -50,10 +50,19 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
           {blurb ? (
             <p className="mt-3 max-w-xl text-base text-[var(--color-text-secondary)]">{blurb}</p>
           ) : null}
-          <p className="mt-4 text-xl font-semibold">
-            {formatMoney(room.pricePerNight, room.currency)}{" "}
-            <span className="text-base font-normal text-[var(--color-text-secondary)]">/ night</span>
-          </p>
+          <div className="mt-4 space-y-1">
+            <p className="text-xs font-medium uppercase tracking-[0.15em] text-[var(--color-text-secondary)]">
+              Bed and breakfast
+            </p>
+            <p className="text-xl font-semibold">
+              Single {formatMoney(room.priceSingle, room.currency)}
+              <span className="text-base font-normal text-[var(--color-text-secondary)]"> / night</span>
+            </p>
+            <p className="text-xl font-semibold">
+              Double {formatMoney(room.priceDouble, room.currency)}
+              <span className="text-base font-normal text-[var(--color-text-secondary)]"> / night</span>
+            </p>
+          </div>
         </div>
         <BookNowButton roomType={room.name} className={`shrink-0 ${bookClassName}`}>
           Book Now
@@ -75,6 +84,14 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
           </div>
         </div>
         <aside className="space-y-4 self-start text-sm lg:sticky lg:top-28">
+          <div className="flex justify-between border-b border-[var(--color-border)] pb-3">
+            <span className="text-[var(--color-text-secondary)]">Single B&B</span>
+            <span className="font-medium">{formatMoney(room.priceSingle, room.currency)}</span>
+          </div>
+          <div className="flex justify-between border-b border-[var(--color-border)] pb-3">
+            <span className="text-[var(--color-text-secondary)]">Double B&B</span>
+            <span className="font-medium">{formatMoney(room.priceDouble, room.currency)}</span>
+          </div>
           <div className="flex justify-between border-b border-[var(--color-border)] pb-3">
             <span className="text-[var(--color-text-secondary)]">Max Guests</span>
             <span>{room.maxGuests}</span>

@@ -33,6 +33,16 @@
       "type": "number"
     },
     {
+      "id": "psSingle01",
+      "name": "Price Single",
+      "type": "number"
+    },
+    {
+      "id": "psDouble01",
+      "name": "Price Double",
+      "type": "number"
+    },
+    {
       "id": "CW_zNVeK6",
       "name": "Max Guests",
       "type": "number"
@@ -95,7 +105,7 @@
       },
       "Price Per Night": {
         "type": "number",
-        "value": 5297
+        "value": 4700
       },
       "Max Guests": {
         "type": "number",
@@ -128,6 +138,14 @@
           "altText": "Standard Double room",
           "resolution": "auto"
         }
+      },
+      "Price Single": {
+        "type": "number",
+        "value": 4700
+      },
+      "Price Double": {
+        "type": "number",
+        "value": 6400
       }
     },
     {
@@ -160,7 +178,7 @@
       },
       "Price Per Night": {
         "type": "number",
-        "value": 8543
+        "value": 6200
       },
       "Max Guests": {
         "type": "number",
@@ -193,6 +211,14 @@
           "altText": "Deluxe Room",
           "resolution": "auto"
         }
+      },
+      "Price Single": {
+        "type": "number",
+        "value": 6200
+      },
+      "Price Double": {
+        "type": "number",
+        "value": 7400
       }
     },
     {
@@ -215,7 +241,7 @@
       },
       "Full Description": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">TODO: Client content required — no penthouse suite listed on the client website. Please confirm room details and pricing.</p>",
+        "value": "<p dir=\"auto\">TODO: Client content required \u2014 no penthouse suite listed on the client website. Please confirm room details and pricing.</p>",
         "valueByLocale": {}
       },
       "Currency": {
@@ -225,7 +251,7 @@
       },
       "Price Per Night": {
         "type": "number",
-        "value": 13875
+        "value": 7200
       },
       "Max Guests": {
         "type": "number",
@@ -258,6 +284,14 @@
           "altText": "Suite room",
           "resolution": "auto"
         }
+      },
+      "Price Single": {
+        "type": "number",
+        "value": 7200
+      },
+      "Price Double": {
+        "type": "number",
+        "value": 8900
       }
     },
     {
@@ -280,7 +314,7 @@
       },
       "Full Description": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">Our Junior Suite offers a separate sitting room, king bed, large TV, tea-making facility and bathrobe — ideal for longer stays or guests who want more space to relax.</p>",
+        "value": "<p dir=\"auto\">Our Junior Suite offers a separate sitting room, king bed, large TV, tea-making facility and bathrobe \u2014 ideal for longer stays or guests who want more space to relax.</p>",
         "valueByLocale": {}
       },
       "Currency": {
@@ -290,7 +324,7 @@
       },
       "Price Per Night": {
         "type": "number",
-        "value": 13875
+        "value": 7200
       },
       "Max Guests": {
         "type": "number",
@@ -323,6 +357,14 @@
           "altText": "Junior Suite",
           "resolution": "auto"
         }
+      },
+      "Price Single": {
+        "type": "number",
+        "value": 7200
+      },
+      "Price Double": {
+        "type": "number",
+        "value": 8900
       }
     },
     {
@@ -345,7 +387,7 @@
       },
       "Full Description": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">TODO: Client content required — no villa room type listed on the client website. Garden venue and outside catering are available separately.</p>",
+        "value": "<p dir=\"auto\">TODO: Client content required \u2014 no villa room type listed on the client website. Garden venue and outside catering are available separately.</p>",
         "valueByLocale": {}
       },
       "Currency": {
@@ -355,7 +397,7 @@
       },
       "Price Per Night": {
         "type": "number",
-        "value": 13875
+        "value": 7200
       },
       "Max Guests": {
         "type": "number",
@@ -388,6 +430,14 @@
           "altText": "Garden venue",
           "resolution": "auto"
         }
+      },
+      "Price Single": {
+        "type": "number",
+        "value": 7200
+      },
+      "Price Double": {
+        "type": "number",
+        "value": 8900
       }
     },
     {
@@ -420,7 +470,7 @@
       },
       "Price Per Night": {
         "type": "number",
-        "value": 5297
+        "value": 4700
       },
       "Max Guests": {
         "type": "number",
@@ -453,6 +503,14 @@
           "altText": "Twin Bedroom",
           "resolution": "auto"
         }
+      },
+      "Price Single": {
+        "type": "number",
+        "value": 4700
+      },
+      "Price Double": {
+        "type": "number",
+        "value": 6400
       }
     }
   ]

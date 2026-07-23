@@ -75,8 +75,8 @@ export default function Home() {
                       {room.category}
                     </p>
                     <p className="mt-2 text-sm font-medium">
-                      {formatMoney(room.pricePerNight, room.currency)}{" "}
-                      <span className="font-normal text-[var(--color-text-secondary)]">/ night</span>
+                      From {formatMoney(room.priceSingle, room.currency)}{" "}
+                      <span className="font-normal text-[var(--color-text-secondary)]">B&B / night</span>
                     </p>
                   </Link>
                 ))}
@@ -115,20 +115,29 @@ export default function Home() {
               </RevealSection>
 
               <RevealSection delay={0.1} className="services-grid">
-                {services.slice(0, 4).map((service) => (
-                  <Link
-                    key={service.slug}
-                    href={`/services#${service.slug}`}
-                    className="services-card group cursor-pointer transition-opacity duration-200 hover:opacity-90"
-                  >
-                    <p className="service-number">{service.number}</p>
-                    <h3 className="services-card-title">{service.name}</h3>
-                    <p className="services-card-desc">{service.shortDescription}</p>
-                    <span className="mt-4 inline-block text-xs font-medium uppercase tracking-[0.12em] text-[var(--color-text-primary)]">
-                      Learn more
-                    </span>
-                  </Link>
-                ))}
+                {services.slice(0, 4).map((service) => {
+                  const isAnam = service.slug === "restaurant";
+                  const href = isAnam
+                    ? "https://anam.teatot.co.ke/"
+                    : `/services#${service.slug}`;
+                  return (
+                    <Link
+                      key={service.slug}
+                      href={href}
+                      {...(isAnam
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
+                      className="services-card group cursor-pointer transition-opacity duration-200 hover:opacity-90"
+                    >
+                      <p className="service-number">{service.number}</p>
+                      <h3 className="services-card-title">{service.name}</h3>
+                      <p className="services-card-desc">{service.shortDescription}</p>
+                      <span className="mt-4 inline-block text-xs font-medium uppercase tracking-[0.12em] text-[var(--color-text-primary)]">
+                        Learn more
+                      </span>
+                    </Link>
+                  );
+                })}
               </RevealSection>
             </div>
           </div>

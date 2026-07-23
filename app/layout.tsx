@@ -3,6 +3,7 @@ import { inter, interDisplay } from "@/lib/fonts";
 import { BookingProvider } from "@/providers/BookingProvider";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import ContactFab from "@/components/ContactFab";
 import { getHotelJsonLd } from "@/lib/structured-data";
 import { getRooms } from "@/lib/data";
 import "./globals.css";
@@ -36,6 +37,15 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: BASE_URL },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -59,6 +69,7 @@ export default function RootLayout({
           <Navigation />
           <main id="main-content">{children}</main>
           <Footer />
+          <ContactFab />
         </BookingProvider>
       </body>
     </html>

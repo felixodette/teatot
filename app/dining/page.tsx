@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getDiningMenu } from "@/lib/data";
+import { formatMoney } from "@/lib/format";
 import HeroSection from "@/components/HeroSection";
 import RevealSection from "@/components/RevealSection";
 import ParallaxImage from "@/components/ParallaxImage";
@@ -8,6 +9,9 @@ import ImageWithFallback from "@/components/ImageWithFallback";
 
 const HERO_PARAGRAPH =
   "Kenyan classics, continental plates, hand-stretched pizza and specialty Kenyan coffee at ANAM Restaurant, TeaTot Pizzeria and our Coffee Shop.";
+
+/** Full coffee & pizza list lives on Anam — teaser prices on this page. */
+const ANAM_FULL_MENU = "https://anam.teatot.co.ke/menu#full-menu";
 
 // Typical service windows — confirm current hours when you book.
 const MEAL_HOURS = [
@@ -123,8 +127,12 @@ export default function DiningPage() {
               className="mt-3 text-4xl font-semibold tracking-tight desktop:text-5xl"
               style={{ fontFamily: "var(--font-inter-display)" }}
             >
-              What we serve.
+              Coffee &amp; pizza favourites.
             </h2>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-[var(--color-text-secondary)]">
+              A taste of TeaTot Pizzeria and the coffee bar — prices from the current
+              list. More flavours, sizes and weekly offers on the full menu.
+            </p>
           </RevealSection>
 
           <RevealSection delay={0.1} className="mt-12 desktop:mt-16">
@@ -147,23 +155,33 @@ export default function DiningPage() {
                       dangerouslySetInnerHTML={{ __html: item.description }}
                     />
                   </div>
-                  <div className="flex shrink-0 items-baseline justify-self-end whitespace-nowrap">
-                    <span
-                      className="text-xl font-semibold desktop:text-[32px]"
-                      style={{ fontFamily: "var(--font-inter-display)" }}
-                    >
-                      {item.currency}
+                  <div className="flex shrink-0 flex-col items-end justify-self-end text-right">
+                    <span className="text-xs font-medium uppercase tracking-[0.12em] text-[var(--color-text-secondary)]">
+                      From
                     </span>
                     <span
                       className="text-xl font-semibold desktop:text-[32px]"
                       style={{ fontFamily: "var(--font-inter-display)" }}
                     >
-                      {item.price}
+                      {formatMoney(item.price, item.currency)}
                     </span>
                   </div>
                 </div>
               ))}
             </div>
+
+            <p className="mt-10 text-base text-[var(--color-text-secondary)]">
+              Looking for every pizza size, coffee shot and Tuesday/Thursday offer?{" "}
+              <a
+                href={ANAM_FULL_MENU}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer font-semibold text-[var(--color-text-primary)] underline decoration-[var(--color-border)] underline-offset-4 transition-opacity duration-200 hover:opacity-70"
+              >
+                Open the full Anam menu
+              </a>
+              .
+            </p>
           </RevealSection>
         </div>
       </section>
