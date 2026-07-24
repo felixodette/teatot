@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getRooms, getRoomBySlug } from "@/lib/data";
 import { formatMoney, stripHtml } from "@/lib/format";
+import { whatsappUrl } from "@/config/contact";
 import BookNowButton from "@/components/BookNowButton";
 import ImageWithFallback from "@/components/ImageWithFallback";
 
@@ -16,12 +17,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!room) return { title: "Room" };
   return {
     title: room.name,
-    description: stripHtml(room.shortDescription),
+    description: `${stripHtml(room.shortDescription)} B&B from ${formatMoney(room.priceSingle, room.currency)} single — Tea Tot Hotel, Machakos.`,
   };
 }
 
 const bookClassName =
   "cursor-pointer rounded-none bg-[var(--color-text-primary)] px-6 py-3.5 text-sm font-medium text-white transition-opacity duration-200 hover:opacity-90";
+
+const waClassName =
+  "mt-3 block w-full cursor-pointer rounded-none border border-[var(--color-border)] px-6 py-3.5 text-center text-sm font-medium transition-opacity duration-200 hover:opacity-80";
 
 export default async function RoomDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -29,6 +33,7 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
   if (!room) notFound();
 
   const blurb = stripHtml(room.shortDescription);
+  const roomWa = whatsappUrl("rooms");
 
   return (
     <div className="mx-auto max-w-[var(--container-max)] px-6 py-[var(--spacing-section)]">
@@ -64,9 +69,14 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
             </p>
           </div>
         </div>
-        <BookNowButton roomType={room.name} className={`shrink-0 ${bookClassName}`}>
-          Book Now
-        </BookNowButton>
+        <div className="shrink-0">
+          <BookNowButton roomType={room.name} className={bookClassName}>
+            Book Now
+          </BookNowButton>
+          <a href={roomWa} target="_blank" rel="noopener noreferrer" className={waClassName}>
+            Ask about this room
+          </a>
+        </div>
       </div>
 
       <div className="mt-10 grid gap-12 lg:grid-cols-3">
@@ -104,9 +114,15 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
             <span className="text-[var(--color-text-secondary)]">Bed Type</span>
             <span>{room.bedType}</span>
           </div>
+          <p className="text-xs leading-relaxed text-[var(--color-text-secondary)]">
+            Check-in from 2:00 PM · Free guarded parking · Breakfast included (B&B)
+          </p>
           <BookNowButton roomType={room.name} className={`mt-2 w-full ${bookClassName}`}>
             Book Now
           </BookNowButton>
+          <a href={roomWa} target="_blank" rel="noopener noreferrer" className={waClassName}>
+            Prefer WhatsApp? Ask about this room
+          </a>
           <Link
             href="/rooms"
             className="block text-center text-xs font-medium uppercase tracking-[0.12em] text-[var(--color-text-secondary)] transition-opacity duration-200 hover:opacity-70"

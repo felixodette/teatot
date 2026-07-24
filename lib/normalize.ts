@@ -1,6 +1,6 @@
 import type {
   CmsImage, Room, Service, GalleryItem, DiningMenuItem,
-  Testimonial, BlogPost, LegalPage,
+  Testimonial, BlogPost, LegalPage, Faq,
 } from "@/types/cms";
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -136,4 +136,16 @@ export function normalizeLegalPages(raw: { items?: RawItem[] }): LegalPage[] {
     body: str(i, "Body"),
     lastUpdate: str(i, "Last Update"),
   }));
+}
+
+export function normalizeFaqs(raw: { items?: RawItem[] }): Faq[] {
+  return published(raw)
+    .map((i) => ({
+      slug: i._slug,
+      question: str(i, "Question"),
+      answer: str(i, "Answer"),
+      category: str(i, "Category"),
+      sortOrder: num(i, "Sort"),
+    }))
+    .sort((a, b) => a.sortOrder - b.sortOrder);
 }

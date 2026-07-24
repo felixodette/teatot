@@ -69,12 +69,14 @@ export default function AboutPage() {
     <div className="pb-24">
       <HeroSection
         label="OUR PHILOSOPHY"
-        headline="Where comfort meets local warmth."
-        paragraph="At Tea Tot Hotel we are driven by the desire to provide wellbeing and comfort. Your satisfaction is our daily purpose — met with warmth, enthusiasm and respect."
+        headline="A practical base in Machakos."
+        paragraph="56 quiet rooms opposite Level 5, halls for up to 200, gardens for large gatherings, and food on site. Built for hospital visits, training weeks, weddings and family weekends."
         imageSrc="/images/dining/chandelier-1.jpg"
         imageAlt="Dining chandelier at Tea Tot Hotel, Machakos"
         height="720px"
         parallax
+        primaryButton={{ text: "Book Now", href: "/rooms", openBooking: true }}
+        secondaryButton={{ text: "Enquire", href: "/contact" }}
       />
 
       <div className="mx-auto flex max-w-[1284px] flex-col gap-24 px-6 py-12 tablet:gap-20 tablet:py-20 desktop:gap-32 desktop:py-24">

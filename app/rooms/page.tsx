@@ -1,29 +1,33 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getRooms } from "@/lib/data";
+import { getFaqs, getRooms } from "@/lib/data";
 import { formatMoney, stripHtml } from "@/lib/format";
 import { whatsappUrl } from "@/config/contact";
 import HeroSection from "@/components/HeroSection";
 import RevealSection from "@/components/RevealSection";
 import ImageWithFallback from "@/components/ImageWithFallback";
 import EmptySection from "@/components/EmptySection";
+import FaqAccordion from "@/components/FaqAccordion";
 import { ctaLink } from "@/lib/navigation";
 
 export const metadata: Metadata = {
   title: "Rooms",
   description:
-    "Four comfortable room types at Tea Tot Hotel — Standard Double, Twin Bedroom, Deluxe Room and Junior Suite.",
+    "Room types at Tea Tot Hotel, Machakos — clear B&B rates, AC, Wi-Fi, opposite Level 5 on Konza Road.",
 };
 
 export default function RoomsPage() {
-  const rooms = getRooms();
+  const list = getRooms();
+  const roomFaqs = getFaqs().filter(
+    (f) => f.category === "Rooms" || f.slug === "parking-available",
+  );
 
   return (
     <div>
       <HeroSection
         label="ROOMS & SUITES"
-        headline="Find your room."
-        paragraph="Four comfortable room types — each with satellite TV, AC, hot showers and complimentary Wi-Fi."
+        headline="Sleep well in Machakos."
+        paragraph={`${list.length} room types with clear B&B rates — AC, hot showers, satellite TV and free Wi-Fi. Opposite Level 5 on Konza Road. Book direct — same team at reception.`}
         imageSrc="/images/rooms/bedroom-2.jpeg"
         imageAlt="Rooms at Tea Tot Hotel"
         height="640px"
@@ -37,7 +41,7 @@ export default function RoomsPage() {
       />
 
       <div className="mx-auto max-w-[var(--container-max)] px-6 pt-12 pb-16">
-        {rooms.length === 0 ? (
+        {list.length === 0 ? (
           <EmptySection
             title="Rooms coming soon"
             message="Our room list is being updated. Reach out and we will help you find the right stay in Machakos."
@@ -45,7 +49,7 @@ export default function RoomsPage() {
           />
         ) : (
           <div className="grid grid-cols-1 gap-x-6 gap-y-12 tablet:grid-cols-2 desktop:grid-cols-3">
-            {rooms.map((room, i) => {
+            {list.map((room, i) => {
               const blurb = stripHtml(room.shortDescription);
               return (
                 <RevealSection key={room.slug} delay={i * 0.1} as="article" className="h-full">
@@ -94,6 +98,12 @@ export default function RoomsPage() {
             })}
           </div>
         )}
+
+        {roomFaqs.length > 0 ? (
+          <RevealSection className="mt-20">
+            <FaqAccordion items={roomFaqs} title="Before you book" />
+          </RevealSection>
+        ) : null}
       </div>
     </div>
   );

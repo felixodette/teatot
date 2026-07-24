@@ -4,6 +4,7 @@ import { BookingProvider } from "@/providers/BookingProvider";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import ContactFab from "@/components/ContactFab";
+import Analytics from "@/components/Analytics";
 import { getHotelJsonLd } from "@/lib/structured-data";
 import { getRooms } from "@/lib/data";
 import "./globals.css";
@@ -63,6 +64,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(getHotelJsonLd()) }}
         />
         <BookingProvider roomOptions={roomOptions}>
+          <Analytics />
           <a href="#main-content" className="skip-link">
             Skip to main content
           </a>

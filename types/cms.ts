@@ -80,3 +80,11 @@ export interface LegalPage {
   body: string;
   lastUpdate: string;
 }
+
+export interface Faq {
+  slug: string;
+  question: string;
+  answer: string;
+  category: string;
+  sortOrder: number;
+}

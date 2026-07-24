@@ -1,6 +1,7 @@
 "use client";
 
 import { useBooking } from "@/providers/booking-context";
+import { track } from "@/lib/analytics";
 
 type Props = {
   className?: string;
@@ -23,6 +24,7 @@ export default function BookNowButton({
       type="button"
       className={className ?? "cursor-pointer"}
       onClick={() => {
+        track("book_start", { room_type: roomType ?? "unspecified" });
         onClick?.();
         openBooking(roomType);
       }}
