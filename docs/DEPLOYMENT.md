@@ -81,8 +81,10 @@ Set under the Node.js app → **Environment variables**. Never commit secrets.
 | `SMTP_USER` | (mailbox user) |
 | `SMTP_PASSWORD` | (mailbox password) |
 | `NEXT_PUBLIC_GOOGLE_MAPS_EMBED_KEY` | (optional) |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | `G-9B8TV2N3WT` (optional on cPanel; **required in GitHub Actions build**) |
+| `NEXT_PUBLIC_META_PIXEL_ID` | (optional) |
 
-`NEXT_PUBLIC_*` for **build-time** also live in `.github/workflows/deploy-develop.yml` (`NEXT_PUBLIC_SITE_URL`). Runtime secrets (`SMTP_*`) belong only in cPanel.
+`NEXT_PUBLIC_*` for **build-time** live in `.github/workflows/deploy-*.yml` (`NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`). Runtime secrets (`SMTP_*`) belong only in cPanel. Do **not** paste a second Google tag into `layout.tsx` — `components/Analytics.tsx` already injects gtag once.
 
 ---
 
@@ -115,13 +117,15 @@ Separate from the development app — editing one does not touch the other.
 | `SMTP_USER` | (production mailbox) |
 | `SMTP_PASSWORD` | (production mailbox password) |
 | `NEXT_PUBLIC_GOOGLE_MAPS_EMBED_KEY` | (optional) |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | `G-9B8TV2N3WT` (build-time — already in workflow) |
 
 **Do not upload `.env` / `.env.production` via FTP.** Those files are not in the deploy bundle. Secrets live in the Node.js App Manager UI so develop and production stay isolated.
 
-Build-time public URL for production is set in `.github/workflows/deploy-production.yml`:
+Build-time public vars for production are set in `.github/workflows/deploy-production.yml`:
 
 ```yaml
 NEXT_PUBLIC_SITE_URL: https://www.teatot.co.ke
+NEXT_PUBLIC_GA_MEASUREMENT_ID: G-9B8TV2N3WT
 ```
 
 ---
