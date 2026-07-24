@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { contact, smsUrl, telUrl, whatsappUrl } from "@/config/contact";
+import { track } from "@/lib/analytics";
 
 type FabOption = {
   label: string;
@@ -92,7 +93,10 @@ export default function ContactFab() {
     {
       label: "WhatsApp",
       icon: <WhatsAppIcon className="h-4 w-4 text-[#25D366]" />,
-      onClick: () => openHref(whatsappUrl("general")),
+      onClick: () => {
+        track("whatsapp_click", { source: "fab" });
+        openHref(whatsappUrl("general"));
+      },
     },
     {
       label: "Messenger",

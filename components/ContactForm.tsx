@@ -1,7 +1,8 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect, useRef } from "react";
 import { submitContactForm, type ContactState } from "@/app/actions/contact";
+import { track } from "@/lib/analytics";
 
 const initial: ContactState = { status: "idle", message: "" };
 
@@ -13,6 +14,14 @@ const labelClass =
 
 export default function ContactForm() {
   const [state, formAction, pending] = useActionState(submitContactForm, initial);
+  const trackedSuccess = useRef(false);
+
+  useEffect(() => {
+    if (state.status === "success" && !trackedSuccess.current) {
+      trackedSuccess.current = true;
+      track("contact_submit", { source: "contact_form" });
+    }
+  }, [state.status]);
 
   if (state.status === "success") {
     return (

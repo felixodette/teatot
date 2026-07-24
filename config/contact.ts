@@ -13,14 +13,15 @@ export const contact = {
   messenger: "https://m.me/teatothotelmachakos",
 } as const;
 
-/** Prefill WhatsApp chat — rooms, events, or general. */
+/** Prefill WhatsApp chat — rooms, dining, events, or general. */
 export function whatsappUrl(
-  intent: "rooms" | "conference" | "events" | "general" = "general",
+  intent: "rooms" | "conference" | "events" | "dining" | "general" = "general",
 ): string {
   const messages = {
     rooms: "Hi Tea Tot — I'd like to check room availability.",
     conference: "Hi — I'd like to enquire about conference facilities.",
     events: "Hi — outdoor / garden event enquiry.",
+    dining: "Hi — I'd like to reserve a table at ANAM / TeaTot Pizzeria.",
     general: "Hi Tea Tot — I'd like to get in touch.",
   } as const;
   return `https://wa.me/${contact.whatsapp}?text=${encodeURIComponent(messages[intent])}`;

@@ -46,7 +46,7 @@
       "_draft": false,
       "Title": {
         "type": "string",
-        "value": "Discover Ol Donyo Sabuk",
+        "value": "Day trip to Ol Donyo Sabuk",
         "valueByLocale": {}
       },
       "Excerpt": {
@@ -94,7 +94,7 @@
       },
       "Excerpt": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">World-class recreation in Machakos town — zip-lines, boat rides and family fun just 2km away.</p>",
+        "value": "<p dir=\"auto\">Family recreation in Machakos town — zip-lines, boat rides and open parkland just 2km away.</p>",
         "valueByLocale": {}
       },
       "Body": {

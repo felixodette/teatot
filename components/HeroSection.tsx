@@ -5,6 +5,7 @@ import Link from "next/link";
 import ImageWithFallback from "./ImageWithFallback";
 import BookNowButton from "./BookNowButton";
 import ParallaxImage from "./ParallaxImage";
+import { track } from "@/lib/analytics";
 
 interface HeroButton {
   text: string;
@@ -51,6 +52,7 @@ function HeroButtonLink({
   if (button.external) {
     const isAppLink =
       button.href.startsWith("tel:") || button.href.startsWith("mailto:");
+    const isWhatsApp = button.href.includes("wa.me");
     return (
       <a
         href={button.href}
@@ -58,6 +60,9 @@ function HeroButtonLink({
           ? {}
           : { target: "_blank", rel: "noopener noreferrer" })}
         className={className}
+        onClick={() => {
+          if (isWhatsApp) track("whatsapp_click", { source: "hero" });
+        }}
       >
         {button.text}
       </a>

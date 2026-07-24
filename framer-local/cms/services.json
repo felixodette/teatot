@@ -60,7 +60,7 @@
       },
       "Short Descrription": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">From Kenyan classics to continental cuisine, artisan pizza and world-class coffee.</p>",
+        "value": "<p dir=\"auto\">From Kenyan classics to continental cuisine, artisan pizza and specialty Kenyan coffee.</p>",
         "valueByLocale": {}
       },
       "Full Description": {
@@ -75,7 +75,7 @@
     },
     {
       "_id": "cRLP1TjBq",
-      "_slug": "garage-parking",
+      "_slug": "conference-events",
       "_draft": false,
       "Number": {
         "type": "string",
@@ -109,12 +109,12 @@
       },
       "Category": {
         "type": "enum",
-        "value": "Other"
+        "value": "Business"
       }
     },
     {
       "_id": "VAl6boLNV",
-      "_slug": "laundry-dry-cleaning",
+      "_slug": "outside-catering",
       "_draft": false,
       "Number": {
         "type": "string",
@@ -153,7 +153,7 @@
     },
     {
       "_id": "KIuR2CuLv",
-      "_slug": "spa-wellness",
+      "_slug": "garden-venue",
       "_draft": false,
       "Number": {
         "type": "string",
@@ -181,17 +181,17 @@
       },
       "Full Description": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">Our breathtaking gardens are ideal for weddings, concerts, team building, graduation parties and large-scale events. Features include complimentary secure parking, mains power with backup generator, a kids' playground and flexible layouts for theatre, cocktail or banquet setups.</p>",
+        "value": "<p dir=\"auto\">Our gardens are ideal for weddings, concerts, team building, graduation parties and large-scale events. Features include complimentary secure parking, mains power with backup generator, a kids' playground and flexible layouts for theatre, cocktail or banquet setups.</p>",
         "valueByLocale": {}
       },
       "Category": {
         "type": "enum",
-        "value": "Wellness"
+        "value": "Events"
       }
     },
     {
       "_id": "uJ0dEAhU1",
-      "_slug": "concierge",
+      "_slug": "guest-services",
       "_draft": false,
       "Number": {
         "type": "string",
@@ -224,7 +224,7 @@
       },
       "Category": {
         "type": "enum",
-        "value": "Other"
+        "value": "Convenience"
       }
     }
   ]

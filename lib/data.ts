@@ -1,11 +1,11 @@
 import type {
   Room, Service, GalleryItem, DiningMenuItem,
-  Testimonial, BlogPost, LegalPage,
+  Testimonial, BlogPost, LegalPage, Faq,
 } from "@/types/cms";
 import {
   normalizeRooms, normalizeServices, normalizeGallery,
   normalizeDiningMenu, normalizeTestimonials,
-  normalizeBlogPosts, normalizeLegalPages,
+  normalizeBlogPosts, normalizeLegalPages, normalizeFaqs,
 } from "@/lib/normalize";
 import roomsData from "@/framer-local/cms/rooms.json";
 import servicesData from "@/framer-local/cms/services.json";
@@ -14,6 +14,7 @@ import diningMenuData from "@/framer-local/cms/dining-menu.json";
 import testimonialsData from "@/framer-local/cms/testimonials.json";
 import blogPostsData from "@/framer-local/cms/blog-posts.json";
 import legalPageData from "@/framer-local/cms/legal-page.json";
+import faqsData from "@/framer-local/cms/faqs.json";
 
 
 export function getRooms(): Room[] {
@@ -60,4 +61,12 @@ export function getLegalPages(): LegalPage[] {
 
 export function getLegalPageBySlug(slug: string): LegalPage | undefined {
   return getLegalPages().find((p) => p.slug === slug);
+}
+
+export function getFaqs(): Faq[] {
+  return normalizeFaqs(faqsData);
+}
+
+export function getFaqsByCategory(category: string): Faq[] {
+  return getFaqs().filter((f) => f.category === category);
 }

@@ -3,7 +3,10 @@ import HeroSection from "@/components/HeroSection";
 import RevealSection from "@/components/RevealSection";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
+import FaqAccordion from "@/components/FaqAccordion";
 import { contact, whatsappUrl } from "@/config/contact";
+import { getFaqs } from "@/lib/data";
+import { getFaqPageJsonLd } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -11,8 +14,14 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const faqs = getFaqs();
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getFaqPageJsonLd(faqs)) }}
+      />
       <HeroSection
         label="GET IN TOUCH"
         headline="Find us."
@@ -83,6 +92,10 @@ export default function ContactPage() {
         </RevealSection>
 
         <RevealSection as="section" delay={0.1}>
+          <FaqAccordion items={faqs} />
+        </RevealSection>
+
+        <RevealSection as="section" delay={0.15}>
           <MapEmbed />
         </RevealSection>
       </div>

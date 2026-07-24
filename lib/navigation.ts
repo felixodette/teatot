@@ -42,6 +42,5 @@ export const footerLinks = {
     { platform: "Instagram", href: "https://instagram.com/teatotmachakos" },
     { platform: "WhatsApp", href: whatsappUrl("general") },
     { platform: "Messenger", href: contact.messenger },
-    { platform: "X", href: "https://twitter.com/teatothotel" },
   ],
 } as const;

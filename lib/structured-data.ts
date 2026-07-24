@@ -1,4 +1,6 @@
 import { contact } from "@/config/contact";
+import type { Faq } from "@/types/cms";
+import { stripHtml } from "@/lib/format";
 
 export function getHotelJsonLd() {
   return {
@@ -17,5 +19,20 @@ export function getHotelJsonLd() {
     telephone: contact.phone,
     email: contact.email,
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://teatot.co.ke",
+  };
+}
+
+export function getFaqPageJsonLd(faqs: Faq[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: stripHtml(faq.answer),
+      },
+    })),
   };
 }

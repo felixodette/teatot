@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { getDiningMenu } from "@/lib/data";
 import { formatMoney } from "@/lib/format";
+import { whatsappUrl } from "@/config/contact";
 import HeroSection from "@/components/HeroSection";
 import RevealSection from "@/components/RevealSection";
 import ParallaxImage from "@/components/ParallaxImage";
 import ImageWithFallback from "@/components/ImageWithFallback";
 
 const HERO_PARAGRAPH =
-  "Kenyan classics, continental plates, hand-stretched pizza and specialty Kenyan coffee at ANAM Restaurant, TeaTot Pizzeria and our Coffee Shop.";
+  "Message us for a table at ANAM / TeaTot Pizzeria, or a catering quote for your event. Kenyan classics, continental plates, hand-stretched pizza and specialty Kenyan coffee.";
+
+const primaryCtaClass =
+  "mt-6 inline-block cursor-pointer rounded-none bg-[var(--color-text-primary)] px-4 py-2 text-base font-semibold text-white transition-opacity duration-200 hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-text-primary)]";
+
+const secondaryCtaClass =
+  "mt-6 inline-block cursor-pointer rounded-none border border-[var(--color-border)] bg-transparent px-4 py-2 text-base font-semibold transition-opacity duration-200 hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-text-primary)]";
 
 /** Full coffee & pizza list lives on Anam — teaser prices on this page. */
 const ANAM_FULL_MENU = "https://anam.teatot.co.ke/menu#full-menu";
@@ -92,12 +98,22 @@ export default function DiningPage() {
     <div className="pb-24">
       <HeroSection
         label="FOOD & BEVERAGE"
-        headline="Food on Konza Road."
+        headline="Table tonight, or catering for Saturday?"
         paragraph={HERO_PARAGRAPH}
         imageSrc="/images/hero/dining-hero.jpg"
         imageAlt="Dining at Tea Tot Hotel"
         height="640px"
         parallax
+        primaryButton={{
+          text: "Reserve on WhatsApp",
+          href: whatsappUrl("dining"),
+          external: true,
+        }}
+        secondaryButton={{
+          text: "Catering enquiry",
+          href: whatsappUrl("events"),
+          external: true,
+        }}
       />
 
       <RevealSection>
@@ -208,11 +224,19 @@ export default function DiningPage() {
               className="mt-3 text-4xl font-semibold tracking-tight desktop:text-5xl"
               style={{ fontFamily: "var(--font-inter-display)" }}
             >
-              Hospitality &amp; service at its best.
+              Food downstairs when you need it.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-[var(--color-text-secondary)]">
-              ANAM Restaurant, our Coffee Shop and TeaTot Pizzeria serve Kenyan classics, continental dishes, artisan pizza and specialty coffee. The best pizza in Machakos — made to order, every time.
+              ANAM Restaurant, our Coffee Shop and TeaTot Pizzeria serve Kenyan classics, continental dishes, pizza made to order and specialty coffee — for business lunches, family meals and late coffee on Konza Road.
             </p>
+            <div className="mt-2 flex flex-wrap gap-3">
+              <a href={whatsappUrl("dining")} target="_blank" rel="noopener noreferrer" className={primaryCtaClass}>
+                Reserve on WhatsApp
+              </a>
+              <a href={ANAM_FULL_MENU} target="_blank" rel="noopener noreferrer" className={secondaryCtaClass}>
+                Full Anam menu
+              </a>
+            </div>
           </div>
           <div className="relative h-[320px] w-full flex-1 overflow-hidden desktop:h-[640px]">
             <ImageWithFallback
@@ -248,12 +272,14 @@ export default function DiningPage() {
             <p className="mt-6 text-base leading-relaxed text-[var(--color-text-secondary)]">
               Professional catering for weddings, corporate events, funerals, birthdays and community celebrations. Our experienced team delivers restaurant-quality meals anywhere — from setup through to service.
             </p>
-              <Link
-                href="/contact"
-                className="mt-6 inline-block cursor-pointer bg-[var(--color-text-primary)] px-4 py-2 text-base font-semibold text-white transition-opacity duration-200 hover:opacity-90"
+              <a
+                href={whatsappUrl("events")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={primaryCtaClass}
               >
-                Contact Us
-              </Link>
+                Catering enquiry
+              </a>
             </div>
           </div>
         </RevealSection>
