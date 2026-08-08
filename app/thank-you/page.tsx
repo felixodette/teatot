@@ -6,6 +6,8 @@ import RevealSection from "@/components/RevealSection";
 export const metadata: Metadata = {
   title: "Thank You",
   description: "Thank you for getting in touch. We will respond shortly.",
+  alternates: { canonical: "/thank-you" },
+  robots: { index: false, follow: false },
 };
 
 export default function ThankYouPage() {

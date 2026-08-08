@@ -51,17 +51,17 @@
       },
       "Excerpt": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">A day trip to Buffalo Mountain — wildlife, waterfalls and hiking just 85km from the hotel.</p>",
+        "value": "<p dir=\"auto\">A day trip to Buffalo Mountain — wildlife, waterfalls and hiking just 85 km from Tea Tot Hotel. Here is everything you need to plan it.</p>",
         "valueByLocale": {}
       },
       "Body": {
         "type": "formattedText",
-        "value": "<h3 dir=\"auto\">Buffalo Mountain</h3><p dir=\"auto\">Ol Donyo Sabuk (Kilimambogo) is a lush national park where elephants, Cape buffalo, baboons and 45+ bird species roam freely. Three waterfalls and the historic MacMillan burial site await at the summit.</p><h3 dir=\"auto\">Getting There</h3><p dir=\"auto\">The park is approximately 85km from Tea Tot Hotel. Our concierge can arrange transport and guided day trips.</p>",
+        "value": "<h3 dir=\"auto\">Buffalo Mountain</h3><p dir=\"auto\">Ol Donyo Sabuk — also called Kilimambogo — is a national park where elephants, Cape buffalo, baboons and more than 45 bird species roam freely. Three waterfalls cascade down its flanks, and the historic MacMillan burial site sits near the summit at 2,146 m.</p><h3 dir=\"auto\">Getting There</h3><p dir=\"auto\">The park is approximately 85 km from Tea Tot Hotel — about a 90-minute drive. Head towards Thika on the Nairobi–Thika Superhighway, then turn off at Kilimambogo. Our front desk can help arrange a private vehicle or link you with a local driver. Guided day trips are available on request.</p><h3 dir=\"auto\">What to Expect</h3><p dir=\"auto\">Park entry: KES 600 per adult, KES 200 per child (subject to Kenya Wildlife Service rates — confirm at the gate). Bring sturdy walking shoes, at least two litres of water per person, binoculars, sunscreen and a light raincoat. The trails are steep in sections; budget three to five hours for a return hike to the summit.</p><h3 dir=\"auto\">Best Time to Go</h3><p dir=\"auto\">Leave before 7:00 AM for the best wildlife sightings and to reach the summit before the midday heat. Avoid heavy rain months (April–May, October–November) when paths become slippery. Clear mornings offer views as far as Mount Kenya.</p><h3 dir=\"auto\">Plan Your Stay</h3><p dir=\"auto\">Combine the hike with a night at Tea Tot Hotel in Machakos — we are a convenient base for day trips into the Ukambani highlands. Ask our concierge to book your transport when you check in.</p>",
         "valueByLocale": {}
       },
       "Author": {
         "type": "string",
-        "value": "Tea Tot Hotel",
+        "value": "Tea Tot Concierge Team",
         "valueByLocale": {}
       },
       "Published Date": {
@@ -85,7 +85,7 @@
     },
     {
       "_id": "Njk60CeFJ",
-      "_slug": "how-we-think-about-food",
+      "_slug": "machakos-peoples-park",
       "_draft": false,
       "Title": {
         "type": "string",
@@ -94,17 +94,17 @@
       },
       "Excerpt": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">Family recreation in Machakos town — zip-lines, boat rides and open parkland just 2km away.</p>",
+        "value": "<p dir=\"auto\">Free entry, 2 km from the hotel, and enough to fill a half-day — zip-lines, fountains, boat rides and open parkland in the heart of Machakos town.</p>",
         "valueByLocale": {}
       },
       "Body": {
         "type": "formattedText",
-        "value": "<h3 dir=\"auto\">In the Heart of Machakos</h3><p dir=\"auto\">Machakos People's Park features beautifully lit walkways and arches, dancing fountains, a 300m zip-line, camel and horse riding, boat rides, archery and a children's playground. Free entry.</p><h3 dir=\"auto\">From the Hotel</h3><p dir=\"auto\">The park is just 2km from Tea Tot Hotel — an easy outing for families and groups staying with us.</p>",
+        "value": "<h3 dir=\"auto\">What Is Machakos People's Park?</h3><p dir=\"auto\">Built on the edge of Machakos town, People's Park is a well-maintained public green space with illuminated walkways, ornamental arches, dancing fountains, a 300-metre zip-line, camel and horse riding, boat rides on a small lake, archery, a skateboard ramp and a dedicated children's playground. Entry is free.</p><h3 dir=\"auto\">Getting There from Tea Tot Hotel</h3><p dir=\"auto\">The park is approximately 2 km from Tea Tot Hotel on Konza Road — a short matatu ride or a pleasant 20-minute walk through Machakos town. Tuk-tuks are available outside the hotel for around KES 100–150 each way.</p><h3 dir=\"auto\">What to Bring</h3><p dir=\"auto\">No ticket required — just walk in. Bring some cash for the zip-line (approximately KES 200), camel rides and snacks from the park vendors. Sunscreen is useful in the afternoon. The park is fully paved and pushchair-friendly.</p><h3 dir=\"auto\">Best Time to Visit</h3><p dir=\"auto\">Weekday mornings are quietest. Come back in the evening: the fountains and LED walkways are lit after 6:00 PM and create a very different atmosphere — popular with families after dinner. Avoid Sunday afternoons when it gets busy with local crowds (or embrace it — the energy is great).</p><h3 dir=\"auto\">Combine With a Stay</h3><p dir=\"auto\">Machakos People's Park is ideal for families and groups who want an easy, free outing between conference sessions or hospital visits. Ask the Tea Tot front desk for the latest park hours and any upcoming events.</p>",
         "valueByLocale": {}
       },
       "Author": {
         "type": "string",
-        "value": "Tea Tot Hotel",
+        "value": "Tea Tot Concierge Team",
         "valueByLocale": {}
       },
       "Published Date": {
@@ -127,7 +127,7 @@
     },
     {
       "_id": "Vx8TEh8J7",
-      "_slug": "art-of-a-good-hotel-stay",
+      "_slug": "kyamwilu-gravity-hill",
       "_draft": false,
       "Title": {
         "type": "string",
@@ -136,17 +136,17 @@
       },
       "Excerpt": {
         "type": "formattedText",
-        "value": "<p dir=\"auto\">Where nature defies gravity — a mysterious optical phenomenon unique to Machakos.</p>",
+        "value": "<p dir=\"auto\">About 15 km from Tea Tot Hotel, Kyamwilu Gravity Hill is Machakos's strangest attraction — water appears to flow uphill and cars roll without engine power. Here is what to know before you go.</p>",
         "valueByLocale": {}
       },
       "Body": {
         "type": "formattedText",
-        "value": "<h3 dir=\"auto\">Antigravity Site</h3><p dir=\"auto\">Officially certified by Machakos Tourism as the Kyamwilu Antigravity Site — water flows uphill and cars roll without power. A must-visit attraction approximately 15km from the hotel.</p><h3 dir=\"auto\">Plan Your Visit</h3><p dir=\"auto\">Ask our front desk to arrange a trip to Kyamwilu and other Machakos highlights during your stay.</p>",
+        "value": "<h3 dir=\"auto\">What Is the Kyamwilu Antigravity Site?</h3><p dir=\"auto\">Officially known as the Kyamwilu Antigravity Site and certified by Machakos County Tourism, this is a gravity hill — a stretch of road where the surrounding landscape creates an optical illusion that makes the slope appear to run the wrong way. Pour water on the road and it seems to flow uphill. Put your car in neutral on the hill and it appears to roll against gravity. The effect works because the horizon line is obscured by the surrounding terrain, tricking your eyes into misreading the true downhill direction.</p><h3 dir=\"auto\">Getting There</h3><p dir=\"auto\">Kyamwilu is approximately 15 km from Tea Tot Hotel — about 20 minutes by road. Follow the Machakos–Kitui highway past Kyamwilu market and look for the signposted turn-off. Entry to the site is free. Our front desk can give you current directions or connect you with a local driver (expect to pay around KES 500–800 for a return trip by boda-boda or taxi).</p><h3 dir=\"auto\">What to Bring</h3><p dir=\"auto\">A bottle of water to demonstrate the uphill effect (pour it slowly on the road surface). A ball also works well and is easier to photograph. The site itself is a roadside stop rather than a formal park — there are no facilities, so carry snacks and water from the hotel.</p><h3 dir=\"auto\">Best Time to Go</h3><p dir=\"auto\">The illusion is visible any time of day, but morning light makes it easier to photograph and the road is less busy. Combine the stop with a longer drive into the Ukambani highlands for a half-day outing from Machakos.</p><h3 dir=\"auto\">A Word on the Science</h3><p dir=\"auto\">Gravity hills exist in several countries and have been studied in detail. The effect is entirely optical — measurements with a spirit level confirm the road slopes the way you'd expect. That said, experiencing it in person is genuinely disorienting, and it makes for a memorable conversation at dinner back at ANAM Restaurant.</p>",
         "valueByLocale": {}
       },
       "Author": {
         "type": "string",
-        "value": "Tea Tot Hotel",
+        "value": "Tea Tot Concierge Team",
         "valueByLocale": {}
       },
       "Published Date": {

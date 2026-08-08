@@ -11,6 +11,8 @@ import BookNowButton from "@/components/BookNowButton";
 export const metadata: Metadata = {
   title: "Gallery",
   description: "Rooms, conference halls, gardens and dining at Tea Tot Hotel, Machakos.",
+  alternates: { canonical: "/gallery" },
+  openGraph: { url: "/gallery" },
 };
 
 /** Story order for conversion — Arrival/rooms first, events last. */

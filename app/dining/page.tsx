@@ -36,6 +36,8 @@ const MEAL_HOURS = [
 export const metadata: Metadata = {
   title: "Dining",
   description: HERO_PARAGRAPH,
+  alternates: { canonical: "/dining" },
+  openGraph: { url: "/dining" },
 };
 
 function MealTimeBlock({

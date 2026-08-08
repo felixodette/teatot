@@ -16,6 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.excerpt.replace(/<[^>]*>/g, ""),
+    alternates: { canonical: `/blog-posts/${slug}` },
+    openGraph: { url: `/blog-posts/${slug}` },
   };
 }
 
@@ -50,7 +52,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </span>
           <time dateTime={post.publishedDate}>{date}</time>
           <span>·</span>
-          <span>{post.author}</span>
+          <span>
+            <span className="font-medium text-[var(--color-text-primary)]">{post.author}</span>
+            <span className="ml-1 text-xs">— Local Guides, Tea Tot Hotel, Machakos</span>
+          </span>
         </div>
 
         <h1

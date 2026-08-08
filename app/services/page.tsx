@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   title: "Services",
   description:
     "Conference halls, garden venues, dining, outside catering and guest services at Tea Tot Hotel, Machakos.",
+  alternates: { canonical: "/services" },
+  openGraph: { url: "/services" },
 };
 
 function enquireFor(slug: string): { label: string; href: string } {

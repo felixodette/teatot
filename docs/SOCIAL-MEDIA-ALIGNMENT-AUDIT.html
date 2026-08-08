@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Social Media Alignment Audit — Tea Tot Hotel</title>
+<style>
+  @page { size: A4; margin: 14mm 12mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.42;
+    color: #1a1a1a;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 18pt; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 12pt; margin: 18px 0 6px; border-bottom: 1px solid #ccc; padding-bottom: 3px; }
+  h3 { font-size: 10.5pt; margin: 12px 0 5px; }
+  .meta { color: #555; font-size: 8.5pt; margin-bottom: 10px; }
+  .lede { margin: 0 0 12px; }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 12px 0 14px;
+  }
+  .stat {
+    border: 1px solid #ddd;
+    padding: 8px 6px;
+    text-align: center;
+  }
+  .stat .v { font-size: 15pt; font-weight: 600; }
+  .stat .l { font-size: 7.5pt; color: #555; margin-top: 2px; }
+  .callout {
+    border-left: 3px solid #a63d3d;
+    background: #fbf4f4;
+    padding: 9px 11px;
+    margin: 10px 0 14px;
+  }
+  .callout.info { border-color: #2a5a8a; background: #f3f6fa; }
+  .callout.ok { border-color: #2a7a4b; background: #f4f8f5; }
+  .callout.warn { border-color: #a67c00; background: #fbf7ee; }
+  .callout strong { display: block; margin-bottom: 3px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8pt;
+    margin: 6px 0 12px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 4px 5px;
+    vertical-align: top;
+    text-align: left;
+  }
+  th { background: #f2f2f2; font-weight: 600; }
+  tr.strong td:last-child { color: #1a6b3c; font-weight: 600; }
+  tr.broken td:last-child { color: #a63d3d; font-weight: 600; }
+  tr.gap td:last-child { color: #8a5a00; font-weight: 600; }
+  ul { margin: 4px 0 10px; padding-left: 16px; }
+  li { margin-bottom: 3px; }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 8px 0 12px;
+  }
+  .card {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+  }
+  .card h3 { margin-top: 0; }
+  .scoregrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin: 8px 0 12px;
+  }
+  .footer {
+    margin-top: 18px;
+    padding-top: 8px;
+    border-top: 1px solid #ccc;
+    font-size: 7.5pt;
+    color: #666;
+  }
+  .bar-row { display: flex; align-items: center; gap: 8px; margin: 3px 0; font-size: 8pt; }
+  .bar-label { width: 190px; flex-shrink: 0; }
+  .bar-track { flex: 1; height: 9px; background: #eee; }
+  .bar-fill { height: 100%; background: #3a6ea5; }
+  .bar-fill.low { background: #a63d3d; }
+  .bar-fill.mid { background: #a67c00; }
+  .bar-fill.hi { background: #2a7a4b; }
+  .bar-pct { width: 28px; text-align: right; }
+  pre.box {
+    background: #f6f6f6;
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    font-size: 8pt;
+    white-space: pre-wrap;
+    margin: 6px 0 10px;
+  }
+  .checklist { columns: 2; column-gap: 16px; }
+  .checklist li { list-style: none; margin-left: 0; padding-left: 0; }
+  .checklist li::before { content: "☐ "; }
+  @media print {
+    .callout, .card, .stat, table { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<p class="meta">Conversion Architect · 24 Jul 2026 · Live Facebook check + web app (footer, FAB, analytics, schema) · Companion: DIGITAL-CONVERSION-AUDIT.md</p>
+<h1>Social Media ↔ Web Alignment Audit</h1>
+<p class="lede">The storefront closes. Social does not yet feed it reliably. Overall social ↔ web alignment: <strong>38 / 100</strong>.</p>
+
+<div class="stats">
+  <div class="stat"><div class="v">38</div><div class="l">Overall alignment / 100</div></div>
+  <div class="stat"><div class="v">88</div><div class="l">WA / Messenger close</div></div>
+  <div class="stat"><div class="v">22</div><div class="l">Instagram alignment</div></div>
+  <div class="stat"><div class="v">1.7K</div><div class="l">FB followers (live)</div></div>
+</div>
+
+<div class="callout">
+  <strong>Executive verdict</strong>
+  The web app already closes well (Book + WhatsApp). Social is not yet a demand engine pointing at that close path. Highest-impact breaks: footer Instagram points at @teatotmachakos while Facebook’s canonical profile is @tea.tot.hotel; TikTok exists but is invisible on the site; and teatot.co.ke currently serves maintenance — so every social “Visit website” click fails the conversion chain. Do not scale paid Meta until Pixel + live site are up.
+</div>
+
+<h2>Channel scores</h2>
+<div class="bar-row"><div class="bar-label">WhatsApp / Messenger</div><div class="bar-track"><div class="bar-fill hi" style="width:88%"></div></div><div class="bar-pct">88</div></div>
+<div class="bar-row"><div class="bar-label">Facebook page</div><div class="bar-track"><div class="bar-fill mid" style="width:58%"></div></div><div class="bar-pct">58</div></div>
+<div class="bar-row"><div class="bar-label">Brand / handle consistency</div><div class="bar-track"><div class="bar-fill mid" style="width:42%"></div></div><div class="bar-pct">42</div></div>
+<div class="bar-row"><div class="bar-label">Measurement / ads</div><div class="bar-track"><div class="bar-fill mid" style="width:40%"></div></div><div class="bar-pct">40</div></div>
+<div class="bar-row"><div class="bar-label">Website as social landing</div><div class="bar-track"><div class="bar-fill low" style="width:35%"></div></div><div class="bar-pct">35</div></div>
+<div class="bar-row"><div class="bar-label">Content → booking system</div><div class="bar-track"><div class="bar-fill low" style="width:32%"></div></div><div class="bar-pct">32</div></div>
+<div class="bar-row"><div class="bar-label">Google Business posts</div><div class="bar-track"><div class="bar-fill low" style="width:28%"></div></div><div class="bar-pct">28</div></div>
+<div class="bar-row"><div class="bar-label">Instagram</div><div class="bar-track"><div class="bar-fill low" style="width:22%"></div></div><div class="bar-pct">22</div></div>
+<div class="bar-row"><div class="bar-label">TikTok</div><div class="bar-track"><div class="bar-fill low" style="width:15%"></div></div><div class="bar-pct">15</div></div>
+<p class="meta">Sales stack (keep): Facebook / Instagram / GBP → Website proof → WhatsApp / Booking modal → Review ask. Skip X.</p>
+
+<h2>1. Assessment</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>Strengths</h3>
+    <ul>
+      <li>FB + Messenger match page slug</li>
+      <li>WhatsApp intent prefills + FAB</li>
+      <li>OG share cards present</li>
+      <li>FB posting (food/events within ~1 day)</li>
+      <li>X correctly removed from footer</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Weaknesses</h3>
+    <ul>
+      <li>IG handle mismatch (critical)</li>
+      <li>TikTok orphaned from site</li>
+      <li>Live site maintenance wall</li>
+      <li>Soft captions / thin FB recommends (5)</li>
+      <li>No Meta Pixel; no schema sameAs</li>
+    </ul>
+  </div>
+</div>
+<p><strong>Business impact:</strong> Every wrong IG click and every maintenance-page landing wastes paid and organic attention. Until identity + live site + Pixel are fixed, social is brand wallpaper — not a booking tool.</p>
+
+<h2>2. Conversion scorecard (social layer)</h2>
+<table>
+  <thead>
+    <tr><th>Dimension</th><th>Score</th><th>Finding</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Clarity of next step</td><td>34</td><td>Posts rarely route to WA / rooms / conference</td></tr>
+    <tr><td>Trust</td><td>52</td><td>1.7K FB followers; only 5 FB recommends</td></tr>
+    <tr><td>SEO / discovery</td><td>40</td><td>No schema sameAs; IG handle split; category = Hotel services</td></tr>
+    <tr><td>Emotion / proof</td><td>45</td><td>Food/event photos exist; captions soft</td></tr>
+    <tr><td>Differentiation</td><td>38</td><td>Could be any Machakos venue without location proof</td></tr>
+    <tr><td>Readability / cadence</td><td>48</td><td>Recent FB post — cadence uneven</td></tr>
+    <tr><td>Call-to-action</td><td>28</td><td>Weak Book / Enquire / WhatsApp in captions</td></tr>
+    <tr><td><strong>Overall conversion potential</strong></td><td><strong>38</strong></td><td>Close path strong on site; demand gen broken</td></tr>
+  </tbody>
+</table>
+
+<h2>3. Evidence lock (live vs code)</h2>
+<table>
+  <thead>
+    <tr><th>Channel</th><th>Canonical</th><th>Web app</th><th>Status</th></tr>
+  </thead>
+  <tbody>
+    <tr class="strong"><td>Facebook</td><td>facebook.com/teatothotelmachakos · 1.7K</td><td>Footer matches</td><td>Aligned</td></tr>
+    <tr class="broken"><td>Instagram</td><td>instagram.com/tea.tot.hotel (FB Intro)</td><td>Footer: teatotmachakos</td><td>Misaligned</td></tr>
+    <tr class="gap"><td>TikTok</td><td>tiktok.com/@tea.tothotelmachakos</td><td>Not linked</td><td>Gap</td></tr>
+    <tr class="strong"><td>WhatsApp</td><td>wa.me/254718009684</td><td>Intent URLs + FAB</td><td>Strong</td></tr>
+    <tr class="strong"><td>Messenger</td><td>m.me/teatothotelmachakos</td><td>Footer + FAB</td><td>Strong</td></tr>
+    <tr class="broken"><td>Website</td><td>teatot.co.ke</td><td>Linked from FB</td><td>Maintenance</td></tr>
+    <tr class="broken"><td>Meta Pixel</td><td>—</td><td>NEXT_PUBLIC_META_PIXEL_ID empty</td><td>Blocked</td></tr>
+  </tbody>
+</table>
+<p class="meta">Code refs: lib/navigation.ts · config/contact.ts · ContactFab · Analytics · structured-data.ts</p>
+
+<h2>4. Target operating model</h2>
+<p>Treat social as the <strong>front of house</strong>; the web app as the <strong>menu and proof</strong>; WhatsApp as the <strong>reservation desk</strong>.</p>
+
+<h3>Bio / Intro lock (all channels)</h3>
+<pre class="box">Tea Tot Hotel · Konza Road, Machakos (opp. Level 5 Hospital)
+56 rooms · Conference for 200 · Gardens · ANAM Restaurant
+Book: https://teatot.co.ke
+Chat: WhatsApp 0718 009684</pre>
+
+<h3>Standing CTA (end of every post)</h3>
+<pre class="box">Enquire on WhatsApp: https://wa.me/254718009684?text=...
+Or book: https://teatot.co.ke/rooms</pre>
+
+<h3>Weekly content → product map</h3>
+<table>
+  <thead>
+    <tr><th>Day</th><th>Theme</th><th>Asset</th><th>Destination</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Mon</td><td>Rooms / stay</td><td>Reel or carousel + rate cue</td><td>WA rooms + /rooms</td></tr>
+    <tr><td>Tue</td><td>Dining</td><td>Food clip + hours</td><td>WA dining + /dining</td></tr>
+    <tr><td>Wed</td><td>Conference</td><td>Hall / AV / Wi-Fi proof</td><td>WA conference + /services</td></tr>
+    <tr><td>Thu</td><td>Gardens / events</td><td>Outdoor capacity</td><td>WA events</td></tr>
+    <tr><td>Fri</td><td>Proof</td><td>Review / arrival clip</td><td>Book / Contact</td></tr>
+    <tr><td>Sat–Sun</td><td>Weekend / family</td><td>Local convenience</td><td>WA rooms + GBP post</td></tr>
+  </tbody>
+</table>
+<p class="meta">Caption formula: concrete use case → one proof detail → one CTA. Avoid nestled / unforgettable / world-class / elevate / indulge.</p>
+
+<h2>5. Rationale</h2>
+<ul>
+  <li>Closing paths on the site already outperform competitors; demand gen is the leak.</li>
+  <li>Local Kenyan buyers finish on WhatsApp/Messenger — social must push there, not vague “DM us.”</li>
+  <li>Handle and website integrity are trust tests; failing them before rooms kills conversion.</li>
+  <li>Pixel-before-ads prevents spending on vanity reach.</li>
+</ul>
+
+<h2>6. Actionable tasks</h2>
+
+<h3>P0 — this week (identity + live path)</h3>
+<table>
+  <thead>
+    <tr><th>#</th><th>Owner</th><th>Task</th><th>Done when</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Eng</td><td>Production site live (no maintenance wall)</td><td>Social → Home → Book/WA works</td></tr>
+    <tr><td>2</td><td>Eng</td><td>Footer IG → https://instagram.com/tea.tot.hotel</td><td>Wrong handle gone</td></tr>
+    <tr><td>3</td><td>Ops</td><td>Lock bios + pin Book/Enquire on FB (+ IG highlight)</td><td>Same phone, URL, WA everywhere</td></tr>
+    <tr><td>4</td><td>Ops</td><td>Confirm @teatotmachakos — claim, redirect, or abandon</td><td>One IG identity</td></tr>
+  </tbody>
+</table>
+
+<h3>P1 — next 2 weeks (measurement + channel hygiene)</h3>
+<table>
+  <thead>
+    <tr><th>#</th><th>Owner</th><th>Task</th><th>Done when</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>5</td><td>Eng</td><td>Set Meta Pixel; verify whatsapp_click / book_start / contact_submit</td><td>Events Manager green</td></tr>
+    <tr><td>6</td><td>Eng</td><td>Add Hotel JSON-LD sameAs for FB + IG (+ TikTok if kept)</td><td>Entity binding consistent</td></tr>
+    <tr><td>7</td><td>Eng</td><td>Track messenger_click like WhatsApp</td><td>FAB Messenger measurable</td></tr>
+    <tr><td>8</td><td>Ops</td><td>FB category → Hotel; enable Book Now / WhatsApp page CTA</td><td>Page button live</td></tr>
+    <tr><td>9</td><td>Ops+Eng</td><td>TikTok keep or kill — footer + bio or remove from FB</td><td>No orphan channel</td></tr>
+    <tr><td>10</td><td>Ops</td><td>Caption template mandatory on all posts</td><td>No post without CTA</td></tr>
+  </tbody>
+</table>
+
+<h3>P2 — 30 days (operate as conversion tool)</h3>
+<table>
+  <thead>
+    <tr><th>#</th><th>Owner</th><th>Task</th><th>Done when</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>11</td><td>Ops</td><td>Run 6-slot weekly calendar for 30 days</td><td>≥12 posts/month across FB/IG</td></tr>
+    <tr><td>12</td><td>Ops</td><td>Post-stay review ask (Google + FB)</td><td>+20 Google / +15 FB in 60 days</td></tr>
+    <tr><td>13</td><td>Ops</td><td>2 GBP posts/week; fix address conflicts (Konza vs Wote)</td><td>GBP matches site</td></tr>
+    <tr><td>14</td><td>Product</td><td>Conference day package (hall + AV + lunch)</td><td>Priced offer for ads/organic</td></tr>
+  </tbody>
+</table>
+
+<h3>P3 — scale only after P0–P1</h3>
+<table>
+  <thead>
+    <tr><th>#</th><th>Owner</th><th>Task</th><th>Done when</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>15</td><td>Ops</td><td>UGC permission + weekly guest repost; &lt;1h reply SLA</td><td>Response time tracked</td></tr>
+    <tr><td>16</td><td>Growth</td><td>Small Meta boosts on conference + weekend stay</td><td>Pixel live first; kill losers in 7 days</td></tr>
+  </tbody>
+</table>
+
+<h2>7. Additional opportunities</h2>
+<ul>
+  <li><strong>Images:</strong> Arrival facade, room daylight, ANAM plated dish, conference set, garden ceremony — one story per post.</li>
+  <li><strong>IG Highlights:</strong> Rooms · Dining · Conference · Gardens · Reviews · How to book.</li>
+  <li><strong>FAQ Reels:</strong> Parking, conference capacity → Contact FAQ.</li>
+  <li><strong>UTM:</strong> utm_source=facebook|instagram on bio links; extend analytics to Messenger.</li>
+  <li><strong>Trust:</strong> Staff names on replies; response-time promise in About.</li>
+</ul>
+
+<h2>Quality checklist</h2>
+<ul class="checklist">
+  <li>One Instagram handle everywhere</li>
+  <li>Website loads from every bio</li>
+  <li>WhatsApp in bio + captions</li>
+  <li>Meta Pixel firing</li>
+  <li>Weekly calendar mapped to live pages</li>
+  <li>Review ask after stay/event</li>
+  <li>No soft posts without CTA</li>
+  <li>Paid spend only after Pixel + live site</li>
+</ul>
+
+<div class="callout info">
+  <strong>North star</strong>
+  Every social impression should answer: Why Tea Tot in Machakos? → What do I book? → How do I talk to someone now? Website stores the proof; WhatsApp closes the sale; Facebook/Instagram create the demand.
+</div>
+
+<div class="footer">
+  Lens: Chief Hospitality Content &amp; Conversion Architect · Scores editorial from live FB + repo evidence, not GA data.
+  Narrative MD: docs/SOCIAL-MEDIA-ALIGNMENT-AUDIT.md · Canvas: social-media-alignment-audit.canvas.tsx
+  Companion: docs/DIGITAL-CONVERSION-AUDIT.md
+</div>
+
+</body>
+</html>
