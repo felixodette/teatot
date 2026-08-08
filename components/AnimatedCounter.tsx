@@ -22,18 +22,21 @@ export default function AnimatedCounter({
   const inView = useInView(ref, { once: true, amount: 0.5 });
   const motionValue = useMotionValue(0);
   const spring = useSpring(motionValue, { duration: duration * 1000, bounce: 0 });
-  const [display, setDisplay] = useState("0");
+  // SSR and initial client render: show real value so crawlers see it.
+  const [display, setDisplay] = useState(value.toLocaleString());
+  const started = useRef(false);
 
   useEffect(() => {
-    if (inView) motionValue.set(value);
-  }, [inView, motionValue, value]);
-
-  useEffect(() => {
-    const unsub = spring.on("change", (v) => {
-      setDisplay(Math.round(v).toString());
-    });
-    return unsub;
-  }, [spring]);
+    if (inView && !started.current) {
+      started.current = true;
+      // Attach listener only when animation begins — avoids the "56 → 0 → 56" flash.
+      const unsub = spring.on("change", (v) => {
+        setDisplay(Math.round(v).toLocaleString());
+      });
+      motionValue.set(value);
+      return unsub;
+    }
+  }, [inView, motionValue, spring, value]);
 
   return (
     <span ref={ref} className={className}>

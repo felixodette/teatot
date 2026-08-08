@@ -11,6 +11,8 @@ import { getFaqPageJsonLd } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Get in touch with Tea Tot Hotel. Konza Road, Machakos — rooms, conferencing, dining and events.",
+  alternates: { canonical: "/contact" },
+  openGraph: { url: "/contact" },
 };
 
 export default function ContactPage() {

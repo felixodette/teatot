@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getRooms, getRoomBySlug } from "@/lib/data";
 import { formatMoney, stripHtml } from "@/lib/format";
 import { whatsappUrl } from "@/config/contact";
+import { getRoomProductJsonLd } from "@/lib/structured-data";
 import BookNowButton from "@/components/BookNowButton";
 import ImageWithFallback from "@/components/ImageWithFallback";
 
@@ -18,6 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: room.name,
     description: `${stripHtml(room.shortDescription)} B&B from ${formatMoney(room.priceSingle, room.currency)} single — Tea Tot Hotel, Machakos.`,
+    alternates: { canonical: `/rooms/${slug}` },
+    openGraph: { url: `/rooms/${slug}` },
   };
 }
 
@@ -36,6 +39,11 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
   const roomWa = whatsappUrl("rooms");
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getRoomProductJsonLd(room)) }}
+      />
     <div className="mx-auto max-w-[var(--container-max)] px-6 py-[var(--spacing-section)]">
       <ImageWithFallback
         src={room.thumbnail.url}
@@ -132,5 +140,6 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
         </aside>
       </div>
     </div>
+    </>
   );
 }

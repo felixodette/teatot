@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Tea Tot Hotel on Konza Road, Machakos — 56 rooms, conference for 200, gardens for large gatherings, and dining on site. Built for business, events, and family stays.",
+  alternates: { canonical: "/about" },
+  openGraph: { url: "/about" },
 };
 
 const stats = [
@@ -107,6 +109,18 @@ export default function AboutPage() {
               </p>
               <p className="mt-5 text-base leading-relaxed text-[var(--color-text-secondary)]">
                 On Konza Road, opposite Machakos Level 5 Hospital — about 60 km from Nairobi. Check in from 2:00 PM, check out by 12:00 noon.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-[var(--color-text-secondary)]">
+                ANAM Restaurant and the full dining menu are hosted at{" "}
+                <a
+                  href="https://anam.teatot.co.ke/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2"
+                >
+                  anam.teatot.co.ke
+                </a>{" "}
+                — a dedicated site for our food &amp; beverage offering, part of Tea Tot Hotel.
               </p>
             </div>
           </div>

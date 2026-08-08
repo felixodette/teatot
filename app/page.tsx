@@ -13,7 +13,9 @@ import { ctaLink } from "@/lib/navigation";
 export const metadata: Metadata = {
   title: "Tea Tot Hotel — Hospitality & Service at its Best",
   description:
-    "Tea Tot Hotel on Konza Road, Machakos — 56 rooms, conference for 200, gardens for large events, ANAM Restaurant and TeaTot Pizzeria. Book direct or enquire on WhatsApp.",
+    "Tea Tot Hotel, Machakos — 56 rooms, conference up to 200, ANAM Restaurant, TeaTot Pizzeria and gardens for events. Book direct or WhatsApp.",
+  alternates: { canonical: "/" },
+  openGraph: { url: "/" },
 };
 
 export default function Home() {
@@ -120,6 +122,14 @@ export default function Home() {
                   const href = isAnam
                     ? "https://anam.teatot.co.ke/"
                     : `/services#${service.slug}`;
+                  const ctaLabels: Record<string, string> = {
+                    restaurant: "Explore ANAM Restaurant",
+                    "conference-events": "See conference halls",
+                    "outside-catering": "Get a catering quote",
+                    "garden-venue": "View garden venue",
+                    "guest-services": "See guest services",
+                  };
+                  const ctaLabel = ctaLabels[service.slug] ?? "View details";
                   return (
                     <Link
                       key={service.slug}
@@ -133,7 +143,7 @@ export default function Home() {
                       <h3 className="services-card-title">{service.name}</h3>
                       <p className="services-card-desc">{service.shortDescription}</p>
                       <span className="mt-4 inline-block text-xs font-medium uppercase tracking-[0.12em] text-[var(--color-text-primary)]">
-                        Learn more
+                        {ctaLabel}
                       </span>
                     </Link>
                   );

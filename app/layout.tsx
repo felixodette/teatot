@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import ContactFab from "@/components/ContactFab";
 import Analytics from "@/components/Analytics";
 import { getHotelJsonLd } from "@/lib/structured-data";
-import { getRooms } from "@/lib/data";
+import { getRooms, getTestimonials } from "@/lib/data";
 import "./globals.css";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://teatot.co.ke";
@@ -37,7 +37,6 @@ export const metadata: Metadata = {
     images: ["/images/home/hotel-front.jpeg"],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: BASE_URL },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
@@ -55,13 +54,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const roomOptions = getRooms().map((r) => r.name);
+  const testimonials = getTestimonials();
 
   return (
     <html lang="en" className={`${inter.variable} ${interDisplay.variable}`}>
       <body className="font-[family-name:var(--font-inter)]">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(getHotelJsonLd()) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(getHotelJsonLd(testimonials)) }}
         />
         <BookingProvider roomOptions={roomOptions}>
           <Analytics />

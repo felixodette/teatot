@@ -11,6 +11,21 @@ const nextConfig: NextConfig = {
   // which can break webpack client chunk factories during Fast Refresh.
   outputFileTracingRoot: projectRoot,
   turbopack: { root: projectRoot },
+  async redirects() {
+    return [
+      // Blog slugs were mismatched — content renamed to match actual article topic.
+      {
+        source: "/blog-posts/how-we-think-about-food",
+        destination: "/blog-posts/machakos-peoples-park",
+        permanent: true,
+      },
+      {
+        source: "/blog-posts/art-of-a-good-hotel-stay",
+        destination: "/blog-posts/kyamwilu-gravity-hill",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

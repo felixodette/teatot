@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Internal Delivery Surplus Audit — Tea Tot</title>
+<style>
+  @page { size: A4; margin: 16mm 14mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 20pt; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 13pt; margin: 22px 0 8px; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
+  h3 { font-size: 11pt; margin: 14px 0 6px; }
+  .meta { color: #555; font-size: 9pt; margin-bottom: 12px; }
+  .lede { margin: 0 0 16px; }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 14px 0 18px;
+  }
+  .stat {
+    border: 1px solid #ddd;
+    padding: 10px 8px;
+    text-align: center;
+  }
+  .stat .v { font-size: 16pt; font-weight: 600; }
+  .stat .l { font-size: 8pt; color: #555; margin-top: 2px; }
+  .callout {
+    border-left: 3px solid #2a7a4b;
+    background: #f4f8f5;
+    padding: 10px 12px;
+    margin: 12px 0 18px;
+  }
+  .callout.info { border-color: #2a5a8a; background: #f3f6fa; }
+  .callout.warn { border-color: #a67c00; background: #fbf7ee; }
+  .callout strong { display: block; margin-bottom: 4px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    margin: 8px 0 16px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 5px 6px;
+    vertical-align: top;
+    text-align: left;
+  }
+  th { background: #f2f2f2; font-weight: 600; }
+  tr.ok td:last-child { color: #1a6b3c; }
+  tr.hi td:last-child { color: #1a4d7a; }
+  tr.med td:last-child { color: #8a5a00; }
+  ul { margin: 6px 0 12px; padding-left: 18px; }
+  li { margin-bottom: 4px; }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 0 16px;
+  }
+  .card {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .card h3 { margin-top: 0; }
+  .scoregrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 10px 0 16px;
+  }
+  .footer {
+    margin-top: 24px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 8pt;
+    color: #666;
+  }
+  .bar-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 8.5pt; }
+  .bar-label { width: 210px; flex-shrink: 0; }
+  .bar-track { flex: 1; height: 10px; background: #eee; }
+  .bar-fill { height: 100%; background: #3a6ea5; }
+  .bar-pct { width: 36px; text-align: right; }
+</style>
+</head>
+<body>
+
+<p class="meta">INTERNAL audit · 24 Jul 2026 · Delivery / engineering lens · Separate from client PRDAA gate</p>
+<h1>What we already own</h1>
+<p class="lede">Side view for the team: how much of the client brief is already embodied in shipped code, where we over-delivered, and how little net-new work remains to close Views Draft using existing assets.</p>
+
+<div class="stats">
+  <div class="stat"><div class="v">82%</div><div class="l">Gap-close leverage</div></div>
+  <div class="stat"><div class="v">12</div><div class="l">Surplus capabilities</div></div>
+  <div class="stat"><div class="v">78%</div><div class="l">Old HTML → built match</div></div>
+  <div class="stat"><div class="v">~1–2 wks</div><div class="l">To Views Draft green</div></div>
+</div>
+
+<div class="callout">
+  <strong>Internal read: strong foundation, thin remaining delta</strong>
+  The PRDAA client gate correctly flags IA gaps. Internally, most of those gaps are composition problems — reorder nav, assemble Explore from existing blog content, trim home teasers — not greenfield features. Dining split and ANAM depth already exceed the letter of the brief.
+</div>
+
+<h2>Similarity map (three sources)</h2>
+<div class="bar-row"><div class="bar-label">Old HTML ↔ Built</div><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div><div class="bar-pct">78%</div></div>
+<div class="bar-row"><div class="bar-label">Views Draft ↔ Built</div><div class="bar-track"><div class="bar-fill" style="width:52%"></div></div><div class="bar-pct">52%</div></div>
+<div class="bar-row"><div class="bar-label">Old HTML ↔ Views Draft</div><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div><div class="bar-pct">70%</div></div>
+<div class="bar-row"><div class="bar-label">Reusable assets ↔ Remaining gaps</div><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div><div class="bar-pct">82%</div></div>
+<p class="meta">Heuristic overlap from capability matrix. Built tracks old HTML stronger than Views Draft because Views Draft is mostly IA/nav/home restructuring on top of content already migrated.</p>
+
+<h2>Capability convergence</h2>
+<table>
+  <thead>
+    <tr><th>Capability</th><th>Old HTML</th><th>Views Draft</th><th>Built</th><th>Reuse</th></tr>
+  </thead>
+  <tbody>
+    <tr class="ok"><td>Rooms catalogue + pricing</td><td>Yes (#rooms)</td><td>Implied (Rooms nav)</td><td>Yes — /rooms + detail + rates</td><td>Complete</td></tr>
+    <tr class="hi"><td>Dining as own destination</td><td>Section #dining tabs</td><td>Required standalone page</td><td>Yes — /dining + hours + teaser menu</td><td>High — only IA polish left</td></tr>
+    <tr class="ok"><td>ANAM / pizza / coffee depth</td><td>In-page tabs</td><td>Menus + hours per outlet</td><td>Surplus — full anam.teatot.co.ke catalogue</td><td>Complete + exceeds</td></tr>
+    <tr class="hi"><td>Conference / garden / catering</td><td>Separate sections</td><td>Services refocus</td><td>Yes — /services anchors + WA enquire</td><td>High — strip restaurant card</td></tr>
+    <tr class="hi"><td>Explore Machakos attractions</td><td>#attractions + 4 spots</td><td>Dedicated page + nav + map</td><td>Partial — 3 blog posts + images exist</td><td>High — content ready, route missing</td></tr>
+    <tr class="ok"><td>Gallery</td><td>In-page gallery</td><td>Nav item + lazy load</td><td>Yes — /gallery story groups</td><td>Complete</td></tr>
+    <tr class="ok"><td>Contact / enquiry</td><td>Form + newsletter</td><td>Enquiry CTAs</td><td>Surplus — form + FAB + WA/SMS/tel/Messenger</td><td>Complete + exceeds</td></tr>
+    <tr class="med"><td>Book / pay path</td><td>Book form + M-Pesa modal</td><td>Clarify Book Now destination</td><td>BookingModal SMTP (no M-Pesa)</td><td>Medium — modal exists; label/engine TBD</td></tr>
+    <tr class="ok"><td>Multi-page SEO shell</td><td>SPA hash</td><td>OG on Dining/Explore</td><td>Surplus — metadata, sitemap, JSON-LD, canonical</td><td>Complete for existing routes</td></tr>
+    <tr class="ok"><td>Measurement</td><td>None observed</td><td>Not in Views Draft</td><td>Surplus — GA4 live + event hooks</td><td>Complete + exceeds</td></tr>
+  </tbody>
+</table>
+
+<h2>Delivered beyond the brief</h2>
+<table>
+  <thead>
+    <tr><th>Surplus</th><th>Vs client ask</th><th>Business / eng value</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Dual-site dining architecture</td><td>Views Draft asked for one Dining page</td><td>Hotel teaser + full menu subdomain scales F&amp;B without bloating hotel IA</td></tr>
+    <tr><td>Intent-prefixed WhatsApp</td><td>Views Draft: enquiry CTA</td><td>rooms / conference / events / dining / general prefills — conversion layer</td></tr>
+    <tr><td>Contact FAB (WA / call / SMS / Messenger)</td><td>Not in Views Draft or old nav</td><td>Always-on close path; matches conversion audit priorities</td></tr>
+    <tr><td>BookingModal + server actions</td><td>Old HTML inline book form</td><td>Accessible modal, validation, SMTP path, room prefill</td></tr>
+    <tr><td>Framer → typed domain pipeline</td><td>Client never asked for this</td><td>Maintainable CMS JSON → Room/Service/Blog models; UI decoupled</td></tr>
+    <tr><td>FAQ + FAQPage JSON-LD</td><td>Not in Views Draft</td><td>Contact/rooms trust + rich results readiness</td></tr>
+    <tr><td>GA4 instrumentation</td><td>Not in Views Draft</td><td>G-9B8TV2N3WT live; book_start / whatsapp_click hooks ready</td></tr>
+    <tr><td>ANAM menu domain model + tests</td><td>Sample dishes with photos</td><td>33 products, promotions, view-models, unit tests, selfcheck</td></tr>
+    <tr><td>Legal pages + thank-you</td><td>Not in Views Draft</td><td>Privacy/terms routes; form completion path</td></tr>
+    <tr><td>Motion / reveal / parallax system</td><td>Not required</td><td>Premium feel parity with Framer origin; reuse on Explore</td></tr>
+    <tr><td>Empty states + ImageWithFallback</td><td>Not required</td><td>Graceful CMS gaps; production hardening</td></tr>
+    <tr><td>Internal docs corpus</td><td>Not required</td><td>Parity, hosting, conversion, validation reports accelerate closes</td></tr>
+  </tbody>
+</table>
+
+<h2>Leverage on remaining Views Draft gaps</h2>
+<p class="meta">% = estimated share of the solution that already exists in repo/live. Effort: XS &lt; 2h · S &lt; 1d · M &lt; 3d.</p>
+<div class="bar-row"><div class="bar-label">Build /explore page</div><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div><div class="bar-pct">70%</div></div>
+<div class="bar-row"><div class="bar-label">Fix nav order + add Explore</div><div class="bar-track"><div class="bar-fill" style="width:95%"></div></div><div class="bar-pct">95%</div></div>
+<div class="bar-row"><div class="bar-label">Homepage Dining + venue teasers</div><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><div class="bar-pct">80%</div></div>
+<div class="bar-row"><div class="bar-label">Slug rename + redirects</div><div class="bar-track"><div class="bar-fill" style="width:75%"></div></div><div class="bar-pct">75%</div></div>
+<div class="bar-row"><div class="bar-label">Drop restaurant from Services</div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div><div class="bar-pct">90%</div></div>
+<div class="bar-row"><div class="bar-label">Image compression</div><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div><div class="bar-pct">40%</div></div>
+<div class="bar-row"><div class="bar-label">Book Now clarity</div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div><div class="bar-pct">85%</div></div>
+
+<table>
+  <thead>
+    <tr><th>Remaining gap</th><th>Already in hand</th><th>Effort</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Build /explore page</td><td>3 attraction posts + cover images (Ol Donyo, People's Park, Kyamwilu); Wamunyu asset; MapEmbed; RevealSection; sitemap helper</td><td>S–M</td></tr>
+    <tr><td>Fix nav order + add Explore</td><td>navLinks single source in lib/navigation.ts</td><td>XS</td></tr>
+    <tr><td>Homepage Dining + venue teasers</td><td>Services CMS cards, Flavours copy, /dining and /services routes, ParallaxImage</td><td>S</td></tr>
+    <tr><td>Slug rename + redirects</td><td>Titles already match; generateStaticParams; blog image filenames already attraction-named</td><td>S</td></tr>
+    <tr><td>Drop restaurant from Services</td><td>enquireFor() + slug anchors; ANAM external link pattern on home</td><td>XS</td></tr>
+    <tr><td>Image compression</td><td>Next/Image pipeline; asset tree known; heavy files identifiable</td><td>S</td></tr>
+    <tr><td>Book Now clarity</td><td>BookingModal + WhatsApp intents; only copy/CTA strategy needed</td><td>XS</td></tr>
+  </tbody>
+</table>
+
+<h2>Two-site asset inventory</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>teatot.co.ke (hotel)</h3>
+    <p><strong>Routes:</strong> /, /rooms[+slug], /dining, /services, /gallery, /about, /contact, /blog-posts/[slug], /legal-page/[slug], /thank-you</p>
+    <p><strong>Systems:</strong> Navigation, BookingModal, ContactFab, Analytics/GA4, Hotel JSON-LD, FAQ, WhatsApp intents, Framer normalize/data layer, sitemap</p>
+    <p><strong>Docs:</strong> PARITY, HOSTING, DEPLOYMENT, VALIDATION, DIGITAL-CONVERSION-AUDIT</p>
+    <p><strong>Status:</strong> Live production</p>
+  </div>
+  <div class="card">
+    <h3>anam.teatot.co.ke (menu)</h3>
+    <p><strong>Routes:</strong> /, /menu, /about, /blog[+slug], /contact-form, privacy, terms</p>
+    <p><strong>Systems:</strong> Catalogue domain (families/products/promotions), view-models, filter hash, Restaurant JSON-LD, GA component, unit tests + selfcheck</p>
+    <p>Linked from hotel Dining + home ANAM card — fulfills “menus with photos” deeper than a single hotel page would</p>
+    <p><strong>Status:</strong> Live production</p>
+  </div>
+</div>
+
+<h2>Internal narrative vs client narrative</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>Client gate (PRDAA)</h3>
+    <p>Focus: did we ship the restructuring plan? Answer: not yet — Explore missing, home still mixed, nav/slugs wrong. Score ~62; Significant Rework.</p>
+  </div>
+  <div class="card">
+    <h3>Internal gate (this audit)</h3>
+    <p>Focus: is the product system ready to absorb that plan cheaply? Answer: yes — dining/ANAM/services/contact/measurement already exceed; remaining work is mostly IA assembly. Estimated 1–2 weeks to Views Draft green with current assets.</p>
+  </div>
+</div>
+
+<h2>What not to rebuild</h2>
+<ul>
+  <li>Do not rebuild Dining — extend home teaser to point at existing /dining + ANAM.</li>
+  <li>Do not invent new attraction copy first — promote existing three posts into /explore; add Wamunyu as fourth card from existing image.</li>
+  <li>Do not replace BookingModal for Views Draft “clarify Book Now” — change label/copy or secondary WA CTA; engine/M-Pesa is a product decision, not a missing page.</li>
+  <li>Do not merge ANAM back into hotel — dual-site is surplus that already satisfies menu depth; only tighten parent-brand cross-links.</li>
+  <li>Do not rewrite Services content — filter/hide restaurant + guest-services presentation; keep conference/garden/catering enquire pattern.</li>
+</ul>
+
+<h2>Internal scorecard</h2>
+<div class="scoregrid">
+  <div class="stat"><div class="v">9/10</div><div class="l">Asset readiness</div></div>
+  <div class="stat"><div class="v">8/10</div><div class="l">Surplus value</div></div>
+  <div class="stat"><div class="v">7/10</div><div class="l">Close-the-brief speed</div></div>
+  <div class="stat"><div class="v">6/10</div><div class="l">IA alignment today</div></div>
+  <div class="stat"><div class="v">8/10</div><div class="l">Conversion stack</div></div>
+  <div class="stat"><div class="v">5/10</div><div class="l">Main-site test harness</div></div>
+</div>
+
+<div class="callout info">
+  <strong>Recommended internal posture</strong>
+  Treat Views Draft remaining items as a short IA sprint on top of a finished platform — not a second build. Keep PRDAA as the external acceptance checklist; use this surplus map for sequencing and scope control (deletion over reinvention).
+</div>
+
+<div class="footer">
+  Stance: delivery team advocate. Celebrates shipped surplus without disputing client-facing gaps.
+  Source canvas: internal-delivery-surplus-audit.canvas.tsx · Companion client audit: prdaa-implementation-audit.canvas.tsx
+  Confidence: grounded in prior live/repo audit · Effort estimates are planning, not quotes.
+</div>
+
+</body>
+</html>

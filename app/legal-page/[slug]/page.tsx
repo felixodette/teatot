@@ -13,6 +13,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!page) return { title: "Legal" };
   return {
     title: page.title,
+    alternates: { canonical: `/legal-page/${slug}` },
+    openGraph: { url: `/legal-page/${slug}` },
   };
 }
 

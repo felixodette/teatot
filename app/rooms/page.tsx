@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getFaqs, getRooms } from "@/lib/data";
 import { formatMoney, stripHtml } from "@/lib/format";
 import { whatsappUrl } from "@/config/contact";
+import { getFaqPageJsonLd } from "@/lib/structured-data";
 import HeroSection from "@/components/HeroSection";
 import RevealSection from "@/components/RevealSection";
 import ImageWithFallback from "@/components/ImageWithFallback";
@@ -14,6 +15,8 @@ export const metadata: Metadata = {
   title: "Rooms",
   description:
     "Room types at Tea Tot Hotel, Machakos — clear B&B rates, AC, Wi-Fi, opposite Level 5 on Konza Road.",
+  alternates: { canonical: "/rooms" },
+  openGraph: { url: "/rooms" },
 };
 
 export default function RoomsPage() {
@@ -21,9 +24,15 @@ export default function RoomsPage() {
   const roomFaqs = getFaqs().filter(
     (f) => f.category === "Rooms" || f.slug === "parking-available",
   );
+  const allFaqs = getFaqs();
 
   return (
-    <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getFaqPageJsonLd(allFaqs)) }}
+      />
+      <div>
       <HeroSection
         label="ROOMS & SUITES"
         headline="Sleep well in Machakos."
@@ -41,6 +50,46 @@ export default function RoomsPage() {
       />
 
       <div className="mx-auto max-w-[var(--container-max)] px-6 pt-12 pb-16">
+        {list.length > 0 ? (
+          <RevealSection className="mb-12 overflow-x-auto">
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-[var(--color-text-secondary)]">
+              Compare rooms
+            </h2>
+            <table className="w-full min-w-[560px] border-collapse text-sm">
+              <thead>
+                <tr className="border-b border-[var(--color-border)]">
+                  <th className="py-3 pr-6 text-left font-semibold">Room</th>
+                  <th className="py-3 pr-6 text-left font-semibold">Single B&amp;B</th>
+                  <th className="py-3 pr-6 text-left font-semibold">Double B&amp;B</th>
+                  <th className="py-3 pr-6 text-left font-semibold">Size</th>
+                  <th className="py-3 pr-6 text-left font-semibold">Bed</th>
+                  <th className="py-3 text-left font-semibold">Max guests</th>
+                </tr>
+              </thead>
+              <tbody>
+                {list.map((room) => (
+                  <tr
+                    key={room.slug}
+                    className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-bg-subtle)] transition-colors"
+                  >
+                    <td className="py-3 pr-6 font-medium">
+                      <Link href={`/rooms/${room.slug}`} className="hover:underline">
+                        {room.name}
+                      </Link>
+                    </td>
+                    <td className="py-3 pr-6">{formatMoney(room.priceSingle, room.currency)}</td>
+                    <td className="py-3 pr-6">{formatMoney(room.priceDouble, room.currency)}</td>
+                    <td className="py-3 pr-6">{room.roomSize} m²</td>
+                    <td className="py-3 pr-6">{room.bedType}</td>
+                    <td className="py-3">{room.maxGuests}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="mt-2 text-xs text-[var(--color-text-secondary)]">All rates are B&amp;B per night · KES · Book direct for best rate</p>
+          </RevealSection>
+        ) : null}
+
         {list.length === 0 ? (
           <EmptySection
             title="Rooms coming soon"
@@ -105,6 +154,7 @@ export default function RoomsPage() {
           </RevealSection>
         ) : null}
       </div>
-    </div>
+      </div>
+    </>
   );
 }
